@@ -1,0 +1,312 @@
+/* ==============================================================
+
+Template name : Functional Movement Systems
+Author : Breon Williams
+Version : v1.0.0
+
+-----------------------------------------------------------------
+CSS structure
+-----------------------------------------------------------------
+
+01. Typography
+02. Blockquote
+03. Tooltip
+04. Modal
+05. Navigation
+06. Form
+07. Button
+08. Progress Bar
+
+============================================================== */
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic);
+
+/*
+Typography
+=========================== */
+body {
+    background:#fff;
+    font-family: 'Open Sans', sans-serif;
+    font-size:13px;
+    line-height:24px;
+    color:#5c5c5c;
+}
+
+a,
+a:active,
+a:focus,
+a:hover{
+    outline:none;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+a:hover{
+    text-decoration:underline;
+}
+
+h1, h2, h3, h4, h5, h6{
+    color:#1c1c1c;
+    text-transform:uppercase;
+    font-weight:700;
+    margin:0 0 20px 0;
+}
+
+h1{
+    font-size:48px;
+    line-height:52px;
+}
+
+h2{
+    font-size:36px;
+    line-height:48px;
+}
+
+h3{
+    font-size:30px;
+    line-height:36px;
+}
+
+h4{
+    font-size:24px;
+    line-height:30px;
+}
+
+h5{
+    font-size:18px;
+    line-height:24px;
+}
+
+h6{
+    font-size:14px;
+    line-height:18px;
+}
+
+p{
+    margin-bottom:20px;
+}
+
+label{
+    color:#1c1c1c;
+}
+
+.alignleft{
+    float:left;
+    margin:10px 20px 20px 0;
+}
+
+.alignright{
+    float:right;
+    margin:10px 0 20px 20px;
+}
+
+
+/*
+Navigation
+=========================== */
+.navbar {
+    float: left;
+    width: 100%;
+    border: none;
+    border-radius: 0;
+    background: #0b0b0b;
+    z-index: 9999;
+}
+
+
+
+
+.navbar-nav > li > a {
+    margin:0 1px;
+    line-height: 20px;
+    color:#fff;
+    text-transform:uppercase;
+    font-size:12px;
+    font-weight:700;
+    border:1px solid transparent;
+}
+
+.navbar-custom .navbar-nav>li>a {
+    color: #fff;
+}
+
+
+.navbar-custom .navbar-nav>.open>a, .navbar-custom .navbar-nav>.open>a:hover, .navbar-custom .navbar-nav>.open>a:focus{
+    background:#d33939;
+    border-color:#d33939;
+}
+
+.navbar-nav > li > a:hover,
+.navbar-nav > li > a:focus,
+.navbar-nav > .dropdown a:hover,
+.navbar-nav > .dropdown a:focus,
+.navbar-nav > .active > a,
+.navbar-nav > .active > a:hover,
+.navbar-nav > .active > a:focus {
+    border:1px solid #d33939;
+    background: #d33939;
+    cursor: pointer;
+
+}
+
+.dropdown-menu {
+    z-index: 1000;
+    display: none;
+    min-width: 180px;
+    padding:0;
+    margin:0;
+    text-align: left;
+    list-style: none;
+    background-color: rgba(23, 23, 23, 0.98);
+    border: none;
+    border-radius: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.navbar-nav .dropdown-menu > li > a {
+    display: block;
+    padding: 10px 20px;
+    clear: both;
+    font-weight: normal;
+    line-height: 1.42857143;
+    color: #fff;
+    font-size: 11px;
+    text-transform:uppercase;
+    font-weight:700;
+    border:none;
+    border-bottom:1px solid #292929;
+    white-space: nowrap;
+}
+
+.navbar-nav .dropdown-menu li > a:hover {
+    border:none;
+    border-bottom:1px solid #d33939;
+    background-color: #d33939;
+}
+
+
+.navbar .navbar-toggle,
+.navbar .navbar-toggle:active,
+.navbar .navbar-toggle:focus{
+    border:2px solid #3e3e3e;
+    background:none;
+    margin:13px 20px 0 0;
+    border-radius:0;
+}
+
+.navbar .navbar-toggle .icon-bar,
+.navbar .navbar-toggle:focus .icon-bar {
+    background-color:#636363;
+}
+
+/*
+Megamenu
+================================== */
+.yamm .nav,
+.yamm .dropup,
+.yamm .dropdown,
+.yamm .collapse {
+    position: static;
+}
+.yamm .navbar-inner,
+.yamm .container {
+    position: static;
+    color:#fff;
+}
+.yamm .dropdown-menu {
+    left: auto;
+}
+.yamm .dropdown-menu > li {
+    display: block;
+}
+.yamm .dropdown-menu > li.container{
+    padding-top:40px;
+    padding-bottom:40px;
+    font-size:11px;
+    line-height:18px;
+}
+.yamm .dropdown-menu > li.container h1,
+.yamm .dropdown-menu > li.container h2,
+.yamm .dropdown-menu > li.container h3,
+.yamm .dropdown-menu > li.container h4,
+.yamm .dropdown-menu > li.container h5,
+.yamm .dropdown-menu > li.container h6{
+    color:#fff;
+    font-weight:400;
+    margin-bottom:15px;
+}
+.yamm .dropdown-menu > li.container a{
+    border:none;
+}
+.yamm .dropdown-submenu .dropdown-menu {
+    left: 100%;
+}
+.yamm .nav.pull-right .dropdown-menu {
+    right: 0;
+}
+.yamm .yamm-content {
+    padding: 20px 30px;
+    *zoom: 1;
+}
+.yamm .yamm-content:before,
+.yamm .yamm-content:after {
+    display: table;
+    content: "";
+    line-height: 0;
+}
+.yamm .yamm-content:after {
+    clear: both;
+}
+.yamm.navbar .nav > li > .dropdown-menu:after,
+.yamm.navbar .nav > li > .dropdown-menu:before {
+    display: none;
+}
+.yamm .dropdown.yamm-fullwidth .dropdown-menu {
+    position:absolute;
+    width: 100%;
+    left: 0;
+    right: 0;
+}
+.yamm-link{
+    margin:0;
+    padding:0;
+}
+.yamm-link li{
+    list-style:none;
+    margin:0 0 10px 0;
+    padding:0;
+}
+.yamm-link li a{
+    display: block;
+    padding: 0 15px 0 0;
+    clear: both;
+    font-size:11px;
+    font-weight: normal;
+    text-transform:uppercase;
+    line-height: 1.42857143;
+    color: #fff;
+    border:none;
+    white-space: nowrap;
+}
+.navbar-nav .yamm-link li a:hover,
+.navbar-nav .yamm-link li a:active,
+.navbar-nav .yamm-link li a:focus{
+    text-decoration:none;
+    border:none;
+}
+@media (max-width: 969px) {
+    .yamm .dropdown.yamm-fullwidth .dropdown-menu {
+        width: auto;
+    }
+    .yamm .yamm-content {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .yamm .dropdown-menu > li > ul {
+        display: block;
+    }
+}
