@@ -245,7 +245,6 @@ Navigation
 .navbar .navbar-toggle,
 .navbar .navbar-toggle:active,
 .navbar .navbar-toggle:focus{
-    border:2px solid #fff;
     background:none;
     border-radius:0;
 }
@@ -652,7 +651,6 @@ Border color
 .navbar-nav > .active > a:hover,
 .navbar-nav > .active > a:focus,
 .navbar-nav .dropdown-menu > li > a:hover,
-.navbar .navbar-toggle:hover,
 .btn-primary,
 .btn-primary.disabled,
 .btn-primary[disabled],
