@@ -128,7 +128,7 @@ Navigation
     text-transform:uppercase;
     font-size:12px;
     font-weight:700;
-    border:1px solid transparent;
+    border: none;
 }
 
 .navbar-custom .navbar-nav>li>a {
@@ -136,9 +136,18 @@ Navigation
 }
 
 
-.navbar-custom .navbar-nav>.open>a, .navbar-custom .navbar-nav>.open>a:hover, .navbar-custom .navbar-nav>.open>a:focus{
+.navbar-custom .navbar-nav>.open>a,
+.navbar-custom .navbar-nav>.open>a:hover,
+.navbar-custom .navbar-nav>.open>a:focus {
     background:#d33939;
-    border-color:#d33939;
+    border: none;
+}
+
+.navbar-nav .dropdown-menu > .open > a,
+.navbar-nav .dropdown-menu > .open > a:hover,
+.navbar-nav .dropdown-menu > .open > a:focus {
+    background:#d33939;
+    border: none;
 }
 
 .navbar-nav > li > a:hover,
@@ -148,7 +157,7 @@ Navigation
 .navbar-nav > .active > a,
 .navbar-nav > .active > a:hover,
 .navbar-nav > .active > a:focus {
-    border:1px solid #d33939;
+    border: none;
     background: #d33939;
     cursor: pointer;
 
@@ -180,13 +189,11 @@ Navigation
     text-transform:uppercase;
     font-weight:700;
     border:none;
-    border-bottom:1px solid #292929;
     white-space: nowrap;
 }
 
 .navbar-nav .dropdown-menu li > a:hover {
     border:none;
-    border-bottom:1px solid #d33939;
     background-color: #d33939;
 }
 
@@ -217,12 +224,12 @@ Navigation
 }
 .navbar-collapse form[role="search"] button,
 .navbar-collapse form[role="search"] input {
-    padding: 16px 12px;
+    padding: 15px 12px;
     border-radius: 0px;
     border-width: 0px;
     color: rgb(119, 119, 119);
     background-color: rgb(248, 248, 248);
-    border-color: rgb(231, 231, 231);
+    border: none;
     box-shadow: none;
     outline: none;
 }
@@ -241,6 +248,7 @@ Navigation
     padding: 0 15px;
     font-size: 12px;
     font-weight: 700;
+    height: 50px;
 }
 
 .navbar-form .input-group {
@@ -273,7 +281,7 @@ Navigation
     }
     .navbar-collapse form[role="search"] button,
     .navbar-collapse form[role="search"] input {
-        padding: 16px 12px;
+        padding: 15px 12px;
     }
     .navbar-collapse form[role="search"] input {
         padding: 25px 12px;
@@ -294,113 +302,6 @@ Navigation
     }
 }
 
-/*
-Megamenu
-================================== */
-.yamm .nav,
-.yamm .dropup,
-.yamm .dropdown,
-.yamm .collapse {
-    position: static;
-}
-.yamm .navbar-inner,
-.yamm .container {
-    position: static;
-    color:#fff;
-}
-.yamm .dropdown-menu {
-    left: auto;
-}
-.yamm .dropdown-menu > li {
-    display: block;
-}
-.yamm .dropdown-menu > li.container{
-    padding-top:40px;
-    padding-bottom:40px;
-    font-size:11px;
-    line-height:18px;
-}
-.yamm .dropdown-menu > li.container h1,
-.yamm .dropdown-menu > li.container h2,
-.yamm .dropdown-menu > li.container h3,
-.yamm .dropdown-menu > li.container h4,
-.yamm .dropdown-menu > li.container h5,
-.yamm .dropdown-menu > li.container h6{
-    color:#fff;
-    font-weight:400;
-    margin-bottom:15px;
-}
-.yamm .dropdown-menu > li.container a{
-    border:none;
-}
-.yamm .dropdown-submenu .dropdown-menu {
-    left: 100%;
-}
-.yamm .nav.pull-right .dropdown-menu {
-    right: 0;
-}
-.yamm .yamm-content {
-    padding: 20px 30px;
-    *zoom: 1;
-}
-.yamm .yamm-content:before,
-.yamm .yamm-content:after {
-    display: table;
-    content: "";
-    line-height: 0;
-}
-.yamm .yamm-content:after {
-    clear: both;
-}
-.yamm.navbar .nav > li > .dropdown-menu:after,
-.yamm.navbar .nav > li > .dropdown-menu:before {
-    display: none;
-}
-.yamm .dropdown.yamm-fullwidth .dropdown-menu {
-    position:absolute;
-    width: 100%;
-    left: 0;
-    right: 0;
-}
-.yamm-link{
-    margin:0;
-    padding:0;
-}
-.yamm-link li{
-    list-style:none;
-    margin:0 0 10px 0;
-    padding:0;
-}
-.yamm-link li a{
-    display: block;
-    padding: 0 15px 0 0;
-    clear: both;
-    font-size:11px;
-    font-weight: normal;
-    text-transform:uppercase;
-    line-height: 1.42857143;
-    color: #fff;
-    border:none;
-    white-space: nowrap;
-}
-.navbar-nav .yamm-link li a:hover,
-.navbar-nav .yamm-link li a:active,
-.navbar-nav .yamm-link li a:focus{
-    text-decoration:none;
-    border:none;
-}
-@media (max-width: 969px) {
-    .yamm .dropdown.yamm-fullwidth .dropdown-menu {
-        width: auto;
-    }
-    .yamm .yamm-content {
-        padding-left: 0;
-        padding-right: 0;
-    }
-    .yamm .dropdown-menu > li > ul {
-        display: block;
-    }
-}
 
 
 /*
@@ -579,18 +480,8 @@ Color
 a,
 a:hover,
 a:focus,
-.noempaty,
 .primary,
-.icon-primary,
 .btn-primary.btn-bordered,
-.navbar-nav > li > a:hover,
-.navbar-nav > li > a:focus,
-.navbar-nav > .active > a,
-.navbar-nav > .active > a:hover,
-.navbar-nav > .active > a:focus,
-.navbar-nav .yamm-link li a:hover,
-.navbar-nav .yamm-link li a:active,
-.navbar-nav .yamm-link li a:focus,
 .cart .icon-cart,
 .home-link li a:hover,
 h1 span, h2 span, h3 span, h4 span, h5 span, h6 span,
