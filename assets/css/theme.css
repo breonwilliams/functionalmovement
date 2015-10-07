@@ -264,6 +264,7 @@ Navigation
     padding: 0px;
     margin: 0px;
     z-index: 0;
+    border: none;
 }
 .navbar-collapse form[role="search"] button,
 .navbar-collapse form[role="search"] input {
