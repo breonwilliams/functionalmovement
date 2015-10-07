@@ -103,6 +103,11 @@ label{
     margin:10px 0 20px 20px;
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+}
+
 
 /*
 Navigation
@@ -119,6 +124,20 @@ Navigation
 .navbar-brand {
     text-shadow: none;
     font-weight: 900;
+}
+
+.navbar-brand {
+    float: left;
+    height: 50px;
+    padding: 0;
+    font-size: 18px;
+    line-height: 20px;
+}
+
+.navbar-brand>img {
+    display: block;
+    width: auto;
+    max-height: 50px;
 }
 
 
