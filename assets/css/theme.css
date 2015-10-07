@@ -108,6 +108,7 @@ label{
 Navigation
 =========================== */
 .navbar {
+    float: left;
     width: 100%;
     border: none;
     border-radius: 0;
@@ -141,7 +142,6 @@ Navigation
 .navbar-custom .navbar-nav>.open>a:focus {
     background:#d33939;
     border: none;
-    margin: 0;
 }
 
 .navbar-nav .dropdown-menu > .open > a,
@@ -149,7 +149,6 @@ Navigation
 .navbar-nav .dropdown-menu > .open > a:focus {
     background:#d33939;
     border: none;
-    margin: 0;
 }
 
 .navbar-nav .fa-shopping-cart {
@@ -183,7 +182,6 @@ Navigation
     border: none;
     background: #d33939;
     cursor: pointer;
-    margin: 0;
 }
 
 .navbar-nav > li > a {
@@ -217,13 +215,11 @@ Navigation
     font-weight:700;
     border:none;
     white-space: nowrap;
-    margin: 0;
 }
 
 .navbar-nav .dropdown-menu li > a:hover {
     border:none;
     background-color: #d33939;
-    margin: 0;
 }
 
 
