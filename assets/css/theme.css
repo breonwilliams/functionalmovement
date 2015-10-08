@@ -287,7 +287,7 @@ Navigation
 .navbar-form .input-group > .form-control {
     width: 100%;
     padding: 0 15px;
-    font-size: 12px;
+    font-size: 16px;
     font-weight: 700;
     height: 50px;
 }
@@ -360,6 +360,10 @@ Navigation
     }
     .navbar-collapse form[role="search"].active input {
         width: 100%;
+    }
+
+    input, select, textarea {
+        font-size: 16px;
     }
 }
 
