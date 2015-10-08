@@ -20,13 +20,15 @@ CSS structure
 ============================================================== */
 
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic);
+@import url(https://fonts.googleapis.com/css?family=Karla:400,400italic,700,700italic);
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
 
 /*
 Typography
 =========================== */
 body {
     background:#fff;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Karla', sans-serif;
     font-size:14px;
     line-height:24px;
     color:#5c5c5c;
@@ -48,40 +50,48 @@ a:hover, a:focus {
     text-decoration: none;
 }
 
-h1, h2, h3, h4, h5, h6{
-    color:#1c1c1c;
-    font-weight:700;
-    margin:0 0 20px 0;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin-top: 0;
+    color: #3b3b3b;
+    margin-bottom: 10px;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+    font-family: 'Montserrat', sans-serif;
 }
-
-h1{
-    font-size:48px;
-    line-height:52px;
+h1 {
+    font-size: 28px;
+    line-height: 32px;
+    margin-bottom: 15px;
 }
-
-h2{
-    font-size:36px;
-    line-height:48px;
+h2 {
+    font-size: 24px;
+    line-height: 28px;
+    margin-bottom: 15px;
 }
-
-h3{
-    font-size:30px;
-    line-height:36px;
+h3 {
+    font-size: 18px;
+    line-height: 22px;
 }
-
-h4{
-    font-size:24px;
-    line-height:30px;
+h4 {
+    font-size: 16px;
+    line-height: 20px;
+    margin-bottom: 7px;
+    letter-spacing: -0.2px;
 }
-
-h5{
-    font-size:18px;
-    line-height:24px;
+h5 {
+    font-size: 15px;
+    line-height: 19px;
+    letter-spacing: -0.2px;
 }
-
-h6{
-    font-size:14px;
-    line-height:18px;
+h6 {
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: -0.2px;
 }
 
 p{
@@ -890,9 +900,7 @@ Accordion
 .panel-default > .panel-heading + .panel-collapse .panel-body {
     border: 0
 }
-.panel-body {
-    padding: 20px 0;
-}
+
 .boxed .panel-body {
     padding: 20px;
     padding-top: 0;
@@ -911,6 +919,35 @@ Accordion
 .boxed.panel-group .panel-heading .panel-title:hover,
 .boxed.panel-group .panel-active .panel-heading .panel-title {
     color: #3b3b3b !important
+}
+
+/*
+Tooltip
+=========================== */
+
+.tooltip {
+    font-size: 14px
+}
+.tooltip-inner {
+    color: #fff;
+    background-color: #3b3b3b;
+    padding: 5px 12px 5px;
+}
+.tooltip.top .tooltip-arrow,
+.tooltip.top-left .tooltip-arrow,
+.tooltip.top-right .tooltip-arrow {
+    border-top-color: #3b3b3b
+}
+.tooltip.right .tooltip-arrow {
+    border-right-color: #3b3b3b
+}
+.tooltip.left .tooltip-arrow {
+    border-left-color: #3b3b3b
+}
+.tooltip.bottom .tooltip-arrow,
+.tooltip.bottom-left .tooltip-arrow,
+.tooltip.bottom-right .tooltip-arrow {
+    border-bottom-color: #3b3b3b
 }
 
 

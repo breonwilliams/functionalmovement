@@ -43,3 +43,8 @@ $(function () {
         });
     });
 })
+
+// Initialize Tooltip
+$(function () {
+    $('[data-rel="tooltip"]').tooltip()
+})
