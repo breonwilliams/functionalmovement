@@ -172,7 +172,7 @@ Header
 =========================== */
 
 .header-mid-area {
-    padding: 30px 0 10px;
+    padding: 15px 0;
 }
 
 .header-mid-area .logo img {
@@ -211,6 +211,7 @@ Header
     float: right;
 }
 .lang-select ul{
+    list-style: outside none none;
     padding: 0;
     margin: 0;
 }
@@ -535,7 +536,8 @@ Button
 
 .btn-default:focus,
 .btn-default.focus,
-.btn-default:hover {
+.btn-default:hover,
+.btn-group.open .btn-default:focus {
     color: #fff;
     background-color: #212121;
     border-color: #212121;
@@ -566,6 +568,7 @@ Button
 .btn-green:hover,
 .btn-green.btn-bordered:focus,
 .btn-green.btn-bordered.focus,
+.btn-group.open .btn-green:focus,
 .btn-green.btn-bordered:hover{
     color: #fff;
     background-color: #69bd67;
@@ -588,6 +591,7 @@ Button
 .btn-blue:hover,
 .btn-blue.btn-bordered:focus,
 .btn-blue.btn-bordered.focus,
+.btn-group.open .btn-blue:focus,
 .btn-blue.btn-bordered:hover{
     color: #fff;
     background-color: #3fcde2;
@@ -616,6 +620,7 @@ Button
 .btn-red:hover,
 .btn-red.btn-bordered:focus,
 .btn-red.btn-bordered.focus,
+.btn-group.open .btn-red:focus,
 .btn-red.btn-bordered:hover{
     color: #fff;
     background: #e44b4b;
@@ -638,6 +643,7 @@ Button
 .btn-yellow:hover,
 .btn-yellow.btn-bordered:focus,
 .btn-yellow.btn-bordered.focus,
+.btn-group.open .btn-yellow:focus,
 .btn-yellow.btn-bordered:hover{
     color: #fff;
     background-color: #e2ba3f;
@@ -848,6 +854,7 @@ Hover background color
 .btn-primary:focus,
 .btn-primary.focus,
 .btn-primary:hover,
+.btn-group.open .btn-primary:focus,
 .zoom a:hover {
     background:#eb5858;
 }
@@ -1095,6 +1102,10 @@ Form
 }
 .form-control::-webkit-input-placeholder {
     color: #ababab;
+}
+
+.header-top-area .bootstrap-select:not([class*="col-"]):not([class*="form-control"]):not(.input-group-btn) {
+    width: auto;
 }
 
 
