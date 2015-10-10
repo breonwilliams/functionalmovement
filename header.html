@@ -13,7 +13,82 @@
 
 </head>
 <body>
-<nav class="navbar navbar-custom">
+<!-- Header start -->
+<header class="header" id="header" role="banner">
+    <div class="header-top-area">
+        <div class="container">
+            <div class="row">
+                <!-- header-top-left start -->
+                <div class="col-lg-6 col-md-6 col-sm-7">
+                    <div class="header-top-left">
+                        <div class="top-message">Default welcome message</div>
+                        <div class="phone-number"> Call support free: <span>123 456  789</span></div>
+                    </div>
+                </div>
+                <!-- header-top-left end -->
+                <!-- header-top-right start -->
+                <div class="col-lg-6 col-md-6 col-sm-5">
+                    <div class="header-top-right">
+                        <div class="lang-select">
+                            <ul>
+                                <li><a href="#">language</a></li>
+                            </ul>
+                        </div>
+                        <div class="top-menu">
+                            <ul>
+                                <li><a href="my-account.html">My Account</a></li>
+                                <li><a href="wishlist.html">My Wishlist</a></li>
+                                <li><a href="cart.html">Cart</a></li>
+                                <li><a href="#">Login</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- header-top-right end -->
+            </div>
+        </div>
+    </div>
+    <div class="header-mid-area">
+        <div class="container">
+            <div class="row">
+                <!-- logo start -->
+                <div class="col-lg-6 col-md-6 col-sm-4 col-xs-12">
+                    <div class="logo">
+                        <a href="#"><img src="assets/img/logo.jpg" alt=""></a>
+                    </div>
+                </div>
+                <!-- logo end -->
+                <div class="col-lg-6 col-md-6 col-sm-8 col-xs-12 text-right">
+                    <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#modal">Signup</button> <a href="#" class="btn btn-default btn-sm">Register</a>
+                </div>
+            </div>
+            <!-- Start Modal -->
+            <div class="modal fade" id="modal" tabindex="-1" role="modal" aria-labelledby="modal-label" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                            <h4 class="modal-title" id="modal-label">My FMS</h4>
+                        </div>
+                        <div class="modal-body">
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium atque architecto quae ullam rem labore veritatis temporibus asperiores, ad eaque odit commodi inventore dolore perspiciatis, nam dicta est eos id quod excepturi.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-bordered btn-primary" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End Modal -->
+        </div>
+    </div>
+</header>
+<!-- Header end -->
+<nav class="navbar navbar-custom" data-spy="affix">
     <div class="container-fluid">
     <div class="navbar-header">
         <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".navbar-collapse">

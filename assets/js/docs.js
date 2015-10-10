@@ -48,3 +48,13 @@ $(function () {
 $(function () {
     $('[data-rel="tooltip"]').tooltip()
 })
+
+// Sticky Nav
+
+$(function() {
+    $('.navbar').affix({
+        offset: {
+            top: $('.navbar').offset().top
+        }
+    });
+});
