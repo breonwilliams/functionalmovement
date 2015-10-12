@@ -243,6 +243,15 @@ Navigation
     width: 100%;
 }
 
+.affix .navbar-brand {
+    position:static;
+    -webkit-transform:translate3d(0, 0, 0);
+    -o-transform:translate3d(0, 0, 0);
+    -moz-transform:translate3d(0, 0, 0);
+    -ms-transform:translate3d(0, 0, 0);
+    transform:translate3d(0, 0, 0);
+}
+
 nav.affix {
     top: 0;
 }
@@ -252,40 +261,41 @@ nav.affix {
     font-weight: 900;
 }
 
-.affix-top .navbar-brand {
-    opacity: 0;
-    float: left;
-    height: 0;
-    padding: 0;
-    animation-duration: 0.25s;
-    animation-timing-function: ease;
-    animation-delay: 0s;
-    animation-direction: normal;
-    animation-fill-mode: none;
-    animation-iteration-count: 1;
+.navbar-brand {
+    float:left;
+    padding:15px 0;
+    font-size:18px;
+    line-height:20px;
+    height:50px;
+    font-weight:700;
 }
 
+.navbar > .container .navbar-brand, .navbar > .container-fluid .navbar-brand {
+    margin-left:0;
+}
+.navbar-brand {
+    opacity:0;
+    width:0;
+    margin:0;
+    padding:0;
+}
 .affix .navbar-brand {
-    opacity: 1;
-    float: left;
-    height: 50px;
+    opacity:1;
+    width:auto;
     padding: 0 15px;
-    font-size: 18px;
-    line-height: 20px;
-    animation-duration: 0.25s;
-    animation-timing-function: ease;
-    animation-delay: 0s;
-    animation-direction: normal;
-    animation-fill-mode: none;
-    animation-iteration-count: 1;
+    animation-duration:.25s;
+    animation-timing-function:ease;
+    animation-delay:0;
+    animation-direction:normal;
+    animation-fill-mode:none;
+    animation-iteration-count:1;
+    animation-name:headerlogo;
 }
 
 .navbar-brand>img {
-    display: block;
-    max-width: 100%;
-    height: 50px;
     max-height: 50px;
     width: auto;
+    display: block;
 }
 
 
@@ -470,13 +480,13 @@ nav.affix {
     }
 
     .right-containt {
-        padding: 0 23px 0 0;
+        padding: 0 53px 0 0;
     }
 
     .navbar-collapse form[role="search"] {
         position: absolute;
         top: 0px;
-        right: 0px;
+        right: 30px;
         width: auto;
         padding: 0px;
         margin: 0px;
@@ -509,6 +519,11 @@ nav.affix {
     }
 }
 
+
+.navbar-custom .container-fluid {
+    max-width: 1200px;
+    position: relative;
+}
 
 
 /*
@@ -1113,6 +1128,10 @@ Form
 
 .header-top-area .bootstrap-select:not([class*="col-"]):not([class*="form-control"]):not(.input-group-btn) {
     width: auto;
+}
+
+.form-horizontal .input-group {
+    margin: 0 0 25px 0;
 }
 
 

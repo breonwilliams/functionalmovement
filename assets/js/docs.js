@@ -51,10 +51,10 @@ $(function () {
 
 // Sticky Nav
 
-$(function() {
-    $('.navbar').affix({
-        offset: {
-            top: $('.navbar').offset().top
-        }
+    $(function() {
+        $('.navbar').affix({
+            offset: {
+                top: $('.navbar').offset().top
+            }
+        });
     });
-});

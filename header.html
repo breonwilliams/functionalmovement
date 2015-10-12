@@ -44,7 +44,6 @@
                         <div class="top-menu">
                             <ul>
                                 <li><a href="my-account.html">My Account</a></li>
-                                <li><a href="wishlist.html">My Wishlist</a></li>
                                 <li><a href="cart.html">Cart</a></li>
                                 <li><a href="#">Login</a></li>
                             </ul>
@@ -80,7 +79,133 @@
                         <div class="modal-body">
                             <div class="row">
                                 <div class="col-sm-12">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium atque architecto quae ullam rem labore veritatis temporibus asperiores, ad eaque odit commodi inventore dolore perspiciatis, nam dicta est eos id quod excepturi.</p>
+                                    <ul class="nav nav-tabs">
+                                        <li class="active"><a href="#signintab" data-toggle="tab" aria-expanded="true">Sign In</a></li>
+                                        <li class=""><a href="#registertab" data-toggle="tab" aria-expanded="false">Register</a></li>
+                                        <li class=""><a href="#passwordtab" data-toggle="tab" aria-expanded="false">Forgot Password?</a></li>
+                                    </ul>
+                                    <div class="tab-content">
+                                        <div class="tab-pane fade active in" id="signintab">
+                                            <form id="loginform" class="form-horizontal" role="form">
+
+                                                <p>Please enter your username and password to login or <a href="#">create a new account</a>.</p>
+
+                                                <div class="input-group">
+                                                    <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                                                    <input id="login-username" type="text" class="form-control" name="username" value="" placeholder="username or email">
+                                                </div>
+
+                                                <div class="input-group">
+                                                    <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+                                                    <input id="login-password" type="password" class="form-control" name="password" placeholder="password">
+                                                </div>
+
+
+
+                                                <div class="input-group">
+                                                    <div class="checkbox">
+                                                        <label>
+                                                            <input id="login-remember" type="checkbox" name="remember" value="1"> Keep me logged in.
+                                                        </label>
+                                                    </div>
+                                                </div>
+
+
+                                                <div class="form-group">
+                                                    <!-- Button -->
+
+                                                    <div class="col-sm-12 controls">
+                                                        <a id="btn-login" href="#" class="btn btn btn-green">Sign In  </a>
+                                                        <a id="btn-cancel" href="#" class="btn btn-primary">Cancel</a>
+
+                                                    </div>
+                                                </div>
+
+
+                                                <div class="form-group">
+                                                    <div class="col-md-12 control">
+                                                            Don't have an account!
+                                                            <a href="#">
+                                                                Sign Up Here
+                                                            </a>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </div>
+                                        <div class="tab-pane fade" id="registertab">
+                                            <form id="loginform" class="form-horizontal" role="form">
+
+                                                <h3>Create a new account.</h3>
+                                                <p>Use the form below to create a new account Passwords are required to be a minimum of 6 characters in length.</p>
+
+                                                <div class="input-group">
+                                                    <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                                                    <input id="login-username" type="text" class="form-control" name="username" value="" placeholder="username">
+                                                </div>
+
+                                                <div class="input-group">
+                                                    <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                                                    <input id="login-username" type="text" class="form-control" name="username" value="" placeholder="first name">
+                                                </div>
+
+                                                <div class="input-group">
+                                                    <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                                                    <input id="login-username" type="text" class="form-control" name="username" value="" placeholder="last name">
+                                                </div>
+
+                                                <div class="input-group">
+                                                    <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
+                                                    <input id="login-password" type="password" class="form-control" name="password" placeholder="email address">
+                                                </div>
+
+                                                <div class="input-group">
+                                                    <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+                                                    <input id="login-password" type="password" class="form-control" name="password" placeholder="password">
+                                                </div>
+
+                                                <div class="input-group">
+                                                    <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+                                                    <input id="login-password" type="password" class="form-control" name="password" placeholder="confirm password">
+                                                </div>
+
+                                                <p>By clicking "Sign Up" you agree to the <a href="#">Terms of Use</a>.</p>
+
+                                                <div class="form-group">
+                                                    <!-- Button -->
+
+                                                    <div class="col-sm-12 controls">
+                                                        <a id="btn-login" href="#" class="btn btn btn-green">Sign In  </a>
+                                                        <a id="btn-cancel" href="#" class="btn btn-primary">Cancel</a>
+
+                                                    </div>
+                                                </div>
+
+                                            </form>
+                                        </div>
+                                        <div class="tab-pane fade" id="passwordtab">
+                                            <div class="tab-pane fade active in" id="signintab">
+                                                <form id="loginform" class="form-horizontal" role="form">
+
+                                                    <p>Use the form below to reset your password.</p>
+
+                                                    <div class="input-group">
+                                                        <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                                                        <input id="login-username" type="text" class="form-control" name="username" value="" placeholder="username or email">
+                                                    </div>
+
+                                                    <div class="form-group">
+                                                        <!-- Button -->
+
+                                                        <div class="col-sm-12 controls">
+                                                            <a id="btn-login" href="#" class="btn btn btn-green">Reset Password</a>
+                                                            <a id="btn-cancel" href="#" class="btn btn-primary">Cancel</a>
+
+                                                        </div>
+                                                    </div>
+
+                                                </form>
+                                            </div>
+                                        </div>
                                 </div>
                             </div>
                         </div>
@@ -426,8 +551,6 @@
                 </div> <!--/footer-1-->
                 <div class="col-md-3">
                     <h2 class="ft-title"><span>Connect with us</span></h2>
-                    <div class="footer-widget-2 text-center">
-                    </div>
                     <div class="footer-social">
                         <div class="social-icon">
                             <ul>
@@ -454,7 +577,7 @@
                     </div>
                 </div> <!--/footer-3-->
                 <div class="col-md-3">
-                    <h2 class="ft-title"><span>Flickr stream</span></h2>
+                    <h2 class="ft-title"><span>Find Certified Members</span></h2>
 
                 </div> <!--/footer-4-->
             </div>
