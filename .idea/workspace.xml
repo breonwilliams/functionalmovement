@@ -28,10 +28,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="header.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="header.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/header.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="13.992323" vertical-offset="0" max-vertical-offset="7440">
+            <state vertical-scroll-proportion="-52.5" vertical-offset="3720" max-vertical-offset="7440">
               <caret line="486" column="37" selection-start-line="486" selection-start-column="0" selection-end-line="487" selection-end-column="0" />
               <folding>
                 <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#4;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -52,11 +52,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="theme.css" pinned="false" current-in-tab="false">
+      <file leaf-file-name="theme.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/assets/css/theme.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-5.4772725" vertical-offset="16634" max-vertical-offset="19980">
-              <caret line="1125" column="16" selection-start-line="1125" selection-start-column="16" selection-end-line="1125" selection-end-column="16" />
+            <state vertical-scroll-proportion="0.5504587" vertical-offset="4005" max-vertical-offset="20085">
+              <caret line="287" column="16" selection-start-line="287" selection-start-column="16" selection-end-line="287" selection-end-column="16" />
               <folding />
             </state>
           </provider>
@@ -135,8 +135,8 @@
         <option value="$PROJECT_DIR$/assets/js/bootstrap-hover-dropdown.js" />
         <option value="$PROJECT_DIR$/assets/js/docs.js" />
         <option value="$PROJECT_DIR$/assets/css/bootstrap-select.css" />
-        <option value="$PROJECT_DIR$/assets/css/theme.css" />
         <option value="$PROJECT_DIR$/header.html" />
+        <option value="$PROJECT_DIR$/assets/css/theme.css" />
       </list>
     </option>
   </component>
@@ -386,14 +386,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/css/theme.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.4772725" vertical-offset="16634" max-vertical-offset="19980">
-          <caret line="1125" column="16" selection-start-line="1125" selection-start-column="16" selection-end-line="1125" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/assets/js/dropdownhover.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="180">
@@ -404,13 +396,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/header.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="13.992323" vertical-offset="0" max-vertical-offset="7440">
+        <state vertical-scroll-proportion="-52.5" vertical-offset="3720" max-vertical-offset="7440">
           <caret line="486" column="37" selection-start-line="486" selection-start-column="0" selection-end-line="487" selection-end-column="0" />
           <folding>
             <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#4;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#4;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#1;n#div#2;n#div#0;n#div#0;n#div#4;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/css/theme.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5504587" vertical-offset="4005" max-vertical-offset="20085">
+          <caret line="287" column="16" selection-start-line="287" selection-start-column="16" selection-end-line="287" selection-end-column="16" />
+          <folding />
         </state>
       </provider>
     </entry>
