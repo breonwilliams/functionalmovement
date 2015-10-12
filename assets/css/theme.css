@@ -545,6 +545,10 @@ Button
     text-shadow: none;
 }
 
+.btn:focus {
+    outline: none;
+}
+
 .btn-default {
     color: #fff;
     background: #0b0b0b;
