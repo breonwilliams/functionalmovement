@@ -375,11 +375,25 @@ nav.affix {
     margin:0;
     text-align: left;
     list-style: none;
-    background-color: rgba(23, 23, 23, 0.98);
+    background: rgba(23, 23, 23, 0.98);
     border: none;
     border-radius: 0;
     -webkit-box-shadow: none;
-    box-shadow: none;
+    box-shadow: 0 6px 12px rgba(0,0,0,.175);
+}
+
+.bootstrap-select.btn-group .dropdown-menu.inner > li > a {
+    color: #444450;
+    padding: 5px 20px;
+}
+
+.bootstrap-select.btn-group .dropdown-menu.inner > li > a:hover,
+.bootstrap-select.btn-group .dropdown-menu.inner > li > a:focus {
+    background: #eaeaea;
+}
+
+.bootstrap-select.btn-group .dropdown-menu.inner {
+    background: #f6f6f6;
 }
 
 .navbar-nav .dropdown-menu > li > a {
