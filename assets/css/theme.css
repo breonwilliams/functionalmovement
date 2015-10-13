@@ -173,6 +173,7 @@ Header
 
 .header-mid-area {
     padding: 15px 0;
+    background: #000;
 }
 
 .header-mid-area .logo img {
@@ -1011,6 +1012,20 @@ Accordion
     display: block;
     padding: 10px 20px;
     color: #3b3b3b;
+}
+
+.panel-group .panel-heading .panel-title > a:before {
+    content: "\f068";
+    width: 1.3em;
+    display: inline-block;
+    font-family: FontAwesome;
+}
+
+.panel-group .panel-heading .panel-title > a.collapsed:before {
+    content: "\f067";
+    width: 1.3em;
+    display: inline-block;
+    font-family: FontAwesome;
 }
 
 .panel-group .panel-title > a.collapsed {
