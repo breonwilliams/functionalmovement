@@ -58,3 +58,9 @@ $(function () {
             }
         });
     });
+
+// Full Width Video
+
+$(function() {
+    $('.jquery-background-video').bgVideo({fadeIn: 2000});
+});
