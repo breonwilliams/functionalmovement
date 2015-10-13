@@ -1209,6 +1209,15 @@ Full Width Video
     font-size: 34px;
     margin: 0 0 10px;
 }
+
+.video-hero--content h1,
+.video-hero--content h2,
+.video-hero--content h3,
+.video-hero--content h4,
+.video-hero--content h5,
+.video-hero--content h6 {
+    color: #fff;
+}
 .video-hero--content p {
     font-size: 20px;
     margin: 0;
@@ -1317,7 +1326,8 @@ Footer
 }
 
 .pad-40 {
-    padding: 40px 0;
+    padding-top: 40px;
+    padding-bottom: 40px;
 }
 
 .copyright {
