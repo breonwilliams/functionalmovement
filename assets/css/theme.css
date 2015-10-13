@@ -1184,6 +1184,56 @@ Form
 }
 
 /*
+Alerts
+================================== */
+
+.alert {
+    border-radius: 1px;
+    border: none;
+    padding: 10px 20px;
+    position: relative;
+    border-left:4px solid rgba(0,0,0,0.2);
+}
+.alert.alert-dark {
+    background-color: #222222;
+    color: #aaa;
+    padding: 20px 40px 20px 20px;
+}
+.alert .icon {
+    display: block;
+    float: left;
+    margin: 5px 20px 15px 5px;
+}
+.alert.alert-dismissable .close {
+    position: absolute;
+    right: 10px;
+    top: 5px;
+}
+.alert.alert-dismissable .close:hover,
+.alert.alert-dismissable .close:focus {
+    color: rgb(235,34,39);
+    opacity: 1;
+}
+.alert-modal {
+    position: fixed;
+    top: 80px;
+    left: 0;
+    opacity: 0;
+    width: 100%;
+    margin-top: -30px;
+    -webkit-transition: all 0.3s ease-out; transition: all 0.3s ease-out;
+}
+.alert-modal.alert-modal-on {
+    opacity: 0.95;
+    margin-top: 0;
+    -webkit-transition: all 0.3s ease-out; transition: all 0.3s ease-out;
+}
+.alert-modal .alert {
+    box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+/*
 Full Width Video
 ================================== */
 
