@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5a4afdbd-c6da-49ba-8bd1-4e878cf744b9" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/css/theme.css" afterPath="$PROJECT_DIR$/assets/css/theme.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/css/slick-theme.css" afterPath="$PROJECT_DIR$/assets/css/slick-theme.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="functionalmovement.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -38,10 +38,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="theme.css" pinned="false" current-in-tab="true">
+      <file leaf-file-name="theme.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/assets/css/theme.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.8681898" vertical-offset="2716" max-vertical-offset="24885">
+            <state vertical-scroll-proportion="-19.0" vertical-offset="2716" max-vertical-offset="24885">
               <caret line="214" column="17" selection-start-line="214" selection-start-column="17" selection-end-line="214" selection-end-column="17" />
               <folding />
             </state>
@@ -91,11 +91,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="slick-theme.css" pinned="false" current-in-tab="false">
+      <file leaf-file-name="slick-theme.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/assets/css/slick-theme.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-12.692307" vertical-offset="1260" max-vertical-offset="3240">
-              <caret line="106" column="12" selection-start-line="106" selection-start-column="12" selection-end-line="106" selection-end-column="12" />
+            <state vertical-scroll-proportion="0.71177506" vertical-offset="270" max-vertical-offset="3165">
+              <caret line="45" column="32" selection-start-line="45" selection-start-column="32" selection-end-line="45" selection-end-column="32" />
               <folding />
             </state>
           </provider>
@@ -158,9 +158,9 @@
       <list>
         <option value="$PROJECT_DIR$/assets/js/slick-init.js" />
         <option value="$PROJECT_DIR$/assets/css/slick.css" />
-        <option value="$PROJECT_DIR$/assets/css/slick-theme.css" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/assets/css/theme.css" />
+        <option value="$PROJECT_DIR$/assets/css/slick-theme.css" />
       </list>
     </option>
   </component>
@@ -830,14 +830,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/css/slick-theme.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-12.692307" vertical-offset="1260" max-vertical-offset="3240">
-          <caret line="106" column="12" selection-start-line="106" selection-start-column="12" selection-end-line="106" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-4.6" vertical-offset="6550" max-vertical-offset="11250">
@@ -859,8 +851,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/css/theme.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8681898" vertical-offset="2716" max-vertical-offset="24885">
+        <state vertical-scroll-proportion="-19.0" vertical-offset="2716" max-vertical-offset="24885">
           <caret line="214" column="17" selection-start-line="214" selection-start-column="17" selection-end-line="214" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/css/slick-theme.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.71177506" vertical-offset="270" max-vertical-offset="3165">
+          <caret line="45" column="32" selection-start-line="45" selection-start-column="32" selection-end-line="45" selection-end-column="32" />
           <folding />
         </state>
       </provider>
