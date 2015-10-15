@@ -636,6 +636,123 @@ nav.affix {
     position: relative;
 }
 
+/*
+Megamenu
+================================== */
+.yamm .nav,
+.yamm .dropup,
+.yamm .dropdown,
+.yamm .collapse {
+    position: static;
+}
+.yamm .navbar-inner,
+.yamm .container {
+    position: static;
+    color:#fff;
+}
+.yamm .dropdown-menu {
+    left: auto;
+}
+.yamm .dropdown-menu > li {
+    display: block;
+}
+.yamm .dropdown-menu > li.container{
+    padding-top:40px;
+    padding-bottom:40px;
+    font-size:15px;
+    line-height:18px;
+}
+.yamm .dropdown-menu > li.container h1,
+.yamm .dropdown-menu > li.container h2,
+.yamm .dropdown-menu > li.container h3,
+.yamm .dropdown-menu > li.container h4,
+.yamm .dropdown-menu > li.container h5,
+.yamm .dropdown-menu > li.container h6{
+    color:#fff;
+    font-weight:400;
+    margin-bottom:15px;
+}
+.yamm .dropdown-menu > li.container a{
+    border:none;
+    background: transparent;
+    color: #fff;
+}
+.yamm .dropdown-submenu .dropdown-menu {
+    left: 100%;
+}
+.yamm .nav.pull-right .dropdown-menu {
+    right: 0;
+}
+.yamm .yamm-content {
+    padding: 20px 30px;
+    *zoom: 1;
+}
+.yamm .yamm-content:before,
+.yamm .yamm-content:after {
+    display: table;
+    content: "";
+    line-height: 0;
+}
+.yamm .yamm-content:after {
+    clear: both;
+}
+.yamm.navbar .nav > li > .dropdown-menu:after,
+.yamm.navbar .nav > li > .dropdown-menu:before {
+    display: none;
+}
+.yamm .dropdown.yamm-fullwidth .dropdown-menu {
+    position:absolute;
+    width: 100%;
+    left: 0;
+    right: 0;
+}
+.yamm-link{
+    margin:0;
+    padding:0;
+}
+.yamm-link li{
+    list-style:none;
+    margin:0 0 10px 0;
+    padding:0;
+}
+.yamm-link li a{
+    display: block;
+    padding: 0 15px 0 0;
+    clear: both;
+    font-size:15px;
+    font-weight: normal;
+    text-transform:uppercase;
+    line-height: 1.42857143;
+    color: #fff;
+    border:none;
+    white-space: nowrap;
+}
+.navbar-nav .yamm-link li a:hover,
+.navbar-nav .yamm-link li a:active,
+.navbar-nav .yamm-link li a:focus{
+    text-decoration:none;
+    border:none;
+    color: rgb(235,34,39);
+}
+@media (max-width: 969px) {
+    .yamm .dropdown.yamm-fullwidth .dropdown-menu {
+        width: auto;
+    }
+    .yamm .yamm-content {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .yamm .dropdown-menu > li > ul {
+        display: block;
+    }
+}
+
+@media (max-width: 768px) {
+    .yamm .dropdown.yamm-fullwidth .dropdown-menu {
+        position:static;
+    }
+}
+
 
 /*
 Button
@@ -1261,6 +1378,35 @@ Form
 
 .form-horizontal .input-group {
     margin: 0 0 25px 0;
+}
+
+.contact-widget ul{
+    float:left;
+    width:100%;
+    margin:0;
+    padding:0;
+}
+
+.contact-widget ul li{
+    float:left;
+    list-style:none;
+    width:50%;
+    margin:0 0 4px 0;
+    padding:0 4px 0 0;
+}
+
+.contact-widget ul li.full-width{
+    width:100%;
+}
+
+.contact-widget .form-control{
+    border:1px solid #fff;
+    border-radius:0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    -webkit-transition: none;
+    -o-transition: none;
+    transition: none;
 }
 
 
