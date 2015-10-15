@@ -187,6 +187,8 @@ Thumbnail
 
 .thumbnail .caption p {
     margin-bottom: 30px;
+    height: 65px;
+    overflow: hidden;
 }
 
 .view {
@@ -208,20 +210,27 @@ Thumbnail
     top: 0;
     left: 0;
 }
-.view img {
-    display: block;
-    position: relative;
-    width: 100%;
-    height: auto;
-}
 
-.view-thumbnail img {
+.view-img {
+    height: 200px;
+    width: auto;
+    background-size: cover;
+    background-padding: 50% 50%;
     -webkit-transition: all 0.2s linear;
     -moz-transition: all 0.2s linear;
     -o-transition: all 0.2s linear;
     -ms-transition: all 0.2s linear;
     transition: all 0.2s linear;
 }
+
+.view-thumbnail:hover .view-img {
+    height: 250px;
+    width: auto;
+    background-size: cover;
+    background-position: 50% 50%;
+}
+
+
 .view-thumbnail .mask {
     -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=0)";
     filter: alpha(opacity=0);
@@ -232,15 +241,6 @@ Thumbnail
     -o-transition: all 0.4s ease-in-out;
     -ms-transition: all 0.4s ease-in-out;
     transition: all 0.4s ease-in-out;
-}
-
-
-.view-thumbnail:hover img {
-    -webkit-transform: scale(1.1,1.1);
-    -moz-transform: scale(1.1,1.1);
-    -o-transform: scale(1.1,1.1);
-    -ms-transform: scale(1.1,1.1);
-    transform: scale(1.1,1.1);
 }
 
 .view-thumbnail:hover .mask {
@@ -269,20 +269,23 @@ Header
 }
 .header-top-left{}
 .top-message{float: left;
-    padding-right: 20px;
     position: relative;}
-.top-message:after {
+.phone-number:before {
     border-right: 1px solid #d5d5d5;
     content: "";
     height: 20px;
     position: absolute;
-    right: 0;
+    left: 0;
     top: 10px;
     width: 0;
 }
 .top-message{}
-.phone-number{float: left;
-    margin-left: 20px;}
+.phone-number{
+    float: left;
+    margin-left: 20px;
+    position: relative;
+    padding-left: 20px;
+}
 .phone-number:after{content: "";
     display: inline-block;
     float: left;
@@ -310,10 +313,20 @@ Header
 .top-menu ul li{display: inline-block;}
 .top-menu ul li a{display: inline-block;
     margin-right: 20px;
+    margin-left: 20px;
     color: #d5d5d5;
 }
 .top-menu ul li a:hover{color: #eb221d;}
 
+@media (max-width: 480px) {
+    .top-menu {
+        float: left;
+    }
+    .lang-select {
+        float: left;
+    }
+
+}
 
 /*
 Navigation
@@ -1341,8 +1354,8 @@ Full Width Video
     bottom: 0;
     right: 0;
     pointer-events: none; /* Allows right click menu on the video */
-    background: #3b3b3b;
-    opacity: .7;
+    background: #000;
+    opacity: .5;
 }
 
 .video-hero--content {
@@ -1474,6 +1487,11 @@ Footer
 .pad-40 {
     padding-top: 40px;
     padding-bottom: 40px;
+}
+
+.pad-20 {
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 .copyright {

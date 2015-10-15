@@ -124,7 +124,7 @@ body .slick-next::before {
 .slick-dots
 {
     position: absolute;
-    bottom: -45px;
+    bottom: -25px;
 
     display: block;
 
