@@ -265,26 +265,27 @@ Header
 .header-top-area{
     background-color: #252525;
     line-height: 38px;color: #d5d5d5;
-    font-size: 12px;
+    font-size: 14px;
 }
 .header-top-left{}
 .top-message{float: left;
     position: relative;}
-.phone-number:before {
+.top-message:after {
     border-right: 1px solid #d5d5d5;
     content: "";
     height: 20px;
     position: absolute;
-    left: 0;
+    right: 0;
     top: 10px;
     width: 0;
 }
-.top-message{}
+.top-message{
+    padding-right: 20px;
+    margin-right: 20px;
+}
 .phone-number{
     float: left;
-    margin-left: 20px;
     position: relative;
-    padding-left: 20px;
 }
 .phone-number:after{content: "";
     display: inline-block;
@@ -292,7 +293,7 @@ Header
     font-family: FontAwesome;
     margin-right: 5px;
 }
-.phone-number span{color: #eb221d;}
+.phone-number span{color: #fff;}
 .lang-select {
     float: right;
 }
@@ -401,7 +402,7 @@ nav.affix {
     line-height: 20px;
     color:#fff;
     text-transform:uppercase;
-    font-size:12px;
+    font-size:14px;
     font-weight:700;
     border: none;
 }
@@ -498,7 +499,7 @@ nav.affix {
     font-weight: normal;
     line-height: 1.42857143;
     color: #fff;
-    font-size: 11px;
+    font-size: 14px;
     text-transform:uppercase;
     font-weight:700;
     border:none;
@@ -721,7 +722,6 @@ Megamenu
     clear: both;
     font-size:15px;
     font-weight: normal;
-    text-transform:uppercase;
     line-height: 1.42857143;
     color: #fff;
     border:none;
@@ -1821,4 +1821,10 @@ Footer
     width: 61px;
     height: 61px;
     margin: 0 1px 4px 0;
-}}
+}
+
+@media (max-width:768px) {
+    .foot-menu {
+        float: none;
+    }
+}
