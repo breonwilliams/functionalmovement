@@ -1625,10 +1625,69 @@ Full Width Video
 }
 
 /*
+Upcoming Events
+================================== */
+.event-content ul {
+    list-style: outside none none;
+    margin: 0;
+    padding: 0;
+}
+.cleared {
+    clear: both;
+}
+.event-item-inner {
+    padding: 13px 0;
+    line-height: 24px;
+}
+.latest-event-item {
+    border-top: 1px solid #ece6e7;
+    padding-top: 8px;
+}
+.event-date-wrap {
+    float: left;
+}
+.event-end .event-border {
+    width: 10px;
+    height: 87px;
+    position: absolute;
+    top: -49px;
+    left: -10px;
+    background: transparent;
+    border-left: solid 1px #222;
+    border-top: solid 1px #222;
+    border-bottom: solid 1px #222;
+}
+.event-date {
+    background: rgb(235, 34, 39);
+    color: #fff;
+    margin-top: 6px;
+    padding: 0 5px;
+    text-align: center;
+    text-transform: uppercase;
+    width: 53px;
+    position: relative;
+}
+.event-month {
+    border-bottom: 1px solid rgba(255, 255, 255, .2);
+    font-size: 14px;
+    line-height: 2;
+    padding: 9px 0 1px;
+}
+.event-day {
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 1;
+    padding: 3px 0 15px;
+}
+.event-info {
+    margin-left: 80px;
+}
+
+/*
 Member Activity
 ================================== */
 #activity-stream {
-    margin-top: -5px;
+    margin-top: 0;
 }
 ul.item-list {
     border: 0;
