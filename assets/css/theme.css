@@ -1549,6 +1549,17 @@ Full Width Sections
     background-color: #eee;
 }
 
+.section-blue {
+    background-color: #3766c7;
+}
+
+.section-green {
+    background-color: #5DB65B;
+}
+
+.section-yellow {
+    background-color: #D3AA2E;
+}
 .section-large {
     padding: 70px 0;
 }
@@ -1936,6 +1947,32 @@ Plan Section
     color: #d0d0d0;
 }
 
+/*
+Progress Bars
+================================== */
+.progress {
+    border-radius: 2px;
+    box-shadow: none;
+    height: 24px;
+    margin-bottom: 15px;
+    background-color: #e2e2e2;
+}
+
+.progress-bar-blue {
+    background: #3766c7;
+}
+
+.progress-bar-red {
+    background: #EB221D;
+}
+
+.progress-bar-yellow {
+    background: #D3AA2E;
+}
+
+.progress-bar-green {
+    background: #5DB65B;
+}
 
 /*
 Footer
