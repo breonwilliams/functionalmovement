@@ -31,24 +31,11 @@ $(document).ready(function() {
     $('.vid-carousel').slick({
         dots: true,
         arrows: false,
-        infinite: false,
+        infinite: true,
         speed: 500,
         slidesToShow: 1,
         slidesToScroll: 1,
-        responsive: [{
-            breakpoint: 1024,
-            settings: {
-                slidesToShow: 1,
-                slidesToScroll: 1,
-                infinite: true,
-                dots: true
-            }
-        }, {
-            breakpoint: 2000,
-            settings: {
-                slidesToShow: 1,
-                slidesToScroll: 1
-            }
-        }]
+        autoplay: true,
+        autoplaySpeed: 15000
     });
 });
