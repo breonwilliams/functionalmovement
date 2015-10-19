@@ -4,11 +4,7 @@
     <list default="true" id="5a4afdbd-c6da-49ba-8bd1-4e878cf744b9" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/home-logout.html" afterPath="$PROJECT_DIR$/home-logout.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/home.html" afterPath="$PROJECT_DIR$/home.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/js/slick-init.js" afterPath="$PROJECT_DIR$/assets/js/slick-init.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/css/slick-theme.css" afterPath="$PROJECT_DIR$/assets/css/slick-theme.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/css/theme.css" afterPath="$PROJECT_DIR$/assets/css/theme.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="functionalmovement.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -33,10 +29,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="theme.css" pinned="false" current-in-tab="true">
+      <file leaf-file-name="theme.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/assets/css/theme.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.30851063" vertical-offset="23346" max-vertical-offset="32775">
+            <state vertical-scroll-proportion="-817.8461" vertical-offset="2256" max-vertical-offset="32775">
               <caret line="1568" column="0" selection-start-line="1568" selection-start-column="0" selection-end-line="1568" selection-end-column="0" />
               <folding />
             </state>
@@ -70,8 +66,8 @@
       <file leaf-file-name="home.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/home.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-1.9411764" vertical-offset="2913" max-vertical-offset="8655">
-              <caret line="203" column="12" selection-start-line="203" selection-start-column="12" selection-end-line="229" selection-end-column="18" />
+            <state vertical-scroll-proportion="-3.264706" vertical-offset="2913" max-vertical-offset="8655">
+              <caret line="209" column="34" selection-start-line="209" selection-start-column="34" selection-end-line="209" selection-end-column="34" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -89,11 +85,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="home-logout.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="home-logout.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/home-logout.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-2.1" vertical-offset="5550" max-vertical-offset="9495">
-              <caret line="377" column="0" selection-start-line="377" selection-start-column="0" selection-end-line="377" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.8055556" vertical-offset="4890" max-vertical-offset="9495">
+              <caret line="355" column="34" selection-start-line="355" selection-start-column="34" selection-end-line="355" selection-end-column="34" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -165,8 +161,8 @@
       <file leaf-file-name="slick-init.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/assets/js/slick-init.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="280" max-vertical-offset="885">
-              <caret line="46" column="26" selection-start-line="46" selection-start-column="26" selection-end-line="46" selection-end-column="26" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="885">
+              <caret line="38" column="29" selection-start-line="38" selection-start-column="29" selection-end-line="38" selection-end-column="29" />
               <folding />
             </state>
           </provider>
@@ -187,11 +183,11 @@
       <list>
         <option value="$PROJECT_DIR$/assets/js/docs.js" />
         <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/assets/css/slick-theme.css" />
+        <option value="$PROJECT_DIR$/assets/css/theme.css" />
         <option value="$PROJECT_DIR$/assets/js/slick-init.js" />
         <option value="$PROJECT_DIR$/home.html" />
-        <option value="$PROJECT_DIR$/assets/css/slick-theme.css" />
         <option value="$PROJECT_DIR$/home-logout.html" />
-        <option value="$PROJECT_DIR$/assets/css/theme.css" />
       </list>
     </option>
   </component>
@@ -829,14 +825,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/js/slick-init.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="280" max-vertical-offset="885">
-          <caret line="46" column="26" selection-start-line="46" selection-start-column="26" selection-end-line="46" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/assets/css/slick-theme.css">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="1750" max-vertical-offset="3555">
@@ -845,10 +833,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/assets/js/slick-init.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="885">
+          <caret line="38" column="29" selection-start-line="38" selection-start-column="29" selection-end-line="38" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/css/theme.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-817.8461" vertical-offset="2256" max-vertical-offset="32775">
+          <caret line="1568" column="0" selection-start-line="1568" selection-start-column="0" selection-end-line="1568" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/home.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.9411764" vertical-offset="2913" max-vertical-offset="8655">
-          <caret line="203" column="12" selection-start-line="203" selection-start-column="12" selection-end-line="229" selection-end-column="18" />
+        <state vertical-scroll-proportion="-3.264706" vertical-offset="2913" max-vertical-offset="8655">
+          <caret line="209" column="34" selection-start-line="209" selection-start-column="34" selection-end-line="209" selection-end-column="34" />
           <folding>
             <element signature="n#style#0;n#div#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -867,8 +871,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/home-logout.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.1" vertical-offset="5550" max-vertical-offset="9495">
-          <caret line="377" column="0" selection-start-line="377" selection-start-column="0" selection-end-line="377" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.8055556" vertical-offset="4890" max-vertical-offset="9495">
+          <caret line="355" column="34" selection-start-line="355" selection-start-column="34" selection-end-line="355" selection-end-column="34" />
           <folding>
             <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -881,14 +885,6 @@
             <element signature="n#style#0;n#div#0;n#div#0;n#div#8;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#div#0;n#div#9;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/css/theme.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.30851063" vertical-offset="23346" max-vertical-offset="32775">
-          <caret line="1568" column="0" selection-start-line="1568" selection-start-column="0" selection-end-line="1568" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
