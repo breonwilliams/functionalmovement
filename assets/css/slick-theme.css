@@ -135,6 +135,21 @@ body .slick-next::before {
 
     text-align: center;
 }
+
+.vid-carousel .slick-dots
+{
+    position: absolute;
+    bottom: -55px;
+
+    display: block;
+
+    width: 100%;
+    padding: 0;
+
+    list-style: none;
+
+    text-align: center;
+}
 .slick-dots li
 {
     position: relative;
@@ -202,4 +217,16 @@ body .slick-next::before {
 {
     opacity: .75;
     color: black;
+}
+
+.vid-carousel .slick-dots li button:before
+{
+    opacity: .50;
+    color: #fff;
+}
+
+.vid-carousel .slick-dots li.slick-active button:before
+{
+    opacity: 1;
+    color: #fff;
 }

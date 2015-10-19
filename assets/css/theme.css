@@ -720,7 +720,7 @@ Megamenu
 .yamm .dropdown-menu > li.container h5,
 .yamm .dropdown-menu > li.container h6{
     color:#fff;
-    font-weight:400;
+    font-weight:700;
     margin-bottom:15px;
 }
 .yamm .dropdown-menu > li.container a{
@@ -1566,7 +1566,6 @@ Full Width Sections
 
 .section-bg {
     padding: 50px 0;
-    margin: 40px 0;
     position: relative;
 }
 
@@ -1847,6 +1846,7 @@ Plan Section
     -webkit-transition: all 0.5s ease-out;
     transition: all 0.5s ease-out;
     background: #FFFFFF;
+    margin: 15px 0;
 }
 @media (max-width:991px) {
     .plan {
@@ -1908,9 +1908,9 @@ Plan Section
     line-height: 27px;
 }
 .plan-features > li {
-    padding: 15px 0;
+    padding: 15px;
     font-size: 15px;
-    border-top: solid 1px #eee;
+    border-top: solid 1px rgba(0,0,0,.1);
 }
 .plan-feature-off {
     text-decoration: line-through;
@@ -1921,7 +1921,7 @@ Plan Section
 .plans-2 .plan {
     border: none;
     color: #d0d0d0;
-    background-color: rgb(41,44,49);
+    background-color: rgb(41,41,41);
 }
 .plans-2 .plan-title,
 .plans-2 .plan-period {
