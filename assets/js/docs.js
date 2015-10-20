@@ -64,3 +64,10 @@ $(function () {
 $(function() {
     $('.jquery-background-video').bgVideo({fadeIn: 2000});
 });
+
+// Progress Bar Animation
+$(window).ready(function(e){
+    $.each($('div.progress-bar'),function(){
+        $(this).css('width', $(this).attr('aria-valuetransitiongoal')+'%');
+    });
+});

@@ -1634,7 +1634,7 @@ Alerts
 /*
 Full Width Sections
 ================================== */
-.section-dark {
+.section-grey {
     background-color: #eee;
 }
 
@@ -1995,6 +1995,17 @@ ul.activity-list li {
 }
 
 /*
+Breadcrumbs
+================================== */
+.breadcrumb {
+    padding: 8px 15px;
+    margin-bottom: 0;
+    list-style: none;
+    background-color: transparent;
+    border-radius: 0;
+}
+
+/*
 Plan Section
 ================================== */
 .plan {
@@ -2141,6 +2152,14 @@ Progress Bars
     background: #5DB65B;
 }
 
+.progress .progress-bar {
+    -webkit-transition: width 1s ease-in-out;
+    -moz-transition: width 1s ease-in-out;
+    -ms-transition: width 1s ease-in-out;
+    -o-transition: width 1s ease-in-out;
+    transition: width 1s ease-in-out;
+}
+
 /*
 Responsive Youtube Video
 ================================== */
@@ -2194,6 +2213,46 @@ Footer
 .pad-10 {
     padding-top: 10px;
     padding-bottom: 10px;
+}
+
+.padtop-50 {
+    padding-top: 50px;
+}
+
+.padtop-40 {
+    padding-top: 40px;
+}
+
+.padtop-30 {
+    padding-top: 30px;
+}
+
+.padtop-20 {
+    padding-top: 20px;
+}
+
+.padtop-10 {
+    padding-top: 10px;
+}
+
+.padbot-50 {
+    bottom-top: 50px;
+}
+
+.padbot-40 {
+    bottom-top: 40px;
+}
+
+.padbot-30 {
+    bottom-top: 30px;
+}
+
+.padbot-20 {
+    bottom-top: 20px;
+}
+
+.padbot-10 {
+    bottom-top: 10px;
 }
 
 .copyright {
