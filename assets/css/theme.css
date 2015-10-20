@@ -1266,6 +1266,38 @@ Hover border color
 }
 
 /*
+Tables
+================================== */
+.table th,
+.table td {
+    padding: 12px !important;
+}
+.table.table-condensed th,
+.table.table-condensed td {
+    padding:5px !important;
+}
+.table-1 {
+    border-bottom:1px solid #30343a;
+}
+.table-1 td,
+.table-1 th {
+    border-top:none !important;
+}
+.table-1 th {
+    background-color: #303030;
+    color:#e0e0e0;
+    border-bottom:none;
+}
+.table-1.table-main-color {
+    border-bottom:1px solid rgb(235,34,39);
+}
+.table-1.table-main-color th {
+    background-color: rgb(235,34,39);
+    color:#fff;
+}
+
+
+/*
 Accordion
 ================================== */
 .panel-group .panel {
