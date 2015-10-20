@@ -1998,7 +1998,7 @@ ul.activity-list li {
 Breadcrumbs
 ================================== */
 .breadcrumb {
-    padding: 8px 15px;
+    padding: 8px 0;
     margin-bottom: 0;
     list-style: none;
     background-color: transparent;
