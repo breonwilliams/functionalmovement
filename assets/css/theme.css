@@ -2079,6 +2079,7 @@ Plan Section
 .plan:hover {
     border: 1px solid #dadada;
     -webkit-transition: all 0.3s ease-out; transition: all 0.3s ease-out;
+    box-shadow: 0 6px 12px rgba(0,0,0,.015);
 }
 .plan:hover .plan-title {
     color: rgb(235, 34, 39);
