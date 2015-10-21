@@ -245,10 +245,10 @@ Thumbnail
     color: #5c5c5c;
 }
 
-.thumbnail .caption p {
-    margin-bottom: 30px;
-    height: 65px;
+.thumbnail .caption-fixedh {
     overflow: hidden;
+    height: 150px;
+    margin-bottom: 15px;
 }
 
 .view {
@@ -2004,6 +2004,58 @@ Breadcrumbs
     background-color: transparent;
     border-radius: 0;
 }
+
+/*
+Pagination
+================================== */
+
+.pagination {
+    margin: 50px 0 10px;
+}
+.pagination > li > a {
+    font-family: "Montserrat", "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 15px;
+    line-height: 20px;
+    margin-right: 7px;
+    padding: 5px 12px;
+    color: #888;
+    background-color: transparent;
+    border-radius: 0;
+}
+.pagination > li > a > .icon {
+    font-size: 18px;
+    display: inline-block;
+    margin-top: 1px;
+}
+.pagination > .active > a {
+    color: rgb(235, 34, 39);
+    background-color: transparent;
+    border-radius: 0;
+}
+.pagination li:first-child.disabled a {
+    padding-left: 0 !important;
+}
+.pagination li:first-child a {
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+}
+.pagination li:last-child a {
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
+}
+.pagination > li a:hover,
+.pagination .active a:hover {
+    color: rgb(235, 34, 39);
+    background-color: transparent;
+}
+.pagination > .disabled a {
+    background: transparent;
+    color: #999;
+}
+.pagination > .disabled a:hover {
+    background: transparent;
+}
+
 
 /*
 Plan Section
