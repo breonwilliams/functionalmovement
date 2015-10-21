@@ -2355,11 +2355,13 @@ Footer
     transition: all 0.3s;
 }
 
-.footer-section a:hover {
+.footer-section a:hover,
+.header-mid-area a:hover {
     color: #fff;
 }
 
-.footer-section a:hover i.fa {
+.footer-section a:hover i.fa,
+.header-mid-area a:hover i.fa {
     background: rgb(235,34,39);
     color: #fff;
     font-weight: 400;
@@ -2417,11 +2419,18 @@ Footer
     padding: 20px 10px 0;
 }
 
-.footer-social {
+.footer-social,
+.header-social{
     margin-top: 20px;
 }
 
-.footer-social ul li {
+.header-mid-area a i.fa {
+    color: #aaaaaa;
+}
+
+
+.footer-social ul li,
+.header-social ul li {
     margin: 0 2px;
     padding: 0;
     display: inline-block;
@@ -2429,17 +2438,21 @@ Footer
 }
 
 .footer-social .social-icon i.fa,
-.footer-social .modal-button-icon i.fa {
+.header-social .social-icon i.fa,
+.footer-social .modal-button-icon i.fa,
+.header-social .modal-button-icon i.fa {
     width: 32px;
     height: 32px;
 }
 
-.footer-social .social-icon i.fa::before {
+.footer-social .social-icon i.fa::before,
+.header-social .social-icon i.fa::before {
     font-size: 14px;
     line-height: 24px;
 }
 
-.footer-social .social-icon i.fa {
+.footer-social .social-icon i.fa,
+.header-social .social-icon i.fa {
     background: #2e2e2e;
     color: ##fff;
     display: inline-block;
