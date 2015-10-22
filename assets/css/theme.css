@@ -1820,6 +1820,226 @@ ul.event-courses ul >li {
 }
 
 /*
+Articles
+================================== */
+
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css);
+
+@media (min-width: 767px) {
+    .blog .post-left .post-author .avatar {
+        width: 60px;
+        margin: 0 auto 16px;
+        border-radius: 6px;
+    }
+}
+.blog .post-left .post-author .avatar {
+    border-radius: 2px;
+    margin: 0 6px 0 0;
+    width: 21px;
+    vertical-align: middle;
+}
+.blog .entry.post .post-left {
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin: 0 0 24px;
+    padding: 5px 0 0;
+}
+@media (min-width: 767px) {
+    .blog .entry.post .post-left {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 125px;
+        border-right: 2px solid #f2f2f2;
+        text-align: center;
+        margin: 0;
+    }
+}
+@media (min-width: 767px) {
+    .blog .entry.post .post-left > a:first-child {
+        padding-top: 6px;
+    }
+}
+@media (min-width: 767px) {
+    .blog .post-left .post-back, .blog .post-left .post-author {
+        border-bottom: 2px solid #f2f2f2;
+        text-decoration: none;
+    }
+}
+@media (min-width: 767px) {
+    .blog .post-left .post-author .avatar {
+        width: 60px;
+        margin: 0 auto 16px;
+        border-radius: 6px;
+    }
+}
+@media (min-width: 767px) {
+    .blog .post-left > a span, .blog .post-left .post-back span {
+        display: block;
+    }
+}
+@media (min-width: 767px) {
+    .blog .entry.post .post-left > a {
+        display: block;
+        line-height: 15px;
+        padding: 20px;
+    }
+}
+.blog .post-left .post-comments-link {
+    text-decoration: none;
+}
+.blog .post-left .post-comments-link {
+    margin-left: 24px;
+}
+@media (min-width: 767px) {
+    .blog .post-left .post-comments-link {
+        margin-left: 0;
+    }
+}
+@media (min-width: 767px) {
+    .blog .post-left .post-comments-link .count {
+        font-size: 18px;
+        line-height: 36px;
+        text-align: center;
+        width: 40px;
+        height: 42px;
+        margin: 0 auto;
+        display: inline-block;
+        padding: 0;
+    }
+}
+.blog .post-left .post-comments-link .count {
+    position: relative;
+    padding-right: 12px;
+}
+.blog .post-left .post-comments-link .count i {
+    font-size: 28px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    line-height: 1;
+    margin-top: -8px;
+    margin-left: -10px;
+}
+
+@media (min-width: 767px) {
+    .blog .entry-image {
+        max-width: 150px;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+}
+
+@media (min-width: 1023px) {
+    .blog .entry-image {
+        max-width: none;
+    }
+}
+
+.blog img.alignright, .blog .wp-caption.alignright {
+    margin: 0 0 24px 24px;
+}
+img.rounded {
+    border-radius: 3px;
+}
+.alignright {
+    float: right;
+}
+.blog .entry-content p:last-child {
+    margin: 0;
+}
+
+@media (min-width: 767px) {
+    .blog .entry-content .sharing {
+        display: inline-block;
+        float: right;
+    }
+}
+@media (min-width: 767px) {
+    .blog .sharing {
+        margin-top: 8px;
+    }
+}
+.blog .sharing {
+    display: block;
+    padding: 10px 0;
+    margin-top: 16px;
+    overflow: hidden;
+}
+.blog .entry-content {
+    overflow: hidden;
+}
+@media (min-width: 1023px) {
+    .blog .entry.has-post-thumbnail {
+        padding-right: 324px;
+    }
+}
+@media (min-width: 767px) {
+    .blog .entry.post {
+        padding-left: 150px;
+        position: relative;
+        min-height: 330px;
+    }
+}
+.blog .entry {
+    border-bottom: 2px solid #f2f2f2;
+    padding-bottom: 40px;
+    margin-bottom: 40px;
+}
+@media (min-width: 767px) {
+    .blog .entry {
+        padding-bottom: 60px;
+        margin-bottom: 60px;
+    }
+}
+@media only screen and (min-width: 767px) {
+    .blog .entry.has-post-thumbnail {
+        padding-right: 170px;
+    }
+}
+@media only screen and (min-width: 1023px) {
+    .blog .entry.has-post-thumbnail {
+        padding-right: 324px;
+    }
+}
+@media only screen and (max-width: 560px) {
+    .blog .entry-image {
+        max-width: 100%;
+        width: 100%;
+        margin: 0 0 24px;
+    }
+}
+@media (min-width: 1023px) {
+    .entry-image {
+        max-width: none;
+    }
+}
+@media (min-width: 767px) {
+    .blog .post-left .post-comments-link .count i {
+        font-size: 40px;
+        line-height: 54px;
+        margin: -8px 0;
+    }
+}
+
+@media only screen and (min-width: 767px) {
+
+    .entry-meta {
+        font-size: 14px;
+    }
+}
+
+.blog .sharing .label {
+    color: #989796;
+}
+
+.blog .entry:last-child {
+    margin-bottom: 0;
+}
+
+/*
 Upcoming Events
 ================================== */
 .event-content ul {
