@@ -145,7 +145,7 @@ span.view-all {
 
 }
 
-@media (max-width: 768px) {
+@media (max-width: 992px) {
     .col-xs-1,
     .col-sm-1,
     .col-md-1,
@@ -2289,23 +2289,23 @@ Footer
 }
 
 .padbot-50 {
-    bottom-top: 50px;
+    padding-bottom: 50px;
 }
 
 .padbot-40 {
-    bottom-top: 40px;
+    padding-bottom: 40px;
 }
 
 .padbot-30 {
-    bottom-top: 30px;
+    padding-bottom: 30px;
 }
 
 .padbot-20 {
-    bottom-top: 20px;
+    padding-bottom: 20px;
 }
 
 .padbot-10 {
-    bottom-top: 10px;
+    padding-bottom: 10px;
 }
 
 .copyright {
