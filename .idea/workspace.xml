@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5a4afdbd-c6da-49ba-8bd1-4e878cf744b9" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/css/theme.css" afterPath="$PROJECT_DIR$/assets/css/theme.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/articles.html" afterPath="$PROJECT_DIR$/articles.html" />
     </list>
     <ignored path="functionalmovement.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -41,8 +40,8 @@
       <file leaf-file-name="articles.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/articles.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.33206108" vertical-offset="5076" max-vertical-offset="7185">
-              <caret line="350" column="12" selection-start-line="350" selection-start-column="12" selection-end-line="350" selection-end-column="12" />
+            <state vertical-scroll-proportion="1.9270834" vertical-offset="4220" max-vertical-offset="7185">
+              <caret line="343" column="70" selection-start-line="343" selection-start-column="70" selection-end-line="343" selection-end-column="70" />
               <folding />
             </state>
           </provider>
@@ -887,8 +886,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/articles.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33206108" vertical-offset="5076" max-vertical-offset="7185">
-          <caret line="350" column="12" selection-start-line="350" selection-start-column="12" selection-end-line="350" selection-end-column="12" />
+        <state vertical-scroll-proportion="1.9270834" vertical-offset="4220" max-vertical-offset="7185">
+          <caret line="343" column="70" selection-start-line="343" selection-start-column="70" selection-end-line="343" selection-end-column="70" />
           <folding />
         </state>
       </provider>
