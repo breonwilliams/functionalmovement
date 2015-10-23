@@ -1823,8 +1823,6 @@ ul.event-courses ul >li {
 Articles
 ================================== */
 
-@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css);
-
 @media (min-width: 767px) {
     .blog .post-left .post-author .avatar {
         width: 60px;
