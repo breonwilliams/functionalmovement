@@ -112,6 +112,27 @@ h6 {
     letter-spacing: -0.2px;
 }
 
+.title-medium {
+    font-family: "Montserrat",sans-serif;
+    font-size: 23px;
+    margin: 0 0 20px;
+    line-height: 28px;
+    letter-spacing: 1px;
+}
+
+.mb30 {
+    margin-bottom: 30px !important;
+}
+
+.br-bottom:after {
+    content: "";
+    display: block;
+    height: 1px;
+    width: 35px;
+    border-top: 2px solid #eb221d;
+    margin: 6px 0 10px;
+}
+
 p{
     margin-bottom:20px;
 }
@@ -1499,6 +1520,12 @@ Form
     transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
 }
 
+.form label {
+    font-weight: 400;
+    margin-bottom: 20px;
+    display:block;
+}
+
 .input-lg{
     padding: 10px 20px;
     height: 50px;
@@ -2035,6 +2062,63 @@ img.rounded {
 
 .blog .entry:last-child {
     margin-bottom: 0;
+}
+
+/*
+Comments
+================================== */
+
+/* Media */
+.media, .media .media {
+    margin-top:40px;
+}
+h4.media-heading {
+    color:#445;
+    font-size:17px;
+    margin: 2px 0 6px;
+}
+.media-heading .date {
+    margin-left:20px;
+    font-size:12px;
+}
+.media-heading .reply,
+.media-heading .type {
+    margin-left:20px;
+    font-size:13px;
+}
+.media-heading .reply a:hover {
+    text-decoration: none;
+    color: #453951;
+}
+.media .media-object {
+    width:90px;
+    height:90px;
+    border-radius:3px;
+    margin-top:5px;
+}
+.media-heading > .user {
+    font-size:15px;
+    color:#3b3b3b;
+}
+.media-heading > .user:hover, .media-heading > .user:focus, .media-heading > .user:active {
+    color:rgb(235, 34, 39);
+}
+.media > .pull-left {
+    margin-right:15px;
+}
+@media (max-width:767px) {
+    #blog-posts .media, #blog-posts .media-body {
+        overflow: visible !important;
+    }
+    .media > .pull-left {
+        display:none;
+    }
+    .media-heading > .user {
+        display:block;
+    }
+    .media-heading .date {
+        margin-left:0;
+    }
 }
 
 /*
