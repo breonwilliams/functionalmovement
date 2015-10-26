@@ -230,3 +230,12 @@ body .slick-next::before {
     opacity: 1;
     color: #fff;
 }
+
+/* Exercise Review */
+
+@media (min-width: 768px) {
+    .row.exercise-review {
+        margin-left: 0!important;
+        margin-right: 0!important;
+    }
+}
