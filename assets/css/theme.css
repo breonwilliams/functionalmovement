@@ -224,6 +224,41 @@ span.view-all {
 }
 
 /*
+Blockquote
+=========================== */
+
+blockquote {
+    border: none;
+    background: #f9fafb;
+    border-left: 60px solid #eb221d;
+    padding: 20px;
+    position: relative;
+    margin-top: 20px;
+}
+
+blockquote:before {
+    position: absolute;
+    content: '';
+    width: 30px;
+    height: 23px;
+    top: 50%;
+    left: -45px;
+    margin-top: -12px;
+    background: url('../../assets/img/quote.png') center center no-repeat;
+}
+
+blockquote p {
+    font-size: 13px;
+    color: #dddddd;
+    font-weight: 400;
+    line-height: 20px;
+    margin: 0 0 24px;
+    margin: 0;
+    font-weight: 700;
+    color: #3a3d41;
+}
+
+/*
 Image
 =========================== */
 img {
@@ -341,7 +376,7 @@ Header
 }
 
 .header-mid-area .logo img {
-    max-height: 100px;
+    max-height: 101px;
 }
 
 .header-top-area{
@@ -2071,6 +2106,10 @@ img.rounded {
     padding: 10px 0;
 }
 
+.header-social .social-icon {
+    padding: 0;
+}
+
 .social-icon li {
     display: inline-block;
     padding: 0 20px 0 0;
@@ -2079,7 +2118,7 @@ img.rounded {
 .social-icon a {
     display: inline-block;
     text-decoration: none;
-    color: #3b3b3b;
+    color: #909090;
 }
 
 .social-icon a:hover,
