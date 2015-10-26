@@ -38,4 +38,15 @@ $(document).ready(function() {
         autoplay: true,
         autoplaySpeed: 15000
     });
+
+    $('.exercise-carousel').slick({
+        dots: true,
+        arrows: false,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 15000
+    });
 });
