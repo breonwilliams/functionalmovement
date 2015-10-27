@@ -75,7 +75,6 @@ h4,
 h5,
 h6 {
     margin-top: 0;
-    color: #3b3b3b;
     margin-bottom: 10px;
     font-weight: 700;
     letter-spacing: -0.5px;
@@ -1703,12 +1702,19 @@ Full Width Sections
     background-color: #eee;
 }
 
+.section-red {
+    background-color: rgb(235,34,39);
+    color: #fff;
+}
+
 .section-blue {
     background-color: #3766c7;
+    color: #fff;
 }
 
 .section-green {
     background-color: #5DB65B;
+    color: #fff;
 }
 
 .section-yellow {
@@ -1730,6 +1736,32 @@ Full Width Sections
     background-position: 50% 50%;
     background-size: cover;
 }
+
+.overlay-grey {
+    background: rgba(238,238,238,.7);
+}
+
+.overlay-red {
+    background: rgba(235,34,39,.7);
+    color: #fff;
+}
+
+.overlay-blue {
+    background: rgba(55,102,199,.7);
+    color: #fff;
+}
+
+.overlay-green {
+    background: rgba(93,182,91,.7);
+    color: #fff;
+}
+
+.overlay-yellow {
+    background: rgba(211,170,46,.7);
+    color: #fff;
+}
+
+
 
 /*
 Full Width Video
@@ -2464,6 +2496,7 @@ Plan Section
     transition: all 0.5s ease-out;
     background: #FFFFFF;
     margin: 15px 0;
+    color: #5c5c5c;
 }
 @media (max-width:991px) {
     .plan {
@@ -2636,6 +2669,11 @@ Footer
     color: #aaaaaa;
     font-size: 14px;
     font-weight: 400;
+}
+
+.pad-100 {
+    padding-top: 100px;
+    padding-bottom: 100px;
 }
 
 .pad-50 {
