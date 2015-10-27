@@ -79,6 +79,7 @@ h6 {
     font-weight: 700;
     letter-spacing: -0.5px;
     font-family: 'Montserrat', sans-serif;
+    color: #191919;
 }
 h1 {
     font-size: 28px;
@@ -1761,6 +1762,9 @@ Full Width Sections
     color: #fff;
 }
 
+.color-on-img {
+    color: #fff !important;
+}
 
 
 /*
