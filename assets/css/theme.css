@@ -1346,10 +1346,7 @@ Tables
 .table-1 {
     border-bottom:1px solid #30343a;
 }
-.table-1 td,
-.table-1 th {
-    border-top:none !important;
-}
+
 .table-1 th {
     background-color: #303030;
     color:#e0e0e0;
