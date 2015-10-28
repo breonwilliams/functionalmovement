@@ -2287,6 +2287,66 @@ Upcoming Events
 }
 
 /*
+Seminar Dates
+================================== */
+.date-list {
+    margin: 32px 0 64px;
+    padding: 0
+}
+.date-list h6 {
+    line-height: 30px;
+}
+.date-list {
+    margin: 0;
+    border-top: 1px solid #e9e9e9;
+}
+
+.date-list li {
+    list-style: none;
+    position: relative;
+    padding-left: 85px;
+    padding-right: 15px;
+    border-bottom: 1px solid #e9e9e9;
+    border-left: 1px solid #e9e9e9;
+    min-height: 59px;
+    margin-left: 0;
+}
+
+.date-list time {
+    display: inline-block;
+    width: 70px;
+    text-align: center;
+    border: 1px solid #e9e9e9;
+    float: left;
+    position: absolute;
+    top: -2px;
+    left: -1px;
+}
+.date-list time .month {
+    display: block;
+    margin-left: -1px;
+    margin-right: -1px;
+    padding-left: 1px;
+    padding-right: 1px;
+    font-weight: 800;
+    font-size: 12px;
+    line-height: 30px;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: rgb(235, 34, 39);
+}
+.date-list time .date {
+    display: block;
+    margin-top: -1px;
+    font-family: Litespeed Cn, sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 30px;
+    text-align: center;
+    color: #605b5c;
+}
+
+/*
 Recent Articles
 ================================== */
 

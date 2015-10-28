@@ -36,7 +36,8 @@ $(document).ready(function() {
         slidesToShow: 1,
         slidesToScroll: 1,
         autoplay: true,
-        autoplaySpeed: 15000
+        autoplaySpeed: 15000,
+        adaptiveHeight: true
     });
 
     $('.exercise-carousel').slick({
