@@ -2287,27 +2287,24 @@ Upcoming Events
 Seminar Dates
 ================================== */
 .date-list {
-    margin: 32px 0 64px;
-    padding: 0
+    padding: 0;
+    margin: 0;
 }
 .date-list h6 {
     line-height: 30px;
-}
-.date-list {
-    margin: 0;
-    border-top: 1px solid #ccc;
 }
 
 .date-list li {
     list-style: none;
     position: relative;
-    padding-left: 85px;
-    padding-right: 15px;
     border-bottom: 1px solid #ccc;
-    border-left: 1px solid #ccc;
-    min-height: 59px;
+    min-height: 70px;
     margin-left: 0;
-    border-right: 1px solid #ccc;
+    padding: 15px 15px 15px 85px;
+}
+
+.date-list li:last-child {
+    border-bottom: none;
 }
 
 .date-list time {
@@ -2317,8 +2314,8 @@ Seminar Dates
     border: 1px solid #ccc;
     float: left;
     position: absolute;
-    top: -2px;
-    left: -1px;
+    top: 4px;
+    left: 0;
 }
 .date-list time .month {
     display: block;
@@ -2336,7 +2333,6 @@ Seminar Dates
 .date-list time .date {
     display: block;
     margin-top: -1px;
-    font-family: Litespeed Cn, sans-serif;
     font-size: 16px;
     font-weight: 700;
     line-height: 30px;
