@@ -669,7 +669,6 @@ nav.affix {
     width: 100%;
     padding: 0 15px;
     font-size: 16px;
-    font-weight: 700;
     height: 50px;
 }
 
@@ -900,6 +899,13 @@ Button
     outline: none;
 }
 
+.btn-group .btn+.btn,
+.btn-group .btn+.btn-group,
+.btn-group .btn-group+.btn,
+.btn-group .btn-group+.btn-group {
+    margin-left: 0;
+}
+
 .btn-default {
     color: #fff;
     background: #0b0b0b;
@@ -932,6 +938,14 @@ Button
 .btn-primary.btn-bordered.focus,
 .btn-primary.btn-bordered:hover{
     color: #fff;
+}
+
+.btn-primary.active,
+.btn-primary:active,
+.btn-primary.active:hover,
+.btn-primary:active:hover {
+    background-color: #bc1d2a;
+    border-color: #bc1d2a;
 }
 
 .btn-green {
@@ -2297,7 +2311,7 @@ Seminar Dates
     border-bottom: 1px solid #ccc;
     min-height: 70px;
     margin-left: 0;
-    padding: 15px 15px 15px 85px;
+    padding: 15px 15px 15px 70px;
 }
 
 .date-list li:last-child {
@@ -2306,7 +2320,7 @@ Seminar Dates
 
 .date-list time {
     display: inline-block;
-    width: 70px;
+    width: 60px;
     text-align: center;
     border: 1px solid #ccc;
     float: left;
