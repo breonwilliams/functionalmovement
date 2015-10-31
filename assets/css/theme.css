@@ -1358,12 +1358,12 @@ Tables
     padding:5px !important;
 }
 .table-1 {
-    border-bottom:1px solid #30343a;
+    border-bottom:1px solid #000;
 }
 
 .table-1 th {
-    background-color: #303030;
-    color:#e0e0e0;
+    background-color: #000;
+    color:#fff;
     border-bottom:none;
 }
 .table-1.table-main-color {
