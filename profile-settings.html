@@ -221,126 +221,182 @@
         <div class="container">
             <ol class="breadcrumb">
                 <li><a href="#">Home</a></li>
-                <li><a href="#">Events</a></li>
-                <li class="active">Register to Seminar/Event</li>
+                <li><a href="#">My Account</a></li>
+                <li class="active">User Profile</li>
             </ol>
         </div>
     </section>
     <div class="container pad-40">
         <div class="row">
-            <div class="col-md-8">
-                <h1>Register to Seminar</h1>
-                <h2>Jan 22-24, 2016, Indian Rocks Beach, FL</h2>
-                <p>Continuing Education Information: To view a full list of organizations that have approved Functional Movement System courses for continuing education please click here.</p>
-                <p>FMS is the screening tool used to identify limitations or asymmetries in seven fundamental movement patterns that are key to functional movement quality in individuals with no current pain complaint or known musculoskeletal injury.</p>
-                <p>These movement patterns are designed to provide observable performance of basic loco motor, manipulative and stabilizing movements by placing an individual in extreme positions where weaknesses and imbalances become noticeable if appropriate mobility and motor control is not utilized.</p>
-                <p>Hotel Information: Rooms have been reserved for attendees at the Holiday Inn Hotel & Suites Clearwater Beach South at a discounted rate. Reservations: 727-595-9484 Reservation deadline: December 22, 2015.</p>
-                <p>Parking Information: Complimentary</p>
-            </div>
             <div class="col-md-4">
-                <h2 class="title-medium br-bottom mb30">Details</h2>
-                <ol class="date-list marginbot-15">
-                    <li>
-                        <time>	<span class="month">Jan</span>
-                            <span class="date">22</span>
-                        </time>
-                        <article class="date-content">	<h6>Functional Movement Screen Level 1</h6>
-                        </article>
-                    </li>
-                    <li>
-                        <time>	<span class="month">Jan</span>
-                            <span class="date">23-24</span>
-                        </time>
-                        <article class="date-content">	<h6>Functional Movement Screen Level 2</h6>
-                        </article>
-                    </li>
-                </ol>
-                <h3>Venue:</h3>
-                <dd>Holiday Inn Hotel & Suites Clearwater Beach South - Key West Center Room</dd>
-                <dd>401 2nd Street</dd>
-                <dd>Indian Rocks Beach, FL 33785</dd>
-                <dd>United States</dd>
-                <dd><i class="fa fa-phone"></i> (727)595-9484</dd>
-                <dd>www.hiharbourside.com</dd>
+                <div class="row">
+                    <div class="col-xs-6">
+                        <img src="assets/img/stock/profile3.png" class="avatar">
+                    </div>
+                    <div class="col-xs-6">
+                        <a href="#" class="btn btn-primary btn-sm btn-block">Send Email</a>
+                        <div class="pad-20"><img src="assets/img/FMS_CERTIFIED_complete_L1_800x300.png"> </div>
+                    </div>
+                </div>
+
+                <div class="padtop-30">
+                    <h4>My Report</h4>
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-green" aria-valuetransitiongoal="60" data-rel="tooltip" data-placement="top" rel="tooltip" data-original-title="View Your Report Details">
+                            60%
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pad-20">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">Kelly Barker</h3>
+                        </div>
+                        <div class="panel-body">
+                            <p><i class="fa fa-phone"></i> 555-765-4321</p>
+                            <p><i class="fa fa-map-marker"></i> 1017 E Whitaker Mill Rd, Raleigh, 27608</p>
+                            <p>United States</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-md-8">
+                <div class="btn-group marginbot-15">
+                    <a class="btn btn-primary active" href="profile-settings.html" rel="" target="_self">Settings</a>
+                    <a class="btn btn-primary" href="profile-client.html" rel="" target="_self">Activity</a>
+                </div>
+                <ul class="nav nav-tabs">
+                    <li class="active"><a href="#tab1" data-toggle="tab" aria-expanded="true">User Profile</a></li>
+                    <li class=""><a href="#tab2" data-toggle="tab" aria-expanded="false">Email & Password</a></li>
+                </ul>
+                <div class="tab-content">
+                    <div class="tab-pane fade active in" id="tab1">
+
+                        <div class="alert alert-info alert-dismissable fade in">
+                            <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
+                            <i class="icon icon_gift_alt"></i>
+                            <strong class="mr10">Use the form below to update your profile.</strong>
+                        </div>
+
+                        <form id="" class="form-horizontal" role="form">
+
+                            <div class="input-group">
+                                <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                                <input id="login-username" type="text" class="form-control" name="username" value="" placeholder="username">
+                            </div>
+
+                            <input id="login-username" type="text" class="form-control marginbot-25" name="username" value="" placeholder="first name">
+
+                            <input id="login-username" type="text" class="form-control marginbot-25" name="username" value="" placeholder="last name">
+
+                            <div class="row">
+                                <div class="col-md-12 marginbot-25">
+                                    <h4>Gender:</h4>
+                                    <div class="radio">
+                                        <label>
+                                            <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+                                            Male
+                                        </label>
+                                        <label>
+                                            <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+                                            Female
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row marginbot-25">
+                                <div class="col-md-12">
+                                    <h4>Profession:</h4>
+                                    <select id="ProfessionID" name="ProfessionID" required="required" class="selectpicker"><option value="">-- Please choose --</option>
+                                        <option value="1">Physical Therapist</option>
+                                        <option selected="selected" value="2">Personal Trainer</option>
+                                        <option value="3">Athletic Trainer</option>
+                                        <option value="4">Strength Coach</option>
+                                        <option value="5">Educator</option>
+                                        <option value="6">Chiropractor</option>
+                                        <option value="7">Other</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="input-group">
+                                <span class="input-group-addon"><i class="fa fa-phone"></i></span>
+                                <input id="login-username" type="text" class="form-control" name="phone" value="" placeholder="phone number">
+                            </div>
+
+
+
+
+
+                            <div class="form-group">
+                                <!-- Button -->
+
+                                <div class="col-sm-12 controls">
+                                    <a id="btn-login" href="#" class="btn btn btn-green">Save Profile</a>
+
+                                </div>
+                            </div>
+
+                        </form>
+                    </div>
+                    <div class="tab-pane fade" id="tab2">
+                        <div class="alert alert-info alert-dismissable fade in">
+                            <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
+                            <i class="icon icon_gift_alt"></i>
+                            <strong class="mr10">Use the form below to update your profile. New passwords are required to be a minimum of 6 characters in length.</strong>
+                        </div>
+
+                        <form id="" class="form-horizontal" role="form">
+
+                            <div class="input-group">
+                                <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+                                <input id="login-password" type="password" class="form-control" name="password" placeholder="current password">
+                            </div>
+
+                            <div class="input-group">
+                                <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
+                                <input id="login-password" type="password" class="form-control" name="password" placeholder="email address">
+                            </div>
+
+                            <div class="form-group">
+                                <!-- Button -->
+
+                                <div class="col-sm-12 controls">
+                                    <a id="btn-login" href="#" class="btn btn btn-green">Save Email</a>
+
+                                </div>
+                            </div>
+
+                            <div class="input-group">
+                                <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+                                <input id="login-password" type="password" class="form-control" name="password" placeholder="new password">
+                            </div>
+
+                            <div class="input-group">
+                                <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+                                <input id="login-password" type="password" class="form-control" name="password" placeholder="confirm password">
+                            </div>
+
+                            <p>By clicking "Sign Up" you agree to the <a href="#">Terms of Use</a>.</p>
+
+                            <div class="form-group">
+                                <!-- Button -->
+
+                                <div class="col-sm-12 controls">
+                                    <a id="btn-login" href="#" class="btn btn btn-green">Save Password</a>
+
+                                </div>
+                            </div>
+
+                        </form>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-    <!-- Course details -->
-    <section class="section-bg section-large section-grey">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6">
-                    <h3>Courses & Days</h3>
-                    <div class="input-group">
-                        <ul class="event-courses">
-                            <li>
-                                <input class="course-checkbox" type="checkbox" aria-label="Radio button for following text input">
-                                <div class="course-detail"><h4>Functional Movement Screen</h4></div>
-                                <ul class="event-courses">
-                                    <li>
-                                        <input class="course-checkbox" type="checkbox" aria-label="Radio button for following text input">
-                                        <div class="course-detail">
-                                            <div class="alert alert-success alert-dismissable fade in">
-                                                <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
-                                                <i class="icon icon_gift_alt"></i>
-                                                <strong class="mr10">Save $150.00 by signing up for this package!</strong>
-                                            </div>
-                                            <dt>Functional Movement Screen Level 1 (8 hrs)</dt>
-                                            <dd>Friday, January 22, 2016 8:00 AM - 5:00 PM</dd>
-                                            <dd>Instructor: Diane Vives MS, CSCS*D, FMS, CGFI-TPI</dd>
-                                            <dd>Cost: $450.00</dd>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <input class="course-checkbox" type="checkbox" aria-label="Radio button for following text input">
-                                        <div class="course-detail">
-                                            <dt>Functional Movement Screen Level 2 (12 hrs)</dt>
-                                            <dd>Saturday, January 23, 2016 8:00 AM - 5:00 PM</dd>
-                                            <dd>Sunday, January 24, 2016 8:00 AM - 12:00 PM</dd>
-                                            <dd>Instructor: Diane Vives MS, CSCS*D, FMS, CGFI-TPI</dd>
-                                            <dd>Cost: $499.00</dd>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <h3 class="plan-price">
-                        <span class="plan-curency">$</span>799.00<span class="plan-period"></span>
-                    </h3>
-                    <div class="alert alert-danger alert-dismissable fade in">
-                        <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
-                        <i class="icon icon_gift_alt"></i>
-                        <p><strong class="mr10">At least one course is required to register.</strong></p>
-                        <p><strong class="mr10">All transactions are in US dollars.</strong></p>
-                    </div>
-                    <table class="table table-striped">
-                        <tbody>
-                        <tr>
-                            <th scope="row"><i class="fa fa-check"></i> </th>
-                            <td>Functional Movement Screen Level 1 (8 hrs)</td>
-                            <td>$450.00</td>
-                        </tr>
-                        <tr>
-                            <th scope="row"><i class="fa fa-check"></i> </th>
-                            <td>Functional Movement Screen Level 2 (12 hrs)</td>
-                            <td>$499.00</td>
-                        </tr>
-                        <tr>
-                            <th scope="row"><i class="fa fa-check"></i> </th>
-                            <td>Functional Movement Screen Bundle Discount</td>
-                            <td>-$150.00</td>
-                        </tr>
-                        </tbody>
-                    </table>
-                    <a href="#" class="btn btn-primary">Reserve Your Seat <i class="fa fa-chevron-right"></i></a>
-                </div>
-            </div>
-        </div>
-    </section>
-
 </div>
 
 
