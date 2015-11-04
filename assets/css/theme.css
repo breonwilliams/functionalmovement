@@ -55,7 +55,8 @@ body {
 a,
 a:active,
 a:focus,
-a:hover{
+a:hover,
+.btn-link{
     outline:none;
     -webkit-transition: all 0.3s ease-in-out;
     -moz-transition: all 0.3s ease-in-out;
@@ -2526,6 +2527,67 @@ ul.activity-list li {
 
 .activity-list .activity-content {
     margin-left: 80px;
+}
+/*
+Member Activity Comments
+================================== */
+
+.inline-reply-box {
+    background-color: #eb5858;
+    padding: 15px;
+    position: relative;
+}
+
+.inline-reply-box>.avatar {
+    max-height: 35px;
+    width: auto;
+    display: block;
+}
+.reply-box {
+    margin-left: 45px;
+}
+
+.reply-box textarea {
+    width: 100%;
+    padding: 10px;
+    vertical-align: top;
+    border: solid 1px rgb(235, 34, 39);
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    resize: none; /* remove this if you want the user to be able to resize it in modern browsers */
+}
+
+textarea:focus {
+    outline-style: none;
+    outline-width: 2px;
+}
+
+.activity-meta {
+}
+
+.profile-action {
+    display: inline-block;
+    width: 80px;
+}
+
+.profile-action .btn-link,
+.profile-action a {
+    color: #cdcdcd;
+}
+
+.profile-action .btn-link:hover,
+.profile-action a:hover {
+    color: #5c5c5c;
+}
+
+.profile-actionCount {
+    padding: 0 3px;
+    font-family: "Montserrat", sans-serif;
+}
+
+.comment-toggle {
+    display: none;
 }
 
 /*

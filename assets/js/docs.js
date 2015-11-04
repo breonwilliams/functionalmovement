@@ -71,3 +71,15 @@ $(window).ready(function(e){
         $(this).css('width', $(this).attr('aria-valuetransitiongoal')+'%');
     });
 });
+
+// Textarea Auto resize
+
+$(function() {
+    autosize(document.querySelectorAll('textarea'));
+});
+
+// toggle comments
+
+function toggleDiv(divId) {
+    $("#"+divId).slideToggle();
+}
