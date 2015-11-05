@@ -2229,11 +2229,53 @@ Comments
 .media, .media .media {
     margin-top:40px;
 }
+
+.media.small-comments {
+}
+
+.media.small-comments a {
+    color: #fff;
+}
+
+.media.small-comments a:hover,
+.media.small-comments .reply a:hover{
+    color: #fff;
+    opacity: .6;
+}
+
+.media.small-comments, .media .media {
+    margin-top:0;
+}
+.comment-slist {
+    margin: 15px 0 0
+}
 h4.media-heading {
-    color:#445;
+    color:#444;
     font-size:17px;
     margin: 2px 0 6px;
 }
+
+.media.small-comments h4.media-heading {
+    font-size:12px;
+    margin: 2px 0 6px;
+}
+
+.media.small-comments .see-more {
+    display: inline-block;
+}
+
+.media.small-comments .media-heading .reply,
+.media.small-comments .media-heading .type,
+.media.small-comments .media-heading > .user {
+    font-size: 12px;
+}
+
+.media.small-comments p {
+    font-size: 12px;
+    line-height: 1.6;
+    color: #3b3b3b;
+}
+
 .media-heading .date {
     margin-left:20px;
     font-size:12px;
@@ -2253,6 +2295,13 @@ h4.media-heading {
     border-radius:3px;
     margin-top:5px;
 }
+
+.media.small-comments .media-object {
+    width:35px;
+    height:35px;
+    border-radius:3px;
+    margin-top:5px;
+}
 .media-heading > .user {
     font-size:15px;
     color:#3b3b3b;
@@ -2262,6 +2311,10 @@ h4.media-heading {
 }
 .media > .pull-left {
     margin-right:15px;
+}
+
+.media.small-comments > .pull-left {
+    margin-right:0;
 }
 @media (max-width:767px) {
     #blog-posts .media, #blog-posts .media-body {
