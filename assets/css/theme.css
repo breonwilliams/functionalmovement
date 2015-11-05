@@ -298,6 +298,29 @@ img {
     transition: all .2s ease-in-out;
 }
 /*
+Jumbotron
+=========================== */
+.jumbotron {
+    background-color: #f9f9f9;
+    margin: 0;
+}
+
+.jumbotron p {
+    font-size: 18px;
+}
+
+@media (min-width: 768px) {
+    .container .jumbotron, .container-fluid .jumbotron {
+        padding-right: 40px;
+        padding-left: 40px;
+    }
+
+    .jumbotron {
+        padding-top: 38px;
+        padding-bottom: 38px;
+    }
+}
+/*
 Thumbnail
 =========================== */
 .thumbnail {
@@ -3008,6 +3031,10 @@ Footer
 
 .margintop-15 {
     margin-top: 15px;
+}
+
+.margintop-25 {
+    margin-top: 25px;
 }
 
 .copyright {
