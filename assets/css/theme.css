@@ -2234,7 +2234,6 @@ Comments
     margin-top:0;
 }
 .comment-slist {
-    margin: 15px 0 0
 }
 h4.media-heading {
     color:#444;
@@ -2310,6 +2309,9 @@ h4.media-heading {
     .media > .pull-left {
         display:none;
     }
+    .media.small-comments > .pull-left {
+        display:block;
+    }
     .media-heading > .user {
         display:block;
     }
@@ -2323,8 +2325,9 @@ Upcoming Events
 ================================== */
 .event-content ul {
     list-style: outside none none;
-    margin: 0;
+    margin: 0 0 15px;
     padding: 0;
+    border-bottom: solid 1px #ece6e7;
 }
 .cleared {
     clear: both;
@@ -2505,7 +2508,7 @@ ul.article-list li {
 Member Activity
 ================================== */
 #activity-stream {
-    margin-top: 0;
+    margin: 0 0 15px;
 }
 ul.item-list {
     border: 0;
@@ -2569,6 +2572,49 @@ ul.activity-list li {
     margin-left: 80px;
 }
 /*
+Star Rating
+================================== */
+.rating {
+    border: none;
+    float: left;
+    line-height: 0.4;
+}
+
+.rating label {
+    margin-bottom: 0;
+}
+
+.rating > input { display: none; }
+.rating > label:before {
+    margin: 0 5px;
+    font-size: 1.25em;
+    font-family: FontAwesome;
+    display: inline-block;
+    content: "\f005";
+}
+
+.rating > .half:before {
+    content: "\f089";
+    position: absolute;
+}
+
+.rating > label {
+    color: #ddd;
+    float: right;
+}
+
+/***** CSS Magic to Highlight Stars on Hover *****/
+
+.rating > input:checked ~ label, /* show gold star when clicked */
+.rating:not(:checked) > label:hover, /* hover current star */
+.rating:not(:checked) > label:hover ~ label { color: rgb(235, 34, 39);  } /* hover previous stars in list */
+
+.rating > input:checked + label:hover, /* hover current star when changing rating */
+.rating > input:checked ~ label:hover,
+.rating > label:hover ~ input:checked ~ label, /* lighten current selection */
+.rating > input:checked ~ label:hover ~ label { color: #e44b4b;  }
+
+/*
 Member Activity Comments
 ================================== */
 
@@ -2605,11 +2651,12 @@ textarea:focus {
 }
 
 .activity-meta {
+    margin-bottom: 10px;
 }
 
 .profile-action {
     display: inline-block;
-    width: 80px;
+    margin: 0 15px 0 0
 }
 
 .profile-action .btn-link,
