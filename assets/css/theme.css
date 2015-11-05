@@ -3010,6 +3010,14 @@ Footer
     margin-bottom: 25px;
 }
 
+.marginbot-30 {
+    margin-bottom: 30px;
+}
+
+.marginbot-35 {
+    margin-bottom: 35px;
+}
+
 .margintop-15 {
     margin-top: 15px;
 }
@@ -3018,6 +3026,13 @@ Footer
     margin-top: 25px;
 }
 
+.margintop-30 {
+    margin-top: 30px;
+}
+
+.margintop-35 {
+    margin-top: 35px;
+}
 .copyright {
     border-top: 1px solid #363636;
     font-size: 12px;
