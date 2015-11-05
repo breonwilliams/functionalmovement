@@ -2230,19 +2230,6 @@ Comments
     margin-top:40px;
 }
 
-.media.small-comments {
-}
-
-.media.small-comments a {
-    color: #fff;
-}
-
-.media.small-comments a:hover,
-.media.small-comments .reply a:hover{
-    color: #fff;
-    opacity: .6;
-}
-
 .media.small-comments, .media .media {
     margin-top:0;
 }
@@ -2586,7 +2573,7 @@ Member Activity Comments
 ================================== */
 
 .inline-reply-box {
-    background-color: #eb5858;
+    background-color: #eee;
     padding: 15px;
     position: relative;
 }
