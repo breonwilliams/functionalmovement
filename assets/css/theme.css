@@ -371,13 +371,6 @@ Thumbnail
     transition: all 0.2s linear;
 }
 
-.view-thumbnail:hover .view-img {
-    height: 250px;
-    width: auto;
-    background-size: cover;
-    background-position: 50% 50%;
-}
-
 
 .view-thumbnail .mask {
     -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=0)";
