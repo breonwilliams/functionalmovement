@@ -81,5 +81,5 @@ $(function() {
 // toggle comments
 
 function toggleDiv(divId) {
-    $("#"+divId).slideToggle();
+    $("#"+divId).toggle();
 }
