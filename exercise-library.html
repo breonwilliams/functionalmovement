@@ -225,62 +225,65 @@
             </ol>
         </div>
     </section>
-    <!-- Filter Exercises -->
-    <section class="section-grey">
-        <div class="container pad-40">
-            <div class="row">
-                <div class="col-md-3 col-sm-6">
-                    <h4>Filter By Category</h4>
-                    <select class="selectpicker" multiple data-selected-text-format="count>3">
-                        <option>Active Straight Leg Raise</option>
-                        <option>Deep Squat</option>
-                        <option>Hurdle Step</option>
-                        <option>In-Line Lunge</option>
-                        <option>Rotary Stability</option>
-                        <option>Shoulder Mobility</option>
-                        <option>Trunk Stability Pushup</option>
-                    </select>
-                </div>
-                <div class="col-md-3 col-sm-6">
-                    <h4>Exercise Positions</h4>
-                    <select class="selectpicker" multiple data-selected-text-format="count>3">
-                        <option>Half Kneeling</option>
-                        <option>Open Half Kneeling</option>
-                        <option>Plank</option>
-                        <option>Phone</option>
-                        <option>Pushup</option>
-                        <option>Quadruped</option>
-                        <option>Side-Lying</option>
-                    </select>
-                </div>
-                <div class="col-md-3 col-sm-6">
-                    <h4>Body Parts</h4>
-                    <select class="selectpicker" multiple data-selected-text-format="count>3">
-                        <option>Anti-Rotational</option>
-                        <option>Assist</option>
-                        <option>Balance</option>
-                        <option>Diagonal</option>
-                        <option>Double Arm</option>
-                        <option>Double Leg</option>
-                        <option>Dynamic Motor Control</option>
-                    </select>
-                </div>
-                <div class="col-md-3 col-sm-6">
-                    <h4>Find An Exercise</h4>
-                    <div class="input-group custom-search-form marginbot-15">
-                        <input type="text" class="form-control" placeholder="Live search...">
-                          <span class="input-group-btn">
-                              <button class="btn btn-default" type="button">
-                                  <span class="glyphicon glyphicon-search"></span>
-                              </button>
-                         </span>
+
+    <div class="container pad-40">
+        <div class="row marginbot-35">
+            <div class="col-sm-6">
+                <h1>Exercise Library</h1>
+            </div>
+            <div class="col-sm-6">
+                <div class="input-group" id="adv-search">
+                    <input type="text" class="form-control" placeholder="Live search..." />
+                    <div class="input-group-btn">
+                        <div class="btn-group" role="group">
+                            <a href="javascript:toggleDiv('box-filter');" class="btn btn-default"><span class="caret"></span></a>
+                            <button type="button" class="btn btn-primary"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
+                        </div>
+                    </div>
+                    <div id="box-filter" class="dropdown-filter">
+                        <form class="form-horizontal" role="form">
+                            <div class="form-group">
+                                <h4>Filter By Category</h4>
+                                <select class="selectpicker" multiple data-selected-text-format="count>3">
+                                    <option>Active Straight Leg Raise</option>
+                                    <option>Deep Squat</option>
+                                    <option>Hurdle Step</option>
+                                    <option>In-Line Lunge</option>
+                                    <option>Rotary Stability</option>
+                                    <option>Shoulder Mobility</option>
+                                    <option>Trunk Stability Pushup</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <h4>Exercise Positions</h4>
+                                <select class="selectpicker" multiple data-selected-text-format="count>3">
+                                    <option>Half Kneeling</option>
+                                    <option>Open Half Kneeling</option>
+                                    <option>Plank</option>
+                                    <option>Phone</option>
+                                    <option>Pushup</option>
+                                    <option>Quadruped</option>
+                                    <option>Side-Lying</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <h4>Body Parts</h4>
+                                <select class="selectpicker" multiple data-selected-text-format="count>3">
+                                    <option>Anti-Rotational</option>
+                                    <option>Assist</option>
+                                    <option>Balance</option>
+                                    <option>Diagonal</option>
+                                    <option>Double Arm</option>
+                                    <option>Double Leg</option>
+                                    <option>Dynamic Motor Control</option>
+                                </select>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-block">Search</button>
+                        </form>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
-    <div class="container pad-40">
-
 
         <!-- Exercise List -->
             <div class="row">

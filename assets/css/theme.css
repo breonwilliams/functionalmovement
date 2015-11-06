@@ -1695,6 +1695,34 @@ Form
     transition: none;
 }
 
+/* Form Filter Dropdown */
+
+.form-horizontal .form-group {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.input-group-btn .btn-group {
+    display: flex !important;
+}
+
+#adv-search .dropdown-filter {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 100%;
+    padding: 20px;
+    background: #fff;
+    z-index: 999;
+    box-shadow: 0 6px 12px rgba(0,0,0,.175);
+    display: none;
+}
+
+#adv-search {
+    margin: 0 auto;
+    position: relative;
+}
+
 
 /* Modals */
 .modal {
@@ -2933,105 +2961,105 @@ Footer
 }
 
 .pad-100 {
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding-top: 100px!important;
+    padding-bottom: 100px!important;
 }
 
 .pad-50 {
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding-top: 50px!important;
+    padding-bottom: 50px!important;
 }
 
 .pad-40 {
-    padding-top: 40px;
-    padding-bottom: 40px;
+    padding-top: 40px!important;
+    padding-bottom: 40px!important;
 }
 
 .pad-30 {
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding-top: 30px!important;
+    padding-bottom: 30px!important;
 }
 
 .pad-20 {
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 20px!important;
+    padding-bottom: 20px!important;
 }
 
 .pad-10 {
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 10px!important;
+    padding-bottom: 10px!important;
 }
 
 .padtop-50 {
-    padding-top: 50px;
+    padding-top: 50px!important;
 }
 
 .padtop-40 {
-    padding-top: 40px;
+    padding-top: 40px!important;
 }
 
 .padtop-30 {
-    padding-top: 30px;
+    padding-top: 30px!important;
 }
 
 .padtop-20 {
-    padding-top: 20px;
+    padding-top: 20px!important;
 }
 
 .padtop-10 {
-    padding-top: 10px;
+    padding-top: 10px!important;
 }
 
 .padbot-50 {
-    padding-bottom: 50px;
+    padding-bottom: 50px!important;
 }
 
 .padbot-40 {
-    padding-bottom: 40px;
+    padding-bottom: 40px!important;
 }
 
 .padbot-30 {
-    padding-bottom: 30px;
+    padding-bottom: 30px!important;
 }
 
 .padbot-20 {
-    padding-bottom: 20px;
+    padding-bottom: 20px!important;
 }
 
 .padbot-10 {
-    padding-bottom: 10px;
+    padding-bottom: 10px!important;
 }
 
 .marginbot-15 {
-    margin-bottom: 15px;
+    margin-bottom: 15px!important;
 }
 
 .marginbot-25 {
-    margin-bottom: 25px;
+    margin-bottom: 25px!important;
 }
 
 .marginbot-30 {
-    margin-bottom: 30px;
+    margin-bottom: 30px!important;
 }
 
 .marginbot-35 {
-    margin-bottom: 35px;
+    margin-bottom: 35px!important;
 }
 
 .margintop-15 {
-    margin-top: 15px;
+    margin-top: 15px!important;
 }
 
 .margintop-25 {
-    margin-top: 25px;
+    margin-top: 25px!important;
 }
 
 .margintop-30 {
-    margin-top: 30px;
+    margin-top: 30px!important;
 }
 
 .margintop-35 {
-    margin-top: 35px;
+    margin-top: 35px!important;
 }
 .copyright {
     border-top: 1px solid #363636;
