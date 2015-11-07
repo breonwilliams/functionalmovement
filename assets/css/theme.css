@@ -700,7 +700,7 @@ nav.affix {
     margin: 0;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
 
     .navbar-collapse {
         position: relative;
@@ -725,7 +725,7 @@ nav.affix {
 
 }
 
-@media (min-width: 768px) {
+@media (min-width: 767px) {
 
     .navbar-form .input-group {
         margin: 0;
@@ -887,7 +887,7 @@ Megamenu
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
     .yamm .dropdown.yamm-fullwidth .dropdown-menu {
         position:static;
     }
