@@ -256,16 +256,14 @@ Jumbotron
     font-size: 18px;
 }
 
-@media (min-width: 768px) {
-    .container .jumbotron, .container-fluid .jumbotron {
-        padding-right: 40px;
-        padding-left: 40px;
-    }
+.container .jumbotron, .container-fluid .jumbotron {
+    padding-right: 40px;
+    padding-left: 40px;
+}
 
-    .jumbotron {
-        padding-top: 38px;
-        padding-bottom: 38px;
-    }
+.jumbotron {
+    padding-top: 38px;
+    padding-bottom: 38px;
 }
 /*
 Thumbnail
@@ -476,6 +474,12 @@ nav.affix {
     animation-fill-mode:none;
     animation-iteration-count:1;
     animation-name:headerlogo;
+}
+
+@media (min-width: 768px) {
+    .affix .navbar-brand {
+        padding: 0;
+    }
 }
 
 .navbar-brand>img {
