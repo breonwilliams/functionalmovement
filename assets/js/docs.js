@@ -83,3 +83,22 @@ $(function() {
 function toggleDiv(divId) {
     $("#"+divId).toggle();
 }
+
+// toggle plans
+
+$(function() {
+    $(".plan > a.more-feat").on("click", function(){
+        if($(this).hasClass('active')){
+            $(this).removeClass("active");
+            $(".plan > .clearfix").removeClass("planf-heightaut").addClass("planf-height");
+            $(".plan > a.more-feat i").removeClass("fa-minus").addClass("fa-plus");
+        }else{
+            $(".plan > a.more-feat i").removeClass("fa-minus").addClass("fa-plus");
+            $(".plan > .clearfix").removeClass("planf-height").addClass("planf-heightaut");
+            $(this).find("i").removeClass("fa-plus").addClass("fa-minus");
+            $(".plan > a.more-feat").removeClass("active");
+            $(this).addClass("active");
+        }
+
+    });
+});

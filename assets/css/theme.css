@@ -342,7 +342,7 @@ Header
 
 .header-mid-area {
     padding: 15px 0;
-    background: #000;
+    background: #0b0b0b;
 }
 
 .header-mid-area .logo img {
@@ -968,6 +968,18 @@ Button
 .btn-blue.btn-bordered{
     color: #3766c7;
     background:none;
+}
+
+.btn-link {
+    font-weight: 400;
+    color: rgb(235,34,39);
+    border-radius: 0;
+}
+
+.btn-link:hover,
+.btn-link:focus {
+    color: #e44b4b;
+    text-decoration: none;
 }
 
 .btn-red,
@@ -2844,10 +2856,18 @@ Plan Section
     padding: 0;
     line-height: 27px;
 }
+.clearfix.planf-height {
+    max-height: 20.25em;
+    overflow: hidden;
+}
+.clearfix.planf-heightaut {
+    height: auto;
+    overflow: auto;
+}
+
 .plan-features > li {
     padding: 15px;
     font-size: 15px;
-    border-top: solid 1px rgba(0,0,0,.1);
 }
 .plan-feature-off {
     text-decoration: line-through;
