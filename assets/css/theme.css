@@ -2702,6 +2702,9 @@ Breadcrumbs
 Pagination
 ================================== */
 
+.pagination {
+    margin: 20px 0 0;
+}
 
 .pagination > li > a {
     font-family: "Montserrat", "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -2712,7 +2715,8 @@ Pagination
     color: #888;
     background-color: transparent;
     border-radius: 0;
-    margin-bottom: 15px;
+    margin-bottom: 7px;
+    margin-top: 7px;
 }
 .pagination > li > a > .icon {
     font-size: 18px;
