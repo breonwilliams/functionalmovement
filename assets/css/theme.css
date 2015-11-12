@@ -869,6 +869,7 @@ Button
     -ms-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
     text-shadow: none;
+    box-shadow: 0 2px 6px rgba(0,0,0,.2);
 }
 
 .btn:focus {
@@ -891,6 +892,7 @@ Button
 .btn-default.btn-bordered{
     color: #0b0b0b;
     background:none;
+    box-shadow: none;
 }
 
 .btn-default:focus,
@@ -904,6 +906,7 @@ Button
 
 .btn-primary.btn-bordered{
     background:none;
+    box-shadow: none;
 }
 
 .btn-primary,
@@ -945,6 +948,7 @@ Button
 .btn-green.btn-bordered{
     color: #69bd67;
     background:none;
+    box-shadow: none;
 }
 
 .btn-blue {
@@ -968,6 +972,7 @@ Button
 .btn-blue.btn-bordered{
     color: #3766c7;
     background:none;
+    box-shadow: none;
 }
 
 .btn-link {
@@ -1009,6 +1014,7 @@ Button
 .btn-red.btn-bordered{
     color: #e44b4b;
     background:none;
+    box-shadow: none;
 }
 
 .btn-yellow {
