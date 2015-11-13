@@ -415,16 +415,6 @@ Header
 }
 .top-menu ul li a:hover{color: #eb221d;}
 
-@media (max-width: 480px) {
-    .top-menu {
-        float: left;
-    }
-    .lang-select {
-        float: left;
-    }
-
-}
-
 /*
 Navigation
 =========================== */
