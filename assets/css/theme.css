@@ -51,6 +51,15 @@ body {
     padding-left: 0;
 }
 
+@media (max-width: 768px) {
+
+    #main-content [class*="col-"],
+    footer [class*="col-"] {
+        margin-bottom: 15px;
+    }
+
+}
+
 
 a,
 a:active,
@@ -979,6 +988,7 @@ Button
     font-weight: 400;
     color: rgb(235,34,39);
     border-radius: 0;
+    box-shadow: none;
 }
 
 .btn-link:hover,
