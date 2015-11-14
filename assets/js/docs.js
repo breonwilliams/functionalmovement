@@ -104,7 +104,7 @@ $(function() {
 // popup video
 
 $(function() {
-    $('.video').magnificPopup({
+    $('.popup-video').magnificPopup({
         type: 'iframe',
         iframe: {
             markup: '<div class="mfp-iframe-scaler">'+
