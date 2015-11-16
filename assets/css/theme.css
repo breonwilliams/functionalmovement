@@ -518,25 +518,36 @@ nav.affix {
     border: none;
 }
 
-.navbar-nav .fa-shopping-cart {
+.header-mid-area a.cart i.fa {
+    color: #ffffff;
     background: none;
-    font-size: 16px;
-    padding: 0;
 }
 
-.cart {
+.header-mid-area a.cart:hover i.fa {
+    color: #ffffff;
+    background: none;
+}
+
+.header-mid-area .fa-shopping-cart {
+    background: none;
+    font-size: 16px;
+    padding: 0 10px 0 0;
+}
+
+.header-mid-area .cart {
     position: relative;
 }
 
-.cart span {
+.header-mid-area .cart span {
     position: absolute;
-    top: 5px;
-    left: 25px;
+    top: -10px;
+    left: 10px;
     padding: 2px 4px 2px 4px;
     border-radius: 50%;
     color: #fff;
-    font-size: 9px;
+    font-size: 10px;
     line-height: 9px;
+    font-weight: 700;
 }
 
 .navbar-nav > li > a:hover,
@@ -676,7 +687,7 @@ nav.affix {
 
 }
 
-@media (min-width: 767px) {
+@media (min-width: 768px) {
 
     .navbar-form .input-group {
         margin: 0;
@@ -726,6 +737,12 @@ nav.affix {
 .navbar-custom .container-fluid {
     max-width: 1200px;
     position: relative;
+}
+
+@media (max-width: 768px) {
+    .navbar-collapse form[role="search"] {
+        right: 15px;
+    }
 }
 
 /*
@@ -1077,7 +1094,6 @@ a:hover,
 a:focus,
 .primary,
 .btn-primary.btn-bordered,
-.cart .icon-cart,
 .home-link li a:hover,
 .team-detail span,
 .article-title h5 a:hover,
@@ -1090,7 +1106,6 @@ a:focus,
 .social-network li a:active,
 .recent li h6 a:hover,
 .yamm .dropdown-menu > li.container .recent li h6 a:hover,
-.dropdown-cart li  h6 a:hover,
 .twitter-icon,
 ol.breadcrumb li a.active,
 ul.pagination li a:hover,
