@@ -2141,7 +2141,7 @@ Articles
 .blog img.alignright, .blog .wp-caption.alignright {
     margin: 0 0 24px 24px;
 }
-img.rounded {
+img.rounded, .rounded {
     border-radius: 3px;
 }
 .alignright {
