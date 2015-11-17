@@ -2483,6 +2483,13 @@ Upcoming Events
     margin-left: 80px;
 }
 
+.event-content .table th, .table td {
+    padding: 15px 0 !important;
+}
+
+.event-content .table td:last-child {
+    padding: 15px 0 15px 15px !important;
+}
 /*
 Seminar Dates
 ================================== */
