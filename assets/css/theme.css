@@ -745,6 +745,12 @@ nav.affix {
     }
 }
 
+@media (max-width: 767px) {
+    .navbar-collapse form[role="search"] {
+        right: 0;
+    }
+}
+
 /*
 Megamenu
 ================================== */
