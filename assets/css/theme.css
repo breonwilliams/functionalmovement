@@ -345,6 +345,37 @@ Thumbnail
     opacity: 1;
 }
 
+@media (max-width: 767px) {
+    .small-thumbnail .view {
+        width: 64px;
+        height: 64px;
+        float: left;
+    }
+
+    .small-thumbnail .view-img {
+        height: 64px;
+        width: 64px;
+    }
+
+    .small-thumbnail .thumbnail .caption {
+        padding: 0 15px 0;
+        color: #5c5c5c;
+        margin: 0 0 0 64px;
+    }
+
+    .small-thumbnail .thumbnail .caption p,
+    .small-thumbnail .thumbnail .btn {
+        display: none;
+    }
+
+    .small-thumbnail .thumbnail .caption-fixedh {
+        overflow: auto;
+        height: auto;
+        min-height: 64px;
+        margin-bottom: 15px;
+    }
+}
+
 /*
 Header
 =========================== */
