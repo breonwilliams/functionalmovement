@@ -1465,6 +1465,13 @@ Tables
     color:#fff;
 }
 
+.table .btn-link {
+    color: #5c5c5c;
+}
+
+.table .btn-link:hover {
+    color: rgb(235,34,39);
+}
 
 /*
 Accordion
