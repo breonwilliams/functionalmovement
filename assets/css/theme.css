@@ -2528,6 +2528,9 @@ img {
     border-top: solid 1px #eee;
     position: relative;
 }
+.client-single .email {
+    overflow-x: hidden;
+}
 .client-single:last-child {
     border-bottom: solid 1px #eee;
 }
