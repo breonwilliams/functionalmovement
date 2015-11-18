@@ -2495,6 +2495,12 @@ Upcoming Events
 .event-content .table td:last-child {
     padding: 15px 0 15px 15px !important;
 }
+
+@media (max-width: 767px) {
+    .latest-event-item {
+        padding: 8px 15px 0;
+    }
+}
 /*
 Seminar Dates
 ================================== */
