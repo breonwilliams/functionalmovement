@@ -2519,7 +2519,7 @@ Client List
 ================================== */
 .client-list {
     padding: 0;
-    margin: 0;
+    margin: 0 0 15px;
     list-style: none;
 }
 img {
