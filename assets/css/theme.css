@@ -712,6 +712,11 @@ nav.affix {
     margin: 0;
 }
 
+.navbar-form {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
 @media (max-width: 767px) {
 
     .navbar-collapse {
@@ -2539,6 +2544,7 @@ img {
 }
 .client-single h3 {
     margin-top: 0;
+    font-size: 14px;
 }
 .client-avi {
     float: left;
