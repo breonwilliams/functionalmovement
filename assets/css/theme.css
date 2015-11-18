@@ -182,7 +182,14 @@ span.view-all {
 
 .location:before {
     content: "\f041";
-    width: 1.3em;
+    width: 1.1em;
+    display: inline-block;
+    font-family: FontAwesome;
+}
+
+.phone:before {
+    content: "\f095";
+    width: 1.1em;
     display: inline-block;
     font-family: FontAwesome;
 }
@@ -2488,7 +2495,7 @@ Upcoming Events
     margin-left: 80px;
 }
 
-.event-content .table th, .table td {
+.event-content .table th, .event-content .table td {
     padding: 15px 0 !important;
 }
 
@@ -2501,6 +2508,63 @@ Upcoming Events
         padding: 8px 15px 0;
     }
 }
+
+/*
+Client List
+================================== */
+.client-list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+.client-single {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    border-top: solid 1px #eee;
+    position: relative;
+}
+.client-single:last-child {
+    border-bottom: solid 1px #eee;
+}
+.client-single:nth-child(even) {
+    background-color: #f9f9f9;
+}
+.client-single h3 {
+    margin-top: 0;
+}
+.client-avi {
+    float: left;
+    width: 50px;
+}
+.client-loc {
+    float: right;
+    width: 40%;
+}
+.client-dt {
+    margin: 0 0 0 12px;
+    float: left;
+    width: 45%;
+}
+
+
+@media (max-width:600px) {
+    .client-loc {
+        float: none;
+        width: auto;
+        margin-left: 70px;
+    }
+    .client-dt {
+        margin: 0 0 0 70px;
+        float: none;
+        width: auto;
+    }
+}
+
 /*
 Seminar Dates
 ================================== */
