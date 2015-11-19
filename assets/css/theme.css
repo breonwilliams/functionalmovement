@@ -760,7 +760,7 @@ nav.affix {
     .navbar-collapse form[role="search"] {
         position: absolute;
         top: 0;
-        right: 0;
+        right: 15px;
         width: auto;
         padding: 0px;
         margin: 0px;
