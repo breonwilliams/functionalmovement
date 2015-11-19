@@ -835,8 +835,7 @@ Megamenu
     display: block;
 }
 .yamm .dropdown-menu > li.container{
-    padding-top:40px;
-    padding-bottom:40px;
+    padding: 40px 30px;
     font-size:15px;
     line-height:18px;
 }
