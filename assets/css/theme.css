@@ -744,6 +744,11 @@ nav.affix {
 
 @media (min-width: 768px) {
 
+    .navbar-collapse {
+        padding-right: 0;
+        padding-left: 0;
+    }
+
     .navbar-form .input-group {
         margin: 0;
     }
@@ -755,7 +760,7 @@ nav.affix {
     .navbar-collapse form[role="search"] {
         position: absolute;
         top: 0;
-        right: 30px;
+        right: 0;
         width: auto;
         padding: 0px;
         margin: 0px;
@@ -794,6 +799,10 @@ nav.affix {
     position: relative;
 }
 
+.navbar-custom .container {
+    position: relative;
+}
+
 @media (max-width: 768px) {
     .navbar-collapse form[role="search"] {
         right: 15px;
@@ -815,8 +824,7 @@ Megamenu
 .yamm .collapse {
     position: static;
 }
-.yamm .navbar-inner,
-.yamm .container {
+.yamm .navbar-inner {
     position: static;
     color:#fff;
 }
@@ -889,12 +897,13 @@ Megamenu
     display: block;
     padding: 0 15px 0 0;
     clear: both;
-    font-size:15px;
-    font-weight: normal;
+    font-size:14px;
+    font-weight: 700;
     line-height: 1.42857143;
     color: #fff;
     border:none;
     white-space: nowrap;
+    text-transform: uppercase;
 }
 .navbar-nav .yamm-link li a:hover,
 .navbar-nav .yamm-link li a:active,
@@ -2535,6 +2544,8 @@ img {
 }
 .client-single .email {
     overflow-x: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 .client-single:last-child {
     border-bottom: solid 1px #eee;
