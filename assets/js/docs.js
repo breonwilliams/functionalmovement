@@ -59,6 +59,12 @@ $(function () {
         });
     });
 
+// Initialize Popover
+$(function () {
+    $('[data-toggle="popover"]').popover()
+})
+
+
 // Full Width Video
 
 $(function() {
