@@ -52,9 +52,9 @@ $(function () {
 // Sticky Nav
 
     $(function() {
-        $('.navbar').affix({
+        $('.navbar-custom').affix({
             offset: {
-                top: $('.navbar').offset().top
+                top: $('.navbar-custom').offset().top
             }
         });
     });
