@@ -2556,6 +2556,12 @@ img {
     margin-top: 0;
     font-size: 14px;
 }
+.client-single h3 a {
+    color: #191919;
+}
+.client-single h3 a:hover {
+    color: rgb(235, 34, 39);
+}
 .client-avi {
     float: left;
     width: 50px;
