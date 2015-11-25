@@ -49,6 +49,14 @@ $(function () {
     $('[data-rel="tooltip"]').tooltip()
 })
 
+// Modal tabs
+$(function () {
+    $('.modal-toggle').click(function (e) {
+        var tab = e.target.hash;
+        $('li > a[href="' + tab + '"]').tab("show");
+    });
+})
+
 // Sticky Nav
 
     $(function() {
