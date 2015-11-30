@@ -3300,8 +3300,8 @@ Footer
     color: #fff;
 }
 
-.footer-section a:hover i.fa,
-.header-mid-area a:hover i.fa {
+.footer-social a:hover i.fa,
+.header-social a:hover i.fa {
     background: rgb(235,34,39);
     color: #fff;
     font-weight: 400;
@@ -3364,7 +3364,7 @@ Footer
     margin-top: 20px;
 }
 
-.header-mid-area a i.fa {
+.header-social a i.fa {
     color: #aaaaaa;
 }
 
