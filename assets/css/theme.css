@@ -126,7 +126,7 @@ h6 {
     background: rgb(235, 34, 39);
     color: ##fff;
     display: inline-block;
-    padding: 10px 16px 0;
+    padding: 10px 0 0;
     position: relative;
     z-index: 1;
     border-radius: 50%;
@@ -135,6 +135,7 @@ h6 {
     color: #fff;
     margin: 0 0 30px;
     border: solid 5px rgba(255, 255, 255, .4);
+    text-align: center;
 }
 
 .title-medium {
