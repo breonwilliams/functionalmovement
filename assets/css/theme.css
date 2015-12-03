@@ -1995,7 +1995,8 @@ Full Width Video
 .video-hero--content {
     position: relative;
     color: #FFF;
-    margin: 150px 0;
+    margin-top: 150px;
+    margin-bottom: 150px;
     text-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
 }
 .video-hero--content h2 {
