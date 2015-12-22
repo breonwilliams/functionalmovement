@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="assets/css/theme.css">
     <link rel="stylesheet" type="text/css" href="assets/css/slick-theme.css"/>
     <link rel="stylesheet" type="text/css" href="assets/css/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="assets/css/magnific-popup.css"/>
 
 
 </head>
@@ -54,165 +55,126 @@
             </div>
         </div>
     </div>
-<div class="header-mid-area">
-    <div class="container">
-        <div class="row">
-            <!-- logo start -->
-            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
-                <div class="logo">
-                    <a href="#"><img src="assets/img/logo.png" alt=""></a>
-                </div>
-            </div>
-            <!-- logo end -->
-            <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8 text-right">
-                <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#modal">Login</button> <a href="#" class="btn btn-default btn-sm">Register</a>
-                <div class="header-social">
-                    <div class="social-icon">
-                        <ul>
-                            <li>
-                                <a title="Facebook" href="#" target="_blank"><i class="fa fa-facebook"></i></a>
-                            </li>
-                            <li>
-                                <a title="Twitter" href="#" target="_blank"><i class="fa fa-twitter"></i></a>
-                            </li>
-                            <li>
-                                <a title="YouTube" href="#" target="_blank"><i class="fa fa-youtube"></i></a>
-                            </li>
-                        </ul>
-                    </div> <!--/.social-icon-->
-                </div>
-            </div>
-        </div>
-        <!-- Start Modal -->
-        <div class="modal fade" id="modal" tabindex="-1" role="modal" aria-labelledby="modal-label" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-                        <h4 class="modal-title" id="modal-label">My FMS</h4>
+    <div class="header-mid-area">
+        <div class="container">
+            <div class="row">
+                <!-- logo start -->
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                    <div class="logo">
+                        <a href="#"><img src="assets/img/logo.png" alt=""></a>
                     </div>
-                    <div class="modal-body">
-                        <div class="row">
-                            <div class="col-sm-12">
-                                <ul class="nav nav-tabs">
-                                    <li class="active"><a href="#signintab" data-toggle="tab" aria-expanded="true">Sign In</a></li>
-                                    <li class=""><a href="#registertab" data-toggle="tab" aria-expanded="false">Register</a></li>
-                                    <li class=""><a href="#passwordtab" data-toggle="tab" aria-expanded="false">Forgot Password?</a></li>
-                                </ul>
-                                <div class="tab-content">
-                                    <div class="tab-pane fade active in" id="signintab">
-                                        <form id="loginform" class="form-horizontal" role="form">
-
-                                            <p>Please enter your username and password to login or <a href="#">create a new account</a>.</p>
-
-                                            <div class="input-group">
-                                                <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-                                                <input id="login-username" type="text" class="form-control" name="username" value="" placeholder="username or email">
-                                            </div>
-
-                                            <div class="input-group">
-                                                <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
-                                                <input id="login-password" type="password" class="form-control" name="password" placeholder="password">
-                                            </div>
-
-
-
-                                            <div class="input-group">
-                                                <div class="checkbox">
-                                                    <label>
-                                                        <input id="login-remember" type="checkbox" name="remember" value="1"> Keep me logged in.
-                                                    </label>
-                                                </div>
-                                            </div>
-
-
-                                            <div class="form-group">
-                                                <!-- Button -->
-
-                                                <div class="col-sm-12 controls">
-                                                    <a id="btn-login" href="#" class="btn btn btn-green">Sign In  </a>
-                                                    <a id="btn-cancel" href="#" class="btn btn-primary">Cancel</a>
-
-                                                </div>
-                                            </div>
-
-
-                                            <div class="form-group">
-                                                <div class="col-md-12 control">
-                                                    Don't have an account!
-                                                    <a href="#">
-                                                        Sign Up Here
-                                                    </a>
-                                                </div>
-                                            </div>
-                                        </form>
-                                    </div>
-                                    <div class="tab-pane fade" id="registertab">
-                                        <form id="loginform" class="form-horizontal" role="form">
-
-                                            <h3>Create a new account.</h3>
-                                            <p>Use the form below to create a new account Passwords are required to be a minimum of 6 characters in length.</p>
-
-                                            <div class="input-group">
-                                                <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-                                                <input id="login-username" type="text" class="form-control" name="username" value="" placeholder="username">
-                                            </div>
-
-                                            <div class="input-group">
-                                                <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-                                                <input id="login-username" type="text" class="form-control" name="username" value="" placeholder="first name">
-                                            </div>
-
-                                            <div class="input-group">
-                                                <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-                                                <input id="login-username" type="text" class="form-control" name="username" value="" placeholder="last name">
-                                            </div>
-
-                                            <div class="input-group">
-                                                <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
-                                                <input id="login-password" type="password" class="form-control" name="password" placeholder="email address">
-                                            </div>
-
-                                            <div class="input-group">
-                                                <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
-                                                <input id="login-password" type="password" class="form-control" name="password" placeholder="password">
-                                            </div>
-
-                                            <div class="input-group">
-                                                <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
-                                                <input id="login-password" type="password" class="form-control" name="password" placeholder="confirm password">
-                                            </div>
-
-                                            <p>By clicking "Sign Up" you agree to the <a href="#">Terms of Use</a>.</p>
-
-                                            <div class="form-group">
-                                                <!-- Button -->
-
-                                                <div class="col-sm-12 controls">
-                                                    <a id="btn-login" href="#" class="btn btn btn-green">Sign In  </a>
-                                                    <a id="btn-cancel" href="#" class="btn btn-primary">Cancel</a>
-
-                                                </div>
-                                            </div>
-
-                                        </form>
-                                    </div>
-                                    <div class="tab-pane fade" id="passwordtab">
+                </div>
+                <!-- logo end -->
+                <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8 text-right">
+                    <a href="#signintab" class="btn btn-primary btn-sm modal-toggle" data-toggle="modal" data-target="#modal">Login</a> <a href="#registertab" class="btn btn-default btn-sm modal-toggle" data-toggle="modal" data-target="#modal">Register</a>
+                    <div class="row">
+                        <div class="col-md-12 margintop-15">
+                            <a href="#" class="cart" data-toggle="modal" data-target="#modal-3"><i class="fa fa-shopping-cart"></i><span>3</span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Start Modal -->
+            <div class="modal fade" id="modal" tabindex="-1" role="modal" aria-labelledby="modal-label" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                            <h4 class="modal-title" id="modal-label">My FMS</h4>
+                        </div>
+                        <div class="modal-body">
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <ul class="nav nav-tabs">
+                                        <li class="active"><a href="#signintab" data-toggle="tab" aria-expanded="true">Sign In</a></li>
+                                        <li class=""><a href="#registertab" data-toggle="tab" aria-expanded="false">Register</a></li>
+                                        <li class=""><a href="#passwordtab" data-toggle="tab" aria-expanded="false">Forgot Password?</a></li>
+                                    </ul>
+                                    <div class="tab-content">
                                         <div class="tab-pane fade active in" id="signintab">
                                             <form id="loginform" class="form-horizontal" role="form">
 
-                                                <p>Use the form below to reset your password.</p>
+                                                <p>Please enter your username and password to login or <a href="#">create a new account</a>.</p>
 
                                                 <div class="input-group">
                                                     <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
                                                     <input id="login-username" type="text" class="form-control" name="username" value="" placeholder="username or email">
                                                 </div>
 
+                                                <div class="input-group">
+                                                    <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+                                                    <input id="login-password" type="password" class="form-control" name="password" placeholder="password">
+                                                </div>
+
+
+
+                                                <div class="input-group">
+                                                    <div class="checkbox">
+                                                        <label>
+                                                            <input id="login-remember" type="checkbox" name="remember" value="1"> Keep me logged in.
+                                                        </label>
+                                                    </div>
+                                                </div>
+
+
                                                 <div class="form-group">
                                                     <!-- Button -->
 
-                                                    <div class="col-sm-12 controls">
-                                                        <a id="btn-login" href="#" class="btn btn btn-green">Reset Password</a>
+                                                    <div class="controls">
+                                                        <a id="btn-login" href="home.html" class="btn btn btn-green">Sign In  </a>
+                                                        <a id="btn-cancel" href="#" class="btn btn-primary">Cancel</a>
+
+                                                    </div>
+                                                </div>
+
+
+                                                <div class="form-group">
+                                                    <div class="col-md-12 control">
+                                                        Don't have an account!
+                                                        <a href="#">
+                                                            Sign Up Here
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </div>
+                                        <div class="tab-pane fade" id="registertab">
+                                            <form id="loginform" class="form-horizontal" role="form">
+
+                                                <h3>Create a new account.</h3>
+                                                <p>Use the form below to create a new account Passwords are required to be a minimum of 6 characters in length.</p>
+
+                                                <div class="input-group">
+                                                    <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                                                    <input id="login-username" type="text" class="form-control" name="username" value="" placeholder="username">
+                                                </div>
+
+                                                <input id="login-username" type="text" class="form-control marginbot-25" name="username" value="" placeholder="first name">
+
+                                                <input id="login-username" type="text" class="form-control marginbot-25" name="username" value="" placeholder="last name">
+
+                                                <div class="input-group">
+                                                    <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
+                                                    <input id="login-password" type="password" class="form-control" name="password" placeholder="email address">
+                                                </div>
+
+                                                <div class="input-group">
+                                                    <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+                                                    <input id="login-password" type="password" class="form-control" name="password" placeholder="password">
+                                                </div>
+
+                                                <div class="input-group">
+                                                    <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+                                                    <input id="login-password" type="password" class="form-control" name="password" placeholder="confirm password">
+                                                </div>
+
+                                                <p>By clicking "Sign Up" you agree to the <a href="#">Terms of Use</a>.</p>
+
+                                                <div class="form-group">
+                                                    <!-- Button -->
+
+                                                    <div class="controls">
+                                                        <a id="btn-login" href="#" class="btn btn btn-green">Sign In  </a>
                                                         <a id="btn-cancel" href="#" class="btn btn-primary">Cancel</a>
 
                                                     </div>
@@ -220,19 +182,140 @@
 
                                             </form>
                                         </div>
+                                        <div class="tab-pane fade" id="passwordtab">
+                                            <div class="tab-pane fade active in" id="signintab">
+                                                <form id="loginform" class="form-horizontal" role="form">
+
+                                                    <p>Use the form below to reset your password.</p>
+
+                                                    <div class="input-group">
+                                                        <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                                                        <input id="login-username" type="text" class="form-control" name="username" value="" placeholder="username or email">
+                                                    </div>
+
+                                                    <div class="form-group">
+                                                        <!-- Button -->
+
+                                                        <div class="controls">
+                                                            <a id="btn-login" href="#" class="btn btn btn-green">Reset Password</a>
+                                                            <a id="btn-cancel" href="#" class="btn btn-primary">Cancel</a>
+
+                                                        </div>
+                                                    </div>
+
+                                                </form>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-bordered btn-primary" data-dismiss="modal">Close</button>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-bordered btn-primary" data-dismiss="modal">Close</button>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
+
+            <!-- Modal Cart -->
+            <div class="modal fade" id="modal-3" tabindex="-1" role="modal" aria-labelledby="modal-label-3" aria-hidden="true" style="display: none;">
+                <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                            <h4 class="modal-title" id="modal-label-3">Cart</h4>
+                        </div>
+                        <div class="modal-body">
+
+                            <div class="table-responsive">
+                                <table class="table table-striped table-hover table-1">
+                                    <thead>
+                                    <tr>
+                                        <th class="text-left">Name</th>
+                                        <th class="text-left">Qty</th>
+                                        <th class="text-left">Price</th>
+                                    </tr>
+                                    </thead>
+
+                                    <tbody>
+                                    <tr>
+                                        <td data-title="Product">
+                                            <h6 class="item-title">Functional Movement Systems Seminar</h6>
+                                        </td>
+                                        <td data-title="Qty"></td>
+                                        <td data-title="Price"></td>
+                                    </tr>
+                                    <tr>
+                                        <td data-title="Product">
+                                            <h6 class="item-title">Functional Movement Screen Level 2</h6>
+                                            <dd>Saturday, January 30, 2016 8:00 AM - 5:00 PM</dd>
+                                            <dd>Sunday, January 31, 2016 8:00 AM - 12:00 PM</dd>
+                                        </td>
+                                        <td data-title="Qty">1</td>
+                                        <td data-title="Price">$499.00</td>
+                                    </tr>
+                                    <tr>
+                                        <td data-title="Product">
+                                            <h6 class="item-title">Functional Movement Systems Seminar</h6>
+                                            <dd>Saturday, January 30, 2016 8:00 AM - 5:00 PM</dd>
+                                            <dd>Sunday, January 31, 2016 8:00 AM - 5:00 PMM</dd>
+                                        </td>
+                                        <td data-title="Qty">1</td>
+                                        <td data-title="Price">$945.00</td>
+                                    </tr>
+                                    <tr>
+                                        <td data-title="Product">
+                                            <h6 class="item-title">SFMA Level 1 - Online Prerequisite Credit</h6>
+                                        </td>
+                                        <td data-title="Qty">1</td>
+                                        <td data-title="Price">$-645.00</td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-6 col-md-offset-6">
+                                    <h2 class="title-medium br-bottom mb30">Order Summary</h2>
+                                    <table class="table">
+                                        <tbody>
+                                        <tr>
+                                            <td scope="row"><h6>Items:</h6></td>
+                                            <td>$1,444.00</td>
+                                        </tr>
+                                        <tr>
+                                            <td><h6>Tax:</h6></td>
+                                            <td>$0.00</td>
+                                        </tr>
+                                        <tr>
+                                            <td scope="row"><h6>Discounts:</h6></td>
+                                            <td>-$645.00</td>
+                                        </tr>
+                                        <tr>
+                                            <td scope="row">
+                                                <h3>Order total:</h3>
+                                            </td>
+                                            <td>
+                                                <h3 class="product-price">
+                                                    <span class="product-curency">$</span>799.00<span class="product-period"></span>
+                                                </h3>
+                                            </td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="modal-footer">
+                            <a href="shop-cart.html" class="btn btn-green">Complete Order <i class="fa fa-chevron-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
             <!-- End Modal -->
         </div>
-    </div>
 </header>
 <!-- Header end -->
 <nav class="navbar navbar-custom yamm" data-spy="affix">
@@ -294,11 +377,11 @@
                 </li>
                 <li class="dropdown">
                     <a href="#" tabindex="0" data-toggle="dropdown" data-hover="dropdown" data-submenu="" aria-expanded="false">
-                        Articles<span class="caret"></span>
+                        Resources<span class="caret"></span>
                     </a>
 
                     <ul class="dropdown-menu">
-                        <li><a href="#" tabindex="0">All Articles</a></li>
+                        <li><a href="#" tabindex="0">All Resource Types</a></li>
                         <li><a href="#" tabindex="0">FMS Screening</a></li>
                         <li><a href="#" tabindex="0">FMS Corrections</a></li>
                         <li><a href="#" tabindex="0">FMS Research</a></li>
@@ -367,7 +450,7 @@
                 <div class="col-sm-6">
                     <h2>Move Well. Move Often</h2><br>
                     <p>A Powerfull Paradigm Shift in exercise and rehabilitation.</p><br>
-                    <p><a href="#" class="btn btn-primary">Learn More</a></p>
+                    <p><a href="http://www.youtube.com/watch?v=qBB0UdcsItk" class="btn btn-primary popup-video">Learn More <i class="fa fa-play-circle"></i></a></p>
                 </div>
                 <div class="col-sm-6">
                     <div class="vid-carousel">
@@ -392,6 +475,9 @@
             </div>
         </div>
     </div>
+    <div class="container">
+        <h2 class="page-header">Exercise Carousel</h2>
+    </div>
     <div class="re-carousel">
         <div class="thumbnail">
             <div class="view view-thumbnail">
@@ -402,7 +488,7 @@
                 <h3>Arm Criss Cross Jump with Jump Rope</h3>
                 <p>This is a lower body dynamic movement with a simultaneous cross arm action done with the jump rope…</p>
             </div>
-            <a href="#" class="btn btn-primary btn-lg btn-block" role="button">Find out more</a>
+            <a href="#" class="btn btn-yellow btn-lg btn-block" role="button"><i class="fa fa-plus"></i> More</a>
         </div>
         <div class="thumbnail">
             <div class="view view-thumbnail">
@@ -413,7 +499,7 @@
                 <h3>Battling Ropes Reverse Lunge Alternating Wave</h3>
                 <p>This is an upper body dynamic exercise for power development.</p>
             </div>
-            <a href="#" class="btn btn-primary btn-lg btn-block" role="button">Find out more</a>
+            <a href="#" class="btn btn-yellow btn-lg btn-block" role="button"><i class="fa fa-plus"></i> More</a>
         </div>
         <div class="thumbnail">
             <div class="view view-thumbnail">
@@ -424,7 +510,7 @@
                 <h3>Bench Press Alternate Arm with Two DB</h3>
                 <p>This is an upper body resistive exercise designed to improve both strength and stability using a…</p>
             </div>
-            <a href="#" class="btn btn-primary btn-lg btn-block" role="button">Find out more</a>
+            <a href="#" class="btn btn-yellow btn-lg btn-block" role="button"><i class="fa fa-plus"></i> More</a>
         </div>
         <div class="thumbnail">
             <div class="view view-thumbnail">
@@ -435,7 +521,7 @@
                 <h3>Bicep Curl Double Arm from Single Leg Supported with Two DB</h3>
                 <p>This is an upper body elbow flexion exercise designed to increase strength and volume of the upper…</p>
             </div>
-            <a href="#" class="btn btn-primary btn-lg btn-block" role="button">Find out more</a>
+            <a href="#" class="btn btn-yellow btn-lg btn-block" role="button"><i class="fa fa-plus"></i> More</a>
         </div>
         <div class="thumbnail">
             <div class="view view-thumbnail">
@@ -446,7 +532,7 @@
                 <h3>Bicep Curl Double Arm from Tall Kneeling with Two DB</h3>
                 <p>This is an elbow flexion exercise from a tall kneeling stance designed to increase upper body…</p>
             </div>
-            <a href="#" class="btn btn-primary btn-lg btn-block" role="button">Find out more</a>
+            <a href="#" class="btn btn-yellow btn-lg btn-block" role="button"><i class="fa fa-plus"></i> More</a>
         </div>
         <div class="thumbnail">
             <div class="view view-thumbnail">
@@ -457,7 +543,7 @@
                 <h3>Bicep Curl Single Arm from Symmetrical Stance with One DB</h3>
                 <p>This exercise helps improve bicep strength from a symmetrical stance pattern.</p>
             </div>
-            <a href="#" class="btn btn-primary btn-lg btn-block" role="button">Find out more</a>
+            <a href="#" class="btn btn-yellow btn-lg btn-block" role="button"><i class="fa fa-plus"></i> More</a>
         </div>
         <div class="thumbnail">
             <div class="view view-thumbnail">
@@ -468,7 +554,7 @@
                 <h3>Body Weight Get-Up</h3>
                 <p>This is a self limiting exercise that determines imbalances between the left and right side of the…</p>
             </div>
-            <a href="#" class="btn btn-primary btn-lg btn-block" role="button">Find out more</a>
+            <a href="#" class="btn btn-yellow btn-lg btn-block" role="button"><i class="fa fa-plus"></i> More</a>
         </div>
         <div class="thumbnail">
             <div class="view view-thumbnail">
@@ -479,7 +565,7 @@
                 <h3>TBrettzel</h3>
                 <p>This is a total mobility exercise for the quadriceps, hips, piriformis, glutes, low back and…</p>
             </div>
-            <a href="#" class="btn btn-primary btn-lg btn-block" role="button">Find out more</a>
+            <a href="#" class="btn btn-yellow btn-lg btn-block" role="button"><i class="fa fa-plus"></i> More</a>
         </div>
         <div class="thumbnail">
             <div class="view view-thumbnail">
@@ -490,7 +576,7 @@
                 <h3>Bridge Single Leg</h3>
                 <p>This exercises is for single leg static stability.</p>
             </div>
-            <a href="#" class="btn btn-primary btn-lg btn-block" role="button">Find out more</a>
+            <a href="#" class="btn btn-yellow btn-lg btn-block" role="button"><i class="fa fa-plus"></i> More</a>
         </div>
         <div class="thumbnail">
             <div class="view view-thumbnail">
@@ -501,37 +587,11 @@
                 <h3>Cheat Clean with One KB</h3>
                 <p>The purpose of this drill is to learn how to get the kettlebell into the rack position without the…</p>
             </div>
-            <a href="#" class="btn btn-primary btn-lg btn-block" role="button">Find out more</a>
+            <a href="#" class="btn btn-yellow btn-lg btn-block" role="button"><i class="fa fa-plus"></i> More</a>
         </div>
     </div>
     <div class="container pad-40">
-        <h2>Elements</h2>
-
-        <div class="row">
-            <div class="col-md-4 text-center">
-                <h4>Who we are</h4>
-                <p>
-                    Sit illud inciderint ut, sale interesset qui patrioque rationibus instructior usu, eu nibh liberavisse soluta diceret electram duo quod labore.
-                </p>
-                <a href="#" class="btn btn-default">Learn more</a>
-            </div>
-            <div class="col-md-4 text-center">
-                <h4>What we do</h4>
-                <p>
-                    Sit illud inciderint ut, sale interesset qui patrioque rationibus instructior usu, eu nibh liberavisse soluta diceret electram duo quod labore.
-                </p>
-                <a href="#" class="btn btn-default">Learn more</a>
-            </div>
-            <div class="col-md-4 text-center">
-                <h4>What we done</h4>
-                <p>
-                    Sit illud inciderint ut, sale interesset qui patrioque rationibus instructior usu, eu nibh liberavisse soluta diceret electram duo quod labore.
-                </p>
-                <a href="#" class="btn btn-default">Learn more</a>
-            </div>
-        </div>
-
-        <h3>Buttons</h3>
+        <h2 class="page-header">Buttons</h2>
         <div class="row">
             <div class="col-md-3">
                 <h5>Buttons default</h5>
@@ -566,19 +626,45 @@
         </div>
 
         <!-- Horizontal Tabs -->
-        <h2>Tabs</h2>
+        <h2 class="page-header">Panels</h2>
 
-        <div class="panel panel-default">
-            <!-- Default panel contents -->
-            <div class="panel-heading">
-                <h3 class="panel-title">Kelly Barker</h3>
+        <div class="row">
+            <div class="col-sm-4">
+                <div class="panel panel-default">
+                    <!-- Default panel contents -->
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Kelly Barker</h3>
+                    </div>
+                    <div class="panel-body">
+                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+                    </div>
+                </div>
             </div>
-
-            <!-- Table -->
-            <table class="table">
-                ...
-            </table>
+            <div class="col-sm-4">
+                <div class="panel panel-default">
+                    <!-- Default panel contents -->
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Kelly Barker</h3>
+                    </div>
+                    <div class="panel-body">
+                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="panel panel-default">
+                    <!-- Default panel contents -->
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Kelly Barker</h3>
+                    </div>
+                    <div class="panel-body">
+                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+                    </div>
+                </div>
+            </div>
         </div>
+
+        <h2 class="page-header">Tabs</h2>
 
         <div class="row">
             <div class="col-md-12">
@@ -624,7 +710,7 @@
                 </div>
             </div>
         </div>
-        <h2>Accordions</h2>
+        <h2 class="page-header">Accordions</h2>
         <div class="row">
             <div class="col-md-12">
                 <!-- Accordion Start -->
@@ -658,6 +744,7 @@
             </div>
         </div>
 
+        <h2 class="page-header">Pricing Packages</h2>
         <div class="row">
             <div class="col-sm-6 col-md-4">
                 <div class="plan plan-basic">
@@ -879,7 +966,7 @@
             </div>
         </div>
 
-        <h3>Popover</h3>
+        <h2 class="page-header">Popover</h2>
         <button type="button" class="btn btn-default" data-container="body" data-toggle="popover" data-placement="left" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
             Popover on left
         </button>
@@ -897,9 +984,10 @@ sagittis lacus vel augue laoreet rutrum faucibus.">
             Popover on right
         </button>
 
-        <h3>Tooltips</h3>
+        <h2 class="page-header">Tooltips</h2>
         <p>Sed posuere consectetur est at lobortis. <a href="#" class="link-effect" title="" data-rel="tooltip" data-placement="top" rel="tooltip" data-original-title="Tooltip on top">Morbi leo risus</a>, porta ac consectetur ac, vestibulum at eros. Nullam id dolor id nibh ultricies vehicula ut id elit. Etiam porta sem malesuada magna mollis euismod. Curabitur blandit tempus porttitor. Fusce dapibus, <a href="#" class="link-effect" title="" data-rel="tooltip" data-placement="bottom" rel="tooltip" data-original-title="Tooltip on bottom">tellus ac cursus</a> commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. <a href="#" class="link-effect" title="" data-rel="tooltip" data-placement="left" rel="tooltip" data-original-title="Tooltip on left">Nullam id dolor</a> id nibh ultricies vehicula ut id elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. <a href="#" class="link-effect" title="" data-rel="tooltip" data-placement="right" rel="tooltip" data-original-title="Tooltip on right">Curabitur blandit tempus</a> porttitor. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
         <!-- Alerts start -->
+        <h2 class="page-header">Alerts</h2>
         <div class="row">
             <div class="col-sm-12">
                 <div class="content">
@@ -936,6 +1024,116 @@ sagittis lacus vel augue laoreet rutrum faucibus.">
                     </div>
                     <div class="mb40"></div>
 
+                </div>
+            </div>
+        </div>
+
+        <h2 class="page-header">Input Groups</h2>
+        <div class="row">
+            <div class="col-md-12">
+                <form class="form" method="post" action="#">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <div class="form-group">
+                                <input type="text" name="user_name" required="" class="form-control" placeholder=" Full Name">
+                            </div>
+                        </div>
+                        <div class="col-sm-12">
+                            <div class="form-group">
+                                <input type="email" name="user_email" required="" class="form-control" placeholder=" Email Address">
+                            </div>
+                        </div>
+                    </div>
+                    <label>
+                        <textarea name="message" id="message" cols="30" rows="10" required="" class="form-control" placeholder=" Message" style="overflow: hidden; word-wrap: break-word; resize: horizontal; height: 234px;"></textarea>
+                    </label>
+                    <div class="mt30 clearfix">
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <h2 class="page-header">Modals</h2>
+        <div class="content">
+            <button class="btn btn-default" data-toggle="modal" data-target="#modal-md">Modal - Middle</button>
+            <button class="btn btn-default" data-toggle="modal" data-target="#modal-sm">Modal - Small</button>
+            <button class="btn btn-default" data-toggle="modal" data-target="#modal-lg">Modal - Large</button>
+            <div class="modal fade" id="modal-md" tabindex="-1" role="modal" aria-labelledby="modal-label" aria-hidden="true" style="display: none;">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                            <h4 class="modal-title" id="modal-label">Modal Title</h4>
+                        </div>
+                        <div class="modal-body">
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium atque architecto quae ullam rem labore veritatis temporibus asperiores, ad eaque odit commodi inventore dolore perspiciatis, nam dicta est eos id quod excepturi.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-default">Save Changes</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" id="modal-sm" tabindex="-1" role="modal" aria-labelledby="modal-label-2" aria-hidden="true">
+                <div class="modal-dialog modal-sm">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                            <h4 class="modal-title" id="modal-label-2">Modal Title</h4>
+                        </div>
+                        <div class="modal-body">
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium atque architecto quae ullam rem labore veritatis.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <div class="pull-left">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Ok, I got it</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" id="modal-lg" tabindex="-1" role="modal" aria-labelledby="modal-label-3" aria-hidden="true">
+                <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                            <h4 class="modal-title" id="modal-label-3">Modal Title</h4>
+                        </div>
+                        <div class="modal-body">
+                            <div class="row mb20">
+                                <div class="col-sm-12">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium atque architecto quae ullam rem labore veritatis temporibus asperiores, ad eaque odit commodi inventore dolore perspiciatis, nam dicta est eos id quod excepturi.</p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-6 xs-box">
+                                    <div class="box-services-a">
+                                        <h3 class="title-uppercased mb10"><i class="fa icon_globe fa-style5"></i> Fully customizable <a href="#" class="link-read-more">read more</a></h3>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis maiores repudiandae, accusantium reiciendis!</p>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="box-services-a">
+                                        <h3 class="title-uppercased mb10"><i class="fa icon_key_alt fa-style5"></i> Easy to use <a href="#" class="link-read-more">read more</a></h3>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis maiores repudiandae, accusantium reiciendis!</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-default">Save Changes</button>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -1027,7 +1225,9 @@ sagittis lacus vel augue laoreet rutrum faucibus.">
 <script src="assets/js/slick.js" defer></script>
 <script src="assets/js/slick-init.js" defer></script>
 <script src="assets/js/autosize.js" defer></script>
-
+<!-- Popup Video js -->
+<script src="assets/js/jquery.magnific-popup.min.js" defer></script>
+<script src="assets/js/magnificPopup.js" defer></script>
 
 </body>
 </html>

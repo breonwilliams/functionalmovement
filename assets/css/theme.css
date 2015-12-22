@@ -1159,6 +1159,7 @@ Button
 .btn-yellow.btn-bordered{
     color: #d3aa2e;
     background:none;
+    box-shadow: none;
 }
 
 .btn-line a{
