@@ -666,7 +666,8 @@ nav.affix {
     box-shadow: 0 6px 12px rgba(0,0,0,.175);
 }
 
-.bootstrap-select.btn-group .dropdown-menu.inner > li > a {
+.bootstrap-select.btn-group .dropdown-menu.inner > li > a,
+.btn-group .dropdown-menu > li > a {
     color: #444450;
     padding: 5px 20px;
 }
@@ -676,7 +677,8 @@ nav.affix {
     background: #eaeaea;
 }
 
-.bootstrap-select.btn-group .dropdown-menu.inner {
+.bootstrap-select.btn-group .dropdown-menu.inner,
+.btn-group .dropdown-menu {
     background: #f6f6f6;
 }
 
@@ -1362,6 +1364,20 @@ Hover background color
 .btn-group.open .btn-primary:focus,
 .zoom a:hover {
     background:#eb5858;
+}
+
+.btn-primary.active.focus,
+.btn-primary.active:focus,
+.btn-primary.active:hover,
+.btn-primary:active.focus,
+.btn-primary:active:focus,
+.btn-primary:active:hover,
+.open>.dropdown-toggle.btn-primary.focus,
+.open>.dropdown-toggle.btn-primary:focus,
+.open>.dropdown-toggle.btn-primary:hover {
+    color: #fff;
+    background-color: #eb5858;
+    border-color: #eb5858;
 }
 
 /*

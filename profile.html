@@ -246,14 +246,31 @@
 
             </div>
             <div class="col-md-8">
-                <div class="btn-group marginbot-15">
-                    <a class="btn btn-primary" href="#" rel="" target="_self">Settings</a>
-                    <a class="btn btn-primary active" href="#" rel="" target="_self">Activity</a>
-                    <a class="btn btn-primary" href="#" rel="" target="_self">Certification</a>
-                    <a class="btn btn-primary" href="#" rel="" target="_self">Education</a>
-                    <a class="btn btn-primary" href="#" rel="" target="_self">Store</a>
-                    <a class="btn btn-primary" href="#" rel="" target="_self">Pro 360 Settings</a>
+
+                <div class="btn-group marginbot-15" role="group" aria-label="...">
+                    <button type="button" class="btn btn-primary">Settings</button>
+                    <button type="button" class="btn btn-primary">Activity</button>
+                    <button type="button" class="btn btn-primary">Certification</button>
+                    <button type="button" class="btn btn-primary">Education</button>
+                    <button type="button" class="btn btn-primary">Store</button>
+
+                    <div class="btn-group" role="group">
+                        <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Pro 360
+                            <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Clients</a></li>
+                            <li><a href="#">Groups</a></li>
+                            <li><a href="#">Build A Workout</a></li>
+                            <li><a href="#">Manage Templates</a></li>
+                            <li><a href="#">Printable Screens</a></li>
+                            <li><a href="#">Tutorials</a></li>
+                        </ul>
+                    </div>
                 </div>
+                <div class="cleared"></div>
+
                 <ul class="nav nav-tabs">
                     <li class="active"><a href="#tab1" data-toggle="tab" aria-expanded="true">Client Activity</a></li>
                     <li class=""><a href="#tab2" data-toggle="tab" aria-expanded="false">My Events</a></li>
