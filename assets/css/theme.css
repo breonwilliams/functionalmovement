@@ -1119,7 +1119,7 @@ Button
 
 .navbar-collapse form[role="search"] button[type="submit"] {
     color: #fff;
-    background: #000;
+    background: transparent;
 }
 
 .btn-red:focus,
