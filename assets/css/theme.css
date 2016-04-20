@@ -2517,7 +2517,7 @@ h4.media-heading {
 /*
 Upcoming Events
 ================================== */
-.event-content ul {
+.event-content ul, .event-content-scroll ul {
     list-style: outside none none;
     margin: 0 0 15px;
     padding: 0;
@@ -2526,6 +2526,12 @@ Upcoming Events
 .cleared {
     clear: both;
 }
+
+.event-content-scroll {
+    overflow: scroll;
+    height: 480px;
+}
+
 .event-item-inner {
     padding: 13px 0;
     line-height: 24px;
@@ -2537,6 +2543,10 @@ Upcoming Events
 
 .latest-event-item:nth-child(even) {
     background-color: #f9f9f9;
+}
+
+.latest-event-item:nth-child(odd) {
+    background-color: #fff;
 }
 
 .event-date-wrap {
