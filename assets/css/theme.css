@@ -1652,6 +1652,27 @@ Accordion
     color: #3b3b3b !important
 }
 
+.accordion-nest li {
+    list-style: none;
+}
+#MainMenu .list-group-item {
+    -webkit-border-radius: 0 !important;
+    -moz-border-radius: 0 !important;
+    border-radius: 0 !important;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border: none;
+    color: #3b3b3b;
+    font-size: 12px;
+    letter-spacing: normal;
+    line-height: 24px;
+    font-weight: 700;
+    background: rgba(59,59,59,0.06);
+    text-transform: uppercase;
+    transition: all 150ms ease-in;
+    font-family: "Montserrat", "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
 /*
 Panels
 =========================== */
