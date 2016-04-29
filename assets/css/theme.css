@@ -1652,26 +1652,7 @@ Accordion
     color: #3b3b3b !important
 }
 
-.accordion-nest li {
-    list-style: none;
-}
-#MainMenu .list-group-item {
-    -webkit-border-radius: 0 !important;
-    -moz-border-radius: 0 !important;
-    border-radius: 0 !important;
-    margin-top: 5px;
-    margin-bottom: 10px;
-    border: none;
-    color: #3b3b3b;
-    font-size: 12px;
-    letter-spacing: normal;
-    line-height: 24px;
-    font-weight: 700;
-    background: rgba(59,59,59,0.06);
-    text-transform: uppercase;
-    transition: all 150ms ease-in;
-    font-family: "Montserrat", "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
-}
+
 
 /*
 Panels
@@ -2548,7 +2529,7 @@ Upcoming Events
     clear: both;
 }
 
-.event-content-scroll {
+.event-content-scroll, .member-content-scroll {
     overflow: scroll;
     height: 480px;
 }
@@ -2654,6 +2635,9 @@ img {
 .client-single:nth-child(even) {
     background-color: #f9f9f9;
 }
+.client-single:nth-child(odd) {
+    background-color: #FFFFFF;
+}
 .client-single h3 {
     margin-top: 0;
     font-size: 14px;
@@ -2676,6 +2660,18 @@ img {
     margin: 0 0 0 12px;
     float: left;
     width: 45%;
+}
+
+
+.member-content-scroll .client-loc {
+    float: none;
+    width: auto;
+    margin-left: 70px;
+}
+.member-content-scroll .client-dt {
+    margin: 0 0 0 70px;
+    float: none;
+    width: auto;
 }
 
 
@@ -3007,6 +3003,10 @@ Pagination
 
 .pagination {
     margin: 20px 0 0;
+}
+
+.jumbotron .pagination {
+    margin: 0;
 }
 
 .pagination > li > a {

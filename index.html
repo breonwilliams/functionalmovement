@@ -14,6 +14,7 @@
     <link rel="stylesheet" type="text/css" href="assets/css/slick.css"/>
     <link rel="stylesheet" type="text/css" href="assets/css/magnific-popup.css"/>
     <link rel="stylesheet" type="text/css" href="assets/css/bootstrap-switch.css"/>
+    <link rel="stylesheet" type="text/css" href="assets/css/slicknav.css"/>
 
 
 </head>
@@ -742,70 +743,30 @@
 
                 <div class="row">
                     <div class="col-md-4">
-                        <div id="MainMenu" class="accordion-nest">
-                            <ul class="list-group panel">
-                                <li>
-                                    <a href="#demo3" class="list-group-item" data-toggle="collapse" data-parent="#MainMenu" aria-expanded="true">Item 3  <i class="fa fa-caret-down"></i></a>
-                                    <ul class="collapse in" id="demo3" aria-expanded="true">
-                                        <li>
-                                            <a href="#SubMenu1" class="list-group-item collapsed" data-toggle="collapse" data-parent="#SubMenu1" aria-expanded="false">Subitem 1 <i class="fa fa-caret-down"></i></a>
-                                            <ul class="list-group-submenu collapse" id="SubMenu1" aria-expanded="false" style="height: 0px;">
-                                                <li>
-                                                    <a href="#" class="list-group-item" data-parent="#SubMenu1">Subitem 1 a</a>
-                                                </li>
-                                                <li>
-                                                    <a href="#" class="list-group-item" data-parent="#SubMenu1">Subitem 2 b</a>
-                                                </li>
-                                                <li>
-                                                    <a href="#SubSubMenu1" class="list-group-item" data-toggle="collapse" data-parent="#SubSubMenu1">Subitem 3 c <i class="fa fa-caret-down"></i></a>
-                                                </li>
-                                                <li class="collapse list-group-submenu list-group-submenu-1" id="SubSubMenu1">
-                                                    <a href="#" class="list-group-item" data-parent="#SubSubMenu1">Sub sub item 1</a>
-                                                </li>
-                                                <li class="collapse list-group-submenu list-group-submenu-1" id="SubSubMenu1">
-                                                    <a href="#" class="list-group-item" data-parent="#SubSubMenu1">Sub sub item 2</a>
-                                                </li>
-                                                <a href="#" class="list-group-item" data-parent="#SubMenu1">Subitem 4 d</a>
-                                            </ul>
-                                        </li>
-                                        <li>
-                                            <a href="javascript:;" class="list-group-item">Subitem 2</a>
-                                        </li>
-                                        <li>
-                                            <a href="javascript:;" class="list-group-item">Subitem 3</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li>
-                                    <a href="#demo4" class="list-group-item list-group-item collapsed" data-toggle="collapse" data-parent="#MainMenu" aria-expanded="false">Item 4 <i class="fa fa-caret-down"></i></a>
-                                    <ul class="collapse" id="demo4" aria-expanded="false" style="height: 0px;">
-                                        <li>
-                                            <a href="" class="list-group-item">Subitem 1</a>
-                                        </li>
-                                        <li>
-                                            <a href="" class="list-group-item">Subitem 2</a>
-                                        </li>
-                                        <li>
-                                            <a href="" class="list-group-item">Subitem 3</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li>
-                                    <a href="#demo5" class="list-group-item list-group-item collapsed" data-toggle="collapse" data-parent="#MainMenu" aria-expanded="false">Item 5 <i class="fa fa-caret-down"></i></a>
-                                    <ul class="collapse" id="demo5" aria-expanded="false" style="height: 0px;">
-                                        <li>
-                                            <a href="#" class="list-group-item">Subitem 1</a>
-                                        </li>
-                                        <li>
-                                            <a href="" class="list-group-item">Subitem 2</a>
-                                        </li>
-                                        <li>
-                                            <a href="" class="list-group-item">Subitem 3</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </div>
+                        <div id="coursemenu"></div>
+                        <ul id="coursemenu-slick">
+                            <li>Parent 1
+                                <ul>
+                                    <li><a href="#">item 3</a></li>
+                                    <li>Parent 3
+                                        <ul>
+                                            <li><a href="#">item 8</a></li>
+                                            <li><a href="#">item 9</a></li>
+                                            <li><a href="#">item 10</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">item 4</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">item 1</a></li>
+                            <li>Parent 2
+                                <ul>
+                                    <li><a href="#">item 5</a></li>
+                                    <li><a href="#">item 6</a></li>
+                                    <li><a href="#">item 7</a></li>
+                                </ul>
+                            </li>
+                        </ul>
                     </div>
                     <div class="col-md-8">
                         <p>Lorem ipsum dolor sit amet, est aliquip dolores voluptatibus ut, viris tation ei duo, eum laoreet pertinax no. Vel id nihil copiosae, probo antiopam inimicus ut vis. Ut cum ignota vivendum, idque tantas deserunt ea nec. His brute vivendo ad. Sale cetero constituam ei quo. Qui idque legimus no. Quo ne nibh facer, ut mei mediocrem intellegam intellegebat.</p>
@@ -1524,6 +1485,8 @@ sagittis lacus vel augue laoreet rutrum faucibus.">
 <script src="assets/js/bootstrap-switch.js" defer></script>
 <script src="assets/js/highlight.js" defer></script>
 <script src="assets/js/main.js" defer></script>
+<script src="assets/js/jquery.slicknav.js" defer></script>
+<script src="assets/js/slicknav-init.js" defer></script>
 
 </body>
 </html>
