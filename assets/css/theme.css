@@ -2519,12 +2519,20 @@ h4.media-heading {
 /*
 Upcoming Events
 ================================== */
-.event-content ul, .event-content-scroll ul {
+.event-content ul {
     list-style: outside none none;
     margin: 0 0 15px;
     padding: 0;
     border-bottom: solid 1px #ece6e7;
 }
+
+.event-content-scroll ul {
+    list-style: outside none none;
+    margin: 0;
+    padding: 0;
+    border-bottom: none;
+}
+
 .cleared {
     clear: both;
 }
@@ -2532,6 +2540,7 @@ Upcoming Events
 .event-content-scroll, .member-content-scroll {
     overflow: scroll;
     height: 480px;
+    overflow-x: hidden;
 }
 
 .event-item-inner {
@@ -2660,6 +2669,10 @@ img {
     margin: 0 0 0 12px;
     float: left;
     width: 45%;
+}
+
+.member-content-scroll .client-list {
+    margin: 0;
 }
 
 
