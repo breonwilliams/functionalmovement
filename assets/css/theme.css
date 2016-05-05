@@ -2517,6 +2517,79 @@ h4.media-heading {
 }
 
 /*
+Map Popover
+================================== */
+
+.map-popover {
+    position: relative;
+    display: block;
+    max-width: 350px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.42857143;
+    text-align: left;
+    text-align: start;
+    text-decoration: none;
+    text-shadow: none;
+    text-transform: none;
+    background-color: #fff;
+    border: 1px solid rgba(0, 0, 0, .2);
+    border-radius: 0;
+    -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
+}
+
+.map-popover>.btn-arrow:after {
+    position: absolute;
+    display: block;
+    width: 0;
+    height: 0;
+    border-color: transparent;
+    border-style: solid;
+    content: "";
+    border-width: 10px;
+    margin-left: -10px;
+    border-top-color: rgb(235,34,39);
+    border-bottom-width: 0;
+    bottom: -10px;
+    left: 50%;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn-arrow:hover:after {
+    border-top-color: #eb5858;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+.map-popover-title {
+    padding: 8px 14px;
+    margin: 0;
+    font-size: 14px;
+    background-color: #f7f7f7;
+    border-bottom: 1px solid #ebebeb;
+    border-radius: 0;
+    position: relative;
+}
+
+.map-popover-content {
+    padding: 9px 14px;
+}
+
+.map-popover .table {
+    margin-bottom: 0;
+}
+
+/*
 Upcoming Events
 ================================== */
 .event-content ul {
