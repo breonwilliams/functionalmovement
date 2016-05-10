@@ -2936,7 +2936,7 @@ ul.item-list li {
 ul.item-list li img.avatar {
     margin-right: 15px;
 }
-ul.item-list li img.avatar {
+ul.item-list li img.avatar, .activity-comments img.avatar  {
     float: left;
     margin: 0 10px 0 0;
 }
