@@ -1044,7 +1044,19 @@ Button
     border-color: #212121;
 }
 
-.btn-primary.btn-bordered{
+.btn-primary.btn-bordered,
+.btn-primary.btn-bordered[disabled],
+.btn-primary.btn-bordered[disabled].active,
+.btn-primary.btn-bordered[disabled].focus,
+.btn-primary.btn-bordered[disabled]:active,
+.btn-primary.btn-bordered[disabled]:focus,
+.btn-primary.btn-bordered[disabled]:hover,
+fieldset[disabled] .btn-primary.btn-bordered,
+fieldset[disabled] .btn-primary.btn-bordered.active,
+fieldset[disabled] .btn-primary.btn-bordered.focus,
+fieldset[disabled] .btn-primary.btn-bordered:active,
+fieldset[disabled] .btn-primary.btn-bordered:focus,
+fieldset[disabled] .btn-primary.btn-bordered:hover{
     background:none;
     box-shadow: none;
 }
@@ -1251,6 +1263,68 @@ ul.tags li a:hover,
     color:rgb(235,34,39);
 }
 
+.btn-primary.disabled:hover,
+.btn-primary[disabled]:hover,
+fieldset[disabled] .btn-primary:hover,
+.btn-primary.disabled:focus,
+.btn-primary[disabled]:focus,
+fieldset[disabled] .btn-primary:focus,
+.btn-primary.disabled.focus,
+.btn-primary[disabled].focus,
+fieldset[disabled] .btn-primary.focus,
+.btn-primary.disabled:active,
+.btn-primary[disabled]:active,
+fieldset[disabled] .btn-primary:active,
+.btn-primary.disabled.active,
+.btn-primary[disabled].active,
+fieldset[disabled] .btn-primary.active {
+    color:#fff;
+}
+
+.btn-primary.btn-bordered.disabled:hover,
+.btn-primary.btn-bordered[disabled]:hover,
+fieldset[disabled] .btn-primary.btn-bordered:hover,
+.btn-primary.btn-bordered.disabled:focus,
+.btn-primary.btn-bordered[disabled]:focus,
+fieldset[disabled] .btn-primary.btn-bordered:focus,
+.btn-primary.btn-bordered.disabled.focus,
+.btn-primary.btn-bordered[disabled].focus,
+fieldset[disabled] .btn-primary.btn-bordered.focus,
+.btn-primary.btn-bordered.disabled:active,
+.btn-primary.btn-bordered[disabled]:active,
+fieldset[disabled] .btn-primary.btn-bordered:active,
+.btn-primary.btn-bordered.disabled.active,
+.btn-primary.btn-bordered[disabled].active,
+fieldset[disabled] .btn-primary.btn-bordered.active {
+    background-color: rgb(235,34,39);
+}
+
+.btn-primary.disabled,
+.btn-primary.disabled.active,
+.btn-primary.disabled.focus,
+.btn-primary.disabled:active,
+.btn-primary.disabled:focus,
+.btn-primary.disabled:hover,
+.btn-primary[disabled],
+.btn-primary[disabled].active,
+.btn-primary[disabled].focus,
+.btn-primary[disabled]:active,
+.btn-primary[disabled]:focus,
+.btn-primary[disabled]:hover,
+fieldset[disabled] .btn-primary,
+fieldset[disabled] .btn-primary.active,
+fieldset[disabled] .btn-primary.focus,
+fieldset[disabled] .btn-primary:active,
+fieldset[disabled] .btn-primary:focus,
+fieldset[disabled] .btn-primary:hover {
+    background-color: rgb(235,34,39);
+    background-image: none;
+}
+
+.btn.disabled, .btn[disabled], fieldset[disabled] .btn {
+    opacity: .45;
+}
+
 /*
 Background color
 =========================== */
@@ -1258,9 +1332,6 @@ Background color
 .navbar .navbar-toggle:hover .icon-bar,
 .cart span,
 .btn-primary,
-.btn-primary.disabled,
-.btn-primary[disabled],
-fieldset[disabled] .btn-primary,
 .btn-primary.disabled:hover,
 .btn-primary[disabled]:hover,
 fieldset[disabled] .btn-primary:hover,
