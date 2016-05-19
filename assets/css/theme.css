@@ -1576,7 +1576,7 @@ ul.post_tag {
 ul.post_tag li {
     list-style: none;
     display: inline-block;
-    margin: 0 10px 0 0;
+    margin: 0 10px 10px 0;
 }
 ul.post_tag li a {
     border: 2px solid rgb(235, 34, 39);
