@@ -213,7 +213,7 @@
                     <input type="text" class="form-control" placeholder="Live search..." />
                     <div class="input-group-btn">
                         <div class="btn-group" role="group">
-                            <a href="javascript:toggleDiv('box-filter');" class="btn btn-default"><span class="caret"></span></a>
+                            <a href="javascript:toggleDiv('box-filter');" class="btn btn-default" data-rel="tooltip" data-trigger="hover" data-placement="bottom" rel="tooltip" data-original-title="Show search options"><span class="caret"></span></a>
                             <button type="button" class="btn btn-primary"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
                         </div>
                     </div>
@@ -455,34 +455,70 @@
         </div>
     </section>
 </div>
-<div class="container padbot-40">
-    <h2 class="page-header">Map Marker</h2>
-    <div class="map-popover top">
-        <h3 class="map-popover-title">
-            Functional Movement Systems Seminar
-            <button type="button" class="close">×</button>
-        </h3>
-        <table class="table">
 
-            <tbody>
-            <tr>
-                <th scope="row">Functional Movement Screen Level 1</th>
-                <td>Jan. 22, 2015</td>
-            </tr>
-            <tr>
-                <th scope="row">Functional Movement Screen Level 2</th>
-                <td>Jan. 23-24, 2016</td>
-            </tr>
-            </tbody>
-        </table>
-        <div class="map-popover-content">
-            <p>Sed posuere consectetur est at lobortis. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.</p>
+
+<div class="container pad-40">
+    <!-- Button trigger modal -->
+    <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+        Member Profile Modal
+    </button>
+
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog modal-md" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">John Wilson</h4>
+                </div>
+                <div class="modal-body">
+                        <div class="row">
+                            <div class="col-md-4 padbot-20">
+                                <img src="assets/img/stock/profile2.png" class="avatar">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h3 class="panel-title">How to find</h3>
+                                    </div>
+                                    <div class="panel-body">
+                                        <p><i class="fa fa-phone"></i> 555-765-4321</p>
+                                        <p><i class="fa fa-map-marker"></i> 1017 E Whitaker Mill Rd, Raleigh, 27608</p>
+                                        <p>United States</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="padbot-20">
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h3 class="panel-title">Certifications</h3>
+                                </div>
+                                <div class="panel-body">
+                                    <div class="row">
+                                        <div class="col-md-6 col-sm-3 col-xs-6">
+                                            <div class="pad-10"><img src="assets/img/FMS_CERTIFIED_complete_L1_800x300.png" width="200px" height="100%"> </div>
+                                        </div>
+                                        <div class="col-md-6 col-sm-3 col-xs-6">
+                                            <div class="pad-10"><img src="assets/img/SFMA_CERTIFIED_complete_L1.png" width="200px" height="100%"> </div>
+                                        </div>
+                                        <div class="col-md-6 col-sm-3 col-xs-6">
+                                            <div class="pad-10"><img src="assets/img/YBT_Certified.png" width="200px" height="100%"> </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    <a href="profile-view.html" type="button" class="btn btn-primary">View Full Profile</a>
+                </div>
+            </div>
         </div>
-        <a href="#" class="btn btn-primary btn-block btn-arrow">More Details <i class="fa fa-chevron-right"></i></a>
     </div>
-
 </div>
-
 
 <!-- Start footer --->
 
