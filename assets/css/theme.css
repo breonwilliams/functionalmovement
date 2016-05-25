@@ -41,7 +41,7 @@ body {
     /* max-width: 1500px; */
     margin: auto;
     position: relative;
-    z-index: 200;
+    /* z-index: 200; */
     background-color: #fff;
     -webkit-transition: -webkit-transform 0.3s ease;
     -moz-transition: -moz-transform 0.3s ease;
