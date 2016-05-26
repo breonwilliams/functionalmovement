@@ -207,11 +207,74 @@
             <div class="col-md-8">
                 <h1>Register to Seminar</h1>
                 <h2>Jan 22-24, 2016, Indian Rocks Beach, FL</h2>
+                <h3 class="page-header">FMS Level 1 Course</h3>
                 <p>Continuing Education Information: To view a full list of organizations that have approved Functional Movement System courses for continuing education please click here.</p>
                 <p>FMS is the screening tool used to identify limitations or asymmetries in seven fundamental movement patterns that are key to functional movement quality in individuals with no current pain complaint or known musculoskeletal injury.</p>
                 <p>These movement patterns are designed to provide observable performance of basic loco motor, manipulative and stabilizing movements by placing an individual in extreme positions where weaknesses and imbalances become noticeable if appropriate mobility and motor control is not utilized.</p>
-                <p>Hotel Information: Rooms have been reserved for attendees at the Holiday Inn Hotel & Suites Clearwater Beach South at a discounted rate. Reservations: 727-595-9484 Reservation deadline: December 22, 2015.</p>
-                <p>Parking Information: Complimentary</p>
+                <h3 class="page-header">FMS Level 2 Course</h3>
+                <p>The FMS Level 2 Course provides an opportunity to take results from the FMS and apply program design and exercise selection to improve your clients fundamental movement baseline. This seminar covers how to interpret results from the FMS, decide what your training priorities are based on those results, and teach exercise applications and techniques to improve your clients training results</p>
+
+                <!-- instructor Modal -->
+                <div class="modal fade" id="instructorModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                    <div class="modal-dialog modal-lg" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                <h4 class="modal-title" id="myModalLabel">Diane Vives MS, CSCS*D, FMS, CGFI-TPI</h4>
+                            </div>
+                            <div class="modal-body">
+                                <div class="media">
+                                    <div class="pull-left">
+                                        <img src="assets/img/stock/profile3.png" alt="author" class="media-object">
+                                    </div>
+                                    <div class="media-body">
+                                        <p>Diane Vives is the Owner/Director of Vives Training Systems and Fit4Austin that currently provides training services focused on small group training for all levels of athletes and develops programs for sports teams with an emphasis in reducing injury risk in athletes. She has co-authored Training for Speed, Agility and Quickness, as well as Developing Speed published by Human Kinetics. Vives has presented workshops and lectures for sports and fitness organizations around the world and also has served on the Board of Directors for the NSCA. Vives brings great insight to integrating the FMS into different environments and assisting professionals in building successful programs and strategies. Her experience with FMS for the last 7 years allows her to share passion for teaching ways to effectively impact functional movement and provide insight for successfully integrating FMS into different training environments.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-primary btn-bordered"  data-toggle="modal" data-target="#emailModal" data-dismiss="modal">Email Instructor</button> <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- email instructor Modal -->
+                <div class="modal fade" id="emailModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                    <div class="modal-dialog modal-lg" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                <h4 class="modal-title" id="myModalLabel">Email Diane</h4>
+                            </div>
+                            <div class="modal-body">
+                                <form class="form" method="post" action="#">
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <div class="form-group">
+                                                <input type="text" name="user_name" required="" class="form-control" placeholder=" Full Name">
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="form-group">
+                                                <input type="email" name="user_email" required="" class="form-control" placeholder=" Email Address">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <label>
+                                        <textarea name="message" id="message" cols="30" rows="10" required="" class="form-control" placeholder=" Message" style="overflow: hidden; word-wrap: break-word; resize: horizontal; height: 234px;"></textarea>
+                                    </label>
+                                    <div class="mt30 clearfix">
+                                        <button type="submit" class="btn btn-primary">Submit</button>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="col-md-4">
                 <h2 class="title-medium br-bottom mb30">Details</h2>
@@ -244,6 +307,16 @@
                         <dd>www.hiharbourside.com</dd>
                     </div>
                 </div>
+
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Please Note</h3>
+                    </div>
+                    <div class="panel-body">
+                        <p>Hotel Information: Rooms have been reserved for attendees at the Holiday Inn Hotel & Suites Clearwater Beach South at a discounted rate. Reservations: 727-595-9484 Reservation deadline: December 22, 2015.</p>
+                        <p>Parking Information: Complimentary</p>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -269,7 +342,7 @@
                                             </div>
                                             <dt>Functional Movement Screen Level 1 (8 hrs)</dt>
                                             <dd>Friday, January 22, 2016 8:00 AM - 5:00 PM</dd>
-                                            <dd>Instructor: Diane Vives MS, CSCS*D, FMS, CGFI-TPI</dd>
+                                            <dd>Instructor: <a href="#" data-toggle="modal" data-target="#instructorModal">Diane Vives</a> MS, CSCS*D, FMS, CGFI-TPI</dd>
                                             <dd>Cost: $450.00</dd>
                                         </div>
                                     </li>
@@ -279,7 +352,7 @@
                                             <dt>Functional Movement Screen Level 2 (12 hrs)</dt>
                                             <dd>Saturday, January 23, 2016 8:00 AM - 5:00 PM</dd>
                                             <dd>Sunday, January 24, 2016 8:00 AM - 12:00 PM</dd>
-                                            <dd>Instructor: Diane Vives MS, CSCS*D, FMS, CGFI-TPI</dd>
+                                            <dd>Instructor: <a href="#" data-toggle="modal" data-target="#instructorModal">Diane Vives</a> MS, CSCS*D, FMS, CGFI-TPI</dd>
                                             <dd>Cost: $499.00</dd>
                                         </div>
                                     </li>
