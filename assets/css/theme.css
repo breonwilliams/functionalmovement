@@ -60,6 +60,15 @@ body {
 
 }
 
+.flex-wrap {
+    display: -webkit-flex;
+    display: flex;
+}
+
+.flex-item {
+    flex: 1;
+}
+
 
 a,
 a:active,
