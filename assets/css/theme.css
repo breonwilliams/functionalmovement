@@ -1664,7 +1664,7 @@ Applied Filters
 
 #search_and_applied_filters #applied_filters li {
     display: inline-block;
-    margin: 10px 5px 0 0;
+    margin: 5px 5px 5px 0;
 }
 
 #search_and_applied_filters #applied_filters a.reset {
