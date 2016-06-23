@@ -3219,7 +3219,7 @@ Pagination
     padding: 5px 12px;
     color: #888;
     background-color: transparent;
-    border-radius: 0;
+    border-radius: 0!important;
     margin-bottom: 7px;
     margin-top: 7px;
 }
