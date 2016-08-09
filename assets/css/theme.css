@@ -538,7 +538,7 @@ Header
     float: left;
     position: relative;
 }
-.phone-number:after{content: "";
+.phone-number:after{content: "\f095";
     display: inline-block;
     float: left;
     font-family: FontAwesome;
