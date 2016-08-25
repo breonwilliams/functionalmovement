@@ -61,12 +61,27 @@ body {
 }
 
 .flex-wrap {
-    display: -webkit-flex;
     display: flex;
+    flex-wrap: wrap;
 }
 
 .flex-item {
     flex: 1;
+}
+
+.flex-item .container {
+    width: auto!important;
+    padding-left: 10%;
+    padding-right: 10px;
+}
+
+@media screen and (max-width: 768px) {
+    .flex-wrap {
+        display: -webkit-flex;
+        -ms-flex-direction: column!important;
+        -webkit-box-orient: vertical!important;
+        flex-direction: column!important;
+    }
 }
 
 
@@ -129,6 +144,27 @@ h6 {
     font-size: 14px;
     line-height: 18px;
     letter-spacing: -0.2px;
+}
+
+.custom-bullet {
+    margin: 0 0 0 15px;
+    padding: 0;
+}
+
+.custom-bullet li {
+    display: block;
+}
+
+.custom-bullet li:before
+{
+    /*Using a Bootstrap glyphicon as the bullet point*/
+    content: "\e080";
+    font-family: 'Glyphicons Halflings';
+    font-size: 9px;
+    float: left;
+    margin-top: 4px;
+    margin-left: -17px;
+    color: #CCCCCC;
 }
 
 .hdr-rounded {
@@ -3529,6 +3565,16 @@ Footer
     color: #aaaaaa;
     font-size: 14px;
     font-weight: 400;
+}
+
+.pad-200 {
+     padding-top: 200px!important;
+     padding-bottom: 200px!important;
+ }
+
+.pad-150 {
+    padding-top: 150px!important;
+    padding-bottom: 150px!important;
 }
 
 .pad-100 {
