@@ -1725,7 +1725,8 @@ Hover border color
         border-top:none;
     }
 
-    .nav-tabs.redtabs > li > a:hover {
+    .nav-tabs.redtabs > li > a:hover,
+    .nav-tabs.redtabs > li > a:focus {
          color: rgb(235,34,39);
          background-color: transparent;
          border-left:2px solid rgb(235,34,39);
