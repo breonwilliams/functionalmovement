@@ -1654,6 +1654,7 @@ Hover border color
 .nav-tabs.redtabs > li.active > a:focus {
     background-color: rgb(235,34,39);
     border-top:2px solid rgb(235,34,39);
+    color: #FFFFFF;
 }
 
 .nav-tabs > li > a:hover,
