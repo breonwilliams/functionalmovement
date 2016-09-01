@@ -1669,6 +1669,11 @@ Hover border color
     border-top:2px solid rgb(235,34,39);
 }
 
+.nav-tabs.nav-tabs-lg > li > a {
+    font-size: 20px;
+    padding: 20px 40px;
+}
+
 /* nav-tabs vertical */
 .nav-tabs.vertical > li {
     float:none;
