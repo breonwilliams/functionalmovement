@@ -304,6 +304,13 @@ span.view-all {
     font-family: FontAwesome;
 }
 
+.faqs a:before {
+    content: "\f059";
+    width: 1.1em;
+    display: inline-block;
+    font-family: FontAwesome;
+}
+
 /*
 Blockquote
 =========================== */
@@ -613,7 +620,7 @@ Header
     padding-right: 10px;
     margin-right: 10px;
 }
-.phone-number{
+.phone-number, .faqs {
     float: left;
     position: relative;
 }
