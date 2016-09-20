@@ -414,10 +414,16 @@ Thumbnail
     padding: 30px 30px 0;
     color: #5c5c5c;
 }
+
 .thumbnail .product-cost {
     padding: 0 30px;
     color: #5c5c5c;
 }
+
+.product-cost del {
+    color: #CCCCCC;
+}
+
 .thumbnail .caption-fixedh {
     overflow: hidden;
     height: 150px;
