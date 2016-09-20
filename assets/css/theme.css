@@ -146,6 +146,10 @@ h6 {
     letter-spacing: -0.2px;
 }
 
+.lead {
+    font-size: 21px;
+}
+
 .custom-bullet {
     margin: 0 0 0 15px;
     padding: 0;
