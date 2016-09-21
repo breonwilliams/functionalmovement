@@ -135,6 +135,7 @@ $(function() {
 });
 
 // Smooth scroll to div
+// <a href="#" data-attr-scroll="section1" class="scrollto">Link</a>
 
 jQuery(document).ready(function($) {
     $(".scrollto").click(function(event) {
