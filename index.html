@@ -12,9 +12,8 @@
     <link rel="stylesheet" href="assets/css/theme.css">
     <link rel="stylesheet" type="text/css" href="assets/css/slick-theme.css"/>
     <link rel="stylesheet" type="text/css" href="assets/css/slick.css"/>
-    <link rel="stylesheet" type="text/css" href="assets/css/lity.css"/>
     <link rel="stylesheet" type="text/css" href="assets/css/bootstrap-switch.css"/>
-    <link rel="stylesheet" type="text/css" href="assets/css/slicknav.css"/>
+    <link rel="stylesheet" type="text/css" href="assets/css/lity.css"/>
 
 
 </head>
@@ -27,8 +26,7 @@
                 <!-- header-top-left start -->
                 <div class="col-lg-6 col-md-6 col-sm-7">
                     <div class="header-top-left">
-                        <div class="top-message">Welcome, <a href="#">John</a>!</div>
-                        <div class="phone-number"> Support: <span>(434) 432-3677</span></div>
+                        <div class="faqs"><a href="faq.html">FAQs</a></div>
                     </div>
                 </div>
                 <!-- header-top-left end -->
@@ -39,16 +37,11 @@
                             <ul>
                                 <li>
                                     <select class="selectpicker" data-style="btn-default" title='Select Language'>
-                                        <option>English</option>
-                                        <option>Spanish</option>
-                                        <option>French</option>
+                                        <option data-content='<img src="assets/img/languages/en.png"> English'></option>
+                                        <option data-content='<img src="assets/img/languages/es.png"> Spanish'></option>
+                                        <option data-content='<img src="assets/img/languages/fr.png"> French'></option>
                                     </select>
                                 </li>
-                            </ul>
-                        </div>
-                        <div class="top-menu">
-                            <ul>
-                                <li><a href="#">My Account</a></li>
                             </ul>
                         </div>
                     </div>
@@ -72,6 +65,7 @@
                     <div class="row">
                         <div class="col-md-12 margintop-15">
                             <a href="#" class="cart" data-toggle="modal" data-target="#modal-3"><i class="fa fa-shopping-cart"></i><span>3</span></a>
+                            <a href="#" class="btn btn-primary btn-bordered btn-sm">Store</a>
                         </div>
                     </div>
                 </div>
@@ -112,7 +106,9 @@
 
                                                 <div class="input-group">
                                                     <div class="checkbox">
-                                                        <input id="login-remember" type="checkbox" name="remember" value="1"> Keep me logged in.
+                                                        <label>
+                                                            <input id="login-remember" type="checkbox" name="remember" value="1"> Keep me logged in.
+                                                        </label>
                                                     </div>
                                                 </div>
 
@@ -348,27 +344,27 @@
                                     <h3>Overview</h3>
                                     <ul class="yamm-link">
                                         <li><a href="#">The System</a></li>
-                                        <li><a href="#">SFMA</a></li>
                                         <li><a href="#">FMS</a></li>
+                                        <li><a href="#">SFMA</a></li>
                                         <li><a href="#">YBT</a></li>
-                                        <li><a href="#">Instructors</a></li>
+                                        <li><a href="#">FCS</a></li>
                                     </ul>
                                 </div>
                                 <div class="col-sm-4 widget">
-                                    <h3>Get Certified</h3>
+                                    <h3>Meet the team</h3>
                                     <ul class="yamm-link">
-                                        <li><a href="#">Get Started</a></li>
-                                        <li><a href="#">SFMA</a></li>
-                                        <li><a href="#">FMS</a></li>
-                                        <li><a href="#">YBT</a></li>
-                                        <li><a href="#">In-Service Options</a></li>
-                                        <li><a href="#">Take a Test</a></li>
+                                        <li><a href="#">About Us</a></li>
+                                        <li><a href="#">Meet the team</a></li>
+                                        <li><a href="#">Advisory board</a></li>
                                     </ul>
                                 </div>
                                 <div class="col-sm-4 widget">
-                                    <h3>Certified Members</h3>
+                                    <h3>Our Community</h3>
                                     <ul class="yamm-link">
-                                        <li><a href="#">Find A Certified Member</a></li>
+                                        <li><a href="#">FMS Health and Safety</a></li>
+                                        <li><a href="#">FMS Physical Education</a></li>
+                                        <li><a href="#">Strategic Partners</a></li>
+                                        <li><a href="#">International Partners</a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -381,10 +377,8 @@
                     </a>
 
                     <ul class="dropdown-menu">
-                        <li><a href="#" tabindex="0">All Resource Types</a></li>
-                        <li><a href="#" tabindex="0">FMS Screening</a></li>
-                        <li><a href="#" tabindex="0">FMS Corrections</a></li>
-                        <li><a href="#" tabindex="0">FMS Research</a></li>
+                        <li><a href="#" tabindex="0">Articles</a></li>
+                        <li><a href="#" tabindex="0">Videos</a></li>
                         <li><a href="#" tabindex="0">Podcasts</a></li>
                     </ul>
                 </li>
@@ -399,19 +393,19 @@
                     </a>
 
                     <ul class="dropdown-menu">
-                        <li><a href="#" tabindex="0">Get Started</a></li>
-                        <li><a href="#" tabindex="0">Find A Seminar</a></li>
-                        <li><a href="#" tabindex="0">Online Courses</a></li>
+                        <li><a href="#" tabindex="0">Where to start?</a></li>
+                        <li class="dropdown-submenu"><a href="#" tabindex="0">Find a course near you</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#" tabindex="0">Event Lists View</a></li>
+                                <li><a href="#" tabindex="0">Event Map View</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#" tabindex="0">Private Course Options</a></li>
                     </ul>
                 </li>
                 <li class="dropdown">
                     <a href="#" tabindex="0" data-toggle="dropdown" data-hover="dropdown" data-submenu="">
-                        Store
-                    </a>
-                </li>
-                <li class="dropdown">
-                    <a href="#" tabindex="0" data-toggle="dropdown" data-hover="dropdown" data-submenu="">
-                        FMS Pro
+                        Membership
                     </a>
                 </li>
             </ul>
@@ -1484,8 +1478,6 @@ sagittis lacus vel augue laoreet rutrum faucibus.">
 <script src="assets/js/bootstrap-switch.js" defer></script>
 <script src="assets/js/highlight.js" defer></script>
 <script src="assets/js/main.js" defer></script>
-<script src="assets/js/jquery.slicknav.js" defer></script>
-<script src="assets/js/slicknav-init.js" defer></script>
 
 </body>
 </html>
