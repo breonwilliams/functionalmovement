@@ -844,7 +844,7 @@ nav.affix {
     background: rgb(235,34,39);
     color: #fff;
     text-align: center;
-    padding: 3px; /* Adjust to suit */
+    padding: 7px; /* Adjust to suit */
 }
 .ribbon:before, .ribbon:after {
     content: "";
