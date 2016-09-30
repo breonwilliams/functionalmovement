@@ -823,7 +823,11 @@ nav.affix {
 }
 
 .sale-price {
-    color: #69bd67;
+    color: #69bd67!important;
+}
+
+.discounted-price {
+    color: #CCCCCC!important;
 }
 
 /*--- Feature Product Ribbon ---*/
