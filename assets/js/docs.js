@@ -154,3 +154,12 @@ jQuery(document).ready(function($) {
         }, 500);
     });
 });
+
+// Popover on page load
+
+$(function() {
+    $("#pload-pop").popover('show');
+    $("#pload-pop").on('click', function () {
+        $('#pload-pop').popover('destroy');
+    });
+});

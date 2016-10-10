@@ -637,6 +637,12 @@ Header
     float: left;
     position: relative;
 }
+.faqs a {
+    color: #fff;
+}
+.faqs a:hover {
+    color: rgb(235,34,39);
+}
 .phone-number:after{content: "\f095";
     display: inline-block;
     float: left;
@@ -1437,6 +1443,11 @@ fieldset[disabled] .btn-primary.btn-bordered:hover{
 .input-group-lg > .input-group-addon,
 .input-group-lg > .input-group-btn > .btn {
     border-radius: 0;
+}
+
+.checkbox label, .radio label {
+    padding-left: 0;
+    padding-right: 20px;
 }
 
 .btn-sm {
@@ -3068,6 +3079,28 @@ Upcoming Events
 
 .event-content .table th, .event-content .table td {
     padding: 15px 0 !important;
+}
+
+@media (min-width: 767px) {
+    .event-content .table th, .event-content .table td {
+        font-size: 22px;
+    }
+
+    h5.location {
+        font-size: 22px;
+    }
+
+    .col-sm-6 .event-content .table th, .col-sm-6 .event-content .table td {
+        font-size: 15px;
+    }
+
+    .col-sm-6 h5.location {
+        font-size: 15px;
+    }
+
+    .event-content-scroll h5.location {
+        font-size: 15px;
+    }
 }
 
 .event-content .table td:last-child {
