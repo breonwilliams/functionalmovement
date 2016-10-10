@@ -1445,10 +1445,6 @@ fieldset[disabled] .btn-primary.btn-bordered:hover{
     border-radius: 0;
 }
 
-.checkbox label, .radio label {
-    padding-left: 0;
-    padding-right: 20px;
-}
 
 .btn-sm {
     padding: 6px 15px;
