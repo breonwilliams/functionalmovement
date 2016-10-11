@@ -3648,6 +3648,7 @@ Plan Section
     text-transform: uppercase;
     letter-spacing: 1px;
     -webkit-transition: all 0.3s ease-out; transition: all 0.3s ease-out;
+    line-height: 14px;
 }
 .plan-features {
     list-style: none;
