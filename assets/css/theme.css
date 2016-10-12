@@ -3086,11 +3086,11 @@ Upcoming Events
         font-size: 22px;
     }
 
-    .col-sm-6 .event-content .table th, .col-sm-6 .event-content .table td {
+    [class*="col-"] .event-content .table th, [class*="col-"] .event-content .table td {
         font-size: 15px;
     }
 
-    .col-sm-6 h5.location {
+    [class*="col-"] h5.location {
         font-size: 15px;
     }
 
