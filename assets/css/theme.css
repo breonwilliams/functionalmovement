@@ -3073,6 +3073,15 @@ Upcoming Events
     margin-left: 80px;
 }
 
+.event-minimal .event-info {
+    margin-left: 0!important;
+}
+
+.event-content .table {
+    margin-bottom: 15px;
+    border-bottom: 1px solid #ddd;
+}
+
 .event-content .table th, .event-content .table td {
     padding: 15px 0 !important;
 }
