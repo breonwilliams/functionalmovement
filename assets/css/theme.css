@@ -633,14 +633,19 @@ Header
     padding-right: 10px;
     margin-right: 10px;
 }
-.phone-number, .faqs {
+.phone-number, .faqs, .need-help {
     float: left;
     position: relative;
 }
-.faqs a {
+
+.need-help {
+    margin-left: 3px;
+}
+
+.faqs a, .need-help a {
     color: #fff;
 }
-.faqs a:hover {
+.faqs a:hover, .need-help a:hover {
     color: rgb(235,34,39);
 }
 .phone-number:after{content: "\f095";
