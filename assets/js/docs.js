@@ -163,3 +163,22 @@ $(function() {
         $('#pload-pop').popover('destroy');
     });
 });
+
+
+// DataTables init
+
+$(document).ready(function() {
+    if($('#dataTablee').length) {
+        $('#dataTablee').DataTable(
+            {
+                "dom": '<"dt-buttons"Bf><"clear">lirtp',
+                "paging": true,
+                "autoWidth": true,
+                "buttons": [
+                    'pdfHtml5',
+                    'print'
+                ]
+            }
+        );
+    }
+});
