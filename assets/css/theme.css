@@ -3583,6 +3583,9 @@ Pagination
 .pagination li:first-child.disabled a {
     padding-left: 0 !important;
 }
+#dataTablee_paginate .pagination li:first-child.disabled a {
+    padding-left: 12px!important;
+}
 .pagination li:first-child a {
     border-bottom-left-radius: 0;
     border-top-left-radius: 0;
