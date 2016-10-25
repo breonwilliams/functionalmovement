@@ -14,8 +14,10 @@
     <link rel="stylesheet" type="text/css" href="assets/css/slick.css"/>
     <link rel="stylesheet" type="text/css" href="assets/css/bootstrap-switch.css"/>
     <link rel="stylesheet" type="text/css" href="assets/css/lity.css"/>
-    <link rel="stylesheet" type="text/css" href="assets/css/datatables.min.css"/>
-    <link rel="stylesheet" type="text/css" href="assets/css/dataTables.bootstrap.min.css"/>
+    <link rel="stylesheet" type="text/css" href="assets/css/datatables/buttons.bootstrap.min.css"/>
+    <link rel="stylesheet" type="text/css" href="assets/css/datatables/dataTables.bootstrap.min.css"/>
+    <link rel="stylesheet" type="text/css" href="assets/css/datatables/datatables.min.css"/>
+    <link rel="stylesheet" type="text/css" href="assets/css/datatables/responsive.bootstrap.min.css"/>
 
 
 </head>
@@ -445,8 +447,7 @@
     <div id="main-content" class="container-fluid theme-showcase" role="main">
         <div class="container pad-40">
             <h2>Data Table</h2>
-            <div class="table-responsive table table-striped table-hover table-1">
-                <table id="dataTablee" class="display" cellspacing="0" width="100%">
+            <table id="dataTablee" class="table table-1 table-striped dt-responsive" cellspacing="0" width="100%">
                     <thead>
                     <tr>
                         <th class="col-md-4">State</th>
@@ -677,7 +678,6 @@
                     </tr>
                     </tbody>
                 </table>
-            </div>
         </div>
     </div>
 
@@ -771,7 +771,17 @@
 <script src="assets/js/highlight.js" defer></script>
 <script src="assets/js/main.js" defer></script>
 <!-- Data Tables -->
-<script src="assets/js/datatables.min.js" defer></script>
-
+<script src="assets/js/datatables/jquery.dataTables.min.js" defer></script>
+<script src="assets/js/datatables/dataTables.bootstrap.min.js" defer></script>
+<script src="assets/js/datatables/dataTables.responsive.min.js" defer></script>
+<script src="assets/js/datatables/responsive.bootstrap.min.js" defer></script>
+<script src="assets/js/datatables/dataTables.buttons.min.js" defer></script>
+<script src="assets/js/datatables/buttons.bootstrap.min.js" defer></script>
+<script src="assets/js/datatables/buttons.colVis.min.js" defer></script>
+<script src="assets/js/datatables/buttons.html5.min.js" defer></script>
+<script src="assets/js/datatables/buttons.print.min.js" defer></script>
+<script src="assets/js/datatables/jszip.min.js" defer></script>
+<script src="assets/js/datatables/pdfmake.min.js" defer></script>
+<script src="assets/js/datatables/vfs_fonts.js" defer></script>
 </body>
 </html>

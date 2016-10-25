@@ -174,9 +174,11 @@ $(document).ready(function() {
                 "dom": '<"dt-buttons"Bf><"clear">lirtp',
                 "paging": true,
                 "autoWidth": true,
+                "responsive": true,
                 "buttons": [
+                    'colvis',
                     'pdfHtml5',
-                    'print'
+                    'print',
                 ]
             }
         );
