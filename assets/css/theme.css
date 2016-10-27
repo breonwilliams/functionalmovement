@@ -60,6 +60,21 @@ body {
 
 }
 
+.header-clear {
+    position: absolute;
+    top: 0;
+    z-index: 9990;
+    width: 100%;
+}
+
+.header-clear .header-top-area, .header-clear .header-mid-area, .header-clear .navbar {
+    background-color: transparent;
+}
+
+.navbar.affix {
+    background: #0b0b0b;
+}
+
 .flex-wrap {
     display: flex;
     flex-wrap: wrap;
