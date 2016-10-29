@@ -3142,7 +3142,7 @@ Upcoming Events
         font-size: 22px;
     }
 
-    [class*="col-"] .event-content .table th, [class*="col-"] .event-content .table td {
+    [class*="col-"] .event-content .table th, [class*="col-"] .event-content .table td, .flex-item .event-content .table th, .flex-item .event-content .table td {
         font-size: 15px;
     }
 
@@ -4008,6 +4008,17 @@ Footer
     font-weight: 400;
     -webkit-transition: all 0.3s;
     transition: all 0.3s;
+}
+
+#instagram {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+#instagram li {
+    display: inline-block;
+    width: 33.33%;
 }
 
 .ft-title {
