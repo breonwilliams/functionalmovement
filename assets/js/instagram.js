@@ -21,7 +21,7 @@
             // Get the images
             $.getJSON(url, function(data){
                 $.each(data.data, function (i, val) {
-                    var li = $("<li/>").appendTo(elem),
+                    var li = $("<li/>", {"class": "col-md-4 col-sm-6 col-xs-6 marginbot-30"}).appendTo(elem),
                         a = $("<a/>", {"href": val.link, "target": "_blank"}).appendTo(li),
                         img = $("<img/>", {"src": val.images.standard_resolution.url}).appendTo(a);
 

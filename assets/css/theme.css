@@ -3949,6 +3949,14 @@ Footer
 .margintop-35 {
     margin-top: 35px!important;
 }
+
+.text-white {
+    color: #ffffff!important;
+}
+
+.text-black {
+    color: #000!important;
+}
 .copyright {
     border-top: 1px solid #363636;
     font-size: 12px;
@@ -4012,14 +4020,13 @@ Footer
 
 #instagram {
     padding: 0;
-    margin: 0;
     list-style: none;
 }
 
-#instagram li {
-    display: inline-block;
-    width: 33.33%;
+#instagram li img {
+    border-radius: 3px;
 }
+
 
 .ft-title {
     color: #fff;
