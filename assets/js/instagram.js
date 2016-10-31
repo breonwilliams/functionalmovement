@@ -40,7 +40,7 @@
 })(jQuery);
 
 $("#instagram").jqinstapics({
-    "user_id": "15449758",
-    "access_token": "15449758.1677ed0.a7db06d68a1e41b192d11140515d2d60",
+    "user_id": "1553721524",
+    "access_token": "1553721524.1677ed0.8c5297d2e475465893c7d352d8e49f3e",
     "count": 6
 });
