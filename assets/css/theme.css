@@ -1402,6 +1402,30 @@ fieldset[disabled] .btn-primary.btn-bordered:hover{
     box-shadow: none;
 }
 
+.btn-white {
+    color: rgb(235,34,39);
+    background-color: #ffffff;
+    border-color: #ffffff;
+}
+
+.btn-white:focus,
+.btn-white.focus,
+.btn-white:hover,
+.btn-white.btn-bordered:focus,
+.btn-white.btn-bordered.focus,
+.btn-group.open .btn-white:focus,
+.btn-white.btn-bordered:hover{
+    color: #000;
+    background-color: #ffffff;
+    border-color: #ffffff;
+}
+
+.btn-white.btn-bordered{
+    color: #fff;
+    background:none;
+    box-shadow: none;
+}
+
 .btn-link {
     font-weight: 400;
     color: rgb(235,34,39);
@@ -2440,6 +2464,11 @@ Full Width Sections
 
 .overlay-yellow {
     background: rgba(211,170,46,.7);
+    color: #fff;
+}
+
+.overlay-gradient {
+    background-image: linear-gradient(to top ,#000,transparent);
     color: #fff;
 }
 
