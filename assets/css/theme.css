@@ -178,6 +178,20 @@ h6 {
     letter-spacing: -0.2px;
 }
 
+.hero-header {
+    font-size: 48px;
+    line-height: 48px;
+    text-transform: uppercase;
+}
+
+@media (min-width: 768px) {
+    .hero-header {
+        font-size: 92px;
+        line-height: 92px;
+        text-transform: uppercase;
+    }
+}
+
 .lead {
     font-size: 21px;
 }
