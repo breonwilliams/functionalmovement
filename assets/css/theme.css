@@ -184,10 +184,22 @@ h6 {
     text-transform: uppercase;
 }
 
+h2.hero-header {
+    font-size: 28px;
+    line-height: 32px;
+    text-transform: uppercase;
+}
+
 @media (min-width: 768px) {
     .hero-header {
         font-size: 92px;
         line-height: 92px;
+        text-transform: uppercase;
+    }
+
+    h2.hero-header {
+        font-size: 42px;
+        line-height: 42px;
         text-transform: uppercase;
     }
 }
@@ -1559,6 +1571,10 @@ fieldset[disabled] .btn-primary.btn-bordered:hover{
     padding: 20px 40px;
     margin-bottom: 0;
     font-size: 20px;
+}
+
+.btn-sm-pad {
+    padding: 10px 40px;
 }
 
 /*
