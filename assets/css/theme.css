@@ -918,6 +918,7 @@ nav.affix {
     color: #fff;
     text-align: center;
     padding: 7px; /* Adjust to suit */
+    line-height: 1.1;
 }
 .ribbon:before, .ribbon:after {
     content: "";
@@ -1575,6 +1576,12 @@ fieldset[disabled] .btn-primary.btn-bordered:hover{
 
 .btn-sm-pad {
     padding: 10px 40px;
+}
+
+@media (max-width: 768px) {
+    .btn {
+        margin-bottom: 15px;
+    }
 }
 
 /*
@@ -2509,6 +2516,11 @@ Full Width Sections
     color: #fff;
 }
 
+.section-dark {
+    background-color: #363636;
+    color: #fff;
+}
+
 .section-blue {
     background-color: #3766c7;
     color: #fff;
@@ -3267,7 +3279,7 @@ Upcoming Events
 }
 
 .latest-event-item:nth-child(odd) {
-    background-color: #fff;
+    /*background-color: #fff;*/
 }
 
 .event-date-wrap {
