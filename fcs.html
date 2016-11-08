@@ -26,53 +26,7 @@
                 <!-- header-top-left start -->
                 <div class="col-lg-6 col-md-6 col-sm-7">
                     <div class="header-top-left">
-                        <div class="faqs"><a href="faq.html">FAQs</a></div>
-                        <div class="need-help">| <a href="#" data-toggle="modal" data-target="#contact-modal">Contact Us</a></div>
-                        <!--- Contact Modal --->
-                        <div class="modal fade" id="contact-modal" tabindex="-1" role="modal" aria-labelledby="modal-label" aria-hidden="true">
-                            <div class="modal-dialog">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-                                        <h4 class="modal-title" id="modal-label">Contact Us</h4>
-                                    </div>
-                                    <div class="modal-body">
-
-                                        <form id="contactform" class="form-horizontal" role="form">
-
-                                            <p>If you would like to contact us please use the form below.</p>
-
-                                            <div class="input-group">
-                                                <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-                                                <input id="your-name" type="text" class="form-control" name="username" value="" placeholder="Your Name">
-                                            </div>
-
-                                            <div class="input-group">
-                                                <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
-                                                <input id="login-password" type="password" class="form-control" name="password" placeholder="Email Address">
-                                            </div>
-
-                                            <textarea class="form-control marginbot-15" name="Comments" id="Comments" rows="5" style="width:99.9%" placeholder="Enter your message here"></textarea>
-
-                                            <div class="form-group">
-                                                <!-- Button -->
-
-                                                <div class="controls">
-                                                    <a id="btn-login" href="#" class="btn btn btn-green">Send</a>
-
-                                                </div>
-                                            </div>
-
-                                        </form>
-
-                                        <div class="modal-footer">
-                                            <button type="button" class="btn btn-bordered btn-primary" data-dismiss="modal">Close</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!--- Contact Modal End--->
+                        <div class="top-message">Welcome, <a href="#">John</a>!</div>
                     </div>
                 </div>
                 <!-- header-top-left end -->
@@ -100,20 +54,15 @@
         <div class="container">
             <div class="row">
                 <!-- logo start -->
-                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                <div class="col-lg-offset-4 col-lg-4 col-md-4 col-sm-4 col-xs-4">
                     <div class="logo">
                         <a href="#"><img src="assets/img/logo.png" alt=""></a>
                     </div>
                 </div>
                 <!-- logo end -->
-                <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8 text-right">
-                    <a href="#signintab" class="btn btn-primary btn-sm modal-toggle" data-toggle="modal" data-target="#modal">Login</a> <a href="#registertab" class="btn btn-default btn-sm modal-toggle" data-toggle="modal" data-target="#modal">Register</a>
-                    <div class="row">
-                        <div class="col-md-12 margintop-15">
-                            <a href="#" class="cart" data-toggle="modal" data-target="#modal-3"><i class="fa fa-shopping-cart"></i><span>3</span></a>
-                            <a href="#" class="btn btn-primary btn-bordered btn-sm">Store</a>
-                        </div>
-                    </div>
+                <div class="col-lg-4 col-md-8 col-sm-8 col-xs-8 text-right">
+                    <a href="#" class="cart" data-toggle="modal" data-target="#modal-3"><i class="fa fa-shopping-cart"></i><span>3</span></a> <a href="#signintab" class="btn btn-primary btn-sm modal-toggle" data-toggle="modal" data-target="#modal">Login</a>
+
                 </div>
             </div>
             <!-- Start Modal -->
@@ -355,7 +304,6 @@
                     </div>
                 </div>
             </div>
-
             <!-- End Modal -->
         </div>
     </div>
@@ -448,6 +396,11 @@
                     <li class="dropdown">
                         <a href="#" tabindex="0" data-toggle="dropdown" data-hover="dropdown" data-submenu="">
                             Membership
+                        </a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" tabindex="0" data-toggle="dropdown" data-hover="dropdown" data-submenu="">
+                            Shop
                         </a>
                     </li>
                 </ul>
