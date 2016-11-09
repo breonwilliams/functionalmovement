@@ -1113,7 +1113,6 @@ nav.affix {
     }
     .navbar .nav,
     .navbar .nav > li {
-        float:none;
         display:inline-block;
         vertical-align: top;
     }
