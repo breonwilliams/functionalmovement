@@ -1577,12 +1577,6 @@ fieldset[disabled] .btn-primary.btn-bordered:hover{
     padding: 10px 40px;
 }
 
-@media (max-width: 768px) {
-    .btn {
-        margin-bottom: 15px;
-    }
-}
-
 /*
 Play button
 =========================== */
@@ -3774,7 +3768,7 @@ Pagination
     margin: 0;
 }
 
-.pagination > li > a {
+.pagination > li > a, .pagination > li > span {
     font-family: "Montserrat", "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 15px;
     line-height: 20px;
