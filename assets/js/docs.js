@@ -157,7 +157,7 @@ jQuery(document).ready(function($) {
 
 // Popover on page load
 
-$(function() {
+$(document).ready(function() {
     $("#pload-pop").popover('show');
     $("#pload-pop").on('click', function () {
         $('#pload-pop').popover('destroy');

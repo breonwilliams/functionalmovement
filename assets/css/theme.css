@@ -3256,6 +3256,7 @@ Upcoming Events
     overflow: scroll;
     height: 480px;
     overflow-x: hidden;
+    background: #ffffff;
 }
 
 .event-item-inner {
