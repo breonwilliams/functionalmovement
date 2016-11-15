@@ -3362,6 +3362,25 @@ Upcoming Events
 }
 
 /*
+Borders
+================================== */
+
+@media (min-width: 969px) {
+    .border-rt {
+        border-right: solid 1px #363636;
+    }
+    .border-lft {
+        border-left: solid 1px #363636;
+    }
+    .border-tp {
+        border-top: solid 1px #363636;
+    }
+    .border-btm {
+        border-bottom: solid 1px #363636;
+    }
+}
+
+/*
 Client List
 ================================== */
 .client-list {
@@ -3826,6 +3845,16 @@ Pagination
     background: transparent;
 }
 
+.k-pager-wrap ul, .k-pager-wrap {
+    border: none!important;
+    margin: 0!important;
+    padding: 0!important;
+}
+.map-overlay .k-pager-wrap {
+    border: none!important;
+    margin: 0!important;
+    padding: 0 30px!important;
+}
 
 /*
 Plan Section
