@@ -497,8 +497,8 @@ Thumbnail
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: cover;
-    width: 280px;
-    height: 280px;
+    width: 200px;
+    height: 200px;
 }
 
 @media (min-width: 767px) {
@@ -532,7 +532,7 @@ Thumbnail
 @media (min-width: 1023px) {
     .thumbnail-bg {
         max-width: none;
-        height: 280px;
+        height: 200px;
     }
 }
 
@@ -1917,13 +1917,13 @@ Hover border color
 .nav-tabs > li > a .fa { margin-right:10px; }
 
 .nav-tabs > li.active > a,
- .nav-tabs > li.active > a:hover,
- .nav-tabs > li.active > a:focus {
-     color: #fff;
-     background-color: #3b3b3b;
-     border:none;
-     border-top:2px solid #3b3b3b;
- }
+.nav-tabs > li.active > a:hover,
+.nav-tabs > li.active > a:focus {
+    color: #fff;
+    background-color: #3b3b3b;
+    border:none;
+    border-top:2px solid #3b3b3b;
+}
 
 .nav-tabs.redtabs > li.active > a,
 .nav-tabs.redtabs > li.active > a:hover,
@@ -2009,11 +2009,11 @@ Hover border color
 
     .nav-tabs.redtabs > li > a:hover,
     .nav-tabs.redtabs > li > a:focus {
-         color: rgb(235,34,39);
-         background-color: transparent;
-         border-left:2px solid rgb(235,34,39);
-         border-top:none;
-     }
+        color: rgb(235,34,39);
+        background-color: transparent;
+        border-left:2px solid rgb(235,34,39);
+        border-top:none;
+    }
 
 
     .nav-tabs.redtabs > li > a:focus {
@@ -2944,7 +2944,7 @@ img.rounded, .rounded {
     .blog .entry.post {
         padding-left: 150px;
         position: relative;
-        min-height: 330px;
+        min-height: 250px;
     }
 }
 .blog .entry {
@@ -2965,7 +2965,7 @@ img.rounded, .rounded {
 }
 @media only screen and (min-width: 1023px) {
     .blog .entry.has-post-thumbnail {
-        padding-right: 324px;
+        padding-right: 244px;
     }
 }
 @media only screen and (max-width: 560px) {
@@ -4074,9 +4074,9 @@ Footer
 }
 
 .pad-200 {
-     padding-top: 200px!important;
-     padding-bottom: 200px!important;
- }
+    padding-top: 200px!important;
+    padding-bottom: 200px!important;
+}
 
 .pad-150 {
     padding-top: 150px!important;
