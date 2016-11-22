@@ -1842,7 +1842,8 @@ a:hover .media-object,
 .flexslider:hover .flex-prev,
 .remove:hover,
 .remove:focus,
-.remove:active{
+.remove:active,
+.pagination .k-state-selected {
     border-color:rgb(235,34,39);
 }
 
@@ -3814,7 +3815,7 @@ Pagination
     display: inline-block;
     margin-top: 1px;
 }
-.pagination > .active > a {
+.pagination > .active > a, .pagination .k-state-selected {
     color: rgb(235, 34, 39);
     background-color: transparent;
     border-radius: 0;
