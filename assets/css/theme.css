@@ -595,6 +595,7 @@ Thumbnail
     height: 200px;
     width: auto;
     background-size: cover;
+    background-position: 50% 50%;
     background-padding: 50% 50%;
     -webkit-transition: all 0.2s linear;
     -moz-transition: all 0.2s linear;
@@ -608,7 +609,7 @@ Thumbnail
     -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=0)";
     filter: alpha(opacity=0);
     opacity: 0;
-    background-color: rgba(211,170,46,.6);
+    background-color: rgba(235,34,39,.6);
     -webkit-transition: all 0.4s ease-in-out;
     -moz-transition: all 0.4s ease-in-out;
     -o-transition: all 0.4s ease-in-out;
