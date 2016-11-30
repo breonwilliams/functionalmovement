@@ -1915,6 +1915,27 @@ Hover border color
     border-top:2px solid rgb(235,34,39);
 
 }
+
+.nav-tabs.tab-arrow > li.active:after {
+    position: absolute;
+    display: block;
+    width: 0;
+    height: 0;
+    border-color: transparent;
+    border-style: solid;
+    content: "";
+    border-width: 10px;
+    margin-left: -10px;
+    border-top-color: rgb(235,34,39);
+    border-bottom-width: 0;
+    bottom: -10px;
+    left: 50%;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
 .nav-tabs > li > a .fa { margin-right:10px; }
 
 .nav-tabs > li.active > a,
@@ -1930,6 +1951,12 @@ Hover border color
 .nav-tabs.redtabs > li.active > a:hover,
 .nav-tabs.redtabs > li.active > a:focus {
     background-color: rgb(235,34,39);
+    border-top:2px solid rgb(235,34,39);
+    color: #FFFFFF;
+}
+
+.nav-tabs.inactive-grey > li > a {
+    background-color: #3b3b3b;
     border-top:2px solid rgb(235,34,39);
     color: #FFFFFF;
 }
@@ -4196,6 +4223,10 @@ Footer
 
 .text-red {
     color: rgb(235,34,39)!important;
+}
+
+.text-uppercase {
+    text-transform: uppercase;
 }
 .copyright {
     border-top: 1px solid #363636;
