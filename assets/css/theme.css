@@ -721,7 +721,7 @@ a.promo h6.promo-title {
 }
 
 a.promo:hover .promo-overlay {
-    background: rgba(235, 34, 39, .6);
+    background: rgb(235, 34, 39);
     position: relative;
     height: 100px;
     overflow: hidden;
