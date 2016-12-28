@@ -240,12 +240,11 @@
                     <div class="col-md-6 border-rt">
 
                         <h2>Billing Information</h2>
-
-
+                        <h3>First Name</h3>
                             <input id="First" name="First" onkeyup="this.value = properCase(this.value);" required="required " type="text" value="" class="form-control marginbot-25" placeholder="First Name">
-
+                        <h3>Last Name</h3>
                             <input id="Last" name="Last" onkeyup="this.value = properCase(this.value);" required="required " type="text" value="" class="form-control marginbot-25" placeholder="Last Name">
-
+                        <h3>Company</h3>
                             <input id="Company" name="Company" type="text" value="" class="form-control marginbot-25" placeholder="Company">
 
 
@@ -496,9 +495,9 @@
                                     </select>
                                 </div>
                             </div>
-
+                        <h3>Address</h3>
                             <input id="Address" name="Address" onkeyup="this.value = properCase(this.value);" required="required " type="text" value="" class="form-control marginbot-25" placeholder="Address">
-
+                        <h3>City</h3>
                             <input id="City" name="City" onkeyup="this.value = properCase(this.value);" required="required " type="text" value="" class="form-control marginbot-25" placeholder="City">
 
                             <div class="row marginbot-25">
@@ -507,11 +506,11 @@
                                     <select id="SelectedStateProvince" name="SelectedStateProvince" class="selectpicker"><option value="3770">Alabama</option><option value="3771">Alaska</option><option value="3772">Arizona</option><option value="3773">Arkansas</option><option value="3774">California</option><option value="3775">Colorado</option><option value="3776">Connecticut</option><option value="3777">Delaware</option><option value="3778">Florida</option><option value="3779">Georgia</option><option value="3780">Hawaii</option><option value="3781">Idaho</option><option value="3782">Illinois</option><option value="3783">Indiana</option><option value="3784">Iowa</option><option value="3785">Kansas</option><option value="3786">Kentucky</option><option value="3787">Louisiana</option><option value="3788">Maine</option><option value="3789">Maryland</option><option value="3790">Massachusetts</option><option value="3791">Michigan</option><option value="3792">Minnesota</option><option value="3793">Mississippi</option><option value="3794">Missouri</option><option value="3795">Montana</option><option value="3796">Nebraska</option><option value="3797">Nevada</option><option value="3798">New Hampshire</option><option value="3799">New Jersey</option><option value="3800">New Mexico</option><option value="3801">New York</option><option value="3802">North Carolina</option><option value="3803">North Dakota</option><option value="3804">Ohio</option><option value="3805">Oklahoma</option><option value="3806">Oregon</option><option value="3807">Pennsylvania</option><option value="3808">Rhode Island</option><option value="3809">South Carolina</option><option value="3810">South Dakota</option><option value="3811">Tennessee</option><option value="3812">Texas</option><option value="3813">Utah</option><option value="3814">Vermont</option><option value="3815">Virginia</option><option value="3816">Washington</option><option value="3817">Washington, D.C.</option><option value="3818">West Virginia</option><option value="3819">Wisconsin</option><option value="3820">Wyoming</option></select>
                                 </div>
                             </div>
-
+                        <h3>Zip/Postal Code</h3>
                             <input id="Zip" name="Zip" required="required" type="text" value="" class="form-control marginbot-25" placeholder="Zip/Postal Code">
-
+                        <h3>Phone</h3>
                             <input id="Phone" name="Phone" pattern="[0-9-()\+.]+" title="Only numbers, parenthesis, hyphens (-), periods (.) and plus (+)" type="tel" value="" class="form-control marginbot-25" placeholder="Phone">
-
+                        <h3>Fax</h3>
                             <input id="Fax" name="Fax" pattern="[0-9-()\+.]+" title="Only numbers, parenthesis, hyphens (-), periods (.) and plus (+)" type="tel" value="" class="form-control marginbot-25" placeholder="Fax">
 
                     </div>
@@ -519,6 +518,7 @@
                         <h2>Payment Information</h2>
                         <form id="" class="form-horizontal" role="form">
                             <p>Accepted Methods: MasterCard, Visa, Discover</p>
+                            <h3>Credit Card Number</h3>
                             <input autocomplete="off" id="CardNumber" maxlength="16" name="CardNumber" pattern="\d{13,16}" required="required" title="Numerical credit card number" type="tel" value="" class="form-control marginbot-25" placeholder="Credit Card Number">
 
                             <h3>Expiration Date</h3>
@@ -553,7 +553,7 @@
                                 </div>
                             </div>
                             <p class="margintop-15">(only month and year required)</p>
-
+                            <h3>Card Code</h3>
                             <input autocomplete="off" id="CardCode" maxlength="4" name="CardCode" pattern="\d{3,4}" required="required" title="3 or 4 digits only" type="tel" value="" class="form-control marginbot-25" placeholder="Card Code">
 
                         </form>
