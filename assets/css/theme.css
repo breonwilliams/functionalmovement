@@ -604,6 +604,11 @@ Thumbnail
     transition: all 0.2s linear;
 }
 
+.view-img.background-contain {
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
 
 .view-thumbnail .mask {
     -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=0)";
