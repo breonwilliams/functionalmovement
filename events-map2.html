@@ -204,7 +204,7 @@
         </div>
     </section>
 
-    <div class="container pad-40">
+    <div class="container padtop-40">
         <h1>Events Map</h1>
         <div class="row">
             <div class="col-sm-6">
@@ -262,6 +262,31 @@
                             </div>
                             <button type="submit" class="btn btn-primary btn-block">Search</button>
                         </form>
+                    </div>
+                </div>
+                <div class="row margintop-15">
+                    <div class="col-sm-6">
+                        <div class="form-group">
+
+                            <select class="selectpicker wid-auto" multiple data-selected-text-format="count>3">
+                                <option>FMS</option>
+                                <option>SFMA</option>
+                                <option>YBT</option>
+                                <option>FCS</option>
+                            </select>
+                            <h4 class="margintop-15">Type(s)</h4>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="form-group">
+
+                            <select fieldid="Level" id="Level" name="Level" class="modelField selectpicker wid-auto">
+                                <option value="">-- Please choose --</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                            </select>
+                            <h4 class="margintop-15">Level</h4>
+                        </div>
                     </div>
                 </div>
             </div>
