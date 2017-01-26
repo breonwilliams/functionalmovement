@@ -3406,6 +3406,10 @@ Upcoming Events
     background: #ffffff;
 }
 
+.event-content-scroll p, .map-popover p {
+    margin-bottom: 5px;
+}
+
 .event-item-inner {
     padding: 13px 0;
     line-height: 24px;
