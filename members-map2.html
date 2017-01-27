@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Functional Movement Systems</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/bootstrap-submenu.css">
+    <link rel="stylesheet" href="assets/css/bootstrap-select.css">
+    <link rel="stylesheet" href="assets/css/theme.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/slick-theme.css"/>
+    <link rel="stylesheet" type="text/css" href="assets/css/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap-switch.css"/>
+    <link rel="stylesheet" type="text/css" href="assets/css/lity.css"/>
+
+
+</head>
+<body>
+<!-- Header start -->
+<header class="header" id="header" role="banner">
+<div class="header-top-area">
+    <div class="container">
+        <div class="row">
+            <!-- header-top-left start -->
+            <div class="col-lg-6 col-md-6 col-sm-7">
+                <div class="header-top-left">
+                    <div class="top-message">Welcome, <a href="#">Kelly</a>!</div>
+                    <div class="phone-number"> Support: <span>(434) 432-3677</span></div>
+                </div>
+            </div>
+            <!-- header-top-left end -->
+            <!-- header-top-right start -->
+            <div class="col-lg-6 col-md-6 col-sm-5">
+                <div class="header-top-right">
+                    <div class="lang-select">
+                        <ul>
+                            <li>
+                                <select class="selectpicker" data-style="btn-default" title='Select Language'>
+                                    <option>English</option>
+                                    <option>Spanish</option>
+                                    <option>French</option>
+                                </select>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- header-top-right end -->
+        </div>
+    </div>
+</div>
+<div class="header-mid-area">
+    <div class="container">
+        <div class="row">
+            <!-- logo start -->
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                <div class="logo">
+                    <a href="#"><img src="assets/img/logo.png" alt=""></a>
+                </div>
+            </div>
+            <!-- logo end -->
+            <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8 text-right">
+                <a href="#" class="btn btn-primary btn-sm">My FMS</a> <a href="#" class="btn btn-default btn-sm">Logout</a>
+                <div class="row">
+                    <div class="col-md-12 margintop-15">
+                        <a href="#" class="cart"><i class="fa fa-shopping-cart"></i><span>3</span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<!-- Header end -->
+<nav class="navbar navbar-custom yamm" data-spy="affix">
+    <div class="container">
+        <div class="navbar-header">
+            <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+
+            <a href="#" class="navbar-brand"><img src="assets/img/logo.jpg"></a>
+        </div>
+
+        <!--- start navbar-collapse Header -->
+        <div class="navbar-collapse collapse out" aria-expanded="true">
+            <ul class="nav navbar-nav navbar-left">
+                <li class="dropdown">
+                    <a href="#" tabindex="0" data-toggle="dropdown" data-hover="dropdown" data-submenu="">
+                        Home
+                    </a>
+                </li>
+                <li class="dropdown yamm-fullwidth">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown">The System<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        <li class="container">
+                            <div class="row">
+                                <div class="col-sm-4 widget">
+                                    <h3>Overview</h3>
+                                    <ul class="yamm-link">
+                                        <li><a href="#">The System</a></li>
+                                        <li><a href="#">SFMA</a></li>
+                                        <li><a href="#">FMS</a></li>
+                                        <li><a href="#">YBT</a></li>
+                                        <li><a href="#">Instructors</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-sm-4 widget">
+                                    <h3>Get Certified</h3>
+                                    <ul class="yamm-link">
+                                        <li><a href="#">Get Started</a></li>
+                                        <li><a href="#">SFMA</a></li>
+                                        <li><a href="#">FMS</a></li>
+                                        <li><a href="#">YBT</a></li>
+                                        <li><a href="#">In-Service Options</a></li>
+                                        <li><a href="#">Take a Test</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-sm-4 widget">
+                                    <h3>Certified Members</h3>
+                                    <ul class="yamm-link">
+                                        <li><a href="#">Find A Certified Member</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" tabindex="0" data-toggle="dropdown" data-hover="dropdown" data-submenu="" aria-expanded="false">
+                        Resources<span class="caret"></span>
+                    </a>
+
+                    <ul class="dropdown-menu">
+                        <li><a href="#" tabindex="0">All Resource Types</a></li>
+                        <li><a href="#" tabindex="0">FMS Screening</a></li>
+                        <li><a href="#" tabindex="0">FMS Corrections</a></li>
+                        <li><a href="#" tabindex="0">FMS Research</a></li>
+                        <li><a href="#" tabindex="0">Podcasts</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" tabindex="0" data-toggle="dropdown" data-hover="dropdown" data-submenu="">
+                        Exercises
+                    </a>
+                </li>
+                <li class="dropdown">
+                    <a href="#" tabindex="0" data-toggle="dropdown" data-hover="dropdown" data-submenu="" aria-expanded="false">
+                        Events<span class="caret"></span>
+                    </a>
+
+                    <ul class="dropdown-menu">
+                        <li><a href="#" tabindex="0">Get Started</a></li>
+                        <li><a href="#" tabindex="0">Find A Seminar</a></li>
+                        <li><a href="#" tabindex="0">Online Courses</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" tabindex="0" data-toggle="dropdown" data-hover="dropdown" data-submenu="">
+                        Store
+                    </a>
+                </li>
+                <li class="dropdown">
+                    <a href="#" tabindex="0" data-toggle="dropdown" data-hover="dropdown" data-submenu="">
+                        FMS Pro
+                    </a>
+                </li>
+            </ul>
+
+            <form class="navbar-form navbar-right" role="search">
+                <div class="input-group">
+                    <input type="text" class="form-control pull-right" placeholder="Search">
+						<span class="input-group-btn">
+							<button type="reset" class="btn btn-red">
+								<span class="glyphicon glyphicon-remove">
+									<span class="sr-only">Close</span>
+								</span>
+                            </button>
+							<button type="submit" class="btn btn-red">
+								<span class="glyphicon glyphicon-search">
+									<span class="sr-only">Search</span>
+								</span>
+                            </button>
+						</span>
+                </div>
+            </form>
+        </div>
+        <!--- end navbar-collapse -->
+    </div>
+</nav>
+<!--- end Header -->
+
+<div id="main-content" class="container-fluid theme-showcase" role="main">
+    <section class="section-grey">
+        <div class="container">
+            <ol class="breadcrumb">
+                <li><a href="#">Home</a></li>
+                <li class="active">Find a Certified Member</li>
+            </ol>
+        </div>
+    </section>
+
+    <div class="container padtop-40">
+        <h1>Find a Certified Member</h1>
+        <div class="row">
+            <div class="col-sm-2">
+                <a href="members-map.html" class="btn btn-primary btn-bordered">Map View <i class="fa fa-map-marker" aria-hidden="true"></i></a>
+            </div>
+            <div class="col-sm-10" id="adv-search">
+
+                <div class="row">
+
+                    <div class="col-sm-3">
+                        <div class="form-group">
+
+                            <select class="selectpicker wid-auto" title="Certification(s)" multiple data-selected-text-format="count>3">
+                                <option>FMS</option>
+                                <option>SFMA</option>
+                                <option>YBT</option>
+                                <option>FCS</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="form-group">
+
+                            <select fieldid="Level" id="Level" name="Level" title="Level" class="modelField selectpicker wid-auto">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <div class="form-group">
+                                    <input fieldid="Location" placeholder="Postal Code" class="form-control marginbot-15">
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="form-group">
+                                    <select fieldid="Distance" id="Distance" name="Distance" class="modelField selectpicker wid-auto">
+                                        <option value="" selected="">Distance</option>
+                                        <option value="5">5</option>
+                                        <option value="25">25</option>
+                                        <option value="50">50</option>
+                                        <option value="75">75</option>
+                                        <option value="100">100</option>
+                                        <option value="1000">1000</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+    <section class="bg-img" style="background-image: url('assets/img/stock/map.jpg');">
+        <div class="container pad-40">
+            <div class="row">
+                <div class="col-md-8">
+
+                </div>
+                <div class="col-md-4">
+                    <div class="member-content-scroll">
+                        <ul class="client-list">
+                            <li class="client-single">
+                                <div class="client-avi">
+                                    <a href="#">
+                                        <img src="assets/img/stock/profile1.jpg" class="avatar" width="58" height="58">
+                                    </a>
+                                </div>
+                                <div class="client-dt">
+                                    <h3><a href="#">Bruce Wills</a></h3>
+                                    <ul class="list-inline">
+                                        <li><img src="assets/img/FMS_CERTIFIED_Web_L1.png" width="50px" height="auto"></li>
+                                        <li><img src="assets/img/FMS_CERTIFIED_Web_L2.png" width="50px" height="auto"></li>
+                                        <li><img src="assets/img/YBT_Certified_short.png" width="50px" height="auto"></li>
+                                    </ul>
+                                    <div class="email">
+                                        <a href="#">bruce@functionalmovement.com</a>
+                                    </div>
+                                </div>
+                                <div class="client-loc">
+                                    <div class="phone">444-777-4321</div>
+                                    <div class="location">Los Angeles, CA</div>
+                                </div>
+                                <div class="cleared"></div>
+                            </li>
+                            <li class="client-single">
+                                <div class="client-avi">
+                                    <a href="#">
+                                        <img src="assets/img/stock/profile2.png" class="avatar" width="58" height="58">
+                                    </a>
+                                </div>
+                                <div class="client-dt">
+                                    <h3><a href="#">Clark Duncan</a></h3>
+                                    <ul class="list-inline">
+                                        <li><img src="assets/img/FMS_CERTIFIED_Web_L1.png" width="50px" height="auto"></li>
+                                    </ul>
+                                    <a href="#">clark@functionalmovement.com</a>
+                                </div>
+                                <div class="client-loc">
+                                    <div class="phone">4555-987-6543</div>
+                                    <div class="location">Atlanta, GA</div>
+                                </div>
+                                <div class="cleared"></div>
+                            </li>
+                            <li class="client-single">
+                                <div class="client-avi">
+                                    <a href="#">
+                                        <img src="assets/img/stock/profile3.png" class="avatar" width="58" height="58">
+                                    </a>
+                                </div>
+                                <div class="client-dt">
+                                    <h3><a href="#">Sue Miller</a></h3>
+                                    <ul class="list-inline">
+                                        <li><img src="assets/img/FMS_CERTIFIED_Web_L1.png" width="50px" height="auto"></li>
+                                        <li><img src="assets/img/FMS_CERTIFIED_Web_L2.png" width="50px" height="auto"></li>
+                                    </ul>
+                                    <a href="#">sue@functionalmovement.com</a>
+                                </div>
+                                <div class="client-loc">
+                                    <div class="phone">555-123-4444</div>
+                                    <div class="location">Greensboro, NC</div>
+                                </div>
+                                <div class="cleared"></div>
+                            </li>
+                            <li class="client-single">
+                                <div class="client-avi">
+                                    <a href="#">
+                                        <img src="assets/img/stock/profile1.jpg" class="avatar" width="58" height="58">
+                                    </a>
+                                </div>
+                                <div class="client-dt">
+                                    <h3><a href="#">Bruce Wills</a></h3>
+                                    <ul class="list-inline">
+                                        <li><img src="assets/img/FMS_CERTIFIED_Web_L1.png" width="50px" height="auto"></li>
+                                        <li><img src="assets/img/FMS_CERTIFIED_Web_L2.png" width="50px" height="auto"></li>
+                                        <li><img src="assets/img/YBT_Certified_short.png" width="50px" height="auto"></li>
+                                    </ul>
+                                    <div class="email">
+                                        <a href="#">bruce@functionalmovement.com</a>
+                                    </div>
+                                </div>
+                                <div class="client-loc">
+                                    <div class="phone">444-777-4321</div>
+                                    <div class="location">Los Angeles, CA</div>
+                                </div>
+                                <div class="cleared"></div>
+                            </li>
+                            <li class="client-single">
+                                <div class="client-avi">
+                                    <a href="#">
+                                        <img src="assets/img/stock/profile2.png" class="avatar" width="58" height="58">
+                                    </a>
+                                </div>
+                                <div class="client-dt">
+                                    <h3><a href="#">Clark Duncan</a></h3>
+                                    <ul class="list-inline">
+                                        <li><img src="assets/img/FMS_CERTIFIED_Web_L1.png" width="50px" height="auto"></li>
+                                    </ul>
+                                    <a href="#">clark@functionalmovement.com</a>
+                                </div>
+                                <div class="client-loc">
+                                    <div class="phone">4555-987-6543</div>
+                                    <div class="location">Atlanta, GA</div>
+                                </div>
+                                <div class="cleared"></div>
+                            </li>
+                            <li class="client-single">
+                                <div class="client-avi">
+                                    <a href="#">
+                                        <img src="assets/img/stock/profile3.png" class="avatar" width="58" height="58">
+                                    </a>
+                                </div>
+                                <div class="client-dt">
+                                    <h3><a href="#">Sue Miller</a></h3>
+                                    <ul class="list-inline">
+                                        <li><img src="assets/img/FMS_CERTIFIED_Web_L1.png" width="50px" height="auto"></li>
+                                        <li><img src="assets/img/FMS_CERTIFIED_Web_L2.png" width="50px" height="auto"></li>
+                                    </ul>
+                                    <a href="#">sue@functionalmovement.com</a>
+                                </div>
+                                <div class="client-loc">
+                                    <div class="phone">555-123-4444</div>
+                                    <div class="location">Greensboro, NC</div>
+                                </div>
+                                <div class="cleared"></div>
+                            </li>
+                            <li class="client-single">
+                                <div class="client-avi">
+                                    <a href="#">
+                                        <img src="assets/img/stock/profile1.jpg" class="avatar" width="58" height="58">
+                                    </a>
+                                </div>
+                                <div class="client-dt">
+                                    <h3><a href="#">Bruce Wills</a></h3>
+                                    <ul class="list-inline">
+                                        <li><img src="assets/img/FMS_CERTIFIED_Web_L1.png" width="50px" height="auto"></li>
+                                        <li><img src="assets/img/FMS_CERTIFIED_Web_L2.png" width="50px" height="auto"></li>
+                                        <li><img src="assets/img/YBT_Certified_short.png" width="50px" height="auto"></li>
+                                    </ul>
+                                    <div class="email">
+                                        <a href="#">bruce@functionalmovement.com</a>
+                                    </div>
+                                </div>
+                                <div class="client-loc">
+                                    <div class="phone">444-777-4321</div>
+                                    <div class="location">Los Angeles, CA</div>
+                                </div>
+                                <div class="cleared"></div>
+                            </li>
+                            <li class="client-single">
+                                <div class="client-avi">
+                                    <a href="#">
+                                        <img src="assets/img/stock/profile2.png" class="avatar" width="58" height="58">
+                                    </a>
+                                </div>
+                                <div class="client-dt">
+                                    <h3><a href="#">Clark Duncan</a></h3>
+                                    <ul class="list-inline">
+                                        <li><img src="assets/img/FMS_CERTIFIED_Web_L1.png" width="50px" height="auto"></li>
+                                    </ul>
+                                    <a href="#">clark@functionalmovement.com</a>
+                                </div>
+                                <div class="client-loc">
+                                    <div class="phone">4555-987-6543</div>
+                                    <div class="location">Atlanta, GA</div>
+                                </div>
+                                <div class="cleared"></div>
+                            </li>
+                            <li class="client-single">
+                                <div class="client-avi">
+                                    <a href="#">
+                                        <img src="assets/img/stock/profile3.png" class="avatar" width="58" height="58">
+                                    </a>
+                                </div>
+                                <div class="client-dt">
+                                    <h3><a href="#">Sue Miller</a></h3>
+                                    <ul class="list-inline">
+                                        <li><img src="assets/img/FMS_CERTIFIED_Web_L1.png" width="50px" height="auto"></li>
+                                        <li><img src="assets/img/FMS_CERTIFIED_Web_L2.png" width="50px" height="auto"></li>
+                                    </ul>
+                                    <a href="#">sue@functionalmovement.com</a>
+                                </div>
+                                <div class="client-loc">
+                                    <div class="phone">555-123-4444</div>
+                                    <div class="location">Greensboro, NC</div>
+                                </div>
+                                <div class="cleared"></div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+</div>
+
+
+<div class="container pad-40">
+    <!-- Button trigger modal -->
+    <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+        Member Profile Modal
+    </button>
+
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog modal-md" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">John Wilson</h4>
+                </div>
+                <div class="modal-body">
+                        <div class="row">
+                            <div class="col-md-4 padbot-20">
+                                <img src="assets/img/stock/profile2.png" class="avatar">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h3 class="panel-title">How to find</h3>
+                                    </div>
+                                    <div class="panel-body">
+                                        <p><i class="fa fa-phone"></i> 555-765-4321</p>
+                                        <p><i class="fa fa-map-marker"></i> 1017 E Whitaker Mill Rd, Raleigh, 27608</p>
+                                        <p>United States</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="padbot-20">
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h3 class="panel-title">Certifications</h3>
+                                </div>
+                                <div class="panel-body">
+                                    <div class="row">
+                                        <div class="col-md-6 col-sm-3 col-xs-6">
+                                            <div class="pad-10"><img src="assets/img/FMS_CERTIFIED_complete_L1_800x300.png" width="200px" height="100%"> </div>
+                                        </div>
+                                        <div class="col-md-6 col-sm-3 col-xs-6">
+                                            <div class="pad-10"><img src="assets/img/SFMA_CERTIFIED_complete_L1.png" width="200px" height="100%"> </div>
+                                        </div>
+                                        <div class="col-md-6 col-sm-3 col-xs-6">
+                                            <div class="pad-10"><img src="assets/img/YBT_Certified.png" width="200px" height="100%"> </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    <a href="profile-view.html" type="button" class="btn btn-primary">View Full Profile</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Start footer --->
+
+<footer>
+    <div class="footer-section pad-40">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <h2 class="ft-title"><span>Support</span></h2>
+                    <div class="footer-widget-1 address">
+                        <ul>
+                            <li><i class="fa fa-envelope"></i><a href="mailto:info@functionalmovement.com">info@functionalmovement.com</a></li>
+                            <li><i class="fa fa-phone"></i>+1 (434) 432-3677</li>
+                        </ul>
+                    </div>
+                </div> <!--/footer-1-->
+                <div class="col-md-3">
+                    <h2 class="ft-title"><span>Connect with us</span></h2>
+                    <div class="footer-social">
+                        <div class="social-icon">
+                            <ul>
+                                <li>
+                                    <a title="Facebook" href="#" target="_blank"><i class="fa fa-facebook"></i></a>
+                                </li>
+                                <li>
+                                    <a title="Twitter" href="#" target="_blank"><i class="fa fa-twitter"></i></a>
+                                </li>
+                                <li>
+                                    <a title="YouTube" href="#" target="_blank"><i class="fa fa-youtube"></i></a>
+                                </li>
+                            </ul>
+                        </div> <!--/.social-icon-->
+                    </div>
+                </div> <!--/footer-2-->
+                <div class="col-md-3">
+                    <h2 class="ft-title"><span>Latest tweet</span></h2>
+                    <div id="twitter-feed" class="twitter-feed">
+                        <div class="tweet"><ul><li><div class="tweet-icon"><i class="fa fa-twitter fa-2x"></i></div><div class="tweet-date">Oct. 24, 2015</div><div class="tweet-content">Simple & Sinister + Heart Rate Monitor <a href="http://www.strongfirst.com/simple-sinister-heart-rate-monitor/" target="_blank">http://www.strongfirst.com/simple-sinister-heart-rate-monitor/</a> … <a href="http://bit.ly/1MeNX6B" target="_blank" title="Visit this link">http://bit.ly/1MeNX6B</a></div></li></ul></div>
+                    </div>
+                </div> <!--/footer-3-->
+                <div class="col-md-3">
+                    <h2 class="ft-title"><span>Find Certified Members</span></h2>
+                    <div class="input-group custom-search-form">
+                        <input type="text" class="form-control" placeholder="Postal Code">
+                          <span class="input-group-btn">
+                              <button class="btn btn-primary" type="button">
+                                  <span class="glyphicon glyphicon-search"></span>
+                              </button>
+                         </span>
+                    </div><!-- /input-group -->
+                </div> <!--/footer-4-->
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <small>Copyright © 2015 FunctionalMovement.com</small>
+                </div>
+                <div class="col-md-6">
+                    <ul class="foot-menu">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms and Conditions</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- latest jQuery, Boostrap JS and hover dropdown plugin -->
+<script src="https://code.jquery.com/jquery-latest.min.js" defer></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" defer></script>
+<script src="assets/js/bootstrap-submenu.js" defer></script>
+<script src="assets/js/docs.js" defer></script>
+<script src="assets/js/bootstrap-hover-dropdown.js" defer></script>
+<script src="assets/js/dropdownhover.js" defer></script>
+<script src="assets/js/bootstrap-select.js" defer></script>
+<script src="assets/js/jquery.background-video.js" defer></script>
+<script src="assets/js/slick.js" defer></script>
+<script src="assets/js/slick-init.js" defer></script>
+<script src="assets/js/autosize.js" defer></script>
+<!-- Popup Video js -->
+<script src="assets/js/lity.js" defer></script>
+<script src="assets/js/bootstrap-switch.js" defer></script>
+<script src="assets/js/highlight.js" defer></script>
+<script src="assets/js/main.js" defer></script>
+
+
+</body>
+</html>
