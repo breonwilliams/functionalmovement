@@ -1,0 +1,785 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Functional Movement Systems</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/bootstrap-submenu.css">
+    <link rel="stylesheet" href="assets/css/bootstrap-select.css">
+    <link rel="stylesheet" href="assets/css/theme.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/slick-theme.css"/>
+    <link rel="stylesheet" type="text/css" href="assets/css/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap-switch.css"/>
+    <link rel="stylesheet" type="text/css" href="assets/css/lity.css"/>
+
+
+</head>
+<body>
+<!-- Header start -->
+<header class="header header-clear" id="header" role="banner">
+    <div class="alert alert-warning alert-dismissable fade in">
+        <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
+        <i class="icon icon_gift_alt"></i>
+        <strong class="mr10">PRO 360 IS TEMPORARILY INTERRUPTED</strong> while we complete our transition to the new FMS website.  Service will be restored on Monday afternoon EST (3/27).
+    </div>
+    <div class="header-top-area">
+        <div class="container">
+            <div class="row">
+                <!-- header-top-left start -->
+                <div class="col-lg-6 col-md-6 col-sm-7">
+                    <div class="header-top-left">
+                        <div class="top-message">Welcome, <a href="#">John</a>!</div>
+                    </div>
+                </div>
+                <!-- header-top-left end -->
+                <!-- header-top-right start -->
+                <div class="col-lg-6 col-md-6 col-sm-5">
+                    <div class="header-top-right">
+                        <div class="lang-select">
+                            <ul>
+                                <li>
+                                    <select class="selectpicker" data-style="btn-default" title='Select Language'>
+                                        <option data-content='<img src="assets/img/languages/en.png"> English'></option>
+                                        <option data-content='<img src="assets/img/languages/es.png"> Spanish'></option>
+                                        <option data-content='<img src="assets/img/languages/fr.png"> French'></option>
+                                    </select>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- header-top-right end -->
+            </div>
+        </div>
+    </div>
+    <div class="header-mid-area">
+        <div class="container">
+            <div class="row">
+                <!-- logo start -->
+                <div class="col-lg-offset-4 col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                    <div class="logo">
+                        <a href="#"><img src="assets/img/logo.png" alt=""></a>
+                    </div>
+                </div>
+                <!-- logo end -->
+                <div class="col-lg-4 col-md-8 col-sm-8 col-xs-8 text-right">
+                    <a href="#" class="cart" data-toggle="modal" data-target="#modal-3"><i class="fa fa-shopping-cart"></i><span>3</span></a> <a href="#signintab" class="btn btn-primary btn-sm modal-toggle" data-toggle="modal" data-target="#modal">Login</a>
+
+                </div>
+            </div>
+            <!-- Start Modal -->
+            <div class="modal fade" id="modal" tabindex="-1" role="modal" aria-labelledby="modal-label" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                            <h4 class="modal-title" id="modal-label">My FMS</h4>
+                        </div>
+                        <div class="modal-body">
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <ul class="nav nav-tabs">
+                                        <li class="active"><a href="#signintab" data-toggle="tab" aria-expanded="true">Sign In</a></li>
+                                        <li class=""><a href="#registertab" data-toggle="tab" aria-expanded="false">Register</a></li>
+                                        <li class=""><a href="#passwordtab" data-toggle="tab" aria-expanded="false">Forgot Password?</a></li>
+                                    </ul>
+                                    <div class="tab-content">
+                                        <div class="tab-pane fade active in" id="signintab">
+                                            <form id="loginform" class="form-horizontal" role="form">
+
+                                                <p>Please enter your username and password to login or <a href="#">create a new account</a>.</p>
+
+                                                <div class="input-group">
+                                                    <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                                                    <input id="login-username" type="text" class="form-control" name="username" value="" placeholder="username or email">
+                                                </div>
+
+                                                <div class="input-group">
+                                                    <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+                                                    <input id="login-password" type="password" class="form-control" name="password" placeholder="password">
+                                                </div>
+
+
+
+                                                <div class="input-group">
+                                                    <div class="checkbox">
+                                                        <label>
+                                                            <input id="login-remember" type="checkbox" name="remember" value="1"> Keep me logged in.
+                                                        </label>
+                                                    </div>
+                                                </div>
+
+
+                                                <div class="form-group">
+                                                    <!-- Button -->
+
+                                                    <div class="controls">
+                                                        <a id="btn-login" href="home.html" class="btn btn btn-green">Sign In  </a>
+                                                        <a id="btn-cancel" href="#" class="btn btn-primary">Cancel</a>
+
+                                                    </div>
+                                                </div>
+
+
+                                                <div class="form-group">
+                                                    <div class="col-md-12 control">
+                                                        Don't have an account!
+                                                        <a href="#">
+                                                            Sign Up Here
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </div>
+                                        <div class="tab-pane fade" id="registertab">
+                                            <form id="loginform" class="form-horizontal" role="form">
+
+                                                <h3>Create a new account.</h3>
+                                                <p>Use the form below to create a new account Passwords are required to be a minimum of 6 characters in length.</p>
+
+                                                <div class="input-group">
+                                                    <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                                                    <input id="login-username" type="text" class="form-control" name="username" value="" placeholder="username">
+                                                </div>
+
+                                                <input id="login-username" type="text" class="form-control marginbot-25" name="username" value="" placeholder="first name">
+
+                                                <input id="login-username" type="text" class="form-control marginbot-25" name="username" value="" placeholder="last name">
+
+                                                <div class="input-group">
+                                                    <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
+                                                    <input id="login-password" type="password" class="form-control" name="password" placeholder="email address">
+                                                </div>
+
+                                                <div class="input-group">
+                                                    <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+                                                    <input id="login-password" type="password" class="form-control" name="password" placeholder="password">
+                                                </div>
+
+                                                <div class="input-group">
+                                                    <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+                                                    <input id="login-password" type="password" class="form-control" name="password" placeholder="confirm password">
+                                                </div>
+
+                                                <p>By clicking "Sign Up" you agree to the <a href="#">Terms of Use</a>.</p>
+
+                                                <div class="form-group">
+                                                    <!-- Button -->
+
+                                                    <div class="controls">
+                                                        <a id="btn-login" href="#" class="btn btn btn-green">Sign In  </a>
+                                                        <a id="btn-cancel" href="#" class="btn btn-primary">Cancel</a>
+
+                                                    </div>
+                                                </div>
+
+                                            </form>
+                                        </div>
+                                        <div class="tab-pane fade" id="passwordtab">
+                                            <div class="tab-pane fade active in" id="signintab">
+                                                <form id="loginform" class="form-horizontal" role="form">
+
+                                                    <p>Use the form below to reset your password.</p>
+
+                                                    <div class="input-group">
+                                                        <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                                                        <input id="login-username" type="text" class="form-control" name="username" value="" placeholder="username or email">
+                                                    </div>
+
+                                                    <div class="form-group">
+                                                        <!-- Button -->
+
+                                                        <div class="controls">
+                                                            <a id="btn-login" href="#" class="btn btn btn-green">Reset Password</a>
+                                                            <a id="btn-cancel" href="#" class="btn btn-primary">Cancel</a>
+
+                                                        </div>
+                                                    </div>
+
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-bordered btn-primary" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Modal Cart -->
+            <div class="modal fade" id="modal-3" tabindex="-1" role="modal" aria-labelledby="modal-label-3" aria-hidden="true" style="display: none;">
+                <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                            <h4 class="modal-title" id="modal-label-3">Cart</h4>
+                        </div>
+                        <div class="modal-body">
+
+                            <div class="table-responsive">
+                                <table class="table table-striped table-hover table-1">
+                                    <thead>
+                                    <tr>
+                                        <th class="text-left">Name</th>
+                                        <th class="text-left">Qty</th>
+                                        <th class="text-left">Price</th>
+                                    </tr>
+                                    </thead>
+
+                                    <tbody>
+                                    <tr>
+                                        <td data-title="Product">
+                                            <h6 class="item-title">Functional Movement Systems Seminar</h6>
+                                        </td>
+                                        <td data-title="Qty"></td>
+                                        <td data-title="Price"></td>
+                                    </tr>
+                                    <tr>
+                                        <td data-title="Product">
+                                            <h6 class="item-title">Functional Movement Screen Level 2</h6>
+                                            <dd>Saturday, January 30, 2016 8:00 AM - 5:00 PM</dd>
+                                            <dd>Sunday, January 31, 2016 8:00 AM - 12:00 PM</dd>
+                                        </td>
+                                        <td data-title="Qty">1</td>
+                                        <td data-title="Price">$499.00</td>
+                                    </tr>
+                                    <tr>
+                                        <td data-title="Product">
+                                            <h6 class="item-title">Functional Movement Systems Seminar</h6>
+                                            <dd>Saturday, January 30, 2016 8:00 AM - 5:00 PM</dd>
+                                            <dd>Sunday, January 31, 2016 8:00 AM - 5:00 PMM</dd>
+                                        </td>
+                                        <td data-title="Qty">1</td>
+                                        <td data-title="Price">$945.00</td>
+                                    </tr>
+                                    <tr>
+                                        <td data-title="Product">
+                                            <h6 class="item-title">SFMA Level 1 - Online Prerequisite Credit</h6>
+                                        </td>
+                                        <td data-title="Qty">1</td>
+                                        <td data-title="Price">$-645.00</td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-6 col-md-offset-6">
+                                    <h2 class="title-medium br-bottom mb30">Order Summary</h2>
+                                    <table class="table">
+                                        <tbody>
+                                        <tr>
+                                            <td scope="row"><h6>Items:</h6></td>
+                                            <td>$1,444.00</td>
+                                        </tr>
+                                        <tr>
+                                            <td><h6>Tax:</h6></td>
+                                            <td>$0.00</td>
+                                        </tr>
+                                        <tr>
+                                            <td scope="row"><h6>Discounts:</h6></td>
+                                            <td>-$645.00</td>
+                                        </tr>
+                                        <tr>
+                                            <td scope="row">
+                                                <h3>Order total:</h3>
+                                            </td>
+                                            <td>
+                                                <h3 class="product-price">
+                                                    <span class="product-curency">$</span>799.00<span class="product-period"></span>
+                                                </h3>
+                                            </td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="modal-footer">
+                            <a href="shop-cart.html" class="btn btn-green">Complete Order <i class="fa fa-chevron-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End Modal -->
+        </div>
+    </div>
+    <nav class="navbar navbar-custom yamm" data-spy="affix">
+        <div class="container">
+            <div class="navbar-header">
+                <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+
+                <a href="#" class="navbar-brand"><img src="assets/img/logo.jpg"></a>
+            </div>
+
+            <!--- start navbar-collapse Header -->
+            <div class="navbar-collapse collapse out" aria-expanded="true">
+                <ul class="nav navbar-nav navbar-left">
+                    <li class="dropdown">
+                        <a href="#" tabindex="0" data-toggle="dropdown" data-hover="dropdown" data-submenu="">
+                            Home
+                        </a>
+                    </li>
+                    <li class="dropdown yamm-fullwidth">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown">The System<b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li class="container">
+                                <div class="row">
+                                    <div class="col-sm-4 widget">
+                                        <h3>Overview</h3>
+                                        <ul class="yamm-link">
+                                            <li><a href="#">The System</a></li>
+                                            <li><a href="#">FMS</a></li>
+                                            <li><a href="#">SFMA</a></li>
+                                            <li><a href="#">YBT</a></li>
+                                            <li><a href="#">FCS</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-sm-4 widget">
+                                        <h3>Meet The Team</h3>
+                                        <ul class="yamm-link">
+                                            <li><a href="#">About Us</a></li>
+                                            <li><a href="#">Instructors</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-sm-4 widget">
+                                        <h3>Community</h3>
+                                        <ul class="yamm-link">
+                                            <li><a href="#">Partners</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" tabindex="0" data-toggle="dropdown" data-hover="dropdown" data-submenu="" aria-expanded="false">
+                            Resources<span class="caret"></span>
+                        </a>
+
+                        <ul class="dropdown-menu">
+                            <li><a href="#" tabindex="0">Philosophy</a></li>
+                            <li><a href="#" tabindex="0">Application</a></li>
+                            <li><a href="#" tabindex="0">Research</a></li>
+                            <li><a href="#" tabindex="0">News</a></li>
+                            <li><a href="#" tabindex="0">Help & Tutorials</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" tabindex="0" data-toggle="dropdown" data-hover="dropdown" data-submenu="">
+                            Exercises
+                        </a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" tabindex="0" data-toggle="dropdown" data-hover="dropdown" data-submenu="" aria-expanded="false">
+                            Events<span class="caret"></span>
+                        </a>
+
+                        <ul class="dropdown-menu">
+                            <li><a href="#" tabindex="0">Where to start?</a></li>
+                            <li class="dropdown-submenu"><a href="#" tabindex="0">Find a course near you</a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#" tabindex="0">Event Lists View</a></li>
+                                    <li><a href="#" tabindex="0">Event Map View</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#" tabindex="0">Private Course Options</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" tabindex="0" data-toggle="dropdown" data-hover="dropdown" data-submenu="">
+                            Membership
+                        </a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" tabindex="0" data-toggle="dropdown" data-hover="dropdown" data-submenu="">
+                            Shop
+                        </a>
+                    </li>
+                </ul>
+
+                <form class="navbar-form navbar-right" role="search">
+                    <div class="input-group">
+                        <input type="text" class="form-control pull-right" placeholder="Search">
+						<span class="input-group-btn">
+							<button type="reset" class="btn btn-red">
+								<span class="glyphicon glyphicon-remove">
+									<span class="sr-only">Close</span>
+								</span>
+                            </button>
+							<button type="submit" class="btn btn-red">
+								<span class="glyphicon glyphicon-search">
+									<span class="sr-only">Search</span>
+								</span>
+                            </button>
+						</span>
+                    </div>
+                </form>
+            </div>
+            <!--- end navbar-collapse -->
+        </div>
+    </nav>
+</header>
+<!-- Header end -->
+
+
+<div id="main-content" class="container-fluid theme-showcase" role="main">
+    <section class="bg-img" style="background-image: url('assets/img/stock/stock22.jpg');">
+        <div class="overlay-dark pad-100">
+            <div class="container pad-100 text-center">
+                <h1 class="hero-header text-white" style="padding-top: 180px;">Join the movement</h1><br>
+                <p class="lead marginbot-30">The world has a movement problem.  In fact, poor movement has become an epidemic.
+                    <br>Functional Movement Systems is our solution. We’re a company committed to giving you actionable steps to help people first move well. Then, move often.</p>
+                <p><a href="#" class="btn btn-white btn-xl btn-sm-pad">Learn More</a> <a href="http://www.youtube.com/watch?v=qBB0UdcsItk" class="btn btn-white btn-xl btn-sm-pad" data-lity>Watch Video <i class="fa fa-play-circle"></i></a></p>
+            </div>
+        </div>
+    </section>
+    <!-- Full width video end -->
+    <div class="flex-wrap">
+        <section class="bg-img flex-item" style="background-image: url('assets/img/stock/stock23.jpg');">
+            <div class="overlay-gradient pad-100 height-100">
+                <div class="container">
+                    <h2 class="hero-header" style="color: #ffffff; text-transform: uppercase;">Find A<br>Course</h2>
+                    <a href="#" class="btn btn-lg btn-white btn-sm-pad">Search</a> <a href="#" class="btn btn-lg btn-white btn-sm-pad">Learn More</a>
+                </div>
+            </div>
+        </section>
+        <section class="bg-img flex-item" style="background-image: url('assets/img/stock/stock14.jpg');">
+            <div class="overlay-gradient pad-100 height-100">
+                <div class="container">
+                    <h2 class="hero-header" style="color: #ffffff; text-transform: uppercase;">Find A<br>Professional</h2>
+                    <a href="#" class="btn btn-lg btn-white btn-sm-pad">Search</a>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Recent news and events start -->
+
+    <div class="flex-wrap">
+        <div class="flex-item flex-vertical">
+            <section class="bg-img " style="background-image: url('assets/img/stock/fitness.jpg');">
+                <div class="overlay-dark pad-100 height-100">
+                    <div class="container pad-20 text-center">
+                        <h2 class="hero-header" style="color: #fff;">The Next Level</h2><br>
+                        <a href="http://www.youtube.com/watch?v=qBB0UdcsItk" data-lity=""><div class="play_border"><div class="play_button"></div></div></a>
+                    </div>
+                </div>
+            </section>
+
+            <section class="bg-img flex-vertical-item" style="background-image: url('assets/img/stock/notre-dame-players.jpg');">
+                <div class="overlay-dark pad-100 height-100">
+                    <div class="container">
+                        <h2 class="text-white">How Notre Dame Football Uses The FMS</h2>
+                        <p class="lead">The FMS is used at every level of football. Notre Dame coach Brian Kelly recently discussed how and why Fighting Irish are using the system.</p>
+                        <a href="#" class="btn btn-primary">Read More</a> <a href="#" class="btn btn-default">More Articles</a>
+
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div class="flex-item flex-vertical section-grey">
+            <div class="pad-20 text-center">
+                <h2 style="padding: 0 30px;" class="hero-header">Upcoming Courses</h2>
+                <div class="event-content event-minimal">
+                    <ul>
+                        <li class="latest-event-item">
+                            <div class="row pad-10">
+                                <div class="col-sm-6">
+                                    <h3><a href="#">SFMA - Munich, DE</a></h3>
+                                </div>
+                                <div class="col-sm-6">
+                                    Oct. 22-23, 2016
+                                </div>
+                            </div>
+                        </li>
+                        <li class="latest-event-item">
+                            <div class="row pad-10">
+                                <div class="col-sm-6">
+                                    <h3><a href="#">SFMA - Munich, DE</a></h3>
+                                </div>
+                                <div class="col-sm-6">
+                                    Oct. 22-23, 2016
+                                </div>
+                            </div>
+                        </li>
+                        <li class="latest-event-item">
+                            <div class="row pad-10">
+                                <div class="col-sm-6">
+                                    <h3><a href="#">SFMA - Munich, DE</a></h3>
+                                </div>
+                                <div class="col-sm-6">
+                                    Oct. 22-23, 2016
+                                </div>
+                            </div>
+                        </li>
+                        <li class="latest-event-item">
+                            <div class="row pad-10">
+                                <div class="col-sm-6">
+                                    <h3><a href="#">SFMA - Munich, DE</a></h3>
+                                </div>
+                                <div class="col-sm-6">
+                                    Oct. 22-23, 2016
+                                </div>
+                            </div>
+                        </li>
+                        <li class="latest-event-item">
+                            <div class="row pad-10">
+                                <div class="col-sm-6">
+                                    <h3><a href="#">SFMA - Munich, DE</a></h3>
+                                </div>
+                                <div class="col-sm-6">
+                                    Oct. 22-23, 2016
+                                </div>
+                            </div>
+                        </li>
+                        <li class="latest-event-item">
+                            <div class="row pad-10">
+                                <div class="col-sm-6">
+                                    <h3><a href="#">SFMA - Munich, DE</a></h3>
+                                </div>
+                                <div class="col-sm-6">
+                                    Oct. 22-23, 2016
+                                </div>
+                            </div>
+                        </li>
+                        <li class="latest-event-item">
+                            <div class="row pad-10">
+                                <div class="col-sm-6">
+                                    <h3><a href="#">SFMA - Munich, DE</a></h3>
+                                </div>
+                                <div class="col-sm-6">
+                                    Oct. 22-23, 2016
+                                </div>
+                            </div>
+                        </li>
+                        <li class="latest-event-item">
+                            <div class="row pad-10">
+                                <div class="col-sm-6">
+                                    <h3><a href="#">SFMA - Munich, DE</a></h3>
+                                </div>
+                                <div class="col-sm-6">
+                                    Oct. 22-23, 2016
+                                </div>
+                            </div>
+                        </li>
+                        <li class="latest-event-item">
+                            <div class="row pad-10">
+                                <div class="col-sm-6">
+                                    <h3><a href="#">SFMA - Munich, DE</a></h3>
+                                </div>
+                                <div class="col-sm-6">
+                                    Oct. 22-23, 2016
+                                </div>
+                            </div>
+                        </li>
+                        <li class="latest-event-item">
+                            <div class="row pad-10">
+                                <div class="col-sm-6">
+                                    <h3><a href="#">SFMA - Munich, DE</a></h3>
+                                </div>
+                                <div class="col-sm-6">
+                                    Oct. 22-23, 2016
+                                </div>
+                            </div>
+                        </li>
+                        <li class="latest-event-item">
+                            <div class="row pad-10">
+                                <div class="col-sm-6">
+                                    <h3><a href="#">SFMA - Munich, DE</a></h3>
+                                </div>
+                                <div class="col-sm-6">
+                                    Oct. 22-23, 2016
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <p style="padding: 0 30px;"><a href="#" class="btn btn-lg btn-block btn-primary btn-bordered">More Courses <i class="fa fa-chevron-right"></i></a></p>
+            </div>
+        </div>
+        <div class="flex-item flex-vertical">
+            <div style="background: #222;">
+                <section class="bg-img pad-100 marginbot-35" style="background-image: url('https://files.functionalmovement.com/page_content/event_images/dallas-skyline.jpg');">
+
+                </section>
+                <section class="">
+                    <div class="container padbot-40 text-center">
+                        <h2 style="text-transform: uppercase;font-size: 42px; line-height: 42px; color: rgb(235, 34, 39);">FMS Level 2</h2>
+                        <h3 class="" style="text-transform: uppercase;font-size: 42px; line-height: 12px; color: #fff;">Dallas</h3>
+                    </div>
+                    <a href="/events/1887/register" class="btn btn-default btn-block btn-lg">March 24-25 2017</a>
+                </section>
+            </div>
+            <section class="section-grey flex-vertical-item padtop-10">
+                <ul id="instagram" class="masonry gutterless"></ul>
+                <div class="flex-wrap">
+                    <a href="#" class="btn btn-default btn-lg flex-item"><i class="fa fa-instagram"></i> Join the movement</a>
+                    <a href="#" class="btn btn-primary btn-lg flex-item" style="text-transform: lowercase;"> #MoveWithFMS</a>
+                </div>
+            </section>
+        </div>
+    </div>
+    <!-- Recent news and events end -->
+
+
+
+
+</div>
+
+<!-- Start footer --->
+
+<footer>
+    <div class="footer-section pad-40">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <h2 class="ft-title"><span>Support</span></h2>
+                    <div class="footer-widget-1 address">
+                        <ul>
+                            <li><i class="fa fa-envelope"></i><a href="mailto:info@functionalmovement.com">info@functionalmovement.com</a></li>
+                            <li><i class="fa fa-phone"></i>+1 (434) 432-3677</li>
+                            <li><a href="faq.html"><i class="fa fa-question-circle" aria-hidden="true"></i> FAQs</a></li>
+                            <li><a href="#" data-toggle="modal" data-target="#contact-modal"><i class="fa fa-comments" aria-hidden="true"></i> Contact Us</a></li>
+                        </ul>
+
+                        <!--- Contact Modal --->
+                        <div class="modal fade" id="contact-modal" tabindex="-1" role="modal" aria-labelledby="modal-label" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                                        <h4 class="modal-title" id="modal-label">Contact Us</h4>
+                                    </div>
+                                    <div class="modal-body">
+
+                                        <form id="contactform" class="form-horizontal" role="form">
+
+                                            <p>If you would like to contact us please use the form below.</p>
+
+                                            <div class="input-group">
+                                                <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                                                <input id="your-name" type="text" class="form-control" name="username" value="" placeholder="Your Name">
+                                            </div>
+
+                                            <div class="input-group">
+                                                <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
+                                                <input id="login-password" type="password" class="form-control" name="password" placeholder="Email Address">
+                                            </div>
+
+                                            <textarea class="form-control marginbot-15" name="Comments" id="Comments" rows="5" style="width:99.9%" placeholder="Enter your message here"></textarea>
+
+                                            <div class="form-group">
+                                                <!-- Button -->
+
+                                                <div class="controls">
+                                                    <a id="btn-login" href="#" class="btn btn btn-green">Send</a>
+
+                                                </div>
+                                            </div>
+
+                                        </form>
+
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-bordered btn-primary" data-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--- Contact Modal End--->
+
+                    </div>
+                </div> <!--/footer-1-->
+                <div class="col-md-3">
+                    <h2 class="ft-title"><span>Connect with us</span></h2>
+                    <div class="footer-social">
+                        <div class="social-icon">
+                            <ul>
+                                <li>
+                                    <a title="Facebook" href="#" target="_blank"><i class="fa fa-facebook"></i></a>
+                                </li>
+                                <li>
+                                    <a title="Twitter" href="#" target="_blank"><i class="fa fa-twitter"></i></a>
+                                </li>
+                                <li>
+                                    <a title="YouTube" href="#" target="_blank"><i class="fa fa-youtube"></i></a>
+                                </li>
+                            </ul>
+                        </div> <!--/.social-icon-->
+                    </div>
+                </div> <!--/footer-2-->
+                <div class="col-md-3">
+                    <h2 class="ft-title"><span>Latest tweet</span></h2>
+                    <div id="twitter-feed" class="twitter-feed">
+                        <div class="tweet"><ul><li><div class="tweet-icon"><i class="fa fa-twitter fa-2x"></i></div><div class="tweet-date">Oct. 24, 2015</div><div class="tweet-content">Simple & Sinister + Heart Rate Monitor <a href="http://www.strongfirst.com/simple-sinister-heart-rate-monitor/" target="_blank">http://www.strongfirst.com/simple-sinister-heart-rate-monitor/</a> … <a href="http://bit.ly/1MeNX6B" target="_blank" title="Visit this link">http://bit.ly/1MeNX6B</a></div></li></ul></div>
+                    </div>
+                </div> <!--/footer-3-->
+                <div class="col-md-3">
+                    <h2 class="ft-title"><span>Find Certified Members</span></h2>
+                    <div class="input-group custom-search-form">
+                        <input type="text" class="form-control" placeholder="Postal Code">
+                          <span class="input-group-btn">
+                              <button class="btn btn-primary" type="button">
+                                  <span class="glyphicon glyphicon-search"></span>
+                              </button>
+                         </span>
+                    </div><!-- /input-group -->
+                </div> <!--/footer-4-->
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <small>Copyright © 2015 FunctionalMovement.com</small>
+                </div>
+                <div class="col-md-6">
+                    <ul class="foot-menu">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms and Conditions</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- latest jQuery, Boostrap JS and hover dropdown plugin -->
+<script src="https://code.jquery.com/jquery-latest.min.js" defer></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" defer></script>
+<script src="assets/js/bootstrap-submenu.js" defer></script>
+<script src="assets/js/docs.js" defer></script>
+<script src="assets/js/bootstrap-hover-dropdown.js" defer></script>
+<script src="assets/js/dropdownhover.js" defer></script>
+<script src="assets/js/bootstrap-select.js" defer></script>
+<script src="assets/js/jquery.background-video.js" defer></script>
+<script src="assets/js/slick.js" defer></script>
+<script src="assets/js/slick-init.js" defer></script>
+<script src="assets/js/autosize.js" defer></script>
+<!-- Popup Video js -->
+<script src="assets/js/lity.js" defer></script>
+<script src="assets/js/bootstrap-switch.js" defer></script>
+<script src="assets/js/highlight.js" defer></script>
+<script src="assets/js/main.js" defer></script>
+<!-- Instagram Feed -->
+<script src="assets/js/instagram.js" defer></script>
+
+</body>
+</html>
