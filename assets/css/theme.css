@@ -1582,8 +1582,9 @@ fieldset[disabled] .btn-primary.btn-bordered:hover{
 .btn-white.btn-bordered:focus,
 .btn-white.btn-bordered.focus,
 .btn-group.open .btn-white:focus,
-.btn-white.btn-bordered:hover{
-    color: #000;
+.btn-white.btn-bordered:hover,
+.btn-white:hover {
+    color: #000!important;
     background-color: #ffffff;
     border-color: #ffffff;
 }
