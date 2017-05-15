@@ -221,69 +221,192 @@
                 </div>
                 <div class="cleared"></div>
 
-                <div class="row">
-                    <div class="col-md-4">
+                <ul class="nav nav-tabs">
+                    <li class=""><a href="#tab1" data-toggle="tab" aria-expanded="false">User Profile</a></li>
+                    <li class=""><a href="#tab2" data-toggle="tab" aria-expanded="false">Email & Password</a></li>
+                    <li class="active"><a href="#tab3" data-toggle="tab" aria-expanded="true">Certified Member Profile</a></li>
+                </ul>
+
+                <div class="tab-content">
+                    <div class="tab-pane fade" id="tab1">
+                        <div class="alert alert-info alert-dismissable fade in">
+                            <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
+                            <i class="icon icon_gift_alt"></i>
+                            <strong class="mr10">Use the form below to update your profile.</strong>
+                        </div>
+
+                        <form id="" class="form-horizontal" role="form">
+
+                            <div class="input-group">
+                                <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                                <input id="login-username" type="text" class="form-control" name="username" value="" placeholder="username">
+                            </div>
+
+                            <input id="login-username" type="text" class="form-control marginbot-25" name="username" value="" placeholder="first name">
+
+                            <input id="login-username" type="text" class="form-control marginbot-25" name="username" value="" placeholder="last name">
+
+                            <div class="row">
+                                <div class="col-md-12 marginbot-25">
+                                    <h4>Gender:</h4>
+                                    <div class="radio">
+                                        <label>
+                                            <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+                                            Male
+                                        </label>
+                                        <label>
+                                            <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+                                            Female
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row marginbot-25">
+                                <div class="col-md-12">
+                                    <h4>Profession:</h4>
+                                    <select id="ProfessionID" name="ProfessionID" required="required" class="selectpicker"><option value="">-- Please choose --</option>
+                                        <option value="1">Physical Therapist</option>
+                                        <option value="2">Personal Trainer</option>
+                                        <option value="3">Athletic Trainer</option>
+                                        <option value="4">Strength Coach</option>
+                                        <option value="5">Educator</option>
+                                        <option value="6">Chiropractor</option>
+                                        <option value="7">Other</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="input-group">
+                                <span class="input-group-addon"><i class="fa fa-phone"></i></span>
+                                <input id="login-username" type="text" class="form-control" name="phone" value="" placeholder="phone number">
+                            </div>
+
+
+
+
+
+                            <div class="form-group">
+                                <!-- Button -->
+
+                                <a id="btn-login" href="#" class="btn btn btn-green">Save Profile</a>
+                            </div>
+
+                        </form>
+                    </div>
+                    <div class="tab-pane fade" id="tab2">
+                        <div class="alert alert-info alert-dismissable fade in">
+                            <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
+                            <i class="icon icon_gift_alt"></i>
+                            <strong class="mr10">Use the form below to update your profile. New passwords are required to be a minimum of 6 characters in length.</strong>
+                        </div>
+
+                        <form id="" class="form-horizontal" role="form">
+
+                            <div class="input-group">
+                                <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+                                <input id="login-password" type="password" class="form-control" name="password" placeholder="current password">
+                            </div>
+
+                            <div class="input-group">
+                                <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
+                                <input id="login-password" type="password" class="form-control" name="password" placeholder="email address">
+                            </div>
+
+                            <div class="form-group">
+                                <!-- Button -->
+
+                                <a id="btn-login" href="#" class="btn btn btn-green">Save Email</a>
+                            </div>
+
+                            <div class="input-group">
+                                <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+                                <input id="login-password" type="password" class="form-control" name="password" placeholder="new password">
+                            </div>
+
+                            <div class="input-group">
+                                <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+                                <input id="login-password" type="password" class="form-control" name="password" placeholder="confirm password">
+                            </div>
+
+                            <p>By clicking "Sign Up" you agree to the <a href="#">Terms of Use</a>.</p>
+
+                            <div class="form-group">
+                                <!-- Button -->
+
+                                <a id="btn-login" href="#" class="btn btn btn-green">Save Password</a>
+                            </div>
+
+                        </form>
+                    </div>
+                    <div class="tab-pane fade active in" id="tab3">
+
                         <div class="row">
-                            <div class="col-xs-6">
-                                <img src="assets/img/stock/profile2.png" class="avatar">
-                            </div>
-                            <div class="col-xs-6">
-                                <a href="#" class="btn btn-primary btn-sm btn-block">Send Email</a>
-                            </div>
-                        </div>
-
-                    </div>
-                    <div class="col-md-8">
-                        <h2>John Wilson</h2>
-                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
-                        <div class="cleared"></div>
-
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-4">
-                        <div class="panel panel-default">
-                            <div class="panel-heading">
-                                <h3 class="panel-title">How to find <span style="font-size:1.5em;" class="pull-right"><a href="/experts/editaddress/25996"><i class="fa fa-pencil-square-o"></i></a> <a href="/experts/breon/deleteaddress/25996"><i class="fa fa-times"></i></a></span></h3>
-                            </div>
-                            <div class="panel-body">
-                                <p><i class="fa fa-phone"></i> 555-765-4321</p>
-                                <p><i class="fa fa-map-marker"></i> 1017 E Whitaker Mill Rd, Raleigh, 27608</p>
-                                <p>United States</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="panel panel-default">
-                            <div class="panel-heading">
-                                <h3 class="panel-title">Credentials</h3>
-                            </div>
-                            <div class="panel-body">
-                                <p>Personal Trainer</p>
-                                <p>FMS Certified (FMSC)</p>
-                            </div>
-                        </div>
-                        <button id="btn-certifiedMemberProfileEdit" class="btn btn btn-green" type="button">Edit</button>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="panel panel-default">
-                            <div class="panel-heading">
-                                <h3 class="panel-title">Certifications</h3>
-                            </div>
-                            <div class="panel-body">
+                            <div class="col-md-4">
                                 <div class="row">
-                                    <div class="col-md-6 col-sm-3 col-xs-6">
-                                        <div class="pad-10"><img src="assets/img/FMS_CERTIFIED_complete_L1_800x300.png" width="200px" height="100%"> </div>
+                                    <div class="col-xs-6">
+                                        <img src="assets/img/stock/profile2.png" class="avatar">
                                     </div>
-                                    <div class="col-md-6 col-sm-3 col-xs-6">
-                                        <div class="pad-10"><img src="assets/img/SFMA_CERTIFIED_complete_L1.png" width="200px" height="100%"> </div>
+                                    <div class="col-xs-6">
+                                        <a href="#" class="btn btn-primary btn-bordered btn-sm btn-block">Change Photo</a>
                                     </div>
-                                    <div class="col-md-6 col-sm-3 col-xs-6">
-                                        <div class="pad-10"><img src="assets/img/YBT_Certified.png" width="200px" height="100%"> </div>
+                                </div>
+
+                            </div>
+                            <div class="col-md-8">
+                                <h2>John Wilson</h2>
+                                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
+                                <div class="cleared"></div>
+
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h3 class="panel-title">How to find <span style="font-size:1.5em;" class="pull-right"><a href="/experts/editaddress/25996"><i class="fa fa-pencil-square-o"></i></a> <a href="/experts/breon/deleteaddress/25996"><i class="fa fa-times"></i></a></span></h3>
+                                    </div>
+                                    <div class="panel-body">
+                                        <p><i class="fa fa-phone"></i> 555-765-4321</p>
+                                        <p><i class="fa fa-map-marker"></i> 1017 E Whitaker Mill Rd, Raleigh, 27608</p>
+                                        <p>United States</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h3 class="panel-title">Credentials</h3>
+                                    </div>
+                                    <div class="panel-body">
+                                        <p>Personal Trainer</p>
+                                        <p>FMS Certified (FMSC)</p>
+                                    </div>
+                                </div>
+                                <button id="btn-certifiedMemberProfileEdit" class="btn btn btn-green" type="button">Edit</button>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h3 class="panel-title">Certifications</h3>
+                                    </div>
+                                    <div class="panel-body">
+                                        <div class="row">
+                                            <div class="col-md-6 col-sm-3 col-xs-6">
+                                                <div class="pad-10"><img src="assets/img/FMS_CERTIFIED_complete_L1_800x300.png" width="200px" height="100%"> </div>
+                                            </div>
+                                            <div class="col-md-6 col-sm-3 col-xs-6">
+                                                <div class="pad-10"><img src="assets/img/SFMA_CERTIFIED_complete_L1.png" width="200px" height="100%"> </div>
+                                            </div>
+                                            <div class="col-md-6 col-sm-3 col-xs-6">
+                                                <div class="pad-10"><img src="assets/img/YBT_Certified.png" width="200px" height="100%"> </div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
+
                     </div>
                 </div>
 
