@@ -197,3 +197,13 @@ $(document).ready(function() {
         );
     }
 });
+
+// Modal page load
+
+$(document).ready(function() {
+    if($('#loadModal').length) {
+        $(window).on('load',function(){
+            $('#loadModal').modal('show');
+        });
+    }
+});
