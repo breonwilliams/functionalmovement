@@ -1,0 +1,1370 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Functional Movement Systems</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/bootstrap-submenu.css">
+    <link rel="stylesheet" href="assets/css/bootstrap-select.css">
+    <link rel="stylesheet" href="assets/css/theme.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/slick-theme.css"/>
+    <link rel="stylesheet" type="text/css" href="assets/css/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap-switch.css"/>
+    <link rel="stylesheet" type="text/css" href="assets/css/lity.css"/>
+
+
+</head>
+<body>
+<!-- Header start -->
+<header class="header" id="header" role="banner">
+    <div class="header-top-area">
+        <div class="container">
+            <div class="row">
+                <!-- header-top-left start -->
+                <div class="col-lg-6 col-md-6 col-sm-7">
+                    <div class="header-top-left">
+                        <div class="top-message">Welcome, <a href="#">John</a>!</div>
+                    </div>
+                </div>
+                <!-- header-top-left end -->
+                <!-- header-top-right start -->
+                <div class="col-lg-6 col-md-6 col-sm-5">
+                    <div class="header-top-right">
+                        <div class="lang-select">
+                            <ul>
+                                <li>
+                                    <select class="selectpicker" data-style="btn-default" title='Select Language'>
+                                        <option data-content='<img src="assets/img/languages/en.png"> English'></option>
+                                        <option data-content='<img src="assets/img/languages/es.png"> Spanish'></option>
+                                        <option data-content='<img src="assets/img/languages/fr.png"> French'></option>
+                                    </select>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- header-top-right end -->
+            </div>
+        </div>
+    </div>
+    <div class="header-mid-area">
+        <div class="container">
+            <div class="row">
+                <!-- logo start -->
+                <div class="col-lg-offset-4 col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                    <div class="logo">
+                        <a href="#"><img src="assets/img/logo.png" alt=""></a>
+                    </div>
+                </div>
+                <!-- logo end -->
+                <div class="col-lg-4 col-md-8 col-sm-8 col-xs-8 text-right">
+                    <a href="#" class="cart" data-toggle="modal" data-target="#modal-3"><i class="fa fa-shopping-cart"></i><span>3</span></a> <a href="#signintab" class="btn btn-primary btn-sm modal-toggle" data-toggle="modal" data-target="#modal">Login</a>
+
+                </div>
+            </div>
+            <!-- Start Modal -->
+            <div class="modal fade" id="modal" tabindex="-1" role="modal" aria-labelledby="modal-label" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                            <h4 class="modal-title" id="modal-label">My FMS</h4>
+                        </div>
+                        <div class="modal-body">
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <ul class="nav nav-tabs">
+                                        <li class="active"><a href="#signintab" data-toggle="tab" aria-expanded="true">Sign In</a></li>
+                                        <li class=""><a href="#registertab" data-toggle="tab" aria-expanded="false">Register</a></li>
+                                        <li class=""><a href="#passwordtab" data-toggle="tab" aria-expanded="false">Forgot Password?</a></li>
+                                    </ul>
+                                    <div class="tab-content">
+                                        <div class="tab-pane fade active in" id="signintab">
+                                            <form id="loginform" class="form-horizontal" role="form">
+
+                                                <p>Please enter your username and password to login or <a href="#">create a new account</a>.</p>
+
+                                                <div class="input-group">
+                                                    <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                                                    <input id="login-username" type="text" class="form-control" name="username" value="" placeholder="username or email">
+                                                </div>
+
+                                                <div class="input-group">
+                                                    <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+                                                    <input id="login-password" type="password" class="form-control" name="password" placeholder="password">
+                                                </div>
+
+
+
+                                                <div class="input-group">
+                                                    <div class="checkbox">
+                                                        <label>
+                                                            <input id="login-remember" type="checkbox" name="remember" value="1"> Keep me logged in.
+                                                        </label>
+                                                    </div>
+                                                </div>
+
+
+                                                <div class="form-group">
+                                                    <!-- Button -->
+
+                                                    <div class="controls">
+                                                        <a id="btn-login" href="home.html" class="btn btn btn-green">Sign In  </a>
+                                                        <a id="btn-cancel" href="#" class="btn btn-primary">Cancel</a>
+
+                                                    </div>
+                                                </div>
+
+
+                                                <div class="form-group">
+                                                    <div class="col-md-12 control">
+                                                        Don't have an account!
+                                                        <a href="#">
+                                                            Sign Up Here
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </div>
+                                        <div class="tab-pane fade" id="registertab">
+                                            <form id="loginform" class="form-horizontal" role="form">
+
+                                                <h3>Create a new account.</h3>
+                                                <p>Use the form below to create a new account Passwords are required to be a minimum of 6 characters in length.</p>
+
+                                                <div class="input-group">
+                                                    <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                                                    <input id="login-username" type="text" class="form-control" name="username" value="" placeholder="username">
+                                                </div>
+
+                                                <input id="login-username" type="text" class="form-control marginbot-25" name="username" value="" placeholder="first name">
+
+                                                <input id="login-username" type="text" class="form-control marginbot-25" name="username" value="" placeholder="last name">
+
+                                                <div class="input-group">
+                                                    <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
+                                                    <input id="login-password" type="password" class="form-control" name="password" placeholder="email address">
+                                                </div>
+
+                                                <div class="input-group">
+                                                    <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+                                                    <input id="login-password" type="password" class="form-control" name="password" placeholder="password">
+                                                </div>
+
+                                                <div class="input-group">
+                                                    <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+                                                    <input id="login-password" type="password" class="form-control" name="password" placeholder="confirm password">
+                                                </div>
+
+                                                <p>By clicking "Sign Up" you agree to the <a href="#">Terms of Use</a>.</p>
+
+                                                <div class="form-group">
+                                                    <!-- Button -->
+
+                                                    <div class="controls">
+                                                        <a id="btn-login" href="#" class="btn btn btn-green">Sign In  </a>
+                                                        <a id="btn-cancel" href="#" class="btn btn-primary">Cancel</a>
+
+                                                    </div>
+                                                </div>
+
+                                            </form>
+                                        </div>
+                                        <div class="tab-pane fade" id="passwordtab">
+                                            <div class="tab-pane fade active in" id="signintab">
+                                                <form id="loginform" class="form-horizontal" role="form">
+
+                                                    <p>Use the form below to reset your password.</p>
+
+                                                    <div class="input-group">
+                                                        <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                                                        <input id="login-username" type="text" class="form-control" name="username" value="" placeholder="username or email">
+                                                    </div>
+
+                                                    <div class="form-group">
+                                                        <!-- Button -->
+
+                                                        <div class="controls">
+                                                            <a id="btn-login" href="#" class="btn btn btn-green">Reset Password</a>
+                                                            <a id="btn-cancel" href="#" class="btn btn-primary">Cancel</a>
+
+                                                        </div>
+                                                    </div>
+
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-bordered btn-primary" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Modal Cart -->
+            <div class="modal fade" id="modal-3" tabindex="-1" role="modal" aria-labelledby="modal-label-3" aria-hidden="true" style="display: none;">
+                <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                            <h4 class="modal-title" id="modal-label-3">Cart</h4>
+                        </div>
+                        <div class="modal-body">
+
+                            <div class="table-responsive">
+                                <table class="table table-striped table-hover table-1">
+                                    <thead>
+                                    <tr>
+                                        <th class="text-left">Name</th>
+                                        <th class="text-left">Qty</th>
+                                        <th class="text-left">Price</th>
+                                    </tr>
+                                    </thead>
+
+                                    <tbody>
+                                    <tr>
+                                        <td data-title="Product">
+                                            <h6 class="item-title">Functional Movement Systems Seminar</h6>
+                                        </td>
+                                        <td data-title="Qty"></td>
+                                        <td data-title="Price"></td>
+                                    </tr>
+                                    <tr>
+                                        <td data-title="Product">
+                                            <h6 class="item-title">Functional Movement Screen Level 2</h6>
+                                            <dd>Saturday, January 30, 2016 8:00 AM - 5:00 PM</dd>
+                                            <dd>Sunday, January 31, 2016 8:00 AM - 12:00 PM</dd>
+                                        </td>
+                                        <td data-title="Qty">1</td>
+                                        <td data-title="Price">$499.00</td>
+                                    </tr>
+                                    <tr>
+                                        <td data-title="Product">
+                                            <h6 class="item-title">Functional Movement Systems Seminar</h6>
+                                            <dd>Saturday, January 30, 2016 8:00 AM - 5:00 PM</dd>
+                                            <dd>Sunday, January 31, 2016 8:00 AM - 5:00 PMM</dd>
+                                        </td>
+                                        <td data-title="Qty">1</td>
+                                        <td data-title="Price">$945.00</td>
+                                    </tr>
+                                    <tr>
+                                        <td data-title="Product">
+                                            <h6 class="item-title">SFMA Level 1 - Online Prerequisite Credit</h6>
+                                        </td>
+                                        <td data-title="Qty">1</td>
+                                        <td data-title="Price">$-645.00</td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-6 col-md-offset-6">
+                                    <h2 class="title-medium br-bottom mb30">Order Summary</h2>
+                                    <table class="table">
+                                        <tbody>
+                                        <tr>
+                                            <td scope="row"><h6>Items:</h6></td>
+                                            <td>$1,444.00</td>
+                                        </tr>
+                                        <tr>
+                                            <td><h6>Tax:</h6></td>
+                                            <td>$0.00</td>
+                                        </tr>
+                                        <tr>
+                                            <td scope="row"><h6>Discounts:</h6></td>
+                                            <td>-$645.00</td>
+                                        </tr>
+                                        <tr>
+                                            <td scope="row">
+                                                <h3>Order total:</h3>
+                                            </td>
+                                            <td>
+                                                <h3 class="product-price">
+                                                    <span class="product-curency">$</span>799.00<span class="product-period"></span>
+                                                </h3>
+                                            </td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="modal-footer">
+                            <a href="shop-cart.html" class="btn btn-green">Complete Order <i class="fa fa-chevron-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End Modal -->
+        </div>
+    </div>
+    <nav class="navbar navbar-custom yamm" data-spy="affix">
+        <div class="container">
+            <div class="navbar-header">
+                <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+
+                <a href="#" class="navbar-brand"><img src="assets/img/logo.jpg"></a>
+            </div>
+
+            <!--- start navbar-collapse Header -->
+            <div class="navbar-collapse collapse out" aria-expanded="true">
+                <ul class="nav navbar-nav navbar-left">
+                    <li class="dropdown">
+                        <a href="#" tabindex="0" data-toggle="dropdown" data-hover="dropdown" data-submenu="">
+                            Home
+                        </a>
+                    </li>
+                    <li class="dropdown yamm-fullwidth">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown">The System<b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li class="container">
+                                <div class="row">
+                                    <div class="col-sm-4 widget">
+                                        <h3>Overview</h3>
+                                        <ul class="yamm-link">
+                                            <li><a href="#">The System</a></li>
+                                            <li><a href="#">FMS</a></li>
+                                            <li><a href="#">SFMA</a></li>
+                                            <li><a href="#">YBT</a></li>
+                                            <li><a href="#">FCS</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-sm-4 widget">
+                                        <h3>Meet the team</h3>
+                                        <ul class="yamm-link">
+                                            <li><a href="#">About Us</a></li>
+                                            <li><a href="#">Meet the team</a></li>
+                                            <li><a href="#">Advisory board</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-sm-4 widget">
+                                        <h3>Our Community</h3>
+                                        <ul class="yamm-link">
+                                            <li><a href="#">Partners</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" tabindex="0" data-toggle="dropdown" data-hover="dropdown" data-submenu="" aria-expanded="false">
+                            Resources<span class="caret"></span>
+                        </a>
+
+                        <ul class="dropdown-menu">
+                            <li><a href="#" tabindex="0">Articles</a></li>
+                            <li><a href="#" tabindex="0">Videos</a></li>
+                            <li><a href="#" tabindex="0">Podcasts</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" tabindex="0" data-toggle="dropdown" data-hover="dropdown" data-submenu="">
+                            Exercises
+                        </a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" tabindex="0" data-toggle="dropdown" data-hover="dropdown" data-submenu="" aria-expanded="false">
+                            Events<span class="caret"></span>
+                        </a>
+
+                        <ul class="dropdown-menu">
+                            <li><a href="#" tabindex="0">Where to start?</a></li>
+                            <li class="dropdown-submenu"><a href="#" tabindex="0">Find a course near you</a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#" tabindex="0">Event Lists View</a></li>
+                                    <li><a href="#" tabindex="0">Event Map View</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#" tabindex="0">Private Course Options</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" tabindex="0" data-toggle="dropdown" data-hover="dropdown" data-submenu="">
+                            Membership
+                        </a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" tabindex="0" data-toggle="dropdown" data-hover="dropdown" data-submenu="">
+                            Shop
+                        </a>
+                    </li>
+                </ul>
+
+                <form class="navbar-form navbar-right" role="search">
+                    <div class="input-group">
+                        <input type="text" class="form-control pull-right" placeholder="Search">
+						<span class="input-group-btn">
+							<button type="reset" class="btn btn-red">
+								<span class="glyphicon glyphicon-remove">
+									<span class="sr-only">Close</span>
+								</span>
+                            </button>
+							<button type="submit" class="btn btn-red">
+								<span class="glyphicon glyphicon-search">
+									<span class="sr-only">Search</span>
+								</span>
+                            </button>
+						</span>
+                    </div>
+                </form>
+            </div>
+            <!--- end navbar-collapse -->
+        </div>
+    </nav>
+</header>
+<!-- Header end -->
+
+
+<div id="main-content" class="container-fluid theme-showcase" role="main">
+    <section class="section-grey">
+        <div class="container">
+            <ol class="breadcrumb">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">The System</a></li>
+                <li class="active">SFMA</li>
+            </ol>
+        </div>
+    </section>
+
+
+
+    <section class="bg-img" style="background-image: url('https://files.functionalmovement.com/page_content/sfma/stock18.jpg');">
+        <div class="overlay-dark pad-40">
+            <div class="container text-center">
+                <h1 class="center-header rule-white" style="color: #FFFFFF; font-size: 78px; line-height: 98px;">
+                    SFMA</h1>
+                <p class="lead">
+                    Selective Functional Movement Assessment</p>
+                <h2 style="color: #FFFFFF;">
+                    Il dolore cambia tutto</h2>
+                <a class="btn btn-lg btn-primary" href="/events">Registrati ora</a> <a class="btn btn-lg btn-white" data-lity="" href="https://www.youtube.com/watch?v=vpbPnJ3fPDI&amp;feature=youtu.be">Guarda il video</a></div>
+        </div>
+    </section>
+    <div class="container pad-40">
+        <ul class="nav nav-tabs redtabs nav-tabs-lg flex-wrap text-center">
+            <li class="active flex-item">
+                <a aria-expanded="true" data-toggle="tab" href="#tab0">Prerequisiti dell’SFMA</a></li>
+            <li class="flex-item">
+                <a aria-expanded="true" data-toggle="tab" href="#tab1">SFMA Livello 1</a></li>
+            <li class="flex-item">
+                <a aria-expanded="false" data-toggle="tab" href="#tab2">SFMA Livello 2</a></li>
+        </ul>
+        <div class="tab-content">
+            <div class="tab-pane fade active in" id="tab0">
+                <div class="row">
+                    <div class="col-md-8">
+                        <h1 class="text-center">
+                            Non hai possibilità di assistere all’SFMA livello1, ma vuoi comunque iniziare il percorso?</h1>
+                        <h4 class="text-center marginbot-15">
+                            Il corso prerequisito online dell’SFMA Livello 1 è il primo passo.</h4>
+                        <p>
+                            Questo corso ti introdurrà al nostro sistema diagnostico basato sul movimento grazie al corso online.</p>
+                        <p>
+                            <em><small>Nota bene - Il corso online, pre-requisito dell’SFMA livello 1, non include una certificazione ma introdurrà i concetti base dell’SFMA.</small></em></p>
+                        <h1 class="text-center">
+                            Cos’è il corso online pre-requisito per l'SFMA livello 1?</h1>
+                        <p>
+                            Questo corso online include più di 5 ore di contenuti video, introduce le origini e la filosofia dietro l’SFMA, e le nostre valutazioni cliniche per coloro che presentano sintomatologie dolorose. L’SFMA è un sistema diagnostico basato sul movimento che identifica sistematicamente la causa del dolore - non l’origine del dolore - in virtù di un logica scissione delle sequenze motorie difunzionali nelle parti che le compongono, ottenendo un valutazione strutturata e ripetibile di quelle parti stesse che non contribuiscono in maniera sufficiente al movimento.</p>
+                        <h1 class="text-center">
+                            Chi dovrebbe seguire il corso online pre-requisito per il livello 1 dell’SFMA?</h1>
+                        <p>
+                            Chiunque è il benvenuto a seguire il corso online.</p>
+                        <p>Il completamento del corso online pre-requisito per il livello 1 dell’SFMA è il primo passo per diventare certificato SFMA. I professionisti sanitari idonei devono controllare il programma dei corsi dal vivo al fine di completare il processo di certificazione SFMA.</p>
+                        <p>Come professionista, la scelta è tua: se scegli di iniziare con il corso online, ti puoi registrare per il corso dal vivo in un secondo momento. Per la certificazione, puoi anche registrarti al corso dal vivo, nel quale verrà incluso l’accesso al corso online, nel caso in cui non sia stato già comprato.</p>
+                    </div>
+                    <div class="col-md-4">
+                        <a class="btn btn-primary btn-bordered btn-block" data-target="#sfmapr-courseobj" data-toggle="modal" href="#">Obiettivi del corso</a> <a class="btn btn-primary btn-bordered btn-block ceu" data-company="2" data-level="0" data-target="#sfmapr-ceu" data-toggle="modal" href="#">CEU info</a> <a class="btn btn-primary btn-bordered btn-block" data-target="#sfmapr-cancel" data-toggle="modal" href="#">Termini di cancellazione</a> <!-- Course Objective Modal-->
+                        <div aria-hidden="true" aria-labelledby="modal-label-3" class="modal fade" id="sfmapr-courseobj" role="modal" style="display: none;" tabindex="-1">
+                            <div class="modal-dialog modal-lg">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button aria-hidden="true" class="close" data-dismiss="modal" type="button">&times;</button>
+                                        <h4 class="modal-title" id="modal-label-3">
+                                            Obiettivi del corso</h4>
+                                    </div>
+                                    <div class="modal-body">
+                                        <ul class="custom-bullet">
+                                            <li>
+                                                Descrivere accuratamente l’importanza dell’identificazione di una sequenza o modello di movimento disfunzionale</li>
+                                            <li>
+                                                Capire l’importanza dei test provocativi il dolore durante il processo di valutazione ed indicare i modi in cui il dolore altera il controllo motorio.</li>
+                                            <li>
+                                                Capire la logica dell’SFMA nella determinazione della causa della disfunzione: problema di mobilità o problema di stabilità e/o di controllo motorio.</li>
+                                            <li>
+                                                Analizzare indipendentemente le informazioni ottenute, su un paziente dai test base e dai sotto-test dell’SFMA, per identificare correttamente le disfunzioni chiave al fine di giungere ad una diagnosi.</li>
+                                            <li>
+                                                Utilizzare le informazioni della valutazione per stilare la strategia terapeutica iniziale e intervenire con l'intervento terapeutico più appropriato (terapia manuale o esercizi correttivi) all’interno dei programmi tradizionali di riabilitazione, per normalizzare i movimenti disfunzionali.</li>
+                                        </ul>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button class="btn btn-bordered btn-primary" data-dismiss="modal" type="button">Close</button></div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--- Course Objective Modal end---><!-- CEU Information Modal-->					<div aria-hidden="true" aria-labelledby="modal-label-3" class="modal fade" id="sfmapr-ceu" role="modal" style="display: none;" tabindex="-1">
+                        <div class="modal-dialog modal-lg">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button aria-hidden="true" class="close" data-dismiss="modal" type="button">&times;</button>
+                                    <h4 class="modal-title" id="modal-label-3">
+                                        Informazioni CEU</h4>
+                                </div>
+                                <div class="modal-body">
+                                    <p>
+                                        La seguente tabella include informazioni riguardanti le organizzazioni che hanno approvato i corsi SFMA con i crediti di educazione continua.</p>
+                                    <div class="table-responsive table table-striped table-hover table-1">
+                                        <table class="ceu-data">
+                                        </table>
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button class="btn btn-bordered btn-primary" data-dismiss="modal" type="button">Close</button></div>
+                            </div>
+                        </div>
+                    </div>
+                        <!--- CEU Information Modal end---><!-- Cancellation Policy Modal-->					<div aria-hidden="true" aria-labelledby="modal-label-3" class="modal fade" id="sfmapr-cancel" role="modal" style="display: none;" tabindex="-1">
+                        <div class="modal-dialog modal-lg">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button aria-hidden="true" class="close" data-dismiss="modal" type="button">&times;</button>
+                                    <h4 class="modal-title" id="modal-label-3">
+                                        Termini di cancellazione</h4>
+                                </div>
+                                <div class="modal-body">
+                                    <p>
+                                        Grazie alla consegna immediata del materiale didattico del corso online, il prezzo dello stesso non è rimborsabile.</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button class="btn btn-bordered btn-primary" data-dismiss="modal" type="button">Close</button></div>
+                            </div>
+                        </div>
+                    </div>
+                        <!--- Cancellation Policy Modal end--->					<a class="btn btn-xl btn-primary margintop-15 btn-block" href="/Store/98/sfma_level_1_-_online_prerequisite">Register Now </a></div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="tab1">
+                <div class="row">
+                    <div class="col-md-8">
+                        <h1 class="center-header rule-black">
+                            Perché l’SFMA livello 1?</h1>
+                        <h4 class="text-center marginbot-15">
+                            Una diagnosi appropriata è il primo passo per un trattamento efficace.</h4>
+                        <p>
+                            Questo corso insegna il nostro sistema di diagnosi basato sul movimento e fornisce ai professionisti sanitari degli strumenti efficienti e sistematici per raggiungere una esaustiva diagnosi del movimento.</p>
+                        <h1 class="center-header rule-black">
+                            Cos’è l’SFMA livello 1?</h1>
+                        <h4 class="text-center marginbot-15">
+                            L’SFMA risponde alla nostra necessità clinica di valutare delle disfunzioni di mobilità o di stabilità e/o controllo motorio.</h4>
+                        <p>
+                            L’SFMA è la nostra valutazione clinica per coloro che presentano una sindrome dolorosa.</p>
+                        <p>L’SFMA è un sistema diagnostico basato sul movimento che identifica sistematicamente la causa del dolore - non l’origine del dolore- in virtù di un logica scissione delle sequenze motorie difunzionali nelle parti che le compongono, ottenendo un valutazione strutturata e ripetibile di quelle parti stesse che non contribuiscono in maniera sufficiente al movimento.</p>
+                        <div class="row marginbot-15">
+                            <div class="col-md-6">
+                                <img src="https://files.functionalmovement.com/page_content/sfma/stock19.jpg" /></div>
+                            <div class="col-md-6">
+                                <img src="https://files.functionalmovement.com/page_content/sfma/stock20.jpg" /></div>
+                        </div>
+                        <p>Considera l'SFMA in questo modo: nel caso di dovessi recare al pronto soccorso per un dolore lancinante al braccio sinistro, l’immediato focus sarà concentrato sul cuore, e non sul braccio. I sintomi sul braccio sono solo il risultato di un problema di un’altra parte del corpo. Analogamente, l'obiettivo dell’SFMA è individuare i movimenti disfunzionali per trovare la causa del dolore, e non l’origine. Questo concetto è meglio conosciuto come interdipendenza regionale - ovvero problemi apparentemente non correlati sono in realtà causa delle disfunzioni.</p>
+                        <p>Cosa rende l’SFMA unico? Noi abbiamo creato il primo sistema organizzato che prende in considerazione il controllo motorio alterato – l’incapacità di coordinare movimenti in maniera appropriata. Questo sistema ci permette di identificare il vero problema – mobilità piuttosto che controllo motorio – per portare l’equipe dei clinici a risultati di successo.</p>
+                        <p>Ci sono molti grandiosi sistemi di trattamento per la mobilità, ma grazie all’SFMA ti introdurremo nel nostro metodo di riprogrammazione del controllo motorio. Utilizziamo la prospettiva dello sviluppo neurologico infantile – il modo in cui impariamo a muoverci da bambini – per creare un sistema che insegna nuovamente al nostro cervello, grazie a movimenti che già conosce, come comunicare col corpo.</p>
+                        <p>Una volta finito il nostro corso, avrai nel tuo arsenale un sistema diagnostico ripetibile per applicare le tecniche manuali già in tuo possesso e un nuovo strumento per affrontare le componenti del controllo motorio. L’obiettivo primario del Livello 1 è arricchire i partecipanti non solo aumentando l’esperienza nella valutazione clinica, ma anche sviluppando la loro sicurezza nell’integrare il sistema con successo nella loro pratica clinica.</p>
+                        <h2 class="center-header rule-black">
+                            Chi dovrebbe partecipare al corso SFMA Livello1?</h2>
+                        <p>
+                            Anche se incoraggiamo tutti i professionisti a seguire il Livello 1 dell’SFMA , la certificazione è riservata ai professionisti in ambito sanitario.</p>
+                    </div>
+                    <div class="col-md-4">
+                        <a class="btn btn-primary btn-bordered btn-block" data-target="#sfma-coursedetails" data-toggle="modal" href="#">Dettagli del corso</a> <a class="btn btn-primary btn-bordered btn-block" data-target="#sfma-courseobj" data-toggle="modal" href="#">Obiettivi del corso e Programma</a> <a class="btn btn-primary btn-bordered btn-block ceu" data-company="2" data-level="1" data-target="#sfma-ceu" data-toggle="modal" href="#">Informazioni CEU</a> <a class="btn btn-primary btn-bordered btn-block" data-target="#sfma-cancel" data-toggle="modal" href="#">Termini di cancellazione</a> <a class="btn btn-primary btn-bordered btn-block" data-target="#sfma-private" data-toggle="modal" href="#">Opzioni di corso privato</a> <!-- Course Objective Modal-->
+                        <div aria-hidden="true" aria-labelledby="modal-label-3" class="modal fade" id="sfma-courseobj" role="modal" style="display: none;" tabindex="-1">
+                            <div class="modal-dialog modal-lg">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button aria-hidden="true" class="close" data-dismiss="modal" type="button">&times;</button>
+                                        <h4 class="modal-title" id="modal-label-3">
+                                            Obiettivi del corso</h4>
+                                    </div>
+                                    <div class="modal-body">
+                                        <ul class="custom-bullet marginbot-15">
+                                            <li>
+                                                Elencare i sette test base dell’SFMA ed identificare i criteri per la valutazione funzionale e disfunzionale per ogni test.</li>
+                                            <li>
+                                                Descrivere il significato della provocazione del dolore durante il processo di analisi ed indicare i due modi in cui il dolore altera il normale controllo motorio.</li>
+                                            <li>
+                                                Distinguere pattern di movimento funzionali e disfunzionali durante l’osservazione di casi registrati con la telecamera.</li>
+                                            <li>
+                                                Eseguire una completa valutazione SFMA compresi tutti i sotto-test.</li>
+                                            <li>
+                                                Analizzare i risultati dell’SFMA per identificare correttamente le disfunzioni fisiche e dare la priorità nel piano di trattamento.</li>
+                                            <li>
+                                                Delineare un programma di terapia riabilitativa che risolva i risultati chiave dell’SFMA.</li>
+                                            <li>
+                                                Valutare l’efficacia dell’intervento riabilitativo tramite la comparazione dei risultati della rivalutazione SFMA</li>
+                                        </ul>
+                                        <h3>
+                                            Programma del corso SFMA Livello 1</h3>
+                                        <h4>
+                                            GIORNO 1</h4>
+                                        <table class="table table-striped">
+                                            <thead>
+                                            <tr>
+                                                <th class="col-md-4">
+                                                    Orario</th>
+                                                <th class="col-md-8">
+                                                    Agenda</th>
+                                            </tr>
+                                            </thead>
+                                            <tbody>
+                                            <tr>
+                                                <td>
+                                                    8:00am &ndash; 8:15 am</td>
+                                                <td>
+                                                    Introduzione</td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    8:15am &ndash; 10:15am</td>
+                                                <td>
+                                                    Storia e sviluppo dell’SFMA/Interdipendenza regionale/Controllo motorio alterato/Prospettiva dello sviluppo neurofisiologico</td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    10:15am - 10:30am</td>
+                                                <td>
+                                                    Pausa</td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    10:30am - 11:15am</td>
+                                                <td>
+                                                    SFMA teorico/pratico- I sette test</td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    11:15am-12:00pm</td>
+                                                <td>
+                                                    SFMA la logica dello spacchettamento tramite i sotto test e loro dimostrazione</td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    12.00- 13.00</td>
+                                                <td>
+                                                    Pranzo</td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    13.00-17.00</td>
+                                                <td>
+                                                    <p>
+                                                        SFMA sotto test</p>
+                                                    <ul>
+                                                        <li>
+                                                            Multi-Segmental Flexion</li>
+                                                        <li>
+                                                            Multi-Segmental Extension</li>
+                                                        <li>
+                                                            Cervical Patterns</li>
+                                                    </ul>
+                                                </td>
+                                            </tr>
+                                            </tbody>
+                                        </table>
+                                        <h4>
+                                            Giorno 2</h4>
+                                        <table class="table table-striped">
+                                            <thead>
+                                            <tr>
+                                                <th class="col-md-4">
+                                                    Time</th>
+                                                <th class="col-md-8">
+                                                    Agenda</th>
+                                            </tr>
+                                            </thead>
+                                            <tbody>
+                                            <tr>
+                                                <td>
+                                                    8:00am &ndash; 8:15am</td>
+                                                <td>
+                                                    Domande sui contenuti del primo giorno</td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    8:15am &ndash; 12:00pm</td>
+                                                <td>
+                                                    <p>
+                                                        SFMA teorico/pratico</p>
+                                                    <ul>
+                                                        <li>
+                                                            Single Leg Stance</li>
+                                                        <li>
+                                                            Upper Extremity Patterns</li>
+                                                        <li>
+                                                            Multi-Segmental Rotation Pattern</li>
+                                                        <li>
+                                                            Overhead Deep Squat</li>
+                                                    </ul>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    12.00-13.00</td>
+                                                <td>
+                                                    Pranzo</td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    13.00-15.00</td>
+                                                <td>
+                                                    <p>
+                                                        Le 3 R</p>
+                                                    <ul>
+                                                        <li>
+                                                            Lo sviluppo delle sequenze neurofisiologiche</li>
+                                                        <li>
+                                                            Rotolamenti</li>
+                                                        <li>
+                                                            Dimostrazione della matrice 4x4</li>
+                                                    </ul>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    15.00-15.15</td>
+                                                <td>
+                                                    Pausa</td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    15.15-16.30</td>
+                                                <td>
+                                                    Mettere insieme tutte le informazioni-Dimostrazioni e casi studio</td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    16.30-17.00</td>
+                                                <td>
+                                                    Domande/Conclusione</td>
+                                            </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button class="btn btn-bordered btn-primary" data-dismiss="modal" type="button">Close</button></div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--- Course Objective Modal end---><!-- Course Details Modal-->					<div aria-hidden="true" aria-labelledby="modal-label-3" class="modal fade" id="sfma-coursedetails" role="modal" style="display: none;" tabindex="-1">
+                        <div class="modal-dialog modal-lg">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button aria-hidden="true" class="close" data-dismiss="modal" type="button">&times;</button>
+                                    <h4 class="modal-title" id="modal-label-3">
+                                        Dettagli del corso</h4>
+                                </div>
+                                <div class="modal-body">
+                                    <ul class="custom-bullet">
+                                        <li>
+                                            Corso prerequisito online – 6 ore di corso</li>
+                                        <li>
+                                            2 giorni di seminario</li>
+                                        <li>
+                                            Manuale a colori</li>
+                                        <li>
+                                            Corso pratico</li>
+                                    </ul>
+                                </div>
+                                <div class="modal-footer">
+                                    <button class="btn btn-bordered btn-primary" data-dismiss="modal" type="button">Close</button></div>
+                            </div>
+                        </div>
+                    </div>
+                        <!--- Course Details Modal end---><!-- CEU Information Modal-->					<div aria-hidden="true" aria-labelledby="modal-label-3" class="modal fade" id="sfma-ceu" role="modal" style="display: none;" tabindex="-1">
+                        <div class="modal-dialog modal-lg">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button aria-hidden="true" class="close" data-dismiss="modal" type="button">&times;</button>
+                                    <h4 class="modal-title" id="modal-label-3">
+                                        CEU Information</h4>
+                                </div>
+                                <div class="modal-body">
+                                    <p>
+                                        The following table includes information regarding organizations that have approved Selective Functional Movement Assessment courses for continuing education credits.</p>
+                                    <div class="table-responsive table table-striped table-hover table-1">
+                                        <table class="ceu-data">
+                                            <thead>
+                                            <tr>
+                                                <th>
+                                                    Certifying Organization</th>
+                                                <th>
+                                                    Level 1 (15 Hrs)</th>
+                                            </tr>
+                                            </thead>
+                                            <tbody>
+                                            <tr>
+                                                <td>
+                                                    NATA</td>
+                                                <td>
+                                                    15</td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    State Physical Therapy Boards</td>
+                                                <td>
+                                                    ---</td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    NATA (EBP)<sup>1 </sup></td>
+                                                <td>
+                                                    15</td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    PACE<sup>2 </sup></td>
+                                                <td>
+                                                    15</td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    CAA</td>
+                                                <td>
+                                                    15</td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    Physical Therapy Boards</td>
+                                                <td>
+                                                    <a href="/stateboards/8">Click Here</a></td>
+                                            </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button class="btn btn-bordered btn-primary" data-dismiss="modal" type="button">Close</button></div>
+                            </div>
+                        </div>
+                    </div>
+                        <!--- CEU Information Modal end---><!-- Cancellation Policy Modal-->					<div aria-hidden="true" aria-labelledby="modal-label-3" class="modal fade" id="sfma-cancel" role="modal" style="display: none;" tabindex="-1">
+                        <div class="modal-dialog modal-lg">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button aria-hidden="true" class="close" data-dismiss="modal" type="button">&times;</button>
+                                    <h4 class="modal-title" id="modal-label-3">
+                                        Termini di cancellazione</h4>
+                                </div>
+                                <div class="modal-body">
+                                    <p>La registrazione al corso livello 1 dell’SFMA include sia il corso online (645$) che il seminario di due giorni SFMA livello 1.</p>
+                                    <p>L’acquisto del corso online prerequisito dell’SFMA livello 1, così come qualunque corso online,non è rimborsabile. Questo è valutato 645$ sulla totale spesa di 945$.</p>
+                                    <p>Il costo (300$) del seminario teorico/pratico SFMA livello 1 è al 100% rimborsabile se la cancellazione avviene 14 giorni prima del corso. Se la cancellazione non avviene prima dei 14 giorni, il costo del corso non è rimborsabile, tuttavia il credito di iscrizione potrà esser utilizzato per i corsi SFMA 1 successivi.</p>
+                                    <p>Nel caso in cui il seminario venga cancellato dagli organizzatori, gli iscritti possono scegliere di ricevere il rimborso della spesa o di mantenere il credito per poi utilizzarlo nei corsi successivi all’interno dello stesso anno.</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button class="btn btn-bordered btn-primary" data-dismiss="modal" type="button">Close</button></div>
+                            </div>
+                        </div>
+                    </div>
+                        <!--- Cancellation Policy Modal end---><!-- Private Course Options Modal-->					<div aria-hidden="true" aria-labelledby="modal-label-3" class="modal fade" id="sfma-private" role="modal" style="display: none;" tabindex="-1">
+                        <div class="modal-dialog modal-lg">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button aria-hidden="true" class="close" data-dismiss="modal" type="button">&times;</button>
+                                    <h4 class="modal-title" id="modal-label-3">
+                                        Corso privato</h4>
+                                </div>
+                                <div class="modal-body">
+                                    <p class="lead">
+                                        I corsi privati sono stati concepiti per educare il vostro staff nell’FMS/SFMA. Non è ammesso alcun tipo di marketing tra le due organizzazioni.</p>
+                                    <h4>
+                                        Le vostre responsabilità delle società/staff:</h4>
+                                    <ul class="custom-bullet marginbot-30">
+                                        <li>
+                                            Fornire la sede del corso (1000 sq ft è raccomandato per 25 partecipanti)</li>
+                                        <li>
+                                            Fornire le attrezzature audio/video (Proiettore, schermo, e microfono se il gruppo è maggiore di 50)</li>
+                                        <li>
+                                            Opzionale - fornire il pasto al vostro staff</li>
+                                        <li>
+                                            Ulteriori attrezzature possono essere richieste (dipendenti dal tipo di corso).</li>
+                                    </ul>
+                                    <h4>
+                                        SFMA 1 corso privato (2 giorni)</h4>
+                                    <p>
+                                        <strong>Include:</strong></p>
+                                    <ul class="custom-bullet marginbot-30">
+                                        <li>
+                                            Corso online, corso pratico SFMA 1, l’esame online di certificazione SFMA 1, il certificato elettronico, un anno di membership</li>
+                                    </ul>
+                                    <h4>
+                                        SFMA Private Level 2 Course (2 day event)</h4>
+                                    <p>
+                                        <strong>Includes:</strong></p>
+                                    <ul class="custom-bullet marginbot-30">
+                                        <li>
+                                            Live SFMA Level 2 course, electronic cerificates, one year active membership, all instructor travel and fees</li>
+                                    </ul>
+                                    <h4>
+                                        SFMA Live Level 1 and 2 Course (4 day event)</h4>
+                                    <p>
+                                        <strong>Includes:</strong></p>
+                                    <ul class="custom-bullet marginbot-30">
+                                        <li>
+                                            Live SFMA Level 1 and 2 courses, SFMA Level 1 Online Prerequisite Course, online SFMA Level 1 certification exam access, electronic certificates, one year active membership, all instructor travel and fees</li>
+                                    </ul>
+                                    <h4>
+                                        Vuoi avere più informazioni?</h4>
+                                    <p>
+                                        Clicca qui per riempire il modulo di richiesta info ed il nostro team ti risponderà a breve. Grazie per il tuo interesse.</p>
+                                    <a class="btn btn-primary" href="/events/privatecourseinquiry">Richiesta corso privato</a></div>
+                                <div class="modal-footer">
+                                    <button class="btn btn-bordered btn-primary" data-dismiss="modal" type="button">Close</button></div>
+                            </div>
+                        </div>
+                    </div>
+                        <!--- Private Course Options Modal end--->					<a class="btn btn-xl btn-primary margintop-15 btn-block" href="/events">Registrati ora</a></div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="tab2">
+                <div class="row">
+                    <div class="col-md-8">
+                        <h1 class="center-header rule-black">
+                            Perché l’SFMA 2?</h1>
+                        <h4 class="text-center marginbot-15">
+                            Ora che hai identificato il problema, iniziamo a parlare della soluzione.</h4>
+                        <p class="marginbot-35">
+                            Questo corso insegna ai professionisti sanitari come utilizzare i risultati dell’SFMA per guidare il loro intervento terapeutico – da tecniche per recuperare la mobilità, alla riprogrammazione delle disfunzioni del controllo motorio.</p>
+                        <h2 class="center-header rule-black marginbot-15">
+                            Cos’è l’SFMA 2</h2>
+                        <h4 class="text-center marginbot-15">
+                            L’SFMA 2 fornisce un approccio sistematico per trattare efficientemente le disfunzioni di movimento.</h4>
+                        <p>
+                            Il livello 2 pone l’attenzione sul nostro approccio delle 3 R – Reset, Reinforce, and Reload – per recuperare il movimento corretto. Con i risultati derivati dall’SFMA, sarai in grado di dare la priorità alla zona da trattare e a comprendere quale tipo di trattamento eseguire. Ci sono a disposizioni molte ottime tecniche di recupero per la mobilità – nell’SFMA2 discuteremo delle opzioni di Reset, ma l’ obiettivo primario del nostro corso è focalizzarsi su Reinforcement e Reloading.</p>
+                        <img class="marginbot-15" src="https://files.functionalmovement.com/page_content/sfma/stock21.jpg" />
+                        <p>
+                            I bambini sviluppano i movimenti in schemi, non in maniera isolata. Imparano a controllare il movimento prima di progredire verso posture più evolute. Utilizzando la prospettiva dello sviluppo neuro-fisiologico - come impariamo a muoverci in età infantile - abbiamo sviluppato un modello che guida la programmazione del controllo motorio, ricalcando quello che abbiamo già imparato nei primi anni di vita.</p>
+                        <p>
+                            Una volta uscito da questo corso, avrai nel tuo arsenale uno strumento di riprogrammazione del controllo motorio che potrai integrare fin da subito nel tuo lavoro.</p>
+                        <h2 class="center-header rule-black">
+                            Chi dovrebbe partecipare al corso SFMA 2?</h2>
+                        <p>
+                            Tutti coloro che hanno completato l’SFMA1 possono partecipare.</p>
+                    </div>
+                    <div class="col-md-4">
+                        <a class="btn btn-primary btn-bordered btn-block" data-target="#sfma-coursedetails2" data-toggle="modal" href="#">Dettagli del corso</a> <a class="btn btn-primary btn-bordered btn-block" data-target="#sfma-courseobj2" data-toggle="modal" href="#">Obiettivi del corso e Programma</a> <a class="btn btn-primary btn-bordered btn-block ceu" data-company="2" data-level="2" data-target="#sfma-ceu2" data-toggle="modal" href="#">Informazioni CEU</a> <a class="btn btn-primary btn-bordered btn-block" data-target="#sfma-cancel2" data-toggle="modal" href="#">Termini di cancellazione</a> <a class="btn btn-primary btn-bordered btn-block" data-target="#sfma-private2" data-toggle="modal" href="#">Opzioni di corso privato</a> <!-- Course Objective Modal-->
+                        <div aria-hidden="true" aria-labelledby="modal-label-3" class="modal fade" id="sfma-courseobj2" role="modal" style="display: none;" tabindex="-1">
+                            <div class="modal-dialog modal-lg">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button aria-hidden="true" class="close" data-dismiss="modal" type="button">&times;</button>
+                                        <h4 class="modal-title" id="modal-label-3">
+                                            Obiettivi del corso</h4>
+                                    </div>
+                                    <div class="modal-body">
+                                        <ol class="marginbot-15">
+                                            <li>
+                                                Spiegare i concetti di Reset, Reinforce e Reload e dove integrarli nella cura del paziente</li>
+                                            <li>
+                                                Dimostrare l’efficacia dei trattamenti di mobilità attraverso il re-testing del movimento</li>
+                                            <li>
+                                                Descrivere i principi di apprendimento di controllo motorio</li>
+                                            <li>
+                                                Dimostrare la progressione del controllo motorio attraverso lo sviluppo di posture sulla base dello sviluppo neuro-fisiologico infantile.</li>
+                                            <li>
+                                                Descrivere il concetto dell’assistenza ed il suo scopo nel processo di apprendimento del controllo motorio</li>
+                                        </ol>
+                                        <h3>
+                                            SFMA Livello  2 Programma del corso</h3>
+                                        <h4>
+                                            GIORNO 1</h4>
+                                        <table class="table table-striped">
+                                            <thead>
+                                            <tr>
+                                                <th class="col-md-4">
+                                                    Orario</th>
+                                                <th class="col-md-8">
+                                                    Agenda</th>
+                                            </tr>
+                                            </thead>
+                                            <tbody>
+                                            <tr>
+                                                <td>
+                                                    8:00am - 8:30am</td>
+                                                <td>
+                                                    Introduzione e aggiornamenti sull’SFMA</td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    8:30am - 10:30am</td>
+                                                <td>
+                                                    Le 3 R (Reset,Reinforce,Reload)</td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    10:30am - 10:45am</td>
+                                                <td>
+                                                    Pausa</td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    10:45am - 11:30am</td>
+                                                <td>
+                                                    Il controllo motorio</td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    11:30am - 12:00pm</td>
+                                                <td>
+                                                    Dimostrazione a gruppi della matrice 4x4 per il  Cervical pattern</td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    12:00pm - 13:00pm</td>
+                                                <td>
+                                                    Pranzo</td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    13.00-17.00</td>
+                                                <td>
+                                                    Dimostrazione a gruppi di:<br />
+                                                    <ul>
+                                                        <li>
+                                                            Upper extremity Pattern 1 e 2 Matrice 4x4</li>
+                                                        <li>
+                                                            Multi-segmental Flexion Matrice 4x4</li>
+                                                        <li>
+                                                            Overhead deep squat Matrice 4x4</li>
+                                                        <li>
+                                                            Discussione pratica sui JMD/TED della caviglia</li>
+                                                    </ul>
+                                                </td>
+                                            </tr>
+                                            </tbody>
+                                        </table>
+                                        <h4>
+                                            Giorno  2</h4>
+                                        <table class="table table-striped">
+                                            <thead>
+                                            <tr>
+                                                <th class="col-md-4">
+                                                    Orario</th>
+                                                <th class="col-md-8">
+                                                    Agenda</th>
+                                            </tr>
+                                            </thead>
+                                            <tbody>
+                                            <tr>
+                                                <td>
+                                                    8:00am &ndash; 8:15am</td>
+                                                <td>
+                                                    Domande sui contenuti del primo giorno</td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    8:15am &ndash; 12:00pm</td>
+                                                <td>
+                                                    Dimostrazione a gruppi di:
+                                                    <ul>
+                                                        <li>
+                                                            Multi-segmental extension Matrice 4x4</li>
+                                                        <li>
+                                                            Multi-segmental rotation Matrice 4x4</li>
+                                                        <li>
+                                                            Discussione pratica sui JMD/TED del torace</li>
+                                                    </ul>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    12:00pm &ndash; 13:00pm</td>
+                                                <td>
+                                                    Pranzo</td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    13.00-16.30</td>
+                                                <td>
+                                                    Dimostrazione a gruppi di:
+                                                    <ul>
+                                                        <li>
+                                                            Single leg stance Matrice 4x4</li>
+                                                        <li>
+                                                            Respirazione</li>
+                                                        <li>
+                                                            Discussione pratica sui JMD/TED dell’anca</li>
+                                                    </ul>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    16.30-17.00</td>
+                                                <td>
+                                                    Domande/Conclusione</td>
+                                            </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button class="btn btn-bordered btn-primary" data-dismiss="modal" type="button">Close</button></div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--- Course Objective Modal end---><!-- Course Details Modal-->					<div aria-hidden="true" aria-labelledby="modal-label-3" class="modal fade" id="sfma-coursedetails2" role="modal" style="display: none;" tabindex="-1">
+                        <div class="modal-dialog modal-lg">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button aria-hidden="true" class="close" data-dismiss="modal" type="button">&times;</button>
+                                    <h4 class="modal-title" id="modal-label-3">
+                                        Dettagli del corso</h4>
+                                </div>
+                                <div class="modal-body">
+                                    <ul class="custom-bullet">
+                                        <li>
+                                            2 giorni di seminario</li>
+                                        <li>
+                                            Manuale a colori</li>
+                                        <li>
+                                            Corso pratico</li>
+                                    </ul>
+                                </div>
+                                <div class="modal-footer">
+                                    <button class="btn btn-bordered btn-primary" data-dismiss="modal" type="button">Close</button></div>
+                            </div>
+                        </div>
+                    </div>
+                        <!--- Course Details Modal end---><!-- CEU Information Modal-->					<div aria-hidden="true" aria-labelledby="modal-label-3" class="modal fade" id="sfma-ceu2" role="modal" style="display: none;" tabindex="-1">
+                        <div class="modal-dialog modal-lg">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button aria-hidden="true" class="close" data-dismiss="modal" type="button">&times;</button>
+                                    <h4 class="modal-title" id="modal-label-3">
+                                        CEU Information</h4>
+                                </div>
+                                <div class="modal-body">
+                                    <p>
+                                        The following table includes information regarding organizations that have approved Selective Functional Movement Assessment courses for continuing education credits.</p>
+                                    <div class="table-responsive table table-striped table-hover table-1">
+                                        <table class="ceu-data">
+                                            <thead>
+                                            <tr>
+                                                <th>
+                                                    Certifying Organization</th>
+                                                <th>
+                                                    Level 2 (15 Hrs)</th>
+                                            </tr>
+                                            </thead>
+                                            <tbody>
+                                            <tr>
+                                                <td>
+                                                    NATA<sup>1 </sup></td>
+                                                <td>
+                                                    15</td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    State Physical Therapy Boards<sup>2 </sup></td>
+                                                <td>
+                                                    ---</td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    Physical Therapy Boards</td>
+                                                <td>
+                                                    <a href="/stateboards/9">Click Here</a></td>
+                                            </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button class="btn btn-bordered btn-primary" data-dismiss="modal" type="button">Close</button></div>
+                            </div>
+                        </div>
+                    </div>
+                        <!--- CEU Information Modal end---><!-- Cancellation Policy Modal-->					<div aria-hidden="true" aria-labelledby="modal-label-3" class="modal fade" id="sfma-cancel2" role="modal" style="display: none;" tabindex="-1">
+                        <div class="modal-dialog modal-lg">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button aria-hidden="true" class="close" data-dismiss="modal" type="button">&times;</button>
+                                    <h4 class="modal-title" id="modal-label-3">
+                                        Termini di cancellazione</h4>
+                                </div>
+                                <div class="modal-body">
+                                    <p>Il costo del seminario teorico/pratico SFMA livello 2 è al 100% rimborsabile se la cancellazione avviene 14 giorni prima del corso. Se la cancellazione non avviene prima dei 14 giorni, il costo del corso non è rimborsabile, tuttavia possono slittare l’iscrizione ad un corso SFMA 2 all’interno dello stesso anno.</p>
+                                    <p>Nel caso in cui il seminario venga cancellato dagli organizzatori, gli iscritti possono scegliere di ricevere il rimborso della spesa o di mantenere il credito per poi utilizzarlo nei corsi successivi all’interni dello stesso anno.</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button class="btn btn-bordered btn-primary" data-dismiss="modal" type="button">Close</button></div>
+                            </div>
+                        </div>
+                    </div>
+                        <!--- Cancellation Policy Modal end---><!-- Private Course Options Modal-->					<div aria-hidden="true" aria-labelledby="modal-label-3" class="modal fade" id="sfma-private2" role="modal" style="display: none;" tabindex="-1">
+                        <div class="modal-dialog modal-lg">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button aria-hidden="true" class="close" data-dismiss="modal" type="button">&times;</button>
+                                    <h4 class="modal-title" id="modal-label-3">
+                                        Corso privato</h4>
+                                </div>
+                                <div class="modal-body">
+                                    <p class="lead">
+                                        I corsi privati sono stati concepiti per educare il vostro staff nell’FMS/SFMA. Non è ammesso alcun tipo di marketing tra le due organizzazioni.</p>
+                                    <h4>
+                                        Le vostre responsabilità delle società/staff:</h4>
+                                    <ul class="custom-bullet marginbot-30">
+                                        <li>
+                                            Fornire la sede del corso( 1000 sq ft è raccomandato per 25 partecipanti)</li>
+                                        <li>
+                                            Fornire le attrezzature audio/video (Proiettore, schermo, e microfono se il gruppo è maggiore di 50)</li>
+                                        <li>
+                                            Opzionale- fornire il pasto al vostro staff</li>
+                                        <li>
+                                            Ulteriori attrezzature possono essere richieste (dipendenti dal tipo di corso).</li>
+                                    </ul>
+                                    <h4>
+                                        SFMA 1 corso privato (2 giorni)</h4>
+                                    <p>
+                                        <strong>Include:</strong></p>
+                                    <ul class="custom-bullet marginbot-30">
+                                        <li>
+                                            Corso online, corso pratico SFMA 1, l’esame online di certificazione SFMA 1, il certificato elettronico, un anno di membership</li>
+                                    </ul>
+                                    <h4>
+                                        SFMA 2 corso privato (2 giorni)</h4>
+                                    <p>
+                                        <strong>Include:</strong></p>
+                                    <ul class="custom-bullet marginbot-30">
+                                        <li>
+                                            Corso pratico SFMA 2, il certificato elettronico, un anno di membership</li>
+                                    </ul>
+                                    <h4>
+                                        Corso privato SFMA 1 e 2(4 giorni))</h4>
+                                    <p>
+                                        <strong>Include:</strong></p>
+                                    <ul class="custom-bullet marginbot-30">
+                                        <li>
+                                            Corso online, corso pratico SFMA 1, l’esame online di certificazione SFMA 1, il certificato elettronico, Corso pratico SFMA 2, il certificato elettronico, un anno di membership</li>
+                                    </ul>
+                                    <h4>
+                                        Vuoi avere più informazioni?</h4>
+                                    <p>
+                                        Clicca qui per riempire il modulo di richiesta info ed il nostro team ti risponderà a breve. Grazie per il vostro interesse.</p>
+                                    <a class="btn btn-primary" href="/events/privatecourseinquiry">Richiesta corso privato</a></div>
+                                <div class="modal-footer">
+                                    <button class="btn btn-bordered btn-primary" data-dismiss="modal" type="button">Close</button></div>
+                            </div>
+                        </div>
+                    </div>
+                        <!--- Private Course Options Modal end--->					<a class="btn btn-xl btn-primary margintop-15 btn-block" href="/events">Registrati ora</a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+<!-- Start footer --->
+
+<footer>
+    <div class="footer-section pad-40">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <h2 class="ft-title"><span>Support</span></h2>
+                    <div class="footer-widget-1 address">
+                        <ul>
+                            <li><i class="fa fa-envelope"></i><a href="mailto:info@functionalmovement.com">info@functionalmovement.com</a></li>
+                            <li><i class="fa fa-phone"></i>+1 (434) 432-3677</li>
+                        </ul>
+                    </div>
+                </div> <!--/footer-1-->
+                <div class="col-md-3">
+                    <h2 class="ft-title"><span>Connect with us</span></h2>
+                    <div class="footer-social">
+                        <div class="social-icon">
+                            <ul>
+                                <li>
+                                    <a title="Facebook" href="#" target="_blank"><i class="fa fa-facebook"></i></a>
+                                </li>
+                                <li>
+                                    <a title="Twitter" href="#" target="_blank"><i class="fa fa-twitter"></i></a>
+                                </li>
+                                <li>
+                                    <a title="YouTube" href="#" target="_blank"><i class="fa fa-youtube"></i></a>
+                                </li>
+                            </ul>
+                        </div> <!--/.social-icon-->
+                    </div>
+                </div> <!--/footer-2-->
+                <div class="col-md-3">
+                    <h2 class="ft-title"><span>Latest tweet</span></h2>
+                    <div id="twitter-feed" class="twitter-feed">
+                        <div class="tweet"><ul><li><div class="tweet-icon"><i class="fa fa-twitter fa-2x"></i></div><div class="tweet-date">Oct. 24, 2015</div><div class="tweet-content">Simple & Sinister + Heart Rate Monitor <a href="http://www.strongfirst.com/simple-sinister-heart-rate-monitor/" target="_blank">http://www.strongfirst.com/simple-sinister-heart-rate-monitor/</a> … <a href="http://bit.ly/1MeNX6B" target="_blank" title="Visit this link">http://bit.ly/1MeNX6B</a></div></li></ul></div>
+                    </div>
+                </div> <!--/footer-3-->
+                <div class="col-md-3">
+                    <h2 class="ft-title"><span>Find Certified Members</span></h2>
+                    <div class="input-group custom-search-form">
+                        <input type="text" class="form-control" placeholder="Postal Code">
+                          <span class="input-group-btn">
+                              <button class="btn btn-primary" type="button">
+                                  <span class="glyphicon glyphicon-search"></span>
+                              </button>
+                         </span>
+                    </div><!-- /input-group -->
+                </div> <!--/footer-4-->
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <small>Copyright © 2015 FunctionalMovement.com</small>
+                </div>
+                <div class="col-md-6">
+                    <ul class="foot-menu">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms and Conditions</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- latest jQuery, Boostrap JS and hover dropdown plugin -->
+<script src="https://code.jquery.com/jquery-latest.min.js" defer></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" defer></script>
+<script src="assets/js/bootstrap-submenu.js" defer></script>
+<script src="assets/js/docs.js" defer></script>
+<script src="assets/js/bootstrap-hover-dropdown.js" defer></script>
+<script src="assets/js/dropdownhover.js" defer></script>
+<script src="assets/js/bootstrap-select.js" defer></script>
+<script src="assets/js/jquery.background-video.js" defer></script>
+<script src="assets/js/slick.js" defer></script>
+<script src="assets/js/slick-init.js" defer></script>
+<script src="assets/js/autosize.js" defer></script>
+<!-- Popup Video js -->
+<script src="assets/js/lity.js" defer></script>
+<script src="assets/js/bootstrap-switch.js" defer></script>
+<script src="assets/js/highlight.js" defer></script>
+<script src="assets/js/main.js" defer></script>
+
+</body>
+</html>
