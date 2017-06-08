@@ -1,0 +1,923 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Functional Movement Systems</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/bootstrap-submenu.css">
+    <link rel="stylesheet" href="assets/css/bootstrap-select.css">
+    <link rel="stylesheet" href="assets/css/theme.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/slick-theme.css"/>
+    <link rel="stylesheet" type="text/css" href="assets/css/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap-switch.css"/>
+    <link rel="stylesheet" type="text/css" href="assets/css/lity.css"/>
+
+
+</head>
+<body>
+<!-- Header start -->
+<header class="header" id="header" role="banner">
+    <div class="header-top-area">
+        <div class="container">
+            <div class="row">
+                <!-- header-top-left start -->
+                <div class="col-lg-6 col-md-6 col-sm-7">
+                    <div class="header-top-left">
+                        <div class="top-message">Welcome, <a href="#">John</a>!</div>
+                    </div>
+                </div>
+                <!-- header-top-left end -->
+                <!-- header-top-right start -->
+                <div class="col-lg-6 col-md-6 col-sm-5">
+                    <div class="header-top-right">
+                        <div class="lang-select">
+                            <ul>
+                                <li>
+                                    <select class="selectpicker" data-style="btn-default" title='Select Language'>
+                                        <option data-content='<img src="assets/img/languages/en.png"> English'></option>
+                                        <option data-content='<img src="assets/img/languages/es.png"> Spanish'></option>
+                                        <option data-content='<img src="assets/img/languages/fr.png"> French'></option>
+                                    </select>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- header-top-right end -->
+            </div>
+        </div>
+    </div>
+    <div class="header-mid-area">
+        <div class="container">
+            <div class="row">
+                <!-- logo start -->
+                <div class="col-lg-offset-4 col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                    <div class="logo">
+                        <a href="#"><img src="assets/img/logo.png" alt=""></a>
+                    </div>
+                </div>
+                <!-- logo end -->
+                <div class="col-lg-4 col-md-8 col-sm-8 col-xs-8 text-right">
+                    <a href="#" class="cart" data-toggle="modal" data-target="#modal-3"><i class="fa fa-shopping-cart"></i><span>3</span></a> <a href="#signintab" class="btn btn-primary btn-sm modal-toggle" data-toggle="modal" data-target="#modal">Login</a>
+
+                </div>
+            </div>
+            <!-- Start Modal -->
+            <div class="modal fade" id="modal" tabindex="-1" role="modal" aria-labelledby="modal-label" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                            <h4 class="modal-title" id="modal-label">My FMS</h4>
+                        </div>
+                        <div class="modal-body">
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <ul class="nav nav-tabs">
+                                        <li class="active"><a href="#signintab" data-toggle="tab" aria-expanded="true">Sign In</a></li>
+                                        <li class=""><a href="#registertab" data-toggle="tab" aria-expanded="false">Register</a></li>
+                                        <li class=""><a href="#passwordtab" data-toggle="tab" aria-expanded="false">Forgot Password?</a></li>
+                                    </ul>
+                                    <div class="tab-content">
+                                        <div class="tab-pane fade active in" id="signintab">
+                                            <form id="loginform" class="form-horizontal" role="form">
+
+                                                <p>Please enter your username and password to login or <a href="#">create a new account</a>.</p>
+
+                                                <div class="input-group">
+                                                    <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                                                    <input id="login-username" type="text" class="form-control" name="username" value="" placeholder="username or email">
+                                                </div>
+
+                                                <div class="input-group">
+                                                    <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+                                                    <input id="login-password" type="password" class="form-control" name="password" placeholder="password">
+                                                </div>
+
+
+
+                                                <div class="input-group">
+                                                    <div class="checkbox">
+                                                        <label>
+                                                            <input id="login-remember" type="checkbox" name="remember" value="1"> Keep me logged in.
+                                                        </label>
+                                                    </div>
+                                                </div>
+
+
+                                                <div class="form-group">
+                                                    <!-- Button -->
+
+                                                    <div class="controls">
+                                                        <a id="btn-login" href="home.html" class="btn btn btn-green">Sign In  </a>
+                                                        <a id="btn-cancel" href="#" class="btn btn-primary">Cancel</a>
+
+                                                    </div>
+                                                </div>
+
+
+                                                <div class="form-group">
+                                                    <div class="col-md-12 control">
+                                                        Don't have an account!
+                                                        <a href="#">
+                                                            Sign Up Here
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </div>
+                                        <div class="tab-pane fade" id="registertab">
+                                            <form id="loginform" class="form-horizontal" role="form">
+
+                                                <h3>Create a new account.</h3>
+                                                <p>Use the form below to create a new account Passwords are required to be a minimum of 6 characters in length.</p>
+
+                                                <div class="input-group">
+                                                    <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                                                    <input id="login-username" type="text" class="form-control" name="username" value="" placeholder="username">
+                                                </div>
+
+                                                <input id="login-username" type="text" class="form-control marginbot-25" name="username" value="" placeholder="first name">
+
+                                                <input id="login-username" type="text" class="form-control marginbot-25" name="username" value="" placeholder="last name">
+
+                                                <div class="input-group">
+                                                    <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
+                                                    <input id="login-password" type="password" class="form-control" name="password" placeholder="email address">
+                                                </div>
+
+                                                <div class="input-group">
+                                                    <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+                                                    <input id="login-password" type="password" class="form-control" name="password" placeholder="password">
+                                                </div>
+
+                                                <div class="input-group">
+                                                    <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+                                                    <input id="login-password" type="password" class="form-control" name="password" placeholder="confirm password">
+                                                </div>
+
+                                                <p>By clicking "Sign Up" you agree to the <a href="#">Terms of Use</a>.</p>
+
+                                                <div class="form-group">
+                                                    <!-- Button -->
+
+                                                    <div class="controls">
+                                                        <a id="btn-login" href="#" class="btn btn btn-green">Sign In  </a>
+                                                        <a id="btn-cancel" href="#" class="btn btn-primary">Cancel</a>
+
+                                                    </div>
+                                                </div>
+
+                                            </form>
+                                        </div>
+                                        <div class="tab-pane fade" id="passwordtab">
+                                            <div class="tab-pane fade active in" id="signintab">
+                                                <form id="loginform" class="form-horizontal" role="form">
+
+                                                    <p>Use the form below to reset your password.</p>
+
+                                                    <div class="input-group">
+                                                        <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                                                        <input id="login-username" type="text" class="form-control" name="username" value="" placeholder="username or email">
+                                                    </div>
+
+                                                    <div class="form-group">
+                                                        <!-- Button -->
+
+                                                        <div class="controls">
+                                                            <a id="btn-login" href="#" class="btn btn btn-green">Reset Password</a>
+                                                            <a id="btn-cancel" href="#" class="btn btn-primary">Cancel</a>
+
+                                                        </div>
+                                                    </div>
+
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-bordered btn-primary" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Modal Cart -->
+            <div class="modal fade" id="modal-3" tabindex="-1" role="modal" aria-labelledby="modal-label-3" aria-hidden="true" style="display: none;">
+                <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                            <h4 class="modal-title" id="modal-label-3">Cart</h4>
+                        </div>
+                        <div class="modal-body">
+
+                            <div class="table-responsive">
+                                <table class="table table-striped table-hover table-1">
+                                    <thead>
+                                    <tr>
+                                        <th class="text-left">Name</th>
+                                        <th class="text-left">Qty</th>
+                                        <th class="text-left">Price</th>
+                                    </tr>
+                                    </thead>
+
+                                    <tbody>
+                                    <tr>
+                                        <td data-title="Product">
+                                            <h6 class="item-title">Functional Movement Systems Seminar</h6>
+                                        </td>
+                                        <td data-title="Qty"></td>
+                                        <td data-title="Price"></td>
+                                    </tr>
+                                    <tr>
+                                        <td data-title="Product">
+                                            <h6 class="item-title">Functional Movement Screen Level 2</h6>
+                                            <dd>Saturday, January 30, 2016 8:00 AM - 5:00 PM</dd>
+                                            <dd>Sunday, January 31, 2016 8:00 AM - 12:00 PM</dd>
+                                        </td>
+                                        <td data-title="Qty">1</td>
+                                        <td data-title="Price">$499.00</td>
+                                    </tr>
+                                    <tr>
+                                        <td data-title="Product">
+                                            <h6 class="item-title">Functional Movement Systems Seminar</h6>
+                                            <dd>Saturday, January 30, 2016 8:00 AM - 5:00 PM</dd>
+                                            <dd>Sunday, January 31, 2016 8:00 AM - 5:00 PMM</dd>
+                                        </td>
+                                        <td data-title="Qty">1</td>
+                                        <td data-title="Price">$945.00</td>
+                                    </tr>
+                                    <tr>
+                                        <td data-title="Product">
+                                            <h6 class="item-title">SFMA Level 1 - Online Prerequisite Credit</h6>
+                                        </td>
+                                        <td data-title="Qty">1</td>
+                                        <td data-title="Price">$-645.00</td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-6 col-md-offset-6">
+                                    <h2 class="title-medium br-bottom mb30">Order Summary</h2>
+                                    <table class="table">
+                                        <tbody>
+                                        <tr>
+                                            <td scope="row"><h6>Items:</h6></td>
+                                            <td>$1,444.00</td>
+                                        </tr>
+                                        <tr>
+                                            <td><h6>Tax:</h6></td>
+                                            <td>$0.00</td>
+                                        </tr>
+                                        <tr>
+                                            <td scope="row"><h6>Discounts:</h6></td>
+                                            <td>-$645.00</td>
+                                        </tr>
+                                        <tr>
+                                            <td scope="row">
+                                                <h3>Order total:</h3>
+                                            </td>
+                                            <td>
+                                                <h3 class="product-price">
+                                                    <span class="product-curency">$</span>799.00<span class="product-period"></span>
+                                                </h3>
+                                            </td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="modal-footer">
+                            <a href="shop-cart.html" class="btn btn-green">Complete Order <i class="fa fa-chevron-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End Modal -->
+        </div>
+    </div>
+    <nav class="navbar navbar-custom yamm" data-spy="affix">
+        <div class="container">
+            <div class="navbar-header">
+                <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+
+                <a href="#" class="navbar-brand"><img src="assets/img/logo.jpg"></a>
+            </div>
+
+            <!--- start navbar-collapse Header -->
+            <div class="navbar-collapse collapse out" aria-expanded="true">
+                <ul class="nav navbar-nav navbar-left">
+                    <li class="dropdown">
+                        <a href="#" tabindex="0" data-toggle="dropdown" data-hover="dropdown" data-submenu="">
+                            Home
+                        </a>
+                    </li>
+                    <li class="dropdown yamm-fullwidth">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown">The System<b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li class="container">
+                                <div class="row">
+                                    <div class="col-sm-4 widget">
+                                        <h3>Overview</h3>
+                                        <ul class="yamm-link">
+                                            <li><a href="#">The System</a></li>
+                                            <li><a href="#">FMS</a></li>
+                                            <li><a href="#">SFMA</a></li>
+                                            <li><a href="#">YBT</a></li>
+                                            <li><a href="#">FCS</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-sm-4 widget">
+                                        <h3>Meet the team</h3>
+                                        <ul class="yamm-link">
+                                            <li><a href="#">About Us</a></li>
+                                            <li><a href="#">Meet the team</a></li>
+                                            <li><a href="#">Advisory board</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-sm-4 widget">
+                                        <h3>Our Community</h3>
+                                        <ul class="yamm-link">
+                                            <li><a href="#">Partners</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" tabindex="0" data-toggle="dropdown" data-hover="dropdown" data-submenu="" aria-expanded="false">
+                            Resources<span class="caret"></span>
+                        </a>
+
+                        <ul class="dropdown-menu">
+                            <li><a href="#" tabindex="0">Articles</a></li>
+                            <li><a href="#" tabindex="0">Videos</a></li>
+                            <li><a href="#" tabindex="0">Podcasts</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" tabindex="0" data-toggle="dropdown" data-hover="dropdown" data-submenu="">
+                            Exercises
+                        </a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" tabindex="0" data-toggle="dropdown" data-hover="dropdown" data-submenu="" aria-expanded="false">
+                            Events<span class="caret"></span>
+                        </a>
+
+                        <ul class="dropdown-menu">
+                            <li><a href="#" tabindex="0">Where to start?</a></li>
+                            <li class="dropdown-submenu"><a href="#" tabindex="0">Find a course near you</a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#" tabindex="0">Event Lists View</a></li>
+                                    <li><a href="#" tabindex="0">Event Map View</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#" tabindex="0">Private Course Options</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" tabindex="0" data-toggle="dropdown" data-hover="dropdown" data-submenu="">
+                            Membership
+                        </a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" tabindex="0" data-toggle="dropdown" data-hover="dropdown" data-submenu="">
+                            Shop
+                        </a>
+                    </li>
+                </ul>
+
+                <form class="navbar-form navbar-right" role="search">
+                    <div class="input-group">
+                        <input type="text" class="form-control pull-right" placeholder="Search">
+						<span class="input-group-btn">
+							<button type="reset" class="btn btn-red">
+								<span class="glyphicon glyphicon-remove">
+									<span class="sr-only">Close</span>
+								</span>
+                            </button>
+							<button type="submit" class="btn btn-red">
+								<span class="glyphicon glyphicon-search">
+									<span class="sr-only">Search</span>
+								</span>
+                            </button>
+						</span>
+                    </div>
+                </form>
+            </div>
+            <!--- end navbar-collapse -->
+        </div>
+    </nav>
+</header>
+<!-- Header end -->
+
+<div id="main-content" class="container-fluid theme-showcase" role="main">
+    <section class="section-grey">
+        <div class="container">
+            <ol class="breadcrumb">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">The System</a></li>
+                <li class="active">FMS</li>
+            </ol>
+        </div>
+    </section>
+
+
+    <section class="bg-img" style="background-image: url('https://files.functionalmovement.com/page_content/fms/stock14.jpg');">
+        <div class="overlay-dark pad-40">
+            <div class="container text-center">
+                <h1 class="center-header rule-white" style="color: #FFFFFF; font-size: 78px; line-height: 98px;">
+                    FMS</h1>
+                <p class="lead">
+                    Functional Movement Screen (Scrutinio dei Movimenti Funzionali)</p>
+                <h2 style="color: #FFFFFF;">
+                    Usate i vostri punti di forza e lavorate sulle vostre debolezze</h2>
+                <a class="btn btn-lg btn-white" href="https://www.youtube.com/watch?v=p5yqSZaz4ms&feature=youtu.be" data-lity>Guarda Video <i class="fa fa-play-circle"></i></a>
+            </div>
+        </div>
+    </section>
+    <div class="container pad-40">
+        <ul class="nav nav-tabs redtabs nav-tabs-lg flex-wrap text-center">
+            <li class="active flex-item">
+                <a aria-expanded="true" data-toggle="tab" href="#tab1">FMS livello 1</a></li>
+            <li class="flex-item">
+                <a aria-expanded="false" data-toggle="tab" href="#tab2">FMS livello 2</a></li>
+        </ul>
+        <div class="tab-content">
+            <div class="tab-pane fade active in" id="tab1">
+                <div class="row">
+                    <div class="col-md-8">
+                        <h1 class="center-header rule-black">
+                            Sblocca la potenza dello scrutinio con il livello 1</h1>
+                        <p>
+                            Ogni professionista che lavora nel fitness e ogni allenatore necessita il più grande vantaggio competitivo. Sia che il vostro focus sia l'ottimizzazione dell'allenamento, la massimizzazione nella fidelizzazione dei clienti, il miglioramento della comunicazione o qualsiasi dei punti elencati, lo scrutinio è il punto da quale partire, la vostra mappa, la vostra guida.</p>
+                        <p>
+                            Cosa significa muoversi bene? Lo scrutinio elimina le supposizioni e vi dice esattamente cosa è la qualità del movimento attraverso la valutazione di sette movimenti fondamentali che sono la chiave nelle attività della vita. Lo scrutinio qualifica le persone in una maniera semplice per determinare se le loro sequenze motorie sono ottimali, accettabili o disfunzionali.</p>
+                        <p>
+                            Per stabilire un punto di partenza, avete bisogno di un filtro oggettivo - lo scrutinio e il vostro strumento attendibile e facile da usare.</p>
+                        <p>Nel FMS livello 1 imparerete come eseguire il Functional Movement Screen, il vostro punto di riferimento essenziale. Scoprirete inoltre l'algoritmo di FMS che tramuta i risultati dello scrutinio in miglioramenti, non solo in palestra e sul campo sportivo, ma in ogni scenario e avventura che la vita potrebbe riservare a voi e... ai vostri clienti.</p>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <img src="https://files.functionalmovement.com/page_content/fms/stock15.jpg" /></div>
+                            <div class="col-md-6">
+                                <img src="https://files.functionalmovement.com/page_content/fms/stock17.jpg" /></div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <a class="btn btn-primary btn-bordered btn-block" data-target="#fms-coursedetails" data-toggle="modal" href="#">Course Details</a> <a class="btn btn-primary btn-bordered btn-block" data-target="#fms-courseobj" data-toggle="modal" href="#">Course Objectives</a> <a class="btn btn-primary btn-bordered btn-block ceu" data-company="1" data-level="1" data-target="#fms-ceu" data-toggle="modal" href="#">CEU Information</a> <a class="btn btn-primary btn-bordered btn-block" data-target="#fms-cancel" data-toggle="modal" href="#">Cancellation Policy</a> <a class="btn btn-primary btn-bordered btn-block" data-target="#fms-private" data-toggle="modal" href="#">Private Course Options</a> <!-- Course Details Modal-->
+                        <div aria-hidden="true" aria-labelledby="modal-label-3" class="modal fade" id="fms-coursedetails" role="modal" style="display: none;" tabindex="-1">
+                            <div class="modal-dialog modal-lg">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button aria-hidden="true" class="close" data-dismiss="modal" type="button">&times;</button>
+                                        <h4 class="modal-title" id="modal-label-3">
+                                            Course Details</h4>
+                                    </div>
+                                    <div class="modal-body">
+                                        <p>
+                                            TL' FMS livello 1 viene attualmente offerto come un corso on-line. Il corso on-line FMS include l'accesso a oltre 100 minuti di video e ad un manuale scaricabile. Le unità incluse nel corso sono le seguenti:</p>
+                                        <ul class="custom-bullet marginbot-15">
+                                            <li>
+                                                Unità 1: storia dello scrutinio e comprensione della sua necessità</li>
+                                            <li>
+                                                Unità 2: panoramica, posizione iniziale e valutazione dei 7 test </li>
+                                            <li>
+                                                Unita 3: referto dei punteggi FMS e utilizzo del sistema a semaforo</li>
+                                            <li>
+                                                unita 4: l'impatto dei risultati nella programmazione e nelle strategie degli esercizi correttivi</li>
+                                            <li>
+                                                Appendice 1: introduzione al Motor Control Screen (MCS)</li>
+                                            <li>
+                                                Appendice 2: Modified FMS</li>
+                                        </ul>
+                                        <p>
+                                            Il corso on-line FMS, esclusivamente in lingua inglese per il momento, include inoltre l'accesso all'esame di certificazione per l'FMS livello 1. I corsi dal vivo per l'FMS livello 1 sono disponibili internazionalmente. Gli appuntamenti per gli eventi dal vivo variano a seconda del paese.</p>
+                                        <p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button class="btn btn-bordered btn-primary" data-dismiss="modal" type="button">Close</button></div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--- Course Details Modal end---><!-- Course Objective Modal-->					<div aria-hidden="true" aria-labelledby="modal-label-3" class="modal fade" id="fms-courseobj" role="modal" style="display: none;" tabindex="-1">
+                        <div class="modal-dialog modal-lg">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button aria-hidden="true" class="close" data-dismiss="modal" type="button">&times;</button>
+                                    <h4 class="modal-title" id="modal-label-3">
+                                        Course Objectives</h4>
+                                </div>
+                                <div class="modal-body">
+                                    <ul class="custom-bullet">
+                                        <li>
+                                            Descrizione dei principi a supporto dell'importanza dello scrutinio del movimento. Spiegazione del ruolo della mobilità, del controllo motorio e delle sequenze funzionali nei movimenti fondamentali.</li>
+                                        <li>
+                                            Dimostrazione dell'uso delle istruzioni e delle procedure del Functional Movement Screen. Distinzione fra le tecniche corrette di scrutinio e gli errori più comuni.</li>
+                                        <li>
+                                            Utilizzo dei criteri di valutazione per risultati consistenti ed attendibili.</li>
+                                        <li>
+                                            Sviluppo di programmi di allenamento utilizzando l'FMS come un filtro oggettivo e uno strumento di informazione sui progressi.</li>
+                                        <li>
+                                            Essere in grado di spiegare il motivo dell'applicazione degli esercizi di correzione basati sui risultati dello scrutinio.</li>
+                                    </ul>
+                                </div>
+                                <div class="modal-footer">
+                                    <button class="btn btn-bordered btn-primary" data-dismiss="modal" type="button">Close</button></div>
+                            </div>
+                        </div>
+                    </div>
+                        <!--- Course Objective Modal end---><!-- CEU Information Modal-->					<div aria-hidden="true" aria-labelledby="modal-label-3" class="modal fade" id="fms-ceu" role="modal" style="display: none;" tabindex="-1">
+                        <div class="modal-dialog modal-lg">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button aria-hidden="true" class="close" data-dismiss="modal" type="button">&times;</button>
+                                    <h4 class="modal-title" id="modal-label-3">
+                                        CEU Information</h4>
+                                </div>
+                                <div class="modal-body">
+                                    <p>
+                                        La seguente tabella include le informazioni a proposito delle organizzazioni che hanno approvato i corsi Functional Movement Screen per l'assegnazione di crediti formativi.</p>
+                                    <div class="table-responsive table table-striped table-hover table-1">
+                                        <table class="ceu-data">
+                                        </table>
+                                    </div>
+                                    <div class="ceu-footer">
+                                        &nbsp;</div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button class="btn btn-bordered btn-primary" data-dismiss="modal" type="button">Close</button></div>
+                            </div>
+                        </div>
+                    </div>
+                        <!--- CEU Information Modal end---><!-- Cancellation Policy Modal-->					<div aria-hidden="true" aria-labelledby="modal-label-3" class="modal fade" id="fms-cancel" role="modal" style="display: none;" tabindex="-1">
+                        <div class="modal-dialog modal-lg">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button aria-hidden="true" class="close" data-dismiss="modal" type="button">&times;</button>
+                                    <h4 class="modal-title" id="modal-label-3">
+                                        Cancellation Policy</h4>
+                                </div>
+                                <div class="modal-body">
+                                    <p>
+                                        In virtù dell'immediato accesso al corso on-line dopo il pagamento, non sarà possibile avere un risarcimento. Gli eventi dal vivo e gli importi pagati non possono essere risarciti se la disdetta avviene 14 giorni prima della data del Corso. L'importo pagato però può essere utilizzato per frequentare un evento dal vivo entro l'anno seguente. Se la disdetta avviene prima di 14 giorni dalla data del Corso sarà possibile risarcire il 100% dell'importo. Nell'evento inusuale, che il corso venga cancellato dall'organizzatore, i partecipanti potranno scegliere di ricevere un risarcimento o un credito verso degli eventi futuri all'interno dell'anno seguente.</p>
+                                    <p>
+                                        Sebbene ci siano sforzi per aderire alle proposte pubblicizzate per gli eventi, gli organizzatori si riservano il diritto di sostituire o alternare i relatori.</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button class="btn btn-bordered btn-primary" data-dismiss="modal" type="button">Close</button></div>
+                            </div>
+                        </div>
+                    </div>
+                        <!--- Cancellation Policy Modal end---><!-- Private Course Options Modal-->					<div aria-hidden="true" aria-labelledby="modal-label-3" class="modal fade" id="fms-private" role="modal" style="display: none;" tabindex="-1">
+                        <div class="modal-dialog modal-lg">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button aria-hidden="true" class="close" data-dismiss="modal" type="button">&times;</button>
+                                    <h4 class="modal-title" id="modal-label-3">
+                                        Private Course Options</h4>
+                                </div>
+                                <div class="modal-body">
+                                    <p class="lead">
+                                        I corsi privati sono contemplati per istruire i vostri staff. Non ci sarà nessun tipo di marketing del Functional Movement System o dalla vostra organizzazione.</p>
+                                    <h4>
+                                        Responsabilità della vostra azienda:</h4>
+                                    <ul class="custom-bullet marginbot-30">
+                                        <li>
+                                            Provvedere una aula per i corsi (1000 sq e un minimo di 25 partecipanti)</li>
+                                        <li>
+                                            Provvedere equipaggiamento audiovideo (proiettore, schermo per il proiettore ed un microfono per gruppi più grandi di 50 persone)</li>
+                                        <li>
+                                            Opzionale - provvedere rinfreschi/pasti per il vostro staff</li>
+                                        <li>
+                                            Un aumento addizionale potrebbe essere richiesto (varia dalla tipologia di corso)</li>
+                                    </ul>
+                                    <h4>
+                                        FMS Privato Online Livello 1 e FMS Livello 2 dal vivo (evento di 2 giorni)</h4>
+                                    <ul class="custom-bullet marginbot-30">
+                                        <li>
+                                            Include : corso online FMS livello 1, FMS livello 2 dal vivo, accesso all'esame di certificazione  online FMS livello 1, certificato elettronico, 1 anno di iscrizione attiva dopo la certificazione , FMS test kits, Gray Cook bands, spese di viaggio, vitto e alloggio degli istruttori.</li>
+                                    </ul>
+                                    <h4>
+                                        FMS Privato Livello 2 dal vivo (evento di 2 giorni)</h4>
+                                    <p>
+                                        <em>*tutti i partecipanti devono aver completato FMS Livello 1 (online o dal vivo)</em></p>
+                                    <ul class="custom-bullet marginbot-30">
+                                        <li>
+                                            Include: FMS livello 2 dal vivo, accesso all'esame di certificazione  online FMS livello 2, FMS Test Kits, Gray Cook bands, spese di viaggio, vitto e alloggio degli istruttori</li>
+                                    </ul>
+                                    <h4>
+                                        Vorresti approfondire ulteriormente?</h4>
+                                    <p>
+                                        Clicca qui in basso e compila il modulo per richiedere informazioni e il nostro team ti contatterà il più presto possibile con maggiori dettagli. Grazie per il tuo interesse!</p>
+                                    <a class="btn btn-primary" href="/events/privatecourseinquiry">Richiesta per un corso privato</a></div>
+                                <div class="modal-footer">
+                                    <button class="btn btn-bordered btn-primary" data-dismiss="modal" type="button">Chiudi</button></div>
+                            </div>
+                        </div>
+                    </div>
+                        <!--- Private Course Options Modal end--->					<h3 class="center-header rule-black margintop-30">
+                        Iscriviti ora</h3>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <a class="btn  btn-primary margintop-15 btn-block" href="/Store/35/fms_level_1_online_course">Level 1 Online</a></div>
+                            <div class="col-md-6">
+                                <a class="btn  btn-primary margintop-15 btn-block" href="/events">Level 1 Live*</a></div>
+                            <div class="col-md-12 text-center margintop-15">
+                                <p style="margin: 0;">
+                                    <em>* esclusivamente fuori dagli U.S.A. e dal Canada</em></p>
+                                <p style="margin:0;">
+                                    Gli scriviti al combo (livello 1 e livello 2) per ricevere una agevolazione</p>
+                                <a class="btn  btn-primary margintop-15 " href="/events">Combo</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="tab2">
+                <div class="row">
+                    <div class="col-md-8">
+                        <h1 class="center-header rule-black">
+                            Programmazione degli esercizi</h1>
+                        <p>
+                            Il livello 1 accende il tuo motore. Il livello 2 ti fa inserire la prima marcia. Se il tuo obiettivo E di portare i tuoi clienti in seconda, terza o quarta marcia, saltarne una danneggerà il motore. Il livello 2 rappresenta la base per la tua programmazione - la lieve transizione tra disfunzione e competenza del movimento.</p>
+                        <p>
+                            In quanto professionista, potresti già avere nel tuo bagaglio personale delle strategie di allenamento, ma sei sicuro di creare delle priorità e di adattare il programma basandoti sulle individuali abilità nel movimento dei tuoi clienti? Il livello 2 dell'FMS ti consegna una mappa per ottenere risultati progressivi che rispettano la qualità del movimento. Impara come soddisfare le esigenze dei tuoi clienti con una selezione di esercizi personalizzatiche inoltre limitano i fattori che inibirebbero il loro progresso.</p>
+                        <p>I risultati? Clienti e atleti più consci del loro movimento, in grado di raggiungere risultati più grandi nella vita e nella salute del movimento.</p>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <img src="https://files.functionalmovement.com/page_content/fms/stock22.jpg" /></div>
+                            <div class="col-md-6">
+                                <img src="https://files.functionalmovement.com/page_content/fms/stock23.jpg" /></div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <a class="btn btn-primary btn-bordered btn-block" data-target="#fms-coursedetails2" data-toggle="modal" href="#">Course Details</a> <a class="btn btn-primary btn-bordered btn-block" data-target="#fms-courseobj2" data-toggle="modal" href="#">Course Objectives</a> <a class="btn btn-primary btn-bordered btn-block ceu" data-company="1" data-level="2" data-target="#fms-ceu2" data-toggle="modal" href="#">CEU Information</a> <a class="btn btn-primary btn-bordered btn-block" data-target="#fms-cancel2" data-toggle="modal" href="#">Cancellation Policy</a> <a class="btn btn-primary btn-bordered btn-block" data-target="#fms-private2" data-toggle="modal" href="#">Private Course Options</a> <!-- Course Objective Modal-->
+                        <div aria-hidden="true" aria-labelledby="modal-label-3" class="modal fade" id="fms-courseobj2" role="modal" style="display: none;" tabindex="-1">
+                            <div class="modal-dialog modal-lg">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button aria-hidden="true" class="close" data-dismiss="modal" type="button">&times;</button>
+                                        <h4 class="modal-title" id="modal-label-3">
+                                            Course Objectives</h4>
+                                    </div>
+                                    <div class="modal-body">
+                                        <ul class="custom-bullet">
+                                            <li>
+                                                L'applicazione delle procedure e dei criteri di valutazione per ottenere i migliorie più efficienti  risultati con il Functional Movement Screen.</li>
+                                            <li>
+                                                L'identificazione dei degli errori più comuni durante la valutazione FMS.</li>
+                                            <li>
+                                                L'interpretazione dei risultati e la selezione della corretta priorità nell'allenamento del movimento utilizzando l'algoritmo dell'FMS.</li>
+                                            <li>
+                                                Lo sviluppo di una selezione di esercizi e di una programmazione utilizzando l'FMS come un filtro obbiettivo e uno strumento di feedback.</li>
+                                            <li>
+                                                La comprensione più approfondita di salute del movimento, competenza del movimento e movimento di prestazione.</li>
+                                            <li>
+                                                Lezione del ruolo della mobilità, del controllo motorio e del sovraccarico funzionale nei movimenti fondamentali.</li>
+                                            <li>
+                                                Applicazione di specifiche strategie di mobilità di controllo motorio per migliorare le limitazioni di movimento precedentemente identificate.</li>
+                                            <li>
+                                                L'analisi di casi studio che considerino gli obiettivi del cliente, i risultati FMS ottenuti, la periodizzazione del programma e la selezione degli esercizi.</li>
+                                            <li>
+                                                Fornire strumenti per aumentare la comunicazione con i clienti utilizzando l'FMS per raggiungere gli obiettivi e il successo a lungo termine.</li>
+                                            <li>
+                                                Lo sviluppo di un piano per produrre nuovi clienti e per finalizzare i clienti utilizzando l'SMS e il suo unico approccio per gestire i programmi individuali e di gruppo.</li>
+                                        </ul>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button class="btn btn-bordered btn-primary" data-dismiss="modal" type="button">Close</button></div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--- Course Objective Modal end---><!-- Course Details Modal-->					<div aria-hidden="true" aria-labelledby="modal-label-3" class="modal fade" id="fms-coursedetails2" role="modal" style="display: none;" tabindex="-1">
+                        <div class="modal-dialog modal-lg">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button aria-hidden="true" class="close" data-dismiss="modal" type="button">&times;</button>
+                                    <h4 class="modal-title" id="modal-label-3">
+                                        Course Details</h4>
+                                </div>
+                                <div class="modal-body">
+                                    <p>
+                                        Il corso Functional Movement Screen (FMS) livello 2 ti fornisce l'opportunità per prendere i risultati della FMS applicandoli per stilare il programma e la selezione degli esercizi, per migliorare la qualità dei movimenti di base fondamentali dei vostri clienti. Il corso di livello due inizierà con una approfondita revisione sull'amministrazione dello scrutinio dei movimenti e sulla corretta applicazione dei criteri di valutazione per ottenere i migliori risultati. Verrà discusso inoltre come interpretare i risultati dell'FMS e come decidere quali siano le priorità di allenamento, basandosi su questi risultati e come insegnare l'applicazioni degli esercizi e delle tecniche per migliorare i risultati nell'allenamento dei vostri clienti.</p>
+                                    <p>
+                                        Il seminario tratterà i concetti chiave per comprendere la competenza del movimento e il suo impatto sulla programmazione degli esercizi. Ci sarà una discussione interattiva e una vasta opportunità pratica per dimostrare le strategie e le tecniche chiave utilizzate per migliorare le sequenze motorie che sono state identificate come l'anello debole dall'algoritmo FMS.</p>
+                                    <p>
+                                        Questo corso sottolinea gli esercizi correttivi essenziali dell'FMS: la respirazione, la mobilità, il controllo motorio, le posture transizionali e il sovraccarico funzionale. Per ognuno dei sette test all'interno dell'FMS, verranno spiegate delle progressioni di esercizio in maniera da fornire la miglior strada per migliorare, mantenere e rafforzare queste sequenze motorie. Queste strategie, per ogni sequenza motoria, assisteranno nella determinazione del punto dal quale i vostri clienti debbano iniziare, come anche determineranno il focus all'interno di ogni programma di esercizio per spingere i clienti verso il massimo delle loro abilità</p>
+
+                                    <p>Il corso terminerà con una presentazione di alcuni casi studio è una discussione di gruppo sulla progettazione del programma e l'integrazione dei concetti chiave nell'allenamento e nella riabilitazione.</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button class="btn btn-bordered btn-primary" data-dismiss="modal" type="button">Close</button></div>
+                            </div>
+                        </div>
+                    </div>
+                        <!--- Course Details Modal end---><!-- CEU Information Modal-->					<div aria-hidden="true" aria-labelledby="modal-label-3" class="modal fade" id="fms-ceu2" role="modal" style="display: none;" tabindex="-1">
+                        <div class="modal-dialog modal-lg">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button aria-hidden="true" class="close" data-dismiss="modal" type="button">&times;</button>
+                                    <h4 class="modal-title" id="modal-label-3">
+                                        CEU Information</h4>
+                                </div>
+                                <div class="modal-body">
+                                    <p>
+                                        La seguente tabella include le informazioni a proposito delle organizzazioni che hanno approvato i corsi Functional Movement Screen per l'assegnazione di crediti formativi.</p>
+                                    <div class="table-responsive table table-striped table-hover table-1">
+                                        <table class="ceu-data">
+                                        </table>
+                                    </div>
+                                    <div class="ceu-footer">
+                                        &nbsp;</div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button class="btn btn-bordered btn-primary" data-dismiss="modal" type="button">Close</button></div>
+                            </div>
+                        </div>
+                    </div>
+                        <!--- CEU Information Modal end---><!-- Cancellation Policy Modal-->					<div aria-hidden="true" aria-labelledby="modal-label-3" class="modal fade" id="fms-cancel2" role="modal" style="display: none;" tabindex="-1">
+                        <div class="modal-dialog modal-lg">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button aria-hidden="true" class="close" data-dismiss="modal" type="button">&times;</button>
+                                    <h4 class="modal-title" id="modal-label-3">
+                                        Cancellation Policy</h4>
+                                </div>
+                                <div class="modal-body">
+                                    <p>
+                                        Gli importi pagati per il corso Functional Movement Screen (FMS) livello 2 non possono essere risarciti se la disdetta avviene 14 giorni prima della data del Corso. L'importo pagato però può essere utilizzato per frequentare un evento dal vivo entro l'anno seguente. Se la disdetta avviene prima di 14 giorni dalla data del Corso sarà possibile risarcire il 100% dell'importo. Nell'evento inusuale, che il corso venga cancellato dall'organizzatore, i partecipanti potranno scegliere di ricevere un risarcimento o un credito verso degli eventi futuri all'interno dell'anno seguente.</p>
+                                    <p>
+                                        Sebbene ci siano sforzi per aderire alle proposte pubblicizzate per gli eventi, gli organizzatori si riservano il diritto di sostituire o alternare i relatori.</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button class="btn btn-bordered btn-primary" data-dismiss="modal" type="button">Close</button></div>
+                            </div>
+                        </div>
+                    </div>
+                        <!--- Cancellation Policy Modal end---><!-- Private Course Options Modal-->					<div aria-hidden="true" aria-labelledby="modal-label-3" class="modal fade" id="fms-private2" role="modal" style="display: none;" tabindex="-1">
+                        <div class="modal-dialog modal-lg">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button aria-hidden="true" class="close" data-dismiss="modal" type="button">&times;</button>
+                                    <h4 class="modal-title" id="modal-label-3">
+                                        Opzioni per corsi privati</h4>
+                                </div>
+                                <div class="modal-body">
+                                    <p class="lead">
+                                        I corsi privati sono contemplati per istruire i vostri staff. Non ci sarà nessun tipo di marketing del Functional Movement System o dalla vostra organizzazione.</p>
+                                    <h4>
+                                        Responsabilità della vostra azienda:</h4>
+                                    <ul class="custom-bullet marginbot-30">
+                                        <li>
+                                            Provvedere una aula per i corsi (1000 sq e un minimo di 25 partecipanti)</li>
+                                        <li>
+                                            Provvedere equipaggiamento audiovideo (proiettore, schermo per il proiettore ed un microfono per gruppi più grandi di 50 persone)</li>
+                                        <li>
+                                            Opzionale - provvedere rinfreschi/pasti per il vostro staff</li>
+                                        <li>
+                                            Equipaggiamento addizionale potrebbe essere richiesto (varia dalla tipologia di corso)</li>
+                                    </ul>
+                                    <h4>
+                                        FMS Privato Online Livello 1 e FMS Livello 2 dal vivo (evento di 2 giorni)</h4>
+                                    <ul class="custom-bullet marginbot-30">
+                                        <li>
+                                            Include: corso online FMS livello 1, FMS livello 2 dal vivo, accesso all'esame di certificazione  online FMS livello 1, certificato elettronico, 1 anno di iscrizione attiva dopo la certificazione , FMS test kits, Gray Cook bands, spese di viaggio, vitto e alloggio degli istruttori.</li>
+                                    </ul>
+                                    <h4>
+                                        FMS Privato Livello 2 dal vivo (evento di 2 giorni)</h4>
+                                    <p>
+                                        <em>*tutti i partecipanti devono aver completato FMS Livello 1 (online o dal vivo)</em></p>
+                                    <ul class="custom-bullet marginbot-30">
+                                        <li>
+                                            Include: FMS livello 2 dal vivo, accesso all'esame di certificazione  online FMS livello 2, FMS Test Kits, Gray Cook bands, spese di viaggio, vitto e alloggio degli istruttori</li>
+                                    </ul>
+                                    <h4>
+                                        Vorresti approfondire ulteriormente?</h4>
+                                    <p>
+                                        Clicca qui in basso e compila il modulo per richiedere informazioni e il nostro team ti contatterà il più presto possibile con maggiori dettagli. Grazie per il tuo interesse!</p>
+                                    <a class="btn btn-primary" href="/events/privatecourseinquiry">Richiesta per un corso privato</a></div>
+                                <div class="modal-footer">
+                                    <button class="btn btn-bordered btn-primary" data-dismiss="modal" type="button">Chiudi</button></div>
+                            </div>
+                        </div>
+                    </div>
+                        <!--- Private Course Options Modal end--->					<a class="btn btn-xl btn-primary margintop-15 btn-block" href="/events">Iscriviti ora</a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+</div>
+
+<!-- Start footer --->
+
+<footer>
+    <div class="footer-section pad-40">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <h2 class="ft-title"><span>Support</span></h2>
+                    <div class="footer-widget-1 address">
+                        <ul>
+                            <li><i class="fa fa-envelope"></i><a href="mailto:info@functionalmovement.com">info@functionalmovement.com</a></li>
+                            <li><i class="fa fa-phone"></i>+1 (434) 432-3677</li>
+                        </ul>
+                    </div>
+                </div> <!--/footer-1-->
+                <div class="col-md-3">
+                    <h2 class="ft-title"><span>Connect with us</span></h2>
+                    <div class="footer-social">
+                        <div class="social-icon">
+                            <ul>
+                                <li>
+                                    <a title="Facebook" href="#" target="_blank"><i class="fa fa-facebook"></i></a>
+                                </li>
+                                <li>
+                                    <a title="Twitter" href="#" target="_blank"><i class="fa fa-twitter"></i></a>
+                                </li>
+                                <li>
+                                    <a title="YouTube" href="#" target="_blank"><i class="fa fa-youtube"></i></a>
+                                </li>
+                            </ul>
+                        </div> <!--/.social-icon-->
+                    </div>
+                </div> <!--/footer-2-->
+                <div class="col-md-3">
+                    <h2 class="ft-title"><span>Latest tweet</span></h2>
+                    <div id="twitter-feed" class="twitter-feed">
+                        <div class="tweet"><ul><li><div class="tweet-icon"><i class="fa fa-twitter fa-2x"></i></div><div class="tweet-date">Oct. 24, 2015</div><div class="tweet-content">Simple & Sinister + Heart Rate Monitor <a href="http://www.strongfirst.com/simple-sinister-heart-rate-monitor/" target="_blank">http://www.strongfirst.com/simple-sinister-heart-rate-monitor/</a> … <a href="http://bit.ly/1MeNX6B" target="_blank" title="Visit this link">http://bit.ly/1MeNX6B</a></div></li></ul></div>
+                    </div>
+                </div> <!--/footer-3-->
+                <div class="col-md-3">
+                    <h2 class="ft-title"><span>Find Certified Members</span></h2>
+                    <div class="input-group custom-search-form">
+                        <input type="text" class="form-control" placeholder="Postal Code">
+                          <span class="input-group-btn">
+                              <button class="btn btn-primary" type="button">
+                                  <span class="glyphicon glyphicon-search"></span>
+                              </button>
+                         </span>
+                    </div><!-- /input-group -->
+                </div> <!--/footer-4-->
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <small>Copyright © 2015 FunctionalMovement.com</small>
+                </div>
+                <div class="col-md-6">
+                    <ul class="foot-menu">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms and Conditions</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- latest jQuery, Boostrap JS and hover dropdown plugin -->
+<script src="https://code.jquery.com/jquery-latest.min.js" defer></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" defer></script>
+<script src="assets/js/bootstrap-submenu.js" defer></script>
+<script src="assets/js/docs.js" defer></script>
+<script src="assets/js/bootstrap-hover-dropdown.js" defer></script>
+<script src="assets/js/dropdownhover.js" defer></script>
+<script src="assets/js/bootstrap-select.js" defer></script>
+<script src="assets/js/jquery.background-video.js" defer></script>
+<script src="assets/js/slick.js" defer></script>
+<script src="assets/js/slick-init.js" defer></script>
+<script src="assets/js/autosize.js" defer></script>
+<!-- Popup Video js -->
+<script src="assets/js/lity.js" defer></script>
+<script src="assets/js/bootstrap-switch.js" defer></script>
+<script src="assets/js/highlight.js" defer></script>
+<script src="assets/js/main.js" defer></script>
+
+</body>
+</html>
