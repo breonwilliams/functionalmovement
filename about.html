@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Functional Movement Systems</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/bootstrap-submenu.css">
+    <link rel="stylesheet" href="assets/css/bootstrap-select.css">
+    <link rel="stylesheet" href="assets/css/theme.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/slick-theme.css"/>
+    <link rel="stylesheet" type="text/css" href="assets/css/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap-switch.css"/>
+    <link rel="stylesheet" type="text/css" href="assets/css/lity.css"/>
+
+
+</head>
+<body>
+<!-- Header start -->
+<header class="header" id="header" role="banner">
+    <div class="header-top-area">
+        <div class="container">
+            <div class="row">
+                <!-- header-top-left start -->
+                <div class="col-lg-6 col-md-6 col-sm-7">
+                    <div class="header-top-left">
+                        <div class="top-message">Welcome, <a href="#">John</a>!</div>
+                        <div class="phone-number"> Support: <span>(434) 432-3677</span></div>
+                    </div>
+                </div>
+                <!-- header-top-left end -->
+                <!-- header-top-right start -->
+                <div class="col-lg-6 col-md-6 col-sm-5">
+                    <div class="header-top-right">
+                        <div class="lang-select">
+                            <ul>
+                                <li>
+                                    <select class="selectpicker" data-style="btn-default" title='Select Language'>
+                                        <option>English</option>
+                                        <option>Spanish</option>
+                                        <option>French</option>
+                                    </select>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="top-menu">
+                            <ul>
+                                <li><a href="#">My Account</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- header-top-right end -->
+            </div>
+        </div>
+    </div>
+    <div class="header-mid-area">
+        <div class="container">
+            <div class="row">
+                <!-- logo start -->
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                    <div class="logo">
+                        <a href="#"><img src="assets/img/logo.png" alt=""></a>
+                    </div>
+                </div>
+                <!-- logo end -->
+                <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8 text-right">
+                    <a href="#signintab" class="btn btn-primary btn-sm modal-toggle" data-toggle="modal" data-target="#modal">Login</a> <a href="#registertab" class="btn btn-default btn-sm modal-toggle" data-toggle="modal" data-target="#modal">Register</a>
+                    <div class="row">
+                        <div class="col-md-12 margintop-15">
+                            <a href="#" class="cart" data-toggle="modal" data-target="#modal-3"><i class="fa fa-shopping-cart"></i><span>3</span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Start Modal -->
+            <div class="modal fade" id="modal" tabindex="-1" role="modal" aria-labelledby="modal-label" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                            <h4 class="modal-title" id="modal-label">My FMS</h4>
+                        </div>
+                        <div class="modal-body">
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <ul class="nav nav-tabs">
+                                        <li class="active"><a href="#signintab" data-toggle="tab" aria-expanded="true">Sign In</a></li>
+                                        <li class=""><a href="#registertab" data-toggle="tab" aria-expanded="false">Register</a></li>
+                                        <li class=""><a href="#passwordtab" data-toggle="tab" aria-expanded="false">Forgot Password?</a></li>
+                                    </ul>
+                                    <div class="tab-content">
+                                        <div class="tab-pane fade active in" id="signintab">
+                                            <form id="loginform" class="form-horizontal" role="form">
+
+                                                <p>Please enter your username and password to login or <a href="#">create a new account</a>.</p>
+
+                                                <div class="input-group">
+                                                    <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                                                    <input id="login-username" type="text" class="form-control" name="username" value="" placeholder="username or email">
+                                                </div>
+
+                                                <div class="input-group">
+                                                    <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+                                                    <input id="login-password" type="password" class="form-control" name="password" placeholder="password">
+                                                </div>
+
+
+
+                                                <div class="input-group">
+                                                    <div class="checkbox">
+                                                        <label>
+                                                            <input id="login-remember" type="checkbox" name="remember" value="1"> Keep me logged in.
+                                                        </label>
+                                                    </div>
+                                                </div>
+
+
+                                                <div class="form-group">
+                                                    <!-- Button -->
+
+                                                    <div class="controls">
+                                                        <a id="btn-login" href="home.html" class="btn btn btn-green">Sign In  </a>
+                                                        <a id="btn-cancel" href="#" class="btn btn-primary">Cancel</a>
+
+                                                    </div>
+                                                </div>
+
+
+                                                <div class="form-group">
+                                                    <div class="col-md-12 control">
+                                                        Don't have an account!
+                                                        <a href="#">
+                                                            Sign Up Here
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </div>
+                                        <div class="tab-pane fade" id="registertab">
+                                            <form id="loginform" class="form-horizontal" role="form">
+
+                                                <h3>Create a new account.</h3>
+                                                <p>Use the form below to create a new account Passwords are required to be a minimum of 6 characters in length.</p>
+
+                                                <div class="input-group">
+                                                    <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                                                    <input id="login-username" type="text" class="form-control" name="username" value="" placeholder="username">
+                                                </div>
+
+                                                <input id="login-username" type="text" class="form-control marginbot-25" name="username" value="" placeholder="first name">
+
+                                                <input id="login-username" type="text" class="form-control marginbot-25" name="username" value="" placeholder="last name">
+
+                                                <div class="input-group">
+                                                    <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
+                                                    <input id="login-password" type="password" class="form-control" name="password" placeholder="email address">
+                                                </div>
+
+                                                <div class="input-group">
+                                                    <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+                                                    <input id="login-password" type="password" class="form-control" name="password" placeholder="password">
+                                                </div>
+
+                                                <div class="input-group">
+                                                    <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+                                                    <input id="login-password" type="password" class="form-control" name="password" placeholder="confirm password">
+                                                </div>
+
+                                                <p>By clicking "Sign Up" you agree to the <a href="#">Terms of Use</a>.</p>
+
+                                                <div class="form-group">
+                                                    <!-- Button -->
+
+                                                    <div class="controls">
+                                                        <a id="btn-login" href="#" class="btn btn btn-green">Sign In  </a>
+                                                        <a id="btn-cancel" href="#" class="btn btn-primary">Cancel</a>
+
+                                                    </div>
+                                                </div>
+
+                                            </form>
+                                        </div>
+                                        <div class="tab-pane fade" id="passwordtab">
+                                            <div class="tab-pane fade active in" id="signintab">
+                                                <form id="loginform" class="form-horizontal" role="form">
+
+                                                    <p>Use the form below to reset your password.</p>
+
+                                                    <div class="input-group">
+                                                        <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                                                        <input id="login-username" type="text" class="form-control" name="username" value="" placeholder="username or email">
+                                                    </div>
+
+                                                    <div class="form-group">
+                                                        <!-- Button -->
+
+                                                        <div class="controls">
+                                                            <a id="btn-login" href="#" class="btn btn btn-green">Reset Password</a>
+                                                            <a id="btn-cancel" href="#" class="btn btn-primary">Cancel</a>
+
+                                                        </div>
+                                                    </div>
+
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-bordered btn-primary" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Modal Cart -->
+            <div class="modal fade" id="modal-3" tabindex="-1" role="modal" aria-labelledby="modal-label-3" aria-hidden="true" style="display: none;">
+                <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                            <h4 class="modal-title" id="modal-label-3">Cart</h4>
+                        </div>
+                        <div class="modal-body">
+
+                            <div class="table-responsive">
+                                <table class="table table-striped table-hover table-1">
+                                    <thead>
+                                    <tr>
+                                        <th class="text-left">Name</th>
+                                        <th class="text-left">Qty</th>
+                                        <th class="text-left">Price</th>
+                                    </tr>
+                                    </thead>
+
+                                    <tbody>
+                                    <tr>
+                                        <td data-title="Product">
+                                            <h6 class="item-title">Functional Movement Systems Seminar</h6>
+                                        </td>
+                                        <td data-title="Qty"></td>
+                                        <td data-title="Price"></td>
+                                    </tr>
+                                    <tr>
+                                        <td data-title="Product">
+                                            <h6 class="item-title">Functional Movement Screen Level 2</h6>
+                                            <dd>Saturday, January 30, 2016 8:00 AM - 5:00 PM</dd>
+                                            <dd>Sunday, January 31, 2016 8:00 AM - 12:00 PM</dd>
+                                        </td>
+                                        <td data-title="Qty">1</td>
+                                        <td data-title="Price">$499.00</td>
+                                    </tr>
+                                    <tr>
+                                        <td data-title="Product">
+                                            <h6 class="item-title">Functional Movement Systems Seminar</h6>
+                                            <dd>Saturday, January 30, 2016 8:00 AM - 5:00 PM</dd>
+                                            <dd>Sunday, January 31, 2016 8:00 AM - 5:00 PMM</dd>
+                                        </td>
+                                        <td data-title="Qty">1</td>
+                                        <td data-title="Price">$945.00</td>
+                                    </tr>
+                                    <tr>
+                                        <td data-title="Product">
+                                            <h6 class="item-title">SFMA Level 1 - Online Prerequisite Credit</h6>
+                                        </td>
+                                        <td data-title="Qty">1</td>
+                                        <td data-title="Price">$-645.00</td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-6 col-md-offset-6">
+                                    <h2 class="title-medium br-bottom mb30">Order Summary</h2>
+                                    <table class="table">
+                                        <tbody>
+                                        <tr>
+                                            <td scope="row"><h6>Items:</h6></td>
+                                            <td>$1,444.00</td>
+                                        </tr>
+                                        <tr>
+                                            <td><h6>Tax:</h6></td>
+                                            <td>$0.00</td>
+                                        </tr>
+                                        <tr>
+                                            <td scope="row"><h6>Discounts:</h6></td>
+                                            <td>-$645.00</td>
+                                        </tr>
+                                        <tr>
+                                            <td scope="row">
+                                                <h3>Order total:</h3>
+                                            </td>
+                                            <td>
+                                                <h3 class="product-price">
+                                                    <span class="product-curency">$</span>799.00<span class="product-period"></span>
+                                                </h3>
+                                            </td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="modal-footer">
+                            <a href="shop-cart.html" class="btn btn-green">Complete Order <i class="fa fa-chevron-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- End Modal -->
+        </div>
+</header>
+<!-- Header end -->
+<nav class="navbar navbar-custom yamm" data-spy="affix">
+    <div class="container">
+        <div class="navbar-header">
+            <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+
+            <a href="#" class="navbar-brand"><img src="assets/img/logo.jpg"></a>
+        </div>
+
+        <!--- start navbar-collapse Header -->
+        <div class="navbar-collapse collapse out" aria-expanded="true">
+            <ul class="nav navbar-nav navbar-left">
+                <li class="dropdown">
+                    <a href="#" tabindex="0" data-toggle="dropdown" data-hover="dropdown" data-submenu="">
+                        Home
+                    </a>
+                </li>
+                <li class="dropdown yamm-fullwidth">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown">The System<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        <li class="container">
+                            <div class="row">
+                                <div class="col-sm-4 widget">
+                                    <h3>Overview</h3>
+                                    <ul class="yamm-link">
+                                        <li><a href="#">The System</a></li>
+                                        <li><a href="#">SFMA</a></li>
+                                        <li><a href="#">FMS</a></li>
+                                        <li><a href="#">YBT</a></li>
+                                        <li><a href="#">Instructors</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-sm-4 widget">
+                                    <h3>Get Certified</h3>
+                                    <ul class="yamm-link">
+                                        <li><a href="#">Get Started</a></li>
+                                        <li><a href="#">SFMA</a></li>
+                                        <li><a href="#">FMS</a></li>
+                                        <li><a href="#">YBT</a></li>
+                                        <li><a href="#">In-Service Options</a></li>
+                                        <li><a href="#">Take a Test</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-sm-4 widget">
+                                    <h3>Certified Members</h3>
+                                    <ul class="yamm-link">
+                                        <li><a href="#">Find A Certified Member</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" tabindex="0" data-toggle="dropdown" data-hover="dropdown" data-submenu="" aria-expanded="false">
+                        Resources<span class="caret"></span>
+                    </a>
+
+                    <ul class="dropdown-menu">
+                        <li><a href="#" tabindex="0">All Resource Types</a></li>
+                        <li><a href="#" tabindex="0">FMS Screening</a></li>
+                        <li><a href="#" tabindex="0">FMS Corrections</a></li>
+                        <li><a href="#" tabindex="0">FMS Research</a></li>
+                        <li><a href="#" tabindex="0">Podcasts</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" tabindex="0" data-toggle="dropdown" data-hover="dropdown" data-submenu="">
+                        Exercises
+                    </a>
+                </li>
+                <li class="dropdown">
+                    <a href="#" tabindex="0" data-toggle="dropdown" data-hover="dropdown" data-submenu="" aria-expanded="false">
+                        Events<span class="caret"></span>
+                    </a>
+
+                    <ul class="dropdown-menu">
+                        <li><a href="#" tabindex="0">Get Started</a></li>
+                        <li><a href="#" tabindex="0">Find A Seminar</a></li>
+                        <li><a href="#" tabindex="0">Online Courses</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" tabindex="0" data-toggle="dropdown" data-hover="dropdown" data-submenu="">
+                        Store
+                    </a>
+                </li>
+                <li class="dropdown">
+                    <a href="#" tabindex="0" data-toggle="dropdown" data-hover="dropdown" data-submenu="">
+                        FMS Pro
+                    </a>
+                </li>
+            </ul>
+
+            <form class="navbar-form navbar-right" role="search">
+                <div class="input-group">
+                    <input type="text" class="form-control pull-right" placeholder="Search">
+						<span class="input-group-btn">
+							<button type="reset" class="btn btn-red">
+								<span class="glyphicon glyphicon-remove">
+									<span class="sr-only">Close</span>
+								</span>
+                            </button>
+							<button type="submit" class="btn btn-red">
+								<span class="glyphicon glyphicon-search">
+									<span class="sr-only">Search</span>
+								</span>
+                            </button>
+						</span>
+                </div>
+            </form>
+        </div>
+        <!--- end navbar-collapse -->
+    </div>
+</nav>
+<!--- end Header -->
+
+<div id="main-content" class="container-fluid theme-showcase" role="main">
+
+    <section class="bg-img" style="background-image: url('https://files.functionalmovement.com/page_content/about/about-collage2.jpg');">
+        <div class="overlay-dark pad-100">
+            <div class="container text-center">
+                <h1 class="center-header rule-white pad-40" style="color: #FFFFFF; font-size: 78px; line-height: 98px;">
+                    About Us</h1>
+            </div>
+        </div>
+    </section>
+    <div class="container pad-40">
+        <p>
+            Sometimes the most innovative ideas evolve from the simplest concepts.&nbsp; That&rsquo;s the case with Functional Movement Systems (FMS). Our story is not remarkable.&nbsp; Our model was not developed in a state-of-the-art lab.&nbsp; To be honest, it all started with our co-founder, Gray Cook, sketching diagrams of movement patterns&hellip;on a napkin.&nbsp; Those sketches laid the foundation for our entire system.&nbsp;</p>
+        <p>
+            Some consider us pioneers in the world of movement.&nbsp; Looking back to 1995, we were healthcare and fitness pros working with people &ndash; from high performance athletes to elderly patients in rehab &ndash; who displayed signs of dysfunction either from an injury or poor movement quality in general.&nbsp;&nbsp; And, while we originally designed the screen for local high school and college athletes where we live in southern Virginia, it quickly caught attention and gained notoriety with organizations like the U.S. military and professional sports teams.</p>
+        <p>
+            During this incredible journey, we fine-tuned lessons we learned and now teach them to you in our online courses and seminars hosted around the world. Our system gives you the skillset to raise the movement bar for some and put it back in reach for others.</p>
+        <p>
+            One thing&rsquo;s for sure:&nbsp; Movement dictates the way we live -- all day, every day -- and we take that very seriously.&nbsp; Since 1995, our mission at FMS is for everyone to move well.&nbsp; And move often.</p>
+        <p>
+            While we may have kicked off the movement over 20 years ago, the FMS global community propels our mission to the next level.&nbsp; To paraphrase Gray Cook, &ldquo;let&rsquo;s play to our strengths, work on our weaknesses,&rdquo; and move forward together to reach even greater heights with you on our team.</p>
+    </div>
+
+
+</div>
+
+<!-- Start footer --->
+
+<footer>
+    <div class="footer-section pad-40">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <h2 class="ft-title"><span>Support</span></h2>
+                    <div class="footer-widget-1 address">
+                        <ul>
+                            <li><i class="fa fa-envelope"></i><a href="mailto:info@functionalmovement.com">info@functionalmovement.com</a></li>
+                            <li><i class="fa fa-phone"></i>+1 (434) 432-3677</li>
+                        </ul>
+                    </div>
+                </div> <!--/footer-1-->
+                <div class="col-md-3">
+                    <h2 class="ft-title"><span>Connect with us</span></h2>
+                    <div class="footer-social">
+                        <div class="social-icon">
+                            <ul>
+                                <li>
+                                    <a title="Facebook" href="#" target="_blank"><i class="fa fa-facebook"></i></a>
+                                </li>
+                                <li>
+                                    <a title="Twitter" href="#" target="_blank"><i class="fa fa-twitter"></i></a>
+                                </li>
+                                <li>
+                                    <a title="YouTube" href="#" target="_blank"><i class="fa fa-youtube"></i></a>
+                                </li>
+                            </ul>
+                        </div> <!--/.social-icon-->
+                    </div>
+                </div> <!--/footer-2-->
+                <div class="col-md-3">
+                    <h2 class="ft-title"><span>Latest tweet</span></h2>
+                    <div id="twitter-feed" class="twitter-feed">
+                        <div class="tweet"><ul><li><div class="tweet-icon"><i class="fa fa-twitter fa-2x"></i></div><div class="tweet-date">Oct. 24, 2015</div><div class="tweet-content">Simple & Sinister + Heart Rate Monitor <a href="http://www.strongfirst.com/simple-sinister-heart-rate-monitor/" target="_blank">http://www.strongfirst.com/simple-sinister-heart-rate-monitor/</a> … <a href="http://bit.ly/1MeNX6B" target="_blank" title="Visit this link">http://bit.ly/1MeNX6B</a></div></li></ul></div>
+                    </div>
+                </div> <!--/footer-3-->
+                <div class="col-md-3">
+                    <h2 class="ft-title"><span>Find Certified Members</span></h2>
+                    <div class="input-group custom-search-form">
+                        <input type="text" class="form-control" placeholder="Postal Code">
+                          <span class="input-group-btn">
+                              <button class="btn btn-primary" type="button">
+                                  <span class="glyphicon glyphicon-search"></span>
+                              </button>
+                         </span>
+                    </div><!-- /input-group -->
+                </div> <!--/footer-4-->
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <small>Copyright © 2015 FunctionalMovement.com</small>
+                </div>
+                <div class="col-md-6">
+                    <ul class="foot-menu">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms and Conditions</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- latest jQuery, Boostrap JS and hover dropdown plugin -->
+<script src="https://code.jquery.com/jquery-latest.min.js" defer></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" defer></script>
+<script src="assets/js/bootstrap-submenu.js" defer></script>
+<script src="assets/js/docs.js" defer></script>
+<script src="assets/js/bootstrap-hover-dropdown.js" defer></script>
+<script src="assets/js/dropdownhover.js" defer></script>
+<script src="assets/js/bootstrap-select.js" defer></script>
+<script src="assets/js/jquery.background-video.js" defer></script>
+<script src="assets/js/slick.js" defer></script>
+<script src="assets/js/slick-init.js" defer></script>
+<script src="assets/js/autosize.js" defer></script>
+<!-- Popup Video js -->
+<script src="assets/js/lity.js" defer></script>
+<script src="assets/js/bootstrap-switch.js" defer></script>
+<script src="assets/js/highlight.js" defer></script>
+<script src="assets/js/main.js" defer></script>
+
+</body>
+</html>
