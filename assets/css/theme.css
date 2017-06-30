@@ -3052,8 +3052,13 @@ Articles
     margin: 0 0 24px 24px;
 }
 img.rounded, .rounded {
-    border-radius: 3px;
+     border-radius: 3px;
+ }
+
+img.circle, .circle {
+    border-radius: 50%;
 }
+
 .alignright {
     float: right;
 }
